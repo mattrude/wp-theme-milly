@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<div id="container">
 <div id="content">
 	<?php if (have_posts()) : ?>
 		<!--This is "The Loop"-->
@@ -37,8 +36,9 @@
 		<?php include (TEMPLATEPATH . "/searchform.php"); ?>
 	<?php endif; ?>
 </div><!--close content id-->
-</div><!--close container id-->
 
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
+
+</div><!--close container id-->
