@@ -12,7 +12,7 @@ Tags: Widgets, Avatars
 @import url('./21px.css');
 
 /* Get plugins CSS */
-@import url('./plugins.css');
+/* @import url('./plugins.css'); */
 
 body {
 	font: 12px/21px Verdana, Arial, sans-serif;
