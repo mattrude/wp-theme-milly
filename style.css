@@ -1,19 +1,18 @@
 /* 
-Theme Name: Blue Night
-Theme URI: http://justintadlock.com
-Description: A child of the Hybrid theme framework that puts emphasis on your content.
-Author: Justin Tadlock
-Author URI: http://justintadlock.com
+Theme Name: Milly
+Theme URI: http://mattrude.com
+Description: 
+Author: Matt Rude
+Author URI: http://mattrude.com
 Version: 0.1
 Tags: Widgets, Avatars
-Template: hybrid
 */
 
 /* Get base CSS */
-@import url('../hybrid/library/css/21px.css');
+@import url('./21px.css');
 
 /* Get plugins CSS */
-@import url('../hybrid/library/css/plugins.css');
+@import url('./plugins.css');
 
 body {
 	font: 12px/21px Verdana, Arial, sans-serif;

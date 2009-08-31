@@ -13,7 +13,6 @@
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-    <script src="<?php bloginfo('template_url'); ?>/js/ThemeJS.js" type="text/javascript"></script>
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
     <!--This is a plugin hook-->
