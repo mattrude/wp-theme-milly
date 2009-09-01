@@ -1,5 +1,5 @@
 /* 
-Theme Name: Milly
+Theme Name: Samantha
 Theme URI: http://mattrude.com
 Description: 
 Author: Matt Rude
@@ -9,10 +9,12 @@ Tags: Widgets, Avatars
 */
 
 /* Get base CSS */
-@import url('./21px.css');
+@import url('21px.css');
 
 /* Get plugins CSS */
-@import url('./plugins.css');
+/*
+@import url('plugins.css');
+*/
 
 body {
 	font: 12px/21px Verdana, Arial, sans-serif;

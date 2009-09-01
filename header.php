@@ -38,12 +38,7 @@
 		<div id="navigation">
 			<div id="page-nav" class="page-nav">
 				<ul class="menu sf-menu">
-					<li>
-						<a href="http://mattrude.com">Home</a>
-					</li>
-					<li class="page_item page-item-2">
-						<a title="About" href="http://mattrude.com/about">About</a>
-					</li>
+					<?php get_bookmarks() ?> 
 				</ul>
 			</div>
 		</div>

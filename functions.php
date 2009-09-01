@@ -10,14 +10,12 @@ if(function_exists('register_sidebar'))
 		'after_title' => '</h3>',
 	));
 	
-/* 
 add_action( 'init', 'create_my_taxonomies', 0 );
 function create_my_taxonomies() {
 	register_taxonomy( 'people', 'post', array( 'hierarchical' => false, 'label' => 'People', 'query_var' => true, 'rewrite' => true ) );
 	register_taxonomy( 'places', 'post', array( 'hierarchical' => false, 'label' => 'Places', 'query_var' => true, 'rewrite' => true ) );
 	register_taxonomy( 'events', 'post', array( 'hierarchical' => false, 'label' => 'Events', 'query_var' => true, 'rewrite' => true ) );
 }
-*/
 
 // Adds robots.txt support
 $defaultrobotstxt = "# This is the default robots.txt file
@@ -100,7 +98,7 @@ array
 );
 
 add_action('init', 'robots_txt');
-$Panel = new ControlPanel('Dark and Clear');
+$Panel = new ControlPanel('Milly');
 $Panel->SetOptions($Options);
 $Panel->Initialize();
 
