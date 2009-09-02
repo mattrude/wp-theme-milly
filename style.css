@@ -421,7 +421,7 @@ img.wp-smiley {
 	}
 
 /* Posts (and other general sections) */
-.post, .series, .related, .category-info, .tag-info, .author-info, .date-info, .search-info, .single .author-profile {
+.post, .page, .series, .related, .category-info, .tag-info, .author-info, .date-info, .search-info, .single .author-profile {
 	overflow: hidden;
 	margin: 0 0 20px 0;
 	padding: 19px 19px 0 19px;
@@ -434,14 +434,14 @@ img.wp-smiley {
 	margin: 0 0 5px 0;
 	font: normal normal bold 18px/21px arial, verdana, sans-serif;
 	}
-.home .post-title, .single-title, .attachment-title, .page-title, .series-title, .related-title, 
+.home .post-title, .page-title, .single-title, .attachment-title, .page-title, .series-title, .related-title, 
 .category-title, .tag-title, .author-title, .date-title, .search-title  {
 	margin: 0 0 10px 0;
 	padding: 0 6px 9px 3px;
 	border-bottom: 1px solid #e2e2e2;
 	font: normal normal bold 18px/21px arial, verdana, sans-serif;
 	}
-.page-template-excerpts .post-title, .home .post-title {
+.page-template-excerpts .post-title, .home .post-title, .page-title {
 	margin: 0 0 5px 0;
 	padding: 0;
 	border: none;
