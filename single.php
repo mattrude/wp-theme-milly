@@ -24,7 +24,9 @@
 	
 			</div><!--close entry class-->
 			<!--Add Related Entries if Yet Another Related Posts Plugin is installed-->
-			<?php if (function_exists('related_entries')) { echo related_entries(); }?>
+			<div class="related-entries">
+				<?php if (function_exists('related_entries')) { echo related_entries(); }?>
+			</div>
 			<p class="postmetadata1 alt">
 					<small>
 						<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {

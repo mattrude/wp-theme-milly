@@ -806,6 +806,9 @@ a.comment-link:hover {
 	margin: 0 0 0 0;
 	padding: 5px 19px 5px 19px;
 	}
+.related-entries p {
+	margin: 0;
+	}
 
 /**
 * Secondary widgets (footer)
