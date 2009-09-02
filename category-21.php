@@ -1,43 +1,41 @@
-<?php
-
-get_header();
-
-$cat_title = '<a href="'.get_category_link(intval(get_query_var('cat'))).'">'.single_cat_title('', false).'</a>'; ?>
+<?php get_header(); ?>
 
 <div id="content">
-<h1>Matt Rude's Personal Photo Gallery</h1>
-
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<div id="gallerypost-<?php the_ID(); ?>" class="gallerypost post">
-		<div id="gallerypost_thumbnail-<?php the_ID(); ?>" class="gallerypost_thumbnail">
-			<?php global $wp_query; ?>
-			<?php $gallery_thumbnail = get_post_meta( $wp_query->post->ID, 'gallery thumbnail', true ); ?>
-			<a href="<?php the_permalink() ?>" rel="bookmark"><img src="<?php echo $gallery_thumbnail; ?>" alt="<?php echo get_post_meta( $post->ID, 'gallery thumbnail', true); ?> Gallery" border='1' color='000' align='left' style='margin-right: 5px;' /></a>
-		</div>
-		<div id="gallerypost_body-<?php the_ID(); ?>" class="gallerypost_body">
-			<?php $images =& get_children( 'post_type=attachment&post_mime_type=image' ); ?>
-			<h2><a rel="bookmark" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-			<small class="attr">Written by <?php the_author() ?> on <?php the_time('F jS, Y') ?></small>
-			<div class="entry">
+	<?php if (have_posts()) : ?>
+	<img src="<?php bloginfo('template_url'); ?>/images/twitter.jpg" width="300" height="111" />
+	<br />
+	<div id=tweet_head>
+		Welcome to my Twitter feed. Here you will find ALL my tweet history.  You may click on the date to go to the origin tweet if Twitter still has it. You may follow me as <a href="http://twitter.com/mdrude">@mdrude</a>.
+	</div>
+		<!--This is "The Loop"-->
+		<?php while (have_posts()) : the_post(); ?>
+			<div <?php post_class(); ?> id="tweet_template">
+			<div id=tweet_post>
+				<img src="<?php bloginfo('template_url'); ?>/images/twitter-logo.jpg" width="60" height="60" align='left' style='margin-right: 5px;' />
 				<?php the_excerpt(); ?>
 			</div>
-			<p>This Album contains <?php echo $wpdb->get_var( "SELECT COUNT(*) FROM $wpdb->posts WHERE post_parent = '$post->ID' AND post_type = 'attachment'" ); ?> items.</p>
+			<div id=tweet_date>
+				<?php global $wp_query; ?>
+                        	<?php $tweet_id = get_post_meta( $wp_query->post->ID, 'aktt_twitter_id', true ); ?>
+				Posted to <a href="http://twitter.com">Twitter</a> by <?php the_author() ?> on <a href="http://twitter.com/mdrude/status/<?php echo $tweet_id ?>"><?php the_time('F jS, h:ma T Y ') ?></a>
+			</div>	
+			</div><!--close post class and post# id-->
+		<?php endwhile; ?>
+		<br />	
+		<div class="navigation">
+			<div class="txtalignright"><?php next_posts_link('Older Entries &raquo;') ?></div>
+			<div class="txtalignleft"><?php previous_posts_link('&laquo; Newer Entries') ?></div>
 		</div>
-		<div id="gallerypost_sub-<?php the_ID(); ?>" class="gallerypost_sub">
-			<?php echo get_the_term_list( $post->ID, 'people', 'Who: ', ', ', '<br />' ); ?>
-			<?php echo get_the_term_list( $post->ID, 'places', 'Where: ', ', ', '<br />' ); ?>
-			<?php echo get_the_term_list( $post->ID, 'events', 'What: ', ', ', '' ); ?>
-		</div>
-	</div>
-<?php endwhile; else: ?>
+	<?php else : ?>
 
-<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+		<h2 class="center">Oops! Couldn't find what you were looking for. Maybe you'll want to search for it:</h2>
+		<p class="center">Sorry, but you are looking for something that isn't here.</p>
+		<?php include (TEMPLATEPATH . "/searchform.php"); ?>
 
-<?php endif; ?>
-</div>
-<?php 
-get_sidebar();
+	<?php endif; ?>
 
-get_footer();
+</div><!--close content id-->
 
-?>
+<?php get_sidebar(); ?>
+
+<?php get_footer(); ?>
