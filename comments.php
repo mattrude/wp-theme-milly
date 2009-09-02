@@ -1,0 +1,114 @@
+<?php // Do not delete these lines
+	
+	if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
+		die ('Please do not load this page directly. Thanks!');
+	if ( post_password_required() ) {
+		echo 'This post is password protected. Enter the password to view comments.';
+		return;
+	}
+
+	/* This variable is for alternating comment background */
+	$oddcomment = 'alt';
+?>
+
+<!-- You can start editing here. -->
+<?php 
+//count comments, trackbacks, and pingbacks
+if($comments) {
+	$trackping_count = 0; $comment_count = 0;
+	foreach($comments as $comment) {
+		$comment_type = get_comment_type();
+
+		if($comment_type == 'comment') {
+			$comment_count++;
+		}else{
+			$trackping_count++;
+		} //endif
+	} //end foreach
+} //endif
+?>
+
+<?php if (have_comments()) : ?>
+			
+	<h3 id="comments"><?php echo $comment_count . " Comments"; ?></h3>
+
+	<ol class="commentlist">
+		<?php wp_list_comments('type=comment'); ?>
+	</ol>
+
+ <?php else : // this is displayed if there are no comments so far ?>
+
+	<?php if ('open' == $post->comment_status) : ?>
+		<!-- If comments are open, but there are no comments. -->
+
+	 <?php else : // comments are closed ?>
+		<!-- If comments are closed. -->
+		<p class="nocomments"></p>
+
+	<?php endif; ?>
+<?php endif; ?>
+
+
+<?php if ('open' == $post->comment_status) : ?>
+
+<?php if ( get_option('comment_registration') && !$user_ID ) : ?>
+<p>You must be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php echo urlencode(get_permalink()); ?>">logged in</a> to post a comment.</p>
+<?php else : ?>
+
+<div id="respond">
+<h3><?php comment_form_title( 'Leave a Comment', 'Reply to %s' ); ?></h3>
+
+<div id="cancel-comment-reply">
+	<small><?php cancel_comment_reply_link() ?></small>
+</div>
+
+<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
+
+<?php if ( $user_ID ) : ?>
+
+<p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">Log out &raquo;</a></p>
+
+<textarea id="comment" tabindex="4" cols="20" rows="10" onfocus="if ( value == 'Your comment please...' ) { this.value='' }" name="comment">Your comment please...</textarea>
+
+<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
+
+<?php else : ?>
+
+<div class="comment-left">
+	<input id="author" type="text" onblur="if ( value == '' ) { this.value='Your name' }" onfocus="if ( value == 'Your name' ) { this.value='' }" tabindex="1" size="22" value="Your name" name="author"/>
+	<input id="email" type="text" onblur="if ( value == '' ) { this.value='Your email' }" onfocus="if ( value == 'Your email' ) { this.value='' }" tabindex="2" size="22" value="Your email" name="email"/>
+	<input id="url" type="text" tabindex="3" size="22" value="http://" name="url"/>
+	<div class="comment-submit">
+		<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+		<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
+	</div>
+</div>
+<div class="comment-right">
+<textarea id="comment" tabindex="4" cols="20" rows="8" onfocus="if ( value == 'Your comment...' ) { this.value='' }" name="comment">Your comment...</textarea>
+</div>
+<?php endif; ?>
+
+<?php do_action('comment_form', $post->ID); ?>
+<?php comment_id_fields(); ?>
+</form>
+</div><!-- close respond id -->
+
+<!-- Display trackbacks/pingbacks at bottom of post
+	If you do not want trackbacks/pingbacks visible, delete this section -->
+<?php if($comments && ($trackping_count != 0)) : ?>
+<h3 class="trackbacks"><?php echo $trackping_count; ?> Trackbacks / Pingbacks</h3>
+	<ol class="tpbacks">
+	<?php foreach ($comments as $comment) : ?>
+	<?php $comment_type = get_comment_type(); ?>
+	<?php if($comment_type != 'comment') { ?>
+	<li><?php comment_author_link() ?></li>
+	<?php } ?>
+	<?php endforeach; ?>
+</ol>
+<?php endif; ?>
+<!--End of trackbacks / pingbacks section -->
+
+<?php endif; // If registration required and not logged in ?>
+
+<?php endif; // if you delete this the sky will fall on your head ?>

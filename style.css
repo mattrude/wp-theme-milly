@@ -751,7 +751,20 @@ a.comment-link:hover {
 	color: #222;
 	text-decoration: underline;
 	}
-
+.comment-left,
+.comment-right {
+	width: 50%;
+	float: left;
+	}
+.comment-left input,
+.comment-right textarea {
+	margin: 0 0 15px 4%;
+        padding: 8px;
+        width: 90%;
+	}
+.comment-submit input {
+	width: 130px;
+	}
 /* Comment form */
 #respond {
 	overflow: hidden;
