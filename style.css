@@ -129,6 +129,12 @@ textarea {
 input {
 	font: normal normal normal 13px/21px arial, verdana, sans-serif;
 	}
+.floatleft {
+	float: left;
+	}
+.floatright {
+	float: right;
+	}
 .text-input {
 	display: block;
 	width: 300px;
