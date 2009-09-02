@@ -28,7 +28,6 @@
 				<?php if (function_exists('related_entries')) { echo related_entries(); }?>
 			</div>
 			<p class="postmetadata1 alt">
-					<small>
 						<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
 							// Both Comments and Pings are open ?>
 							<!--You can <a href="#respond">leave a response</a>, or <a href="<?php trackback_url(); ?>" rel="trackback">trackback</a> from your own site.-->
@@ -46,7 +45,6 @@
 							Both comments and pings are currently closed.
 	
 						<?php } ?>
-					</small>
 				</p><!--close p.postmetadata alt-->
 	<div class="navigation">
 		<div class="floatleft"><?php previous_post_link('&laquo; %link') ?></div>
