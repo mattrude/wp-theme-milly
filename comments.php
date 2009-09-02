@@ -28,13 +28,14 @@ if($comments) {
 } //endif
 ?>
 
-<?php if (have_comments()) : ?>
-			
-	<h3 id="comments"><?php echo $comment_count . " Comments"; ?></h3>
+<?php if (have_comments($comment_type = 'comment')) : ?>
+	<div id="comments"			
+		<h3 id="comments-number" class="comments-header"><?php echo $comment_count . " Comments"; ?></h3>
 
-	<ol class="commentlist">
-		<?php wp_list_comments('type=comment'); ?>
+	<ol class="comment-list">
+		<?php wp_list_comments(array('style' => 'ol', 'type' => 'comment')); ?>
 	</ol>
+	</div>
 
  <?php else : // this is displayed if there are no comments so far ?>
 
@@ -97,15 +98,19 @@ if($comments) {
 <!-- Display trackbacks/pingbacks at bottom of post
 	If you do not want trackbacks/pingbacks visible, delete this section -->
 <?php if($comments && ($trackping_count != 0)) : ?>
-<h3 class="trackbacks"><?php echo $trackping_count; ?> Trackbacks / Pingbacks</h3>
-	<ol class="tpbacks">
-	<?php foreach ($comments as $comment) : ?>
-	<?php $comment_type = get_comment_type(); ?>
-	<?php if($comment_type != 'comment') { ?>
-	<li><?php comment_author_link() ?></li>
-	<?php } ?>
-	<?php endforeach; ?>
-</ol>
+<div id="trackback">
+	<h3 id="trackbacks" class="comments-header"><?php echo $trackping_count; ?> Trackbacks / Pingbacks</h3>
+	<div class="trackback">
+		<ol class="trackback-list">
+			<?php foreach ($comments as $comment) : ?>
+			<?php $comment_type = get_comment_type(); ?>
+			<?php if($comment_type != 'comment') { ?>
+			<li><?php comment_author_link() ?></li>
+			<?php } ?>
+			<?php endforeach; ?>
+		</ol>
+	</div>
+</div>
 <?php endif; ?>
 <!--End of trackbacks / pingbacks section -->
 

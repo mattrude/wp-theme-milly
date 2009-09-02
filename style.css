@@ -131,9 +131,11 @@ input {
 	}
 .floatleft {
 	float: left;
+	padding: 0 6px 9px 6px;
 	}
 .floatright {
 	float: right;
+	padding: 0 6px 9px 6px;
 	}
 .text-input {
 	display: block;
@@ -785,6 +787,24 @@ a.comment-link:hover {
 	padding: 0 6px 9px 6px;
 	font: normal normal bold 18px/21px arial, verdana, sans-serif;
 	border-bottom: 1px solid #e2e2e2;
+	}
+.trackback {
+	background: #fff;
+	border: 1px solid #e7e7e7;
+	}
+#trackback ol {
+	list-style: none;
+	margin-left: 0;
+	margin: 0 0 0 10px;
+	}
+#trackback li {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:transparent url(images/bullet.png) no-repeat scroll 0 10px;
+	overflow: hidden;
+	margin: 0 0 0 0;
+	padding: 5px 19px 5px 19px;
 	}
 
 /**
