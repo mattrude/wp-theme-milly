@@ -794,6 +794,7 @@ a.comment-link:hover {
 	}
 #trackback ol {
 	list-style: none;
+	list-style-type: clear;
 	margin-left: 0;
 	margin: 0 0 0 10px;
 	}
@@ -808,6 +809,15 @@ a.comment-link:hover {
 	}
 .related-entries p {
 	margin: 0;
+	}
+.related-entries li {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:transparent url(images/bullet.png) no-repeat scroll 0 6px;
+	border-bottom:1px solid #E2E2E2;
+	margin:0 0 6px;
+	padding:0 0 6px 15px;
 	}
 
 /**
