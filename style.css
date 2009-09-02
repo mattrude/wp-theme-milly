@@ -807,6 +807,9 @@ a.comment-link:hover {
 	margin: 0 0 0 0;
 	padding: 5px 19px 5px 19px;
 	}
+.attr {
+        margin: -5px 0 10px 0;
+	}
 .related-entries p {
 	margin: 0;
 	}
@@ -819,6 +822,41 @@ a.comment-link:hover {
 	margin:0 0 6px;
 	padding:0 0 6px 15px;
 	}
+.gallerypost {
+	background-color:#fff;
+	display: block;
+	height: 250px;
+	margin: 0px 0px 10px 0px;
+	padding: 10px 0px 10px 0px;
+	overflow: hidden;
+	border-bottom: 1px solid #D2C4A2;
+	}
+.gallerypost_body {
+	float: right;
+	width: 400px;
+	height: 220px;
+	}
+.gallerypost_body p {
+	margin: 50px 0px 0px 0px;
+	}
+.gallerypost_body .entry p {
+	margin: 0px 0px 0px 0px;
+	}
+.gallerypost_body .entry {
+	margin: 0px 0px 0px 0px;
+}
+.gallerypost_sub p {
+	vertical-align: bottom;
+	padding: 210px 0px 0px 10px;
+	width 200px;
+	height 30px;
+}
+.gallerypost_thumbnail img {
+	width: 205px;
+	margin: 0 0 0 10px;
+	color: #000;
+}
+
 
 /**
 * Secondary widgets (footer)

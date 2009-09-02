@@ -17,16 +17,16 @@ $cat_title = '<a href="'.get_category_link(intval(get_query_var('cat'))).'">'.si
 		<div id="gallerypost_body-<?php the_ID(); ?>" class="gallerypost_body">
 			<?php $images =& get_children( 'post_type=attachment&post_mime_type=image' ); ?>
 			<h2><a rel="bookmark" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-			<small class="attr">Written by <?php the_author() ?> on <?php the_time('F jS, Y') ?></small>
+			<div class="attr"><small>Written by <?php the_author() ?> on <?php the_time('F jS, Y') ?></small></div>
 			<div class="entry">
 				<?php the_excerpt(); ?>
 			</div>
 			<p>This Album contains <?php echo $wpdb->get_var( "SELECT COUNT(*) FROM $wpdb->posts WHERE post_parent = '$post->ID' AND post_type = 'attachment'" ); ?> items.</p>
 		</div>
 		<div id="gallerypost_sub-<?php the_ID(); ?>" class="gallerypost_sub">
-			<?php echo get_the_term_list( $post->ID, 'people', 'Who: ', ', ', '<br />' ); ?>
-			<?php echo get_the_term_list( $post->ID, 'places', 'Where: ', ', ', '<br />' ); ?>
-			<?php echo get_the_term_list( $post->ID, 'events', 'What: ', ', ', '' ); ?>
+			<p><?php echo get_the_term_list( $post->ID, 'people', 'Who: ', ', ', '<br />' ); ?></p>
+			<p><?php echo get_the_term_list( $post->ID, 'places', 'Where: ', ', ', '<br />' ); ?></p>
+			<p><?php echo get_the_term_list( $post->ID, 'events', 'What: ', ', ', '' ); ?></p>
 		</div>
 	</div>
 <?php endwhile; else: ?>
