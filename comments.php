@@ -99,8 +99,8 @@ if($comments) {
 	If you do not want trackbacks/pingbacks visible, delete this section -->
 <?php if($comments && ($trackping_count != 0)) : ?>
 <div id="trackback">
-	<h3 id="trackbacks" class="comments-header"><?php echo $trackping_count; ?> Trackbacks / Pingbacks</h3>
 	<div class="trackback">
+	<h3 id="trackbacks" class="comments-header title"><?php echo $trackping_count; ?> Trackbacks / Pingbacks</h3>
 		<ol class="trackback-list">
 			<?php foreach ($comments as $comment) : ?>
 			<?php $comment_type = get_comment_type(); ?>

@@ -776,7 +776,6 @@ a.comment-link:hover {
 /* Comment form */
 #respond {
 	overflow: hidden;
-	
 	margin: 0 0 20px 0;
 	padding: 19px 19px 0 19px;
 	background: #fff;
@@ -789,8 +788,14 @@ a.comment-link:hover {
 	border-bottom: 1px solid #e2e2e2;
 	}
 .trackback {
-	background: #fff;
-	border: 1px solid #e7e7e7;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:#FFFFFF none repeat scroll 0 0;
+	border:1px solid #E7E7E7;
+	margin:0 0 20px;
+	overflow:hidden;
+	padding:19px 19px 19px;
 	}
 #trackback ol {
 	list-style: none;
