@@ -116,7 +116,6 @@ class ControlPanel
 					break;
 				case 'Close':
 					$ToPrint .= '<p class="submit custom"><input name="save" type="submit" value="Save All Changes" /><input type="hidden" name="action" value="save" /></p>';
-					$ToPrint .= "<br>";
 					break;
 				case 'End':
 					$ToPrint .= "</div></div>";
@@ -150,7 +149,7 @@ class ControlPanel
 					if(isset($Description)) $ToPrint .= '<p class="description">' .  $Description . '</p>';
 					break; 
 			}
-			if($ToPrint) echo $ToPrint . '<br>';
+			if($ToPrint) echo $ToPrint;
 		}
 		echo '</form>';
 

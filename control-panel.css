@@ -4,7 +4,7 @@
 .select { width:250px; }
 .ajaxmessage { display:none; background-color: rgb(255, 251, 204); font-style:normal;font-size:13px; position:fixed; top:0; left:0; width:500px; z-index:+32767 }
 .hidden { display:none; }
-#poststuff .stuffbox.custom{ margin-bottom:0px; }
+#poststuff .stuffbox.custom{ margin-bottom:10px; }
 .submit.custom { padding:4px; }
 .hndle { cursor:pointer; }
 #settings .custom .description { font-size:11px; margin-top:0; font-style:italic; }
