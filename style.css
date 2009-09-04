@@ -43,6 +43,19 @@ a:hover, a:active {
 h1, h2, h3, h4, h5, h6 {
 	font-family: arial, verdana, sans-serif;
 	}
+.post h1 {
+	-x-system-font:none;
+	border-bottom:1px solid #E2E2E2;
+	font-family:arial,verdana,sans-serif;
+	font-size:18px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:21px;
+	padding:0 0 2px;
+	}
 
 /* Lists */
 #content ul {
@@ -451,6 +464,9 @@ img.wp-smiley {
 .entry-content, .entry-summary {
 	overflow: hidden;
 	}
+.entry {
+	margin: 10px 0 0 0;
+	}
 
 /* Byline */
 .byline {
@@ -616,7 +632,6 @@ p.pages a {
 	margin: 0 0 6px 0;
 	padding: 0 6px 9px 6px;
 	font: normal normal bold 18px/21px arial, verdana, sans-serif;
-	color: #01527a;
 	border-bottom: 1px solid #e2e2e2;
 	}
 .widget ul {
