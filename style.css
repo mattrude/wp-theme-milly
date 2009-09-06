@@ -331,7 +331,6 @@ img.wp-smiley {
 	width: 1024px;
 	height: 200px;
 	margin: 0 auto;
-	padding: 0 20px;
 	}
 #site-title {
 	float: left;
@@ -340,12 +339,17 @@ img.wp-smiley {
 	}
 #site-title a {
 	display: block;
-	width: 275px;
-	height: 65px;
-	margin: 110px 0 0 10px;
+	width: 375px;
+	height: 25px;
+	margin: 8px 0 0 80px;
+	font-size: 28px;
 	}
-#site-title a span, #site-description {
-	display: none;
+#site-description {
+	display: block;
+        width: 375px;
+        height: 35px;
+        margin: 35px 0 0 100px;
+        font-size: 20px;
 	}
 
 /* Search form */
@@ -378,6 +382,7 @@ img.wp-smiley {
 	height: 33px;
 	width: 1024px;
 	margin: 0px auto;
+	padding: none;
 	background: url(images/nav.png) repeat-x 0 0;
 	border-top: 1px solid #081e26;
 	border-bottom: 1px solid #081e26;

@@ -27,7 +27,7 @@
 			<div id="header">
 				<div id="site-title">
 					<a class="standard" href="<?php bloginfo('url'); ?>">
-						<span>mattrude.com</span>
+						<span><?php bloginfo('sitetitle'); ?></span>
 					</a>
 				</div>
 				<div id="site-description">
