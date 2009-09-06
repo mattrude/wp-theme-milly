@@ -17,7 +17,7 @@ Tags: Widgets, Avatars
 */
 
 body {
-	font: 12px/21px Verdana, Arial, sans-serif;
+	font: 14px/21px Verdana, Arial, sans-serif;
 	color: #666;
 	background: #eff1e1 url(images/body.png) repeat-x 0 0;
 	}
@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-variant:normal;
 	font-weight:bold;
 	line-height:21px;
+	margin: 0;
 	padding:0 0 2px;
 	}
 
@@ -434,7 +435,7 @@ img.wp-smiley {
 	}
 
 /* Posts (and other general sections) */
-.post, .page, .series, .related, .category-info, .tag-info, .author-info, .date-info, .search-info, .single .author-profile {
+.attachment, .post, .page, .series, .related, .category-info, .tag-info, .author-info, .date-info, .search-info, .single .author-profile {
 	overflow: hidden;
 	margin: 0 0 20px 0;
 	padding: 19px 19px 19px 19px;
@@ -472,6 +473,7 @@ img.wp-smiley {
 .byline {
 	font-size: 11px;
 	color: #999;
+	margin: 0;
 	}
 .archive .byline, .search .byline, .page-template-excerpts .byline, .home .byline {
 	margin: 0;
@@ -845,7 +847,7 @@ a.comment-link:hover {
 .gallerypost {
 	background-color:#fff;
 	display: block;
-	height: 300px;
+	hNeight: 300px;
 	margin: 0px 0px 10px 0px;
 	padding: 20px 10px 10px 10px;
 	overflow: hidden;

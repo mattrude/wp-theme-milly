@@ -27,8 +27,10 @@ $cat_title = '<a href="'.get_category_link(intval(get_query_var('cat'))).'">'.si
 		</div>
 		<div id="gallerypost_sub-<?php the_ID(); ?>" class="gallerypost_sub">
 			<p><?php echo get_the_term_list( $post->ID, 'people', 'Who: ', ', ', '<br />' ); ?></p>
+			<!-- temp remove the place and event tax until bug is fixed
 			<p><?php echo get_the_term_list( $post->ID, 'places', 'Where: ', ', ', '<br />' ); ?></p>
 			<p><?php echo get_the_term_list( $post->ID, 'events', 'What: ', ', ', '' ); ?></p>
+			-->
 		</div>
 	</div>
 <?php endwhile; else: ?>
