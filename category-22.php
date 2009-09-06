@@ -2,16 +2,15 @@
 
 <div id="content">
 	<?php if (have_posts()) : ?>
-	<img src="<?php bloginfo('template_url'); ?>/images/twitter.jpg" width="300" height="111" />
-	<br />
-	<div id=tweet_head>
+	<img src="<?php bloginfo('template_url'); ?>/images/twitter.jpg" class="tweet_post" width="300" height="111" />
+	<div id=tweet_head class="post">
 		Welcome to my Twitter feed. Here you will find ALL my tweet history.  You may click on the date to go to the origin tweet if Twitter still has it. You may follow me as <a href="http://twitter.com/mdrude">@mdrude</a>.
 	</div>
 		<!--This is "The Loop"-->
 		<?php while (have_posts()) : the_post(); ?>
 			<div <?php post_class(); ?> id="tweet_template">
 			<div id=tweet_post>
-				<img src="<?php bloginfo('template_url'); ?>/images/twitter-logo.jpg" width="60" height="60" align='left' style='margin-right: 5px;' />
+				<img src="<?php bloginfo('template_url'); ?>/images/twitter-logo.jpg" class='tweet-image' width="60" height="60" align='left' style='margin-right: 5px;' />
 				<?php the_excerpt(); ?>
 			</div>
 			<div id=tweet_date>

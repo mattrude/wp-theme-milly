@@ -876,7 +876,28 @@ a.comment-link:hover {
 	margin: 0 0 0 10px;
 	color: #000;
 }
+#tweet_template {
+        position:relative
+}
+#tweet_post {
+        font-size: 18px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        height: 65px;
+        top:50%;
+}
+#tweet_post img {
+	border: none;
+	background: #fff;
+}
+#tweet_date {
+        color: #AAA;
+        font-size: 9px;
+}
 
+#tweet_head {
+        font-size: 20px;
+}
 
 /**
 * Secondary widgets (footer)
