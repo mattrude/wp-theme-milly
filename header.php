@@ -39,6 +39,14 @@
 			<div id="page-nav" class="page-nav">
 				<ul class="menu sf-menu">
 					<?php get_bookmarks() ?> 
+					<a rel="me" href="/about/">About</a> 
+					<a rel="me" href="/contact-me/">Contact Me</a> 
+					<a rel="me" href="/gallery/">Photo Gallery</a> 
+					<a rel="me" href="/plugins/">Plugins</a> 
+					<a rel="me" href="/calendar/">Calendar</a> 
+					<a rel="me" href="/category/tweets/">My Tweets</a> 
+					<a rel="me" href="https://mail.mattrude.com">Mail</a> 
+					<a rel="me" href="http://wiki.mattrude.com/">Wiki</a> 
 				</ul>
 			</div>
 		</div>
