@@ -30,9 +30,11 @@
 						<span><?php bloginfo('sitetitle'); ?></span>
 					</a>
 				</div>
+				<!--
 				<div id="site-description">
 					<span><?php bloginfo('description'); ?></span>
 				</div>
+				-->
 			</div>
 		</div><!--close header id-->
 		<div id="navigation">
