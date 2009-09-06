@@ -437,7 +437,7 @@ img.wp-smiley {
 .post, .page, .series, .related, .category-info, .tag-info, .author-info, .date-info, .search-info, .single .author-profile {
 	overflow: hidden;
 	margin: 0 0 20px 0;
-	padding: 19px 19px 0 19px;
+	padding: 19px 19px 19px 19px;
 	background: #fff;
 	border: 1px solid #e7e7e7;
 	}
@@ -847,13 +847,13 @@ a.comment-link:hover {
 	display: block;
 	height: 250px;
 	margin: 0px 0px 10px 0px;
-	padding: 10px 0px 10px 0px;
+	padding: 20px 10px 10px 10px;
 	overflow: hidden;
 	border-bottom: 1px solid #D2C4A2;
 	}
 .gallerypost_body {
 	float: right;
-	width: 400px;
+	width: 380px;
 	height: 220px;
 	}
 .gallerypost_body p {
