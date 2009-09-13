@@ -36,8 +36,7 @@
 		<div id="navigation">
 			<div id="page-nav" class="page-nav">
 				<ul class="menu sf-menu">
-					<?php get_bookmarks() ?> 
-					<a rel="me" href="/">Home</a> 
+					<a rel="me" href="<?php bloginfo('url'); ?>">Home</a> 
 					<a rel="me" href="/contact-me/">Contact Me</a> 
 					<a rel="me" href="http://gallery.mattrude.com/">Photo Gallery</a> 
 					<a rel="me" href="/plugins/">Plugins</a> 
