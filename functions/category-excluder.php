@@ -1,6 +1,6 @@
 <?php
 
-add_action('admin_menu', 'ce_admin_menu');
+// add_action('admin_menu', 'ce_admin_menu');
 add_filter('pre_get_posts','ce_exclude_categories');
 
 function ce_process() {
