@@ -334,7 +334,7 @@ img.wp-smiley {
 	-moz-background-clip:border;
 	-moz-background-inline-policy:continuous;
 	-moz-background-origin:padding;
-	background:transparent url(images/nav.png) repeat-x scroll 0 0;
+	background:#0A2A35 none repeat scroll 0 0;
 	border-bottom:1px solid #081E26;
 	border-top:1px solid #081E26;
 	height:35px;
@@ -386,7 +386,7 @@ img.wp-smiley {
 	width: 1024px;
 	margin: 0px auto;
 	padding: none;
-	background: url(images/nav.png) repeat-x 0 0;
+	background:#0A2A35 none repeat scroll 0 0;
 	border-top: 1px solid #081e26;
 	border-bottom: 1px solid #081e26;
 	}
