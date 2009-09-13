@@ -332,25 +332,25 @@ img.wp-smiley {
 	height: 200px;
 	margin: 0 auto;
 	}
-#site-title {
-	float: left;
-	width: 275px;
-	margin: 0;
+#header-title {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:transparent url(images/nav.png) repeat-x scroll 0 0;
+	border-bottom:1px solid #081E26;
+	border-top:1px solid #081E26;
+	height:33px;
+	margin:0 auto;
+	overflow:hidden;
+	width:1024px;
 	}
-#site-title a {
-	display: block;
-	width: 375px;
-	height: 25px;
-	margin: 8px 0 0 80px;
+#site-title {
+	margin: 4px 0 0 8px;
 	font-size: 28px;
 	}
-#site-description {
-	display: block;
-        width: 375px;
-        height: 35px;
-        margin: 35px 0 0 100px;
-        font-size: 20px;
-	}
+#site-title a:link, a:visited {
+	color: #cccccc;
+	}	
 
 /* Search form */
 #header form {

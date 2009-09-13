@@ -24,18 +24,14 @@
 
 <div id="body-container">
 		<div id="header-container">
-			<div id="header">
+			<div id="header-title">
 				<div id="site-title">
 					<a class="standard" href="<?php bloginfo('url'); ?>">
-						<span><?php bloginfo('sitetitle'); ?></span>
+						<?php bloginfo('description'); ?>
 					</a>
 				</div>
-				<!--
-				<div id="site-description">
-					<span><?php bloginfo('description'); ?></span>
-				</div>
-				-->
 			</div>
+			<div id="header"></div>
 		</div><!--close header id-->
 		<div id="navigation">
 			<div id="page-nav" class="page-nav">
