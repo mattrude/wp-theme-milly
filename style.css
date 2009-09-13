@@ -349,8 +349,13 @@ img.wp-smiley {
 	margin: 6px 0 0 10px;
 	font-size: 26px;
 	}
-#site-title a:link, a:visited {
+#site-title a:link {
 	color: #aaaaaa;
+	text-decoration: none;
+	}	
+#site-title a:visited {
+	color: #aaaaaa;
+	text-decoration: none;
 	}	
 
 /* Search form */
