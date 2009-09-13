@@ -862,8 +862,8 @@ a.comment-link:hover {
 	}
 .gallerypost_body {
 	float: right;
-	width: 380px;
-	height: 220px;
+	width: 430px;
+	margin: 0 20px 0 0;
 	}
 .gallerypost_body p {
 	margin: 50px 0px 0px 0px;
@@ -873,41 +873,55 @@ a.comment-link:hover {
 	}
 .gallerypost_body .entry {
 	margin: 0px 0px 0px 0px;
-}
+	}
+.gallerypost_main {
+        width: 690px;
+	}
 .gallerypost_sub {
+	display: block;
 	padding: 210px 0px 0px 10px;
 	}
 .gallerypost_sub p {
 	vertical-align: bottom;
 	margin: 0;
-}
+	}
+.gallerypost_sub_left {
+	width: 220px;
+	display: block;
+	float: left;
+	}
+.gallerypost_sub_right {
+	width: 220px;
+	display: block;
+	float: right;
+	}
 .gallerypost_thumbnail img {
 	width: 205px;
 	margin: 0 0 0 10px;
 	color: #000;
-}
+	}
 #tweet_template {
         position:relative
-}
+	}
 #tweet_post {
         font-size: 18px;
         margin-bottom: 5px;
         font-weight: bold;
         height: 65px;
         top:50%;
-}
+	}
 #tweet_post img {
 	border: none;
 	background: #fff;
-}
+	}
 #tweet_date {
         color: #AAA;
         font-size: 9px;
-}
+	}
 
 #tweet_head {
         font-size: 20px;
-}
+	}
 
 /**
 * Secondary widgets (footer)
