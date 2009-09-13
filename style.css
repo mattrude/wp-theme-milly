@@ -340,17 +340,17 @@ img.wp-smiley {
 	background:transparent url(images/nav.png) repeat-x scroll 0 0;
 	border-bottom:1px solid #081E26;
 	border-top:1px solid #081E26;
-	height:33px;
+	height:35px;
 	margin:0 auto;
 	overflow:hidden;
 	width:1024px;
 	}
 #site-title {
-	margin: 4px 0 0 8px;
-	font-size: 28px;
+	margin: 6px 0 0 10px;
+	font-size: 26px;
 	}
 #site-title a:link, a:visited {
-	color: #999999;
+	color: #aaaaaa;
 	}	
 
 /* Search form */
