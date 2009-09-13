@@ -1,10 +1,16 @@
 </div> 
 <div id="footer-container">
 	<div id="footer">
-		<p>
-			<?php global $Panel; echo $Panel->Settings('FooterText'); ?>
-			<br />Page took <?php timer_stop(1); ?> seconds to be created
-		</p>
+		<img src="<?php bloginfo('template_url') ?>/images/wordpress-logo.png" height="100" width="100">
+		<div id="footer_text" class="block">
+			<p>
+			This page took <?php timer_stop(1); ?> seconds of computer labor to produce.<br />
+			Site Designed by <a href="http://mattrude.com/">Matt Rude</a>.<br />
+			Proudly powered by <a href="http://wordpress.org/">WordPress</a>.<br />
+			Copyright © 1980 – 2009 <a href="http://mattrude.com/">Matt Rude</a><br />
+			<?php global $Panel; echo $Panel->Settings('FooterText'); ?><br />
+			</p>
+		</div>
 	</div>
 	<!--footer plugin hook-->
 	<?php wp_footer(); ?>

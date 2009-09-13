@@ -953,14 +953,27 @@ a.comment-link:hover {
 	overflow: hidden;
 	clear: both;
 	width: 1024px;
-	margin: 0px auto 0px auto;
+	margin: 0px auto 10px auto;
 	}
-#footer .copyright {
+#footer img {
+	left:19px;
 	float: left;
-	width: 45%;
 	}
-#footer .credit {
-	float: right;
-	width: 45%;
-	text-align: right;
+#footer p {
+	margin: 0;
+	line-height: 16px;
 	}
+#footer_text {
+	border:0 none;1
+	vertical-align: center;
+	display:inline;
+	font-family:Georgia,"Times New Roman",Times,serif;
+	font-size:12px;
+	font-weight:normal;
+	left:19px;
+	margin: 5px;
+	padding:0;
+	position:relative;
+	text-align:left;
+	text-decoration:none;
+	width:550px;
