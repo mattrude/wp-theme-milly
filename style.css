@@ -393,27 +393,27 @@ img.wp-smiley {
 	border-top: 1px solid #081e26;
 	border-bottom: 1px solid #081e26;
 	}
-#page-nav {
+#menu {
 	overflow: hidden;
 	width: 1024px;
 	height: 33px;
 	margin: 0 auto;
 	background: url(images/nav-border.png) repeat-y left  0;
 	}
-#page-nav ul {
+#menu ul {
 	overflow: hidden;
 	list-style: none;
 	margin: 0 auto;
 	}
-#page-nav li {
+#menu li {
 	display: inline;
 	}
-#page-nav a {
+#menu a {
 	float: left;
 	padding: 5px 35px;
 	background: url(images/nav-border.png) repeat-y right 0;
 	}
-#page-nav li.current_page_item a {
+#menu li.current_page_item a {
 	color: #fff;
 	}
 
@@ -877,11 +877,12 @@ a.comment-link:hover {
 .gallerypost_body .entry {
 	margin: 0px 0px 0px 0px;
 }
+.gallerypost_sub {
+	padding: 210px 0px 0px 10px;
+	}
 .gallerypost_sub p {
 	vertical-align: bottom;
-	padding: 210px 0px 0px 10px;
-	width 200px;
-	height 30px;
+	margin: 0;
 }
 .gallerypost_thumbnail img {
 	width: 205px;

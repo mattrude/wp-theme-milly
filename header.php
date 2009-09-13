@@ -34,7 +34,7 @@
 			<div id="header"></div>
 		</div><!--close header id-->
 		<div id="navigation">
-			<div id="page-nav" class="page-nav">
+			<div id="menu" class="menu">
 				<ul class="menu sf-menu">
 					<a rel="me" href="<?php bloginfo('url'); ?>">Home</a> 
 					<a rel="me" href="/contact-me/">Contact Me</a> 
