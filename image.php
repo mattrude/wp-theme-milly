@@ -1,4 +1,4 @@
-<?php require_once('header.php'); ?>
+<?php require_once('header-simple.php'); ?>
 
 <div id="image_content">
 

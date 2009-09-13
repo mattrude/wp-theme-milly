@@ -19,10 +19,7 @@ Tags: Widgets, Avatars
 body {
 	font: 14px/21px Verdana, Arial, sans-serif;
 	color: #666;
-	background: #eff1e1 url(images/body.png) repeat-x 0 0;
-	}
-body.home, body.front-page {
-	background: #eff1e1 url(images/body.png) repeat-x 0 -35px;
+	background: #eff1e1 ;
 	}
 #body-container {
 	overflow: hidden;
@@ -323,8 +320,8 @@ img.wp-smiley {
 #header-container {
 	overflow: hidden;
 	width: 100%;
-	height: 200px;
 	background: #EFF1E1;
+	margin: 20px 0 0 0;
 	}
 #header {
 	overflow: hidden;
