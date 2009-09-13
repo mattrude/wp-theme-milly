@@ -324,13 +324,14 @@ img.wp-smiley {
 	overflow: hidden;
 	width: 100%;
 	height: 200px;
-	background: url(images/StAnthonyFalls.jpg) no-repeat center 0 #EFF1E1;
+	background: #EFF1E1;
 	}
 #header {
 	overflow: hidden;
 	width: 1024px;
 	height: 200px;
 	margin: 0 auto;
+	background: url(images/StAnthonyFalls.jpg) no-repeat center 0;
 	}
 #header-title {
 	-moz-background-clip:border;
@@ -349,7 +350,7 @@ img.wp-smiley {
 	font-size: 28px;
 	}
 #site-title a:link, a:visited {
-	color: #cccccc;
+	color: #999999;
 	}	
 
 /* Search form */
