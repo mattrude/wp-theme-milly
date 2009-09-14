@@ -1,7 +1,7 @@
 </div> 
 <div id="footer-container">
 	<div id="footer">
-		<img src="<?php bloginfo('template_url') ?>/images/wordpress-logo.png" height="100" width="100">
+		<a href="http://wordpress.org/"><img src="<?php bloginfo('template_url') ?>/images/wordpress-logo.png" height="100" width="100"></a>
 		<div id="footer_text" class="block">
 			<p>
 			This page took <?php timer_stop(1); ?> seconds of computer labor to produce.<br />
