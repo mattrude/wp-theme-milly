@@ -4,7 +4,7 @@
 	<?php if (have_posts()) : ?>
 	<img src="<?php bloginfo('template_url'); ?>/images/twitter.jpg" class="tweet_post" width="300" height="111" />
 	<div id=tweet_head class="post">
-		Welcome to my Twitter feed. Here you will find ALL my tweet history.  You may click on the date to go to the origin tweet if Twitter still has it. You may follow me as <a href="http://twitter.com/mdrude">@mdrude</a>.
+		Welcome to my Twitter feed. Here you will find ALL of my Twitter history.  You may click on the date in the post to go to the origin tweet (if Twitter still has it). You may follow me on Twitter as <a href="http://twitter.com/mdrude">@mdrude</a>.
 	</div>
 		<!--This is "The Loop"-->
 		<?php while (have_posts()) : the_post(); ?>
