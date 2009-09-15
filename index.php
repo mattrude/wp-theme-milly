@@ -9,8 +9,8 @@
 					<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 				</h1>
 				<p class="byline">
-					<span class="byline-prep byline-prep-author text">Written by </span>
-					<span class="author vcard"><?php the_author() ?></span>
+					<span class="byline-prep byline-prep-author text">Posted by </span>
+					<span class="author vcard"><?php the_author_posts_link(); ?></span>
 					<span class="byline-prep byline-prep-published text"> on </span>
 					<span class="published"><?php the_time('F jS, Y') ?></span>
 				</p>

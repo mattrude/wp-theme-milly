@@ -20,7 +20,7 @@ $cat_title = '<a href="'.get_category_link(intval(get_query_var('cat'))).'">'.si
 		<div id="gallerypost_body-<?php the_ID(); ?>" class="gallerypost_body">
 			<?php $images =& get_children( 'post_type=attachment&post_mime_type=image' ); ?>
 			<h2><a rel="bookmark" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-			<div class="attr"><small>Written by <?php the_author() ?> on <?php the_time('F jS, Y') ?></small></div>
+			<div class="attr"><small>Posted by <?php the_author_posts_link(); ?> on <?php the_time('F jS, Y') ?></small></div>
 			<div class="entry">
 				<?php the_excerpt(); ?>
 			</div>
