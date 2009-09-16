@@ -851,6 +851,12 @@ a.comment-link:hover {
 	margin:0 0 6px;
 	padding:0 0 6px 15px;
 	}
+.txtalignleft {
+        text-align: left;
+	}
+.txtalignright {
+        text-align: right;
+	}
 .gallerypost {
 	background-color:#fff;
 	display: block;
