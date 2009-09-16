@@ -11,7 +11,7 @@
 				<p class="byline">
 					<span class="byline-prep byline-prep-author text">Posted on </span>
 					<span class="published"><?php the_time('F jS, Y') ?></span>
-					<span >filed under <?php the_category(', ') ?> | <?php the_tags('Tags: ', ', ', ''); ?> | <?php edit_post_link('Edit', ''); ?></span>
+					<span >filed under <?php the_category(', ') ?> | <?php the_tags('Tags: ', ', ', ''); ?><?php edit_post_link(' | Edit', ''); ?></span>
 				</p>
 			</div><!--close post class and post# id-->
 		<?php endwhile; ?>
