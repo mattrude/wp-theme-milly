@@ -852,9 +852,11 @@ a.comment-link:hover {
 	padding:0 0 6px 15px;
 	}
 .txtalignleft {
+	float: left;
         text-align: left;
 	}
 .txtalignright {
+	float: right; 
         text-align: right;
 	}
 .gallerypost {
