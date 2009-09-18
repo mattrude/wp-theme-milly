@@ -46,16 +46,17 @@
 	
 						<?php } ?>
 				</p><!--close p.postmetadata alt-->
-	<div class="navigation">
+		</div><!--close post class & post# id-->
+	</div><!--close single class-->
+	
+	<?php comments_template(); ?>
+
+	<div class="navigation post">
 		<div class="floatleft"><?php previous_post_link('&laquo; %link') ?></div>
 		<div class="floatright"><?php next_post_link('%link &raquo;') ?></div>
 		<div class="clearfloatthick">&nbsp;</div>
 	</div>
 	
-		</div><!--close post class & post# id-->
-	</div><!--close single class-->
-	
-<?php comments_template(); ?>
 
 <?php endwhile; else: ?>
 
