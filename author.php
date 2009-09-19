@@ -20,10 +20,6 @@
 			<div class="txtalignleft"><?php previous_posts_link('&laquo; Newer Entries') ?></div>
 			<div class="txtalignright"><?php next_posts_link('Older Entries &raquo;') ?></div>
 		</div>
-	<?php else : ?>
-		<h2 class="center">Oops! Couldn't find what you were looking for. Maybe you'll want to search for it:</h2>
-		<p class="center">Sorry, but you are looking for something that isn't here.</p>
-		<?php include (TEMPLATEPATH . "/searchform.php"); ?>
 	<?php endif; ?>
 </div><!--close content id-->
 
