@@ -72,8 +72,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Blockquotes */
 blockquote {
 	margin: 0 24px 0  0;
-	padding: 6px 0 0 24px;
-	background: url(images/quotes.gif) no-repeat 0 0;
+	padding: 6px 0 0 45px;
+	background: url(images/blockquote.gif) no-repeat 0 0;
 	border: none;
 	}
 .post blockquote {
