@@ -420,7 +420,7 @@ img.wp-smiley {
 	}
 #menu a {
 	float: left;
-	padding: 5px 35px;
+	padding: 5px 28px;
 	background: url(images/nav-border.png) repeat-y right 0;
 	}
 #menu li.current_page_item a {
