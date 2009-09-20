@@ -53,7 +53,20 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding:0 0 2px;
 	}
-
+.page h1 {
+	-x-system-font:none;
+	border-bottom:1px solid #E2E2E2;
+	font-family:arial,verdana,sans-serif;
+	font-size:20px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:21px;
+	margin: 0;
+	padding:0 0 2px;
+	}
 /* Lists */
 #content ul {
 	list-style: none;
