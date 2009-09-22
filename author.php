@@ -3,6 +3,15 @@
 <div id="content">
 	<?php if (have_posts()) : ?>
 		<!--This is "The Loop"-->
+			<?php if(isset($_GET['author_name'])) :
+				$curauth = get_userdatabylogin($author_name);
+			else :
+				$curauth = get_userdata(intval($author));
+			endif; ?>
+
+		<div class="author-head post"
+			<h1>Posts written by <?php echo $curauth->display_name; ?></h1>
+		</div>
 		<?php while (have_posts()) : the_post(); ?>
 			<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 				<h1 class="single-title entry-title">
