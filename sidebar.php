@@ -4,7 +4,7 @@
 	if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
 		<div class="side">
 		Welcome to your new site!<br />
-		To add items to your side bar, go to your widgets page from the admin Dashboard.	
+		To add items to your sidebar, go to the widgets page from your admin Dashboard.	
 		</div>
 	
 		
