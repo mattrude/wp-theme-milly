@@ -29,6 +29,7 @@ $cat_title = '<a href="'.get_category_link(intval(get_query_var('cat'))).'">'.si
 		<div id="gallerypost_sub-<?php the_ID(); ?>" class="gallerypost_sub">
 			<div id="gallerypost_sub_left-<?php the_ID(); ?>" class="gallerypost_sub_left">
 				<p><?php echo get_the_term_list( $post->ID, 'people', 'Who: ', ', ', '<br />' ); ?></p>
+				<p><?php echo get_the_term_list( $post->ID, 'events', 'What: ', ', ', '<br />' ); ?></p>
 				<p><?php echo get_the_term_list( $post->ID, 'places', 'Where: ', ', ', '' ); ?></p>
 			</div>
 			<div id"gallerypost_sub_right-<?php the_ID(); ?>" class="gallerypost_sub_right">
