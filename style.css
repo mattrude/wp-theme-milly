@@ -916,6 +916,9 @@ a.comment-link:hover {
 	display: block;
 	float: right;
 	}
+.gallerypost_thumbnail {
+	width: 202px;
+	}
 .gallerypost_thumbnail img {
 	margin: 0 0 0 10px;
 	color: #000;
