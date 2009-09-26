@@ -20,7 +20,7 @@
 
 </head>
 
-<body <?php if(is_page() || is_single()) echo 'onload="hideTags();"'; ?>>
+<body>
 
 <div id="body-container">
 		<div id="header-container">
