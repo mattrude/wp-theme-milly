@@ -4,7 +4,7 @@
 	<?php if (have_posts()) : ?>
 		<!--This is "The Loop"-->
 		<div class="author-head post"
-			<h1>Posts Filed Under: <?php single_cat_title(); ?></h1>
+			<h1>Posts Filed Under <?php single_cat_title(); ?></h1>
 		</div>
 		<?php while (have_posts()) : the_post(); ?>
 			<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
