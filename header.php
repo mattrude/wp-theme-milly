@@ -38,10 +38,9 @@
 				<ul class="menu sf-menu">
 					<a rel="me" href="<?php bloginfo('url'); ?>">Home</a> 
 					<a rel="me" href="/contact-me/">Contact Me</a> 
-					<a rel="me" href="http://gallery.mattrude.com/">Photo Gallery</a> 
+					<a rel="me" href="/category/gallery/">Photo Gallery</a> 
 					<a rel="me" href="/plugins/">Plugins</a> 
 					<a rel="me" href="/calendar/">Calendar</a> 
-					<a rel="me" href="/category/tweets/">My Tweets</a> 
 				</ul>
 			</div>
 		</div>
