@@ -39,7 +39,7 @@
 					<a rel="me" href="<?php bloginfo('url'); ?>">Home</a> 
 					<a rel="me" href="/contact-me/">Contact Me</a> 
 					<a rel="me" href="/category/gallery/">Photo Gallery</a> 
-					<a rel="me" href="/plugins/">Plugins</a> 
+					<a rel="me" href="/projects/">Projects</a> 
 					<a rel="me" href="/calendar/">Calendar</a> 
 				</ul>
 			</div>
