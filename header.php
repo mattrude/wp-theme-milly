@@ -37,10 +37,10 @@
 			<div id="menu" class="menu">
 				<ul class="menu sf-menu">
 					<a rel="me" href="<?php bloginfo('url'); ?>">Home</a> 
-					<a rel="me" href="/contact-me/">Contact Me</a> 
-					<a rel="me" href="/category/gallery/">Photo Gallery</a> 
-					<a rel="me" href="/projects/">Projects</a> 
-					<a rel="me" href="/calendar/">Calendar</a> 
+					<a rel="me" href="<?php bloginfo('url'); ?>/contact-me/">Contact Me</a> 
+					<a rel="me" href="<?php bloginfo('url'); ?>/category/gallery/">Photo Gallery</a> 
+					<a rel="me" href="<?php bloginfo('url'); ?>/projects/">Projects</a> 
+					<a rel="me" href="<?php bloginfo('url'); ?>/calendar/">Calendar</a> 
 				</ul>
 			</div>
 		</div>
