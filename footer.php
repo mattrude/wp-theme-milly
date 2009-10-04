@@ -1,8 +1,10 @@
 </div> 
 <div id="footer-container">
 	<div id="footer">
-		<a href="http://wordpress.org/"><img src="<?php bloginfo('template_url') ?>/images/wordpress-logo.png" height="100" width="100"></a>
-		<div id="footer_text" class="block">
+		<div id="footer-logo">
+			<a href="http://wordpress.org/"><img src="<?php bloginfo('template_url') ?>/images/wordpress-logo.png"></a>
+		</div>
+		<div id="footer-text">
 			<p>
 			This page took <?php timer_stop(1); ?> seconds of computer labor to produce.<br />
 			Site Designed by <a href="http://mattrude.com/">Matt Rude</a>.<br />
