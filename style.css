@@ -341,7 +341,6 @@ img.wp-smiley {
 	width: 1024px;
 	height: 200px;
 	margin: 0 auto;
-	background: url(images/StAnthonyFalls.jpg) no-repeat center 0;
 	}
 #header-title {
 	-moz-background-clip:border;
@@ -354,6 +353,10 @@ img.wp-smiley {
 	margin:0 auto;
 	overflow:hidden;
 	width:1024px;
+	}
+#header img {
+	margin: 0;
+	padding: 0;
 	}
 #site-title {
 	margin: 6px 0 0 10px;
