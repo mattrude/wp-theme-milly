@@ -2,14 +2,14 @@
 
 <div id="content">
 	<?php if (have_posts()) : ?>
+		<div class="author-head post"
+			<h1>Posts Filed Under <?php single_cat_title(); ?></h1>
+		</div>
 		<!--This is "The Loop"-->
 		<?php while (have_posts()) : the_post(); ?>
 		<? if ( in_category( 'gallery' )) {
                          include('functions/gallery-index.php');
                 } else { ?>
-		<div class="author-head post"
-			<h1>Posts Filed Under <?php single_cat_title(); ?></h1>
-		</div>
 			<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 				<h1 class="single-title entry-title">
 					<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
