@@ -983,7 +983,6 @@ a.comment-link:hover {
 ************************************************/
 #footer-container {
 	overflow: hidden;
-	clear: both;
 	width: 100%;
 	padding: 20px 0 0 0;
 	color: #aaa;
@@ -991,29 +990,33 @@ a.comment-link:hover {
 	border-top: 2px solid #000;
 	}
 #footer {
-	overflow: hidden;
-	clear: both;
 	width: 1024px;
-	margin: 0px auto 10px auto;
+	margin: auto;
 	}
-#footer img {
+#footer-text {
+	display: block;
+	text-align: center;
+	border:0 none;1
+	vertical-align: center;
+	font-family:Georgia,"Times New Roman",Times,serif;
+	font-size:12px;
+	padding: 10px;
+	height: 110px;
+	text-align:left;
+	text-decoration:none;
+	margin: 0;
+	}
+#footer-logo {
+	text-align: center;
+	margin: 5px 10px 5px 5px;
 	left:19px;
 	float: left;
+	width: 110px;
+	height: 110px;
 	}
 #footer p {
 	margin: 0;
+	padding: 15px 0 20px 0;
 	line-height: 16px;
 	}
-#footer_text {
-	border:0 none;1
-	vertical-align: center;
-	display:inline;
-	font-family:Georgia,"Times New Roman",Times,serif;
-	font-size:12px;
-	font-weight:normal;
-	left:19px;
-	margin: 5px;
-	position:relative;
-	text-align:left;
-	text-decoration:none;
-	}
+
