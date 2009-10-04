@@ -31,7 +31,8 @@
 					</a>
 				</div>
 			</div>
-			<div id="header"></div>
+			<div id="header">
+				<img src='<?php bloginfo('template_url') ?>/images/StAnthonyFalls.jpg'></div>
 		</div><!--close header id-->
 		<div id="navigation">
 			<div id="menu" class="menu">
