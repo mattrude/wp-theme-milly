@@ -7,7 +7,7 @@
 		</div>
 		<!--This is "The Loop"-->
 		<?php while (have_posts()) : the_post(); ?>
-		<? if ( in_category( 'gallery' )) {
+		<? if ( is_category( 'gallery' )) {
                          include('functions/gallery-index.php');
                 } else { ?>
 			<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
