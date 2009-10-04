@@ -9,7 +9,7 @@
 			This page took <?php timer_stop(1); ?> seconds of computer labor to produce.<br />
 			Site Designed by <a href="http://mattrude.com/">Matt Rude</a>.<br />
 			Proudly powered by <a href="http://wordpress.org/">WordPress</a>.<br />
-			Copyright © 1980 – 2009 <a href="http://mattrude.com/">Matt Rude</a><br />
+			Copyright &copy; 1980 – <?php echo date("Y") ?> <a href="http://mattrude.com/">Matt Rude</a><br />
 			<?php global $Panel; echo $Panel->Settings('FooterText'); ?><br />
 			</p>
 		</div>
