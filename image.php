@@ -58,9 +58,11 @@
 					</small>
 				</p><!--close p.postmetadata alt-->
 		</div><!--close post class & post# id-->
-	</div><!--close single class-->
 	
-<?php comments_template(); ?>
+<div id="image-comments" >
+	<?php comments_template(); ?>
+</div>
+	</div><!--close single class-->
 
 <?php endwhile; else: ?>
 
