@@ -1,9 +1,7 @@
 <div id="gallerypost-<?php the_ID(); ?>" class="gallerypost post">
     <div id="gallerypost_main-<?php the_ID(); ?>" class="gallerypost_main">
 	<div id="gallerypost_thumbnail-<?php the_ID(); ?>" class="gallerypost_thumbnail">
-		<?php global $wp_query; ?>
-		<?php $gallery_thumbnail = get_post_meta( $wp_query->post->ID, 'gallery thumbnail', true ); ?>
-		<a href="<?php the_permalink() ?>" rel="bookmark"><img src="<?php echo $gallery_thumbnail; ?>" alt="<?php echo get_post_meta( $post->ID, 'gallery thumbnail', true); ?> Gallery" border='1' color='000' align='left' style='margin-right: 5px;' /></a>
+		<?php get_the_post_image(); ?>
 	</div>
 	<div id="gallerypost_body-<?php the_ID(); ?>" class="gallerypost_body">
 		<?php $images =& get_children( 'post_type=attachment&post_mime_type=image' ); ?>
