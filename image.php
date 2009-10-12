@@ -22,15 +22,19 @@
 		$next_url =  isset($attachments[$k+1]) ? get_permalink($attachments[$k+1]->ID) : get_permalink($attachments[0]->ID);
 		$previous_url =  isset($attachments[$k-1]) ? get_permalink($attachments[$k-1]->ID) : get_permalink($attachments[0]->ID);
 		?>
-
+		<?php if ( wp_get_attachment_image( $post->ID+1 ) != null ) { ?>
 		<p class="attachment">
 			Next Image<br />
 			<a href="<?php echo $next_url; ?>"><?php echo wp_get_attachment_image( $post->ID+1, 'thumbnail' ); ?></a>
 		</p>
+		<?php } ?>
+
+		<?php if ( wp_get_attachment_image( $post->ID-1 ) != null ) { ?>
 		<p class="attachment">
 			Previous Image<br />
 			<a href="<?php echo $previous_url; ?>"><?php echo wp_get_attachment_image( $post->ID-1, 'thumbnail' ); ?></a>
 		</p>
+		<?php } ?>
 	</div>
 				<p><a class="wrapper" href="<?php echo get_permalink($post->post_parent); ?>" rev="up post">&larr; <?php printf(__('back to &#8220;%s&#8221;', 'carrington-blog'), get_the_title($post->post_parent)); ?></a></p>
 				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
