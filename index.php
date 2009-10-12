@@ -4,7 +4,7 @@
 	<?php if (have_posts()) : ?>
 		<!--This is "The Loop"-->
 		<?php while (have_posts()) : the_post(); ?>
-		<?php if ( is_category( 'tweets' )) {
+		<?php if ( in_category( 'tweets' )) {
                          include('functions/twitter-index.php');
                 } else { ?>
 			<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
