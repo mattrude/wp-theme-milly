@@ -7,7 +7,7 @@
 	<div class="single"><!--Slightly different styling for single posts and single pages-->
 		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 			<h1><?php the_title(); ?></h1>
-			<small class="byline">Posted by <?php the_author_posts_link(); ?> on <?php the_time('F jS, Y') ?>, filed under <?php the_category(', ') ?> | <?php the_tags('Tags: ', ', ', ''); ?><?php edit_post_link(' | Edit', ''); ?></small>
+			<small class="byline">Posted by <?php the_author_posts_link(); ?> on <?php the_time('F jS, Y') ?>, Filed Under: <?php the_category(', '); the_tags(' | Tags: ', ', ', ''); ?><?php edit_post_link(' | Edit', ''); ?></small>
 			<div class="entry">
 				<?php if($post->post_excerpt != '') : ?>
 					<div class="centerer">
