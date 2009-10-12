@@ -11,16 +11,30 @@
 			<div class="image_entry">
 				<p class="attachment"><?php echo wp_get_attachment_image( $post->ID, array(930,930) ); ?></p>
 				<div class="caption"><?php if ( !empty($post->post_excerpt) ) the_excerpt(); // this is the "caption" ?></div>
+	<div class="image-navigation">
+		<div class="floatright">
+		<?php $attachments = array_values(get_children( array('post_parent' => $post->post_parent, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID') ));
+			foreach ( $attachments as $k => $attachment )
+			  if ( $attachment->ID == $post->ID )
+			    break;
+		$attachments = array_values(get_children( array('post_parent' => $post->post_parent, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID') ));
+
+		$next_url =  isset($attachments[$k+1]) ? get_permalink($attachments[$k+1]->ID) : get_permalink($attachments[0]->ID);
+		$previous_url =  isset($attachments[$k-1]) ? get_permalink($attachments[$k-1]->ID) : get_permalink($attachments[0]->ID);
+		?>
+
+		<p class="attachment">
+			Next Image<br />
+			<a href="<?php echo $next_url; ?>"><?php echo wp_get_attachment_image( $post->ID+1, 'thumbnail' ); ?></a>
+		</p>
+		<p class="attachment">
+			Previous Image<br />
+			<a href="<?php echo $previous_url; ?>"><?php echo wp_get_attachment_image( $post->ID-1, 'thumbnail' ); ?></a>
+		</p>
+	</div>
 				<p><a class="wrapper" href="<?php echo get_permalink($post->post_parent); ?>" rev="up post">&larr; <?php printf(__('back to &#8220;%s&#8221;', 'carrington-blog'), get_the_title($post->post_parent)); ?></a></p>
 				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
 	
-	<!--
-	<div class="navigation">
-		<div class="floatleft"><?php previous_image_link('&laquo; %link') ?></div>
-		<div class="floatright"><?php next_image_link('%link &raquo;') ?></div>
-		<div class="clearfloatthick">&nbsp;</div>
-	</div>
-	-->
 			</div><!--close entry class-->
 			<br />
 					<small>
