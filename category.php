@@ -3,7 +3,7 @@
 <div id="content">
 	<?php if (have_posts()) : ?>
 		<div class="author-head post"
-			<h1>Posts Filed Under <?php single_cat_title(); ?></h1>
+			<h1>Posts Filed Under: <?php single_cat_title(); ?></h1>
 		</div>
 		<!--This is "The Loop"-->
 		<?php while (have_posts()) : the_post(); ?>
@@ -20,8 +20,9 @@
 				<p class="byline">
 					<span class="byline-prep byline-prep-author text">Posted on </span>
 					<span class="published"><?php the_time('F jS, Y') ?></span>
-					<span >filed under <?php the_category(', ') ?> | <?php the_tags('Tags: ', ', ', ''); ?><?php edit_post_link(' | Edit', ''); ?></span>
+					<span >Filed Under: <?php the_category(', ') ?> | <?php the_tags('Tags: ', ', ', ''); ?><?php edit_post_link(' | Edit', ''); ?></span>
 				</p>
+			<?php the_content(); ?>
 			</div><!--close post class and post# id-->
 		<?php } ?>
 		<?php endwhile; ?>
