@@ -747,14 +747,14 @@ p.comments-closed {
 	padding: 0;
 	}
 #comments li li, #comments li li li li {
-	margin: 0 15px 15px 15px;
-	padding: 15px 15px 0 15px;
+	margin: 0 0 0 15px;
+	padding: 5px;
 	background: #EFF1E1;
 	border: 1px solid #e7e7e7;
 	}
 #comments li li li, #comments li li li li li {
-	margin: 0 15px 15px 15px;
-	padding: 15px;
+	margin: 0 0 0 15px;
+	padding: 5px;
 	background: #fff;
 	border: 1px solid #e7e7e7;
 	}
