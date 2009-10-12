@@ -1,7 +1,7 @@
 <div <?php post_class(); ?> id="tweet_template">
 	<div id=tweet_post>
 	<img src="<?php bloginfo('template_url'); ?>/images/twitter-bird.gif" class='tweet-image' width="60" height="60" align='left' style='margin-right: 5px;' />
-			<?php the_excerpt(); ?>
+			<?php the_content(); ?>
 	</div>
 	<div id=tweet_date>
 		<?php global $wp_query; ?>
