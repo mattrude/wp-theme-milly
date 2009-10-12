@@ -16,7 +16,7 @@
 					<span class="author vcard"><?php the_author_posts_link(); ?></span>
 					<span class="byline-prep byline-prep-published text"> on </span>
 					<span class="published"><?php the_time('F jS, Y') ?></span>
-					<span class="edit"><?php edit_post_link(' | Edit', '') ?></span>
+					<span class="edit"><?php edit_post_link('Edit', ' | ') ?></span>
 				</p>
 				<div class="entry-content entry">
 					<?php

@@ -20,7 +20,7 @@
 				<p class="byline">
 					<span class="byline-prep byline-prep-author text">Posted on </span>
 					<span class="published"><?php the_time('F jS, Y') ?></span>
-					<span >Filed Under: <?php the_category(', '); the_tags(' | Tags: ', ', ', ''); ?><?php edit_post_link(' | Edit', ''); ?></span>
+					<span >Filed Under: <?php the_category(', '); the_tags(' | Tags: ', ', ', ''); ?><?php edit_post_link('Edit', ' | '); ?></span>
 				</p>
 			<?php the_content(); ?>
 			</div><!--close post class and post# id-->
