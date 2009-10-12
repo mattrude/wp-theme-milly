@@ -1,9 +1,9 @@
 Wordpress Theme Milly
-Version 1.0 
+Version 1.1
 
    1. Features
    2. Wanted Features/Bugs
-         1. Options still needed in the Control Panel
+      2.1. Options still needed in the Control Panel
    3. Known Bugs
    4. Git Commit Change Log
 
@@ -24,18 +24,10 @@ Wanted Features/Bugs
 
     * W3 compliance
     * Auto set rel=lightbox for images when lightbox support is enabled
-    * "« Older Entries" link on main page when there are not any
 
 Options still needed in the Control Panel
 
-    * Random header image on main page(Yes/No)?
-          o if no, what static image would you like?
-    * Upload new images and display already uploaded images
     * Customisable fav-icon
-    * Category's to display on the main page
-    * Add enable/disable page creation time in footer
-    * Main page title
-    * Clean-up robots.txt options
 
 
 Known Bugs
