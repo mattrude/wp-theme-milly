@@ -8,6 +8,8 @@
                          include('functions/twitter-index.php');
                 } else { ?>
 			<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+			<?php if ( is_sticky() ) {
+				} else { ?>
 				<h1 class="single-title entry-title">
 					<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 				</h1>
@@ -18,6 +20,7 @@
 					<span class="published"><?php the_time('F jS, Y') ?></span>
 					<span class="edit"><?php edit_post_link('Edit', ' | ') ?></span>
 				</p>
+				<?php } ?>
 				<div class="entry-content entry">
 					<?php
 					// If post excerpt exists, show that, otherwise, show content
