@@ -18,13 +18,13 @@
 					You may also follow <?php echo $curauth->first_name; ?> on 
 				<?php } ?>
 				<?php if ($curauth->twitter){ ?>
-					Twitter as <a href="http://twitter.com/<?php echo $curauth->twitter; ?>"><?php echo $curauth->twitter; ?></a>
+					Twitter as <strong><a href="http://twitter.com/<?php echo $curauth->twitter; ?>">@<?php echo $curauth->twitter; ?></a></strong>
 					<?php if ($curauth->facebook) { ?>
 						or
 					<?php } ?>
 				<?php } ?>
 				<?php if ($curauth->facebook) { ?>
-				on Facebook as <a href="http://www.facebook.com/<?php echo $curauth->facebook; ?>"><?php echo $curauth->facebook; ?></a>.
+				on Facebook as <strong><a href="http://www.facebook.com/<?php echo $curauth->facebook; ?>"><?php echo $curauth->facebook; ?></a></strong>.
 				<?php } ?>
 			<?php } ?>
 		</div>
