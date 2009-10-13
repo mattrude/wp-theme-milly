@@ -9,8 +9,24 @@
 				$curauth = get_userdata(intval($author));
 			endif; ?>
 
-		<div class="author-head post"
+		<div class="author-head post">
 			<h1>Posts written by <?php echo $curauth->display_name; ?></h1>
+			<?php if ($curauth->twitter or $curauth->facebook) { ?>
+				<?php if ($curauth->user_url) { ?>
+					You may also follow <a href="<?php echo $curauth->user_url;?>"><?php echo $curauth->first_name; ?></a> on 
+				<?php } else { ?>
+					You may also follow <?php echo $curauth->first_name; ?> on 
+				<?php } ?>
+				<?php if ($curauth->twitter){ ?>
+					Twitter as <a href="http://twitter.com/<?php echo $curauth->twitter; ?>"><?php echo $curauth->twitter; ?></a>
+					<?php if ($curauth->facebook) { ?>
+						or
+					<?php } ?>
+				<?php } ?>
+				<?php if ($curauth->facebook) { ?>
+				on Facebook as <a href="http://www.facebook.com/<?php echo $curauth->facebook; ?>"><?php echo $curauth->facebook; ?></a>.
+				<?php } ?>
+			<?php } ?>
 		</div>
 		<?php while (have_posts()) : the_post(); ?>
 			<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -20,7 +36,7 @@
 				<p class="byline">
 					<span class="byline-prep byline-prep-author text">Posted on </span>
 					<span class="published"><?php the_time('F jS, Y') ?></span>
-					<span >filed under <?php the_category(', ') ?> | <?php the_tags('Tags: ', ', ', ''); ?><?php edit_post_link(' | Edit', ''); ?></span>
+					<span >Filed Under: <?php the_category(', ') . the_tags(' | Tags: ', ', ', ''); ?><?php edit_post_link('Edit', ' | '); ?></span>
 				</p>
 			</div><!--close post class and post# id-->
 		<?php endwhile; ?>
