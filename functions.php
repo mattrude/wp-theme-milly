@@ -27,7 +27,7 @@ add_filter('user_contactmethods','add_twitter_contactmethod',10,1);
 
 // Changing excerpt length
 function new_excerpt_length($length) {
-	return 60;
+	return 80;
 }
 add_filter('excerpt_length', 'new_excerpt_length');
  
