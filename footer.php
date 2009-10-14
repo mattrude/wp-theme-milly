@@ -6,10 +6,11 @@
 		</div>
 		<div id="footer-text">
 			<p>
-			This page took <?php timer_stop(1); ?> seconds of computer labor to produce.<br />
+			Copyright &copy; 1980 – <?php echo date("Y") ?> <a href="http://mattrude.com/">Matt Rude</a><br />
 			Site Designed by <a href="http://mattrude.com/">Matt Rude</a>.<br />
 			Proudly powered by <a href="http://wordpress.org/">WordPress</a>.<br />
-			Copyright &copy; 1980 – <?php echo date("Y") ?> <a href="http://mattrude.com/">Matt Rude</a><br />
+			This page took <?php timer_stop(1); ?> seconds of computer labor,<br/>
+			and required <?php echo get_num_queries(); ?> questions to produce.<br />
 			<?php global $Panel; echo $Panel->Settings('FooterText'); ?><br />
 			</p>
 		</div>
