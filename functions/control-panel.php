@@ -211,6 +211,7 @@ class ControlPanel
 	$robotstxt_out = get_option('robots_txt');
 	
 	print '
+	<div class="wrap">
 	<div class="stuffbox custom">
 		<h3 class="hndle">Robots.txt Editor</h3>
 		<div class="inside">
@@ -233,7 +234,6 @@ class ControlPanel
 		</div>
 	</div>
 
-	<div class="wrap">
 	</div>
 	</div>
 	</div>
