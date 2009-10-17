@@ -2,11 +2,10 @@
 
 <div id="content">
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-	<? if ( in_category( 'tweets' )) {
-                         include('functions/twitter-index.php');
-                } else { ?>
+<?php if (have_posts()) : while (have_posts()) : the_post();
+        if ( in_category( 'tweets' )) {
+                include('functions/twitter-index.php');
+        } else { ?>
 
 	<div class="single"><!--Slightly different styling for single posts and single pages-->
 		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
