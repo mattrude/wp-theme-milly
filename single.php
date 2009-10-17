@@ -4,6 +4,10 @@
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+	<? if ( in_category( 'tweets' )) {
+                         include('functions/twitter-index.php');
+                } else { ?>
+
 	<div class="single"><!--Slightly different styling for single posts and single pages-->
 		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 			<h1><?php the_title(); ?></h1>
@@ -58,7 +62,8 @@
 	</div>
 	
 
-<?php endwhile; else: ?>
+	<?php }
+	endwhile; else: ?>
 
 	<p>Sorry, no posts matched your criteria.</p>
 
