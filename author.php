@@ -28,13 +28,16 @@
 				<?php } ?>
 			<?php } ?>
 		</div>
-		<?php while (have_posts()) : the_post(); ?>
-		<? if ( in_category( 'tweets' )) {
-                         include('functions/twitter-index.php');
-       	        } else { ?>
+		<?php while (have_posts()) : the_post();
+	        if ( in_category( 'gallery' )) {
+	                include('functions/gallery-index.php');
+	        } elseif ( in_category( 'tweets' )) {
+	                include('functions/twitter-index.php');
+	        } else { ?>
+
 			<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 				<h1 class="single-title entry-title">
-					<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+					Post: <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 				</h1>
 				<p class="byline">
 					<span class="byline-prep byline-prep-author text">Posted on </span>
