@@ -29,6 +29,9 @@
 			<?php } ?>
 		</div>
 		<?php while (have_posts()) : the_post(); ?>
+		<? if ( in_category( 'tweets' )) {
+                         include('functions/twitter-index.php');
+       	        } else { ?>
 			<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 				<h1 class="single-title entry-title">
 					<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
@@ -39,6 +42,7 @@
 					<span >Filed Under: <?php the_category(', ') . the_tags(' | Tags: ', ', ', ''); ?><?php edit_post_link('Edit', ' | '); ?></span>
 				</p>
 			</div><!--close post class and post# id-->
+		<?php } ?>
 		<?php endwhile; ?>
 		<!--The Loop has ended-->	
 		<div class="navigation">
