@@ -17,7 +17,7 @@ function ce_process() {
 	$options['exclude_main'] = $_POST[ 'exclude_main' ];
 	$options['exclude_feed'] = $_POST[ 'exclude_feed' ];
 	$options['exclude_archives'] = $_POST[ 'exclude_archives' ];
-	update_option('ceExcludes', $options);
+	update_option('Milly_Excluded', $options);
 	
 	$message = "<div class='updated'><p>Excludes successfully updated</p></div>";
 	return $message;
@@ -29,10 +29,10 @@ function ce_get_options(){
 	$defaults['exclude_feed'] = array();
 	$defaults['exclude_archives'] = array();
 
-	$options = get_option('ceExcludes');
+	$options = get_option('Milly_Excluded');
 	if (!is_array($options)){
 		$options = $defaults;
-		update_option('ceExcludes', $options);
+		update_option('Milly_Excluded', $options);
 	}
 
 	return $options;

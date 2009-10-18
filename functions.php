@@ -53,30 +53,6 @@ array
 	array
 	(
 		'Type'=>'Title',
-		'Value'=>'General Settings'
-	),
-	array
-	(
-		'Type'=>'CheckBox',
-		'ID'=>'LightboxEnabled',
-		'Label'=>'<strong>Enable Lightbox images module</strong>',
-		'Description' => 'This may interfere with some plugins.',
-		'Default'=> 'false'
-	),
-	array
-	(
-		'Type'=>'TextArea',
-		'ID'=>'FooterText',
-		'Label'=>'<strong>Footer Text</strong>',
-		'Description' => 'Add a footer to the bottom of ever page.'
-	),
-	array
-	(
-		Type=>'End'
-	),
-	array
-	(
-		'Type'=>'Title',
 		'Value'=>'Google Analytics Options'
 	),
 	array

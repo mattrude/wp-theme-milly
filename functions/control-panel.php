@@ -245,5 +245,4 @@ class ControlPanel
 	}
 }
 
-add_action('init', 'robots_txt');
 ?>
