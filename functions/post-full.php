@@ -14,6 +14,6 @@
 	</p>
 <?php } ?>
 <div class="entry-content entry">
-		<?php the_excerpt(); ?>
+		<?php the_content(); ?>
 </div><!--close entry class-->
 </div><!--close post class-->
