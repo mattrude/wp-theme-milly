@@ -1010,6 +1010,7 @@ a.comment-link:hover {
 	font-size:12px;
 	padding: 10px;
 	height: 110px;
+	width: 500px;
 	text-align:left;
 	text-decoration:none;
 	margin: 0;
@@ -1021,6 +1022,11 @@ a.comment-link:hover {
 	float: left;
 	width: 110px;
 	height: 110px;
+	}
+#footer-copyright {
+	display: block;
+	padding: 40px 80px 10px 10px;
+	float: right;
 	}
 #footer p {
 	margin: 0;

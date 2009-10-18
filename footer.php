@@ -4,6 +4,9 @@
 		<div id="footer-logo">
 			<a href="http://wordpress.org/"><img src="<?php bloginfo('template_url') ?>/images/wordpress-logo.png"></a>
 		</div>
+		<div id="footer-copyright">
+		<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons Attribution-Share Alike 3.0 Unported License" style="border-width:0" src="<?php bloginfo('template_url') ?>/images/cc-by-sa.png" /></a>
+		</div>
 		<div id="footer-text">
 			<p>
 			Copyright &copy; 1980 – <?php echo date("Y") ?> <a href="http://mattrude.com/">Matt Rude</a><br />
