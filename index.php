@@ -7,7 +7,7 @@
 			<?php if ( in_category( 'tweets' )) {
 				include('functions/twitter-index.php');
 			} else {
-				include('functions/function-posts.php');
+				include('functions/post-full.php');
 			}
 		endwhile; ?>
 		<!--The Loop has ended-->	
