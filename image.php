@@ -39,40 +39,16 @@
 				<p><a class="wrapper" href="<?php echo get_permalink($post->post_parent); ?>" rev="up post">&larr; <?php printf(__('back to &#8220;%s&#8221;', 'carrington-blog'), get_the_title($post->post_parent)); ?></a></p>
 				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
 	
-			</div><!--close entry class-->
-			<br />
-					<small>
-						<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
-							// Both Comments and Pings are open ?>
-							<!--You can <a href="#respond">leave a response</a>, or <a href="<?php trackback_url(); ?>" rel="trackback">trackback</a> from your own site.-->
-	
-						<?php } elseif (!('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
-							// Only Pings are Open ?>
-							Responses are currently closed, but you can <a href="<?php trackback_url(); ?> " rel="trackback">trackback</a> from your own site.
-	
-						<?php } elseif (('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
-							// Comments are open, Pings are not ?>
-							You can skip to the end and leave a response. Pinging is currently not allowed.
-	
-						<?php } elseif (!('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
-							// Neither Comments, nor Pings are open ?>
-							Both comments and pings are currently closed.
-	
-						<?php } ?>
-					</small>
-				</p><!--close p.postmetadata alt-->
-		</div><!--close post class & post# id-->
-	
+</div><!--close entry class-->
+<br />
+</div><!--close post class & post# id-->
 <div id="image-comments" >
-	<?php comments_template(); ?>
+  <?php comments_template(); ?>
 </div>
-	</div><!--close single class-->
-
+</div>
+</div><!--close single class-->
 <?php endwhile; else: ?>
-
 	<p>Sorry, no posts matched your criteria.</p>
-
 <?php endif; ?>
-
-	</div><!--close content id-->
+</div><!--close content id-->
 <?php get_footer(); ?>
