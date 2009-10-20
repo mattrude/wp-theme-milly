@@ -8,12 +8,13 @@
 	<p class="byline">
 		<span class="byline-prep byline-prep-author text">Posted by </span>
 		<span class="author vcard"><?php the_author_posts_link(); ?></span>
-		<span class="byline-prep byline-prep-published text"> on </span>
+		<span class="byline-prep byline-prep-author text"> on </span>
 		<span class="published"><?php the_time('F jS, Y') ?></span>
-		<span class="edit"><?php edit_post_link('Edit', ' | ') ?></span>
+		<span > | Filed Under: <?php the_category(', '); the_tags(' | Tagged as: ', ', ', ''); ?></span>
+		<span><?php edit_post_link('Edit', ' | '); ?></span>
 	</p>
 <?php } ?>
 <div class="entry-content entry">
-		<?php the_excerpt(); ?>
+	<?php the_excerpt(); ?>
 </div><!--close entry class-->
 </div><!--close post class-->
