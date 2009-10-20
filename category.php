@@ -8,24 +8,13 @@
 		<!--This is "The Loop"-->
 		<?php while (have_posts()) : the_post(); ?>
 		<? if ( is_category( 'gallery' )) {
-                         include('functions/gallery-index.php');
+			include('functions/gallery-index.php');
                 } elseif ( is_category( 'tweets' )) {
-                         include('functions/twitter-index.php');
-                } else { ?>
-		
-			<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-				<h1 class="single-title entry-title">
-					<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-				</h1>
-				<p class="byline">
-					<span class="byline-prep byline-prep-author text">Posted on </span>
-					<span class="published"><?php the_time('F jS, Y') ?></span>
-					<span >Filed Under: <?php the_category(', '); the_tags(' | Tags: ', ', ', ''); ?><?php edit_post_link('Edit', ' | '); ?></span>
-				</p>
-			<?php the_content(); ?>
-			</div><!--close post class and post# id-->
-		<?php } ?>
-		<?php endwhile; ?>
+			include('functions/twitter-index.php');
+                } else {
+			include('functions/post-full.php');
+		}
+		endwhile; ?>
 		<!--The Loop has ended-->	
 		<div class="navigation">
 			<div class="txtalignleft"><?php previous_posts_link('&laquo; Newer Entries') ?></div>
