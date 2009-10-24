@@ -732,7 +732,7 @@ p.pages a {
 	overflow: hidden;
 	
 	margin: 0 0 20px 0;
-	padding: 19px 19px 0 19px;
+	padding: 19px 5px 0 19px;
 	background: #fff;
 	border: 1px solid #e7e7e7;
 	}
@@ -746,14 +746,14 @@ p.comments-closed {
 	border: none;
 	padding: 0;
 	}
-#comments li li, #comments li li li li {
-	margin: 0 0 0 15px;
+#comments li li, #comments li li li li, #comments li li li li li li, #comments li li li li li li li li, #comments li li li li li li li li li li {
+	margin: 15px 0 0 15px;
 	padding: 5px;
 	background: #EFF1E1;
 	border: 1px solid #e7e7e7;
 	}
-#comments li li li, #comments li li li li li {
-	margin: 0 0 0 15px;
+#comments li li li, #comments li li li li li, #comments li li li li li li li, #comments li li li li li li li li li {
+	margin: 15px 0 0 15px;
 	padding: 5px;
 	background: #fff;
 	border: 1px solid #e7e7e7;
