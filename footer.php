@@ -4,9 +4,13 @@
 		<div id="footer-logo">
 			<a href="http://wordpress.org/"><img src="<?php bloginfo('template_url') ?>/images/wordpress-logo.png"></a>
 		</div>
-		<div id="footer-copyright">
-		<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons Attribution-Share Alike 3.0 Unported License" style="border-width:0" src="<?php bloginfo('template_url') ?>/images/cc-by-sa.png" /></a>
-		</div>
+		<?php global $Panel;
+		$copyright = $Panel->Settings('copyenable');
+		if ($copyright == 'true') { ?>
+			<div id="footer-copyright">
+				<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons Attribution-Share Alike 3.0 Unported License" style="border-width:0" src="<?php bloginfo('template_url') ?>/images/cc-by-sa.png" /></a>
+			</div>
+		<?php } ?>
 		<div id="footer-text">
 			<p>
 			Copyright &copy; 1980 – <?php echo date("Y") ?> <a href="http://mattrude.com/">Matt Rude</a><br />
@@ -26,7 +30,6 @@
 	?><!--User is logged in, so this request will Not be tracked by Google Analytics-->
 <?php
 } else {
-	global $Panel;
 	$GAEnabled = $Panel->Settings('GoogleAnalyticsEnabled');
 	$GAID = $Panel->Settings('GoogleAnalyticsID');
 	if ($GAEnabled == 'true') {

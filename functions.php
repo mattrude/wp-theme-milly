@@ -76,6 +76,23 @@ array
 	),
 	array
 	(
+                'Type'=>'Title',
+                'Value'=>'Copyright logo'
+        ),
+        array
+        (
+                'Type'=>'CheckBox',
+                'ID'=>'copyenable',
+                'Label'=>'<strong>Enable CC Copyright Logo</strong>',
+                'Description' => '',
+                'Default'=> 'false'
+        ),
+        array
+        (
+                Type=>'End'
+        ),
+	array
+	(
 		Type=>'Close'
 	)
 );
