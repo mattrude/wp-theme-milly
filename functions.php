@@ -1,7 +1,7 @@
 <?php
 require_once('functions/control-panel.php');
-require_once('functions/category-excluder.php');
 require_once('functions/robots-txt.php');
+require_once('base/base.php');
 
 // Add Custom Taxonomies
 add_action( 'init', 'create_my_taxonomies', 0 );
