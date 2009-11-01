@@ -152,49 +152,11 @@ class ControlPanel
 		}
 		echo '</form>';
 
-	if( $_POST[ 'ce' ] ) {
-		$message = ce_process();
-	}
-	$options = ce_get_options();
-	?>
-	<div class="wrap">
-		<h2>Category Excluder Options</h2>
-		<?php echo $message ?>
-		<p>Use this section allows you to select the categories you wish to exclude and where you would like to exclude them from.</p>
-		<p>Note: If a post is in more the one category, it will be excluded if it matches any of the excluded categories</p>
-	<form action="themes.php?page=control-panel.php" method="post">
-	<table class="widefat">
-		<thead>
-			<tr>
-				<th scope="col">Category</th>
-				<th scope="col">Exclude from Main Page?</th>
-				<th scope="col">Exclude from Feeds?</th>
-				<th scope="col">Exclude from Archives?</th>
-			</tr>
-		</thead>
-		<tbody id="the-list">
-	<?php
-		//print_r( get_categories() );
-		$cats = get_categories();
-		$alt = 0;
-		foreach( $cats as $cat ) {
-			?>
-			<tr<?php if ( $alt == 1 ) { echo ' class="alternate"'; $alt = 0; } else { $alt = 1; } ?>>
-				<th scope="row"><?php echo $cat->cat_name; //. ' (' . $cat->cat_ID . ')'; ?></th>
-				<td>
-					<input type="checkbox" name="exclude_main[]" value="-<?php echo $cat->cat_ID ?>" <?php if ( in_array( '-' . $cat->cat_ID, $options['exclude_main'] ) ) { echo 'checked="true" '; } ?>/>
-				</td>
-				<td><input type="checkbox" name="exclude_feed[]" value="-<?php echo $cat->cat_ID ?>" <?php if ( in_array( '-' . $cat->cat_ID, $options['exclude_feed'] ) ) { echo 'checked="true" '; } ?>/></td>
-				<td><input type="checkbox" name="exclude_archives[]" value="-<?php echo $cat->cat_ID ?>" <?php if ( in_array( '-' . $cat->cat_ID, $options['exclude_archives'] ) ) { echo 'checked="true" '; } ?>/></td>
-			</tr>			
-		<?php
-		}
-	?>
-	</table>
-	<p class="submit"><input type="submit" value="Update" /></p>
-	<input type="hidden" name="ce" value="true" />
-	</form>
-	</div><?php
+        // Add Category Excluder to the Control Pannel
+        if (function_exists('ce_controlpanel')) {
+          ce_controlpanel();
+        }
+        // End Category Excluder to the Control Pannel
 
 	if ( $_POST['robots_txt'] ){
 		update_option( 'robots_txt', $_POST['robots_txt'] );
