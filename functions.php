@@ -1,6 +1,5 @@
 <?php
 require_once('functions/control-panel.php');
-require_once('functions/robots-txt.php');
 require_once('base/base.php');
 
 // Add Custom Taxonomies
