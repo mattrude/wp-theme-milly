@@ -10,6 +10,8 @@ function create_my_taxonomies() {
 	register_taxonomy( 'events', 'post', array( 'hierarchical' => false, 'label' => 'Events', 'query_var' => true, 'rewrite' => true ) );
 }
 
+add_theme_support('post-thumbnails');
+
 // Add Custom User Contact Methods
 function add_twitter_contactmethod( $contactmethods ) {
   // Add Twitter
