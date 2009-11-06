@@ -42,6 +42,7 @@
 					<a rel="me" href="<?php bloginfo('url'); ?>/category/gallery/">Photo Gallery</a> 
 					<a rel="me" href="<?php bloginfo('url'); ?>/projects/">Projects</a> 
 					<a rel="me" href="<?php bloginfo('url'); ?>/calendar/">Calendar</a> 
+					<a rel="me" href="<?php bloginfo('url'); ?>/category/tweets/">Twitter</a> 
 				</ul>
 			</div>
 		</div>
