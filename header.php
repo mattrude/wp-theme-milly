@@ -32,17 +32,19 @@
 				</div>
 			</div>
 			<div id="header">
-				<img src='<?php bloginfo('template_url') ?>/images/StAnthonyFalls.jpg'></div>
+				<img src='<?php bloginfo('template_url') ?>/images/StAnthonyFalls.jpg' alt='Saint Anthony Falls, Mpls, MN'/></div>
 		</div><!--close header id-->
 		<div id="navigation">
 			<div id="menu" class="menu">
 				<ul class="menu sf-menu">
+				    <li>
 					<a rel="me" href="<?php bloginfo('url'); ?>">Home</a> 
 					<a rel="me" href="<?php bloginfo('url'); ?>/contact-me/">Contact Me</a> 
 					<a rel="me" href="<?php bloginfo('url'); ?>/category/gallery/">Photo Gallery</a> 
 					<a rel="me" href="<?php bloginfo('url'); ?>/projects/">Projects</a> 
 					<a rel="me" href="<?php bloginfo('url'); ?>/calendar/">Calendar</a> 
 					<a rel="me" href="<?php bloginfo('url'); ?>/category/tweets/">Twitter</a> 
+				    </li>
 				</ul>
 			</div>
 		</div>
