@@ -2,7 +2,7 @@
 
 <div id="content">
 	<?php if (have_posts()) : ?>
-		<div class="author-head post"
+		<div class="author-head post">
 			<h1>Posts Filed Under: <?php single_cat_title(); ?></h1>
 		</div>
 		<!--This is "The Loop"-->
