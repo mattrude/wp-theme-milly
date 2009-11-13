@@ -42,7 +42,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
 // Add Widget sidebar to Theme
 if(function_exists('register_sidebar'))
 	register_sidebar(array (
-		'before_widget' => '<div id="linkcat" class="widget bookmarks widget-bookmarks">',
+		'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
