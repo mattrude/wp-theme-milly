@@ -9,5 +9,4 @@
 	
 		
 	<?php endif; ?>
-	</ul>
 </div>

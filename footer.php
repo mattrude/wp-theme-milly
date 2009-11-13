@@ -2,7 +2,7 @@
 <div id="footer-container">
 	<div id="footer">
 		<div id="footer-logo">
-			<a href="http://wordpress.org/"><img src="<?php bloginfo('template_url') ?>/images/wordpress-logo.png"></a>
+			<a href="http://wordpress.org/"><img src="<?php bloginfo('template_url') ?>/images/wordpress-logo.png" alt="WordPress Logo" /></a>
 		</div>
 		<?php global $Panel;
 		$copyright = $Panel->Settings('copyenable');
@@ -24,6 +24,7 @@
 	</div>
 	<!--footer plugin hook-->
 	<?php wp_footer(); ?>
+</div>
 </div>
 
 <?php google_analytics(); ?>

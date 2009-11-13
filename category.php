@@ -26,5 +26,3 @@
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
-
-</div><!--close container id-->
