@@ -17,10 +17,18 @@ class random_image_wiget extends WP_Widget {
     extract($args);
     $image_height = empty($instance['image_height']) ? '&nbsp;' : apply_filters('image_height', $instance['image_height']);
     global $wpdb;
+
     $random_postid = $wpdb->get_var("SELECT ID FROM mdr_posts WHERE post_type = 'attachment' AND post_mime_type = 'image/jpeg' ORDER BY RAND() LIMIT 1");
-    echo $random_postid;
-     wp_get_attachment_thumb_url( $random_postid );
-    echo wp_get_attachment_metadata( $random_postid, $unfiltered );
+    ?>
+    <div class="widget bookmarks widget-bookmarks">
+      <h3 class="widget-title" >Random Image</h3>
+      <div class"one-image">
+        <a href="<?php echo get_permalink( $random_postid ) ?>" >
+          <img src="<?php echo wp_get_attachment_thumb_url( $random_postid ) ?>" />
+        </ a>
+      </div>
+      
+    </div><?php
 
   }
   
