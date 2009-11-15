@@ -1,16 +1,16 @@
 <?php
 
-class random_image_wiget extends WP_Widget {
-  function random_image_wiget() {
+class random_image_widget extends WP_Widget {
+  function random_image_widget() {
     $currentLocale = get_locale();
     if(!empty($currentLocale)) {
-      $moFile = dirname(__FILE__) . "/languages/random_image_wiget_" .  $currentLocale . ".mo";
+      $moFile = dirname(__FILE__) . "/languages/random_image_widget_" .  $currentLocale . ".mo";
       if(@file_exists($moFile) && is_readable($moFile)) load_textdomain('', $moFile);
     }
-    $random_image_wiget_name = __('Random Image Wiget', 'random_image_wiget');
-    $random_image_wiget_description = __('Random Image Wiget for WordPress', 'random_image_wiget');
-    $widget_ops = array('classname' => 'random_image_wiget', 'description' => $random_image_wiget_description );
-    $this->WP_Widget('random_image_wiget', $random_image_wiget_name, $widget_ops);
+    $random_image_widget_name = __('Random Image Widget', 'random_image_widget');
+    $random_image_widget_description = __('Random Image Widget for WordPress', 'random_image_widget');
+    $widget_ops = array('classname' => 'random_image_widget', 'description' => $random_image_widget_description );
+    $this->WP_Widget('random_image_widget', $random_image_widget_name, $widget_ops);
   }  
 
   function widget($args, $instance) {
@@ -19,6 +19,8 @@ class random_image_wiget extends WP_Widget {
     global $wpdb;
 
     $random_postid = $wpdb->get_var("SELECT ID FROM mdr_posts WHERE post_type = 'attachment' AND post_mime_type = 'image/jpeg' ORDER BY RAND() LIMIT 1");
+    $image_meta = wp_get_attachment_metadata( $random_pageid, true );
+    $title = $image_meta->post_title;
     ?>
     <div class="widget bookmarks widget-bookmarks">
       <h3 class="widget-title" >Random Image</h3>
@@ -27,6 +29,8 @@ class random_image_wiget extends WP_Widget {
           <img src="<?php echo wp_get_attachment_thumb_url( $random_postid ) ?>" />
         </ a>
       </div>
+        <br />
+        <?php echo $title; ?>
       
     </div><?php
 
@@ -47,9 +51,9 @@ class random_image_wiget extends WP_Widget {
   
 }
 
-add_action('widgets_init', 'random_image_wiget_init');
-function random_image_wiget_init() {
-        register_widget('random_image_wiget');
+add_action('widgets_init', 'random_image_widget_init');
+function random_image_widget_init() {
+        register_widget('random_image_widget');
 }
 
 ?>
