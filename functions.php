@@ -1,6 +1,9 @@
 <?php
+require_once('functions/category-excluder.php');
 require_once('functions/control-panel.php');
-require_once('base/base.php');
+require_once('functions/google-analytics.php');
+require_once('functions/random-image.php');
+require_once('functions/robots.php');
 
 // Add Custom Taxonomies
 add_action( 'init', 'create_my_taxonomies', 0 );
