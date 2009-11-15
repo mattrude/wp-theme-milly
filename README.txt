@@ -1,5 +1,5 @@
 Wordpress Theme Milly
-Version 1.1
+Version 1.2
 
    1. Features
    2. Wanted Features/Bugs
