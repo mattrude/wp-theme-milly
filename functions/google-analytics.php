@@ -1,4 +1,7 @@
 <?php
+
+$theme_name = get_current_theme();
+
 function google_analytics() {
   if ( is_user_logged_in() ) {
     ?>
@@ -34,4 +37,44 @@ function google_analytics() {
     }
   } 
 }
+
+function register_mysettings() {
+  register_setting( $theme_name, 'GoogleAnalyticsEnabled' );
+  register_setting( $theme_name, 'GoogleAnalyticsID' );
+}
+
+function mdr_ga_controlpanel() {
+  ?>
+  <div class="wrap">
+    <div class="stuffbox custom">
+      <h3 class="hndle">Google Analytics Options</h3>
+      <div class="inside">
+      <div class="wrap">
+      <form method="post" action="themes.php?page=control-panel.php">
+        <?php wp_nonce_field('update-options'); ?>
+	<?php settings_fields( $theme_name ); ?>
+        <label for="GoogleAnalyticsEnabled">
+          <input class="checkbox" id="GoogleAnalyticsEnabled" name="GoogleAnalyticsEnabled" value="<?php echo get_option('GoogleAnalyticsEnabled'); ?>" type="checkbox"> 
+          <strong>Enable Google Analytics</strong>
+        </label>
+        <p class="description">This module requres a <a href="http://analytics.google.com">Google Analytics</a> account.<br>The Google Analytics code will NOT be displayed for logged in users.</p>
+        <label for="GoogleAnalyticsID">
+          <strong>Google Analytics ID</strong>
+          <br>
+          <input class="textbox" id="GoogleAnalyticsID" name="GoogleAnalyticsID" value="<?php echo get_option('GoogleAnalyticsID'); ?>" type="text">
+        </label>
+        <p class="description">Enter your <a href="http://analytics.google.com">Google Analytics</a> account ID.</p>
+        <input type="hidden" name="page_options" value="GoogleAnalyticsEnabled,GoogleAnalyticsID" />
+        <input type="hidden" name="action" value="update" />
+        <p class="submit">
+          <input type="submit" class="button" value="<?php _e('Save Above Changes') ?>" />
+        </p>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+  <?php
+}
+
 ?>
