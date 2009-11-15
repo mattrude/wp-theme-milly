@@ -8,7 +8,7 @@ class random_image_widget extends WP_Widget {
       if(@file_exists($moFile) && is_readable($moFile)) load_textdomain('', $moFile);
     }
     $random_image_widget_name = __('Random Image Widget', 'random_image_widget');
-    $random_image_widget_description = __('Random Image Widget for WordPress', 'random_image_widget');
+    $random_image_widget_description = __('Displays a random gallery image from the WordPress built in galleries.', 'random_image_widget');
     $widget_ops = array('classname' => 'random_image_widget', 'description' => $random_image_widget_description );
     $this->WP_Widget('random_image_widget', $random_image_widget_name, $widget_ops);
   }  
