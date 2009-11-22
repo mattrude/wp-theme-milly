@@ -1,3 +1,4 @@
+<?php /* Template Name: Twitter Page */ ?>
 <?php get_header(); ?>
 
 <div id="content">
