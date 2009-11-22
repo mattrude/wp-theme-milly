@@ -29,9 +29,11 @@ b, i, hr, u, center, menu, layer, s, strike, font, xmp {
 font {
 	color: #333;
 	}
+/*
 center {
 	text-align: left;
 	}
+*/
 
 /* End deprecated elements */
 
