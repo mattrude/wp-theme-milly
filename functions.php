@@ -5,15 +5,22 @@ require_once('functions/google-analytics.php');
 require_once('functions/random-image.php');
 require_once('functions/robots.php');
 
+// Add Post Thumbnails
+add_theme_support('post-thumbnails');
+
 // Add Custom Taxonomies
-add_action( 'init', 'create_my_taxonomies', 0 );
 function create_my_taxonomies() {
 	register_taxonomy( 'people', 'post', array( 'hierarchical' => false, 'label' => 'People', 'query_var' => true, 'rewrite' => true ) );
 	register_taxonomy( 'places', 'post', array( 'hierarchical' => false, 'label' => 'Places', 'query_var' => true, 'rewrite' => true ) );
 	register_taxonomy( 'events', 'post', array( 'hierarchical' => false, 'label' => 'Events', 'query_var' => true, 'rewrite' => true ) );
-}
+        }
+add_action( 'init', 'create_my_taxonomies', 0 );
 
-add_theme_support('post-thumbnails');
+// Add Custom Post Types
+function milly_post_type_init() {
+        register_post_type('twitter',array('exclude_from_search' => true) );
+        }
+add_action('init','milly_post_type_init');
 
 // Add Custom User Contact Methods
 function add_twitter_contactmethod( $contactmethods ) {
