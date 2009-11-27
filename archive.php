@@ -4,9 +4,9 @@
 	<?php if (have_posts()) : ?>
 		<!--This is "The Loop"-->
 		<?php while (have_posts()) : the_post(); ?>
-		<? if ( is_category( 'gallery' )) {
+		<? if ( in_category( 'gallery' )) {
                         include('functions/gallery-index.php');
-                } elseif ( is_category( 'tweets' )) {
+                } elseif ( in_category( 'tweets' )) {
                         include('functions/twitter-index.php');
                 } else {
                         include('functions/post-short.php');
