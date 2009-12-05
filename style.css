@@ -316,7 +316,9 @@ img.wp-smiley {
 	background: #EFF1E1;
 	border: 1px solid #e2e2e2;
 	}
-
+.giInfo {
+	margin: 0 0 0;
+	}
 /* Avatars */
 .avatar {
 	float: left;
