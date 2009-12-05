@@ -97,22 +97,21 @@ blockquote {
 	font-style: normal;
 	}
 
-/* Code */
-code {
-	font-size: 12px;
-	padding: 0 3px;
-	background: #EFF1E1;
-	}
 pre {
 	font-size: 12px;
 	overflow: auto;
 	padding: 9px;
-	background: #EFF1E1;
+	color: black;
+	background: #F9F9F9;
 	border: 1px solid #e2e2e2;
 	}
-pre code {
-	padding: 0;
+code {
+	font-size: 12px;
+	overflow: auto;
+	padding: 9px;
+	color: black;
 	background: transparent;
+	border: 1px solid #e2e2e2;
 	}
 
 /* Tables */
