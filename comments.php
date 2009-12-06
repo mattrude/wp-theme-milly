@@ -1,12 +1,10 @@
 <?php // Do not delete these lines
-	
 	if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
 		die ('Please do not load this page directly. Thanks!');
 	if ( post_password_required() ) {
 		echo 'This post is password protected. Enter the password to view comments.';
 		return;
 	}
-
 	/* This variable is for alternating comment background */
 	$oddcomment = 'alt';
 ?>
@@ -29,8 +27,8 @@ if($comments) {
 ?>
 
 <?php if (have_comments($comment_type = 'comment')) : ?>
-	<div id="comments"			
-		<h3 id="comments-number" class="comments-header"><?php echo $comment_count . " Comments"; ?></h3>
+	<div id="comments" class="post">			
+		<h3 class="comment-title"><?php echo $comment_count . " Comments"; ?></h3>
 
 	<ol class="comment-list">
 		<?php wp_list_comments(array('style' => 'ol', 'type' => 'comment')); ?>
@@ -57,7 +55,7 @@ if($comments) {
 <?php else : ?>
 
 <div id="respond">
-<h3><?php comment_form_title( 'Leave a Comment', 'Reply to %s' ); ?></h3>
+<h3 class='comment-title'><?php comment_form_title( 'Leave a Comment', 'Reply to %s' ); ?></h3>
 
 <div id="cancel-comment-reply">
 	<small><?php cancel_comment_reply_link() ?></small>
@@ -100,7 +98,7 @@ if($comments) {
 <?php if($comments && ($trackping_count != 0)) : ?>
 <div id="trackback">
 	<div class="trackback">
-	<h3 id="trackbacks" class="comments-header title"><?php echo $trackping_count; ?> Trackbacks / Pingbacks</h3>
+	<h3 id="trackbacks" class="comment-title"><?php echo $trackping_count; ?> Trackbacks / Pingbacks</h3>
 		<ol class="trackback-list">
 			<?php foreach ($comments as $comment) : ?>
 			<?php $comment_type = get_comment_type(); ?>
