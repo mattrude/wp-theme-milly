@@ -1,5 +1,5 @@
 Wordpress Theme Milly
-Version 1.2
+Version 1.3
 
    1. Features
    2. Wanted Features/Bugs
@@ -9,6 +9,9 @@ Version 1.2
 
 
 Features
+
+  Version 1.3
+    * Add custom post type of twitter
 
   Version 0.1
     * Google Analytics Support (analytics.google.com)
