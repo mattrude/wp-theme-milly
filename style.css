@@ -610,6 +610,10 @@ p.pages a {
 	}
 
 /* Paged comments navigation */
+.comment-title {
+	border-bottom: 1px solid #E2E2E2;
+	margin-bottom: 5px;
+	}
 #comments-template .paged-navigation {
 	overflow: hidden;
 	margin: 0 0 20px 0;
@@ -731,8 +735,7 @@ p.pages a {
 	}
 #comments li, p.comments-closed {
 	overflow: hidden;
-	
-	margin: 0 0 20px 0;
+	margin: 20px 0;
 	padding: 19px 5px 0 19px;
 	background: #fff;
 	border: 1px solid #e7e7e7;
