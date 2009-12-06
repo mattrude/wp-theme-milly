@@ -17,4 +17,10 @@
 <div class="entry-content entry">
 		<?php the_content(); ?>
 </div><!--close entry class-->
+<?php if ( is_single() ) { ?>
+  <!--Add Related Entries if Yet Another Related Posts Plugin is installed-->
+  <div class="related-entries">
+    <?php if (function_exists('related_entries')) { echo related_entries(); }?>
+  </div>
+<?php } ?>
 </div><!--close post class-->
