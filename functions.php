@@ -2,6 +2,7 @@
 require_once('functions/category-excluder.php');
 require_once('functions/control-panel.php');
 require_once('functions/google-analytics.php');
+require_once('functions/random-image.php');
 require_once('functions/robots.php');
 
 // Add Post Thumbnails
