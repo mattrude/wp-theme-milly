@@ -10,10 +10,10 @@ h3{font-size:1.55em;}
 h4{font-size:1.4em;}
 h5{font-size:1.25em;}
 h6{font-size:1.1em;}
-p{margin:0 0 21px 0;}
+p{margin:0 0 10px 0;}
 ol,ul{list-style:none;}
-ul{list-style:disc;margin:0 0 21px 2.5em;}
-ol{margin:0 0 21px 3em;}
+ul{list-style:disc;margin:0 0 10px 2.5em;}
+ol{margin:0 0 10px 3em;}
 ol ol{list-style:upper-roman;}
 ol ol ol{list-style:lower-roman;}
 ol ol ol ol{list-style:upper-alpha;}
@@ -31,7 +31,7 @@ big{font-size:120%;}
 small,sup,sub{font-size:80%;}
 sup{vertical-align:baseline;position:relative;bottom:.3em;}
 sub{vertical-align:baseline;position:relative;top:.3em;}
-address{font-style:italic;margin:0 0 21px 0;}
+address{font-style:italic;margin:0 0 10px 0;}
 li address,dd address{margin:0;}
 blockquote{margin:0 2.5em;font-style:normal;}
 blockquote em,blockquote cite{font-style:italic;}
@@ -39,24 +39,24 @@ blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 a{cursor:pointer;}
 a img{border:none;}
-pre{overflow:auto;font:.9em Monaco,monospace,Courier,"Courier New";line-height:16px;margin-bottom:21px;padding:9px;}
+pre{overflow:auto;font:.9em Monaco,monospace,Courier,"Courier New";line-height:16px;margin-bottom:10px;padding:9px;}
 code{font:.9em Monaco,monospace,Courier,"Courier New";}
 pre code{font-size:1em;}
 ins,dfn{font-style:italic;text-decoration:none;border-bottom:1px solid #666;}
 del{text-decoration:line-through;}
-object{margin-bottom:21px;}
+object{margin-bottom:10px;}
 input,textarea{font-size:1em;font-family:Cambria,Georgia,Times,"Times New Roman",serif;padding:3px;}
 :focus{outline:none;}
 form label{cursor:pointer;}
 option{padding:1px 3px;}
-table{border-collapse:collapse;border-spacing:0;margin-bottom:21px;}
+table{border-collapse:collapse;border-spacing:0;margin-bottom:10px;}
 th,td{text-align:left;}
-hr{margin-bottom:21px;}
+hr{margin-bottom:10px;}
 img.wp-smiley{max-height:12px;margin:0;padding:0;border:none;}
-.gallery{display:block;text-align:center;margin-bottom:21px!important;}
+.gallery{display:block;text-align:center;margin-bottom:10px!important;}
 .alignleft,.left{float:left;margin-right:15px;}
 .alignright,.right{float:right;margin-left:15px;}
-.aligncenter,.center{display:block;margin:0 auto 21px auto;}
-.alignnone,.block{clear:both;margin:0 0 21px 0;}
+.aligncenter,.center{display:block;margin:0 auto 10px auto;}
+.alignnone,.block{clear:both;margin:0 0 10px 0;}
 .clear{clear:both;}
 img.alignleft,img.alignright{display:inline;}

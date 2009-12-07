@@ -13,7 +13,7 @@
 		<?php } ?>
 		<div id="footer-text">
 			<p>
-			Copyright &copy; 1980 – <?php echo date("Y") ?> <a href="http://mattrude.com/">Matt Rude</a><br />
+			Copyright &copy; 1980 – <?php echo date("Y") ?> by <a href="http://mattrude.com/">Matt Rude</a><br />
 			Site Designed by <a href="http://mattrude.com/">Matt Rude</a>.<br />
 			Proudly powered by <a href="http://wordpress.org/">WordPress</a>.<br />
 			This page took <?php timer_stop(1); ?> seconds of computer labor,<br/>
