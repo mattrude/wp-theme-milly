@@ -7,6 +7,7 @@ require_once('functions/robots.php');
 
 // Add Post Thumbnails
 add_theme_support('post-thumbnails');
+set_post_thumbnail_size(200, 200);
 
 // Add Custom Taxonomies
 function create_my_taxonomies() {

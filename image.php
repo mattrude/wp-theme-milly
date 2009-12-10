@@ -9,7 +9,8 @@
 			<!--<h1><?php the_title(); ?></h1>-->
 			<small class="attr"><?php the_time('F jS, Y') ?></small>
 			<div class="image_entry">
-				<p class="attachment"><?php echo wp_get_attachment_image( $post->ID, array(930,930) ); ?></p>
+				<?php $image_full_url = wp_get_attachment_image_src( $post->ID, "full" ); ?>
+				<p class="attachment"><a href="<?php echo $image_full_url[0]; ?>"><?php echo wp_get_attachment_image( $post->ID, array(930,930) ); ?></a></p>
 				<div class="caption"><?php if ( !empty($post->post_excerpt) ) the_excerpt(); // this is the "caption" ?></div>
 	<div class="image-navigation">
 		<div class="floatright">
