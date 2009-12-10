@@ -1,7 +1,7 @@
 <div id="gallerypost-<?php the_ID(); ?>" class="gallerypost post">
     <div id="gallerypost_main-<?php the_ID(); ?>" class="gallerypost_main">
 	<div id="gallerypost_thumbnail-<?php the_ID(); ?>" class="gallerypost_thumbnail">
-		<a href="<?php the_permalink() ?>"><?php the_post_image() ?></a>
+		<a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
 	</div>
 	<div id="gallerypost_body-<?php the_ID(); ?>" class="gallerypost_body">
 		<?php $images =& get_children( 'post_type=attachment&post_mime_type=image' ); ?>
