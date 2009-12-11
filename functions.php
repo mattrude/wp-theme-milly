@@ -4,9 +4,11 @@ require_once('functions/control-panel.php');
 require_once('functions/google-analytics.php');
 require_once('functions/robots.php');
 
-// Add Post Thumbnails
-add_theme_support('post-thumbnails');
-set_post_thumbnail_size(200, 200);
+// Add Post Thumbnails for WordPress 2.9
+if (function_exists(add_theme_support)) {
+  add_theme_support('post-thumbnails');
+  set_post_thumbnail_size(200, 200);
+}
 
 // Add Custom Taxonomies
 function create_my_taxonomies() {
