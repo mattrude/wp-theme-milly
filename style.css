@@ -339,7 +339,7 @@ img.wp-smiley {
 	}
 #header {
 	overflow: hidden;
-	width: 1024px;
+	width: 984px;
 	height: 200px;
 	margin: 0 auto;
 	}
@@ -353,7 +353,7 @@ img.wp-smiley {
 	height:35px;
 	margin:0 auto;
 	overflow:hidden;
-	width:1024px;
+	width:984px;
 	}
 #header img {
 	margin: 0;
@@ -400,7 +400,7 @@ img.wp-smiley {
 #navigation {
 	overflow: hidden;
 	height: 33px;
-	width: 1024px;
+	width: 984px;
 	margin: 0px auto;
 	padding: none;
 	background:#0A2A35 none repeat scroll 0 0;
@@ -409,7 +409,7 @@ img.wp-smiley {
 	}
 #menu {
 	overflow: hidden;
-	width: 1024px;
+	width: 984px;
 	height: 33px;
 	margin: 0 auto;
 	background: url(images/nav-border.png) repeat-y left  0;
@@ -437,7 +437,7 @@ img.wp-smiley {
 #container {
 	overflow: hidden;
 	
-	width: 1024px;
+	width: 984px;
 	margin: 20px auto;
 	}
 #container a {
@@ -451,7 +451,7 @@ img.wp-smiley {
 
 /* Breadcrumb trail */
 .breadcrumb {
-	width: 1024px;
+	width: 984984984984984984984984984px;
 	margin: 0 auto 20px auto;
 	padding: 4px 0;
 	font-size: 11px;
@@ -581,7 +581,7 @@ p.pages a {
 	margin: 0;
 	}
 .page-template-no-widgets #content, .no-widgets #content, .attachment #content {
-	width: 1024px;
+	width: 984px;
 	}
 .post-box, .page-template-widgets #content .widget {
 	overflow: hidden;
@@ -655,13 +655,12 @@ p.pages a {
 ************************************************/
 #primary {
 	float: right;
-	width: 300px;
+	width: 260px;
 	
 	}
 .widget {
 	overflow: hidden;
-	
-	margin: 0 0 21px 0;
+	margin: 0 0 20px 0;
 	padding: 19px 19px 19px 19px;
 	background: #fff;
 	border: 1px solid #e7e7e7;
@@ -694,9 +693,7 @@ p.pages a {
 
 .widget img {
 	padding: 0 !important;
-        margin: 0;
 	}
-
 
 #primary #text-330321621 {
 	padding-top: 15px;
@@ -1014,7 +1011,7 @@ a.comment-link:hover {
 	border-top: 2px solid #000;
 	}
 #footer {
-	width: 1024px;
+	width: 984px;
 	margin: auto;
 	}
 #footer-text {
