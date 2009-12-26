@@ -19,18 +19,20 @@ class random_image_widget extends WP_Widget {
     global $wpdb;
     
     //http://codex.wordpress.org/Template_Tags/get_posts
+    //http://codewordpress.com/wordpress-hack/display-random-images-from-media-gallery
     $args = array(
        'post_type' => 'attachment',
+       'post_mime_type' => 'image',
        'numberposts' => -1,
        'post_status' => null,
        'post_parent' => $post->ID,
+       'post_category' => '4',
        'orderby' => 'rand'
     );
     $attachments = get_posts($args);
     $noimages = count($attachments);
      
     if ($attachments) {
- 
       foreach ($attachments as $attachment) {
         $alttxt = $attachment->post_title;
         $imgid = $attachment->ID;
@@ -49,7 +51,8 @@ class random_image_widget extends WP_Widget {
           <h3 class="widget-title" >Random Image</h3>
           <div class"one-image">
             <a href="<?php echo get_permalink( $imgid ) ?>" ><?php 
-            echo"<img src='".$fileurl."' alt='".$alttxt."' class='center highlightimg' /></ a>";
+            echo "<div class='aligncenter'><img src='".$fileurl."' alt='".$alttxt."' class='center highlightimg' /></div></ a>";
+            //echo "$alttxt";
             break;
       }
       echo "</div>";
