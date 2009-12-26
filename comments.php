@@ -29,7 +29,8 @@ if($comments) {
 <?php if (have_comments($comment_type = 'comment')) : ?>
 	<div id="comments" class="post">			
 		<h3 class="comment-title"><?php echo $comment_count . " Comments"; ?></h3>
-
+	</div>
+	<div id="comments" class="post">			
 	<ol class="comment-list">
 		<?php wp_list_comments(array('style' => 'ol', 'type' => 'comment')); ?>
 	</ol>

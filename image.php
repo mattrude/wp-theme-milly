@@ -6,11 +6,11 @@
 	
 	<div class="single"><!--Slightly different styling for single posts and single pages-->
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<!--<h1><?php the_title(); ?></h1>-->
 			<small class="attr"><?php the_time('F jS, Y') ?></small>
+			<!--<h1><?php the_title(); ?></h1>-->
 			<div class="image_entry">
 				<?php $image_full_url = wp_get_attachment_image_src( $post->ID, "full" ); ?>
-				<p class="attachment"><a href="<?php echo $image_full_url[0]; ?>"><?php echo wp_get_attachment_image( $post->ID, array(930,930) ); ?></a></p>
+				<p class="attachment"><a href="<?php echo $image_full_url[0]; ?>"><?php echo wp_get_attachment_image( $post->ID, array(894,894) ); ?></a></p>
 				<div class="caption"><?php if ( !empty($post->post_excerpt) ) the_excerpt(); // this is the "caption" ?></div>
 	<div class="image-navigation">
 		<div class="floatright">
@@ -25,19 +25,19 @@
 		?>
 		<?php if ( wp_get_attachment_image( $post->ID+1 ) != null ) { ?>
 		<p class="attachment">
-			Next Image<br />
+			<?php _e('Next Image', 'mdr-milly-theme') ?><br />
 			<a href="<?php echo $next_url; ?>"><?php echo wp_get_attachment_image( $post->ID+1, 'thumbnail' ); ?></a>
 		</p>
 		<?php } ?>
 
 		<?php if ( wp_get_attachment_image( $post->ID-1 ) != null ) { ?>
 		<p class="attachment">
-			Previous Image<br />
+			<?php _e('Previous Image', 'mdr-milly-theme') ?><br />
 			<a href="<?php echo $previous_url; ?>"><?php echo wp_get_attachment_image( $post->ID-1, 'thumbnail' ); ?></a>
 		</p>
 		<?php } ?>
 	</div>
-				<p><a class="wrapper" href="<?php echo get_permalink($post->post_parent); ?>" rev="up post">&larr; <?php printf(__('back to &#8220;%s&#8221;', 'carrington-blog'), get_the_title($post->post_parent)); ?></a></p>
+				<p><a class="wrapper" href="<?php echo get_permalink($post->post_parent); ?>" rev="up post">&larr; <?php printf(__('back to &#8220;%s&#8221;', 'mdr-milly-theme'), get_the_title($post->post_parent)); ?></a></p>
 				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
 	
 </div><!--close entry class-->
@@ -49,7 +49,7 @@
 </div>
 </div><!--close single class-->
 <?php endwhile; else: ?>
-	<p>Sorry, no posts matched your criteria.</p>
+	<p><?php _e('Sorry, no posts matched your criteria.', 'mdr-milly-theme') ?></p>
 <?php endif; ?>
 </div><!--close content id-->
 <?php get_footer(); ?>
