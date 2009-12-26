@@ -7,8 +7,8 @@
     } else {
       include('functions/post-full.php');
       comments_template();
-      include('navigation.php');
     } 
+    include('navigation.php');
   endwhile; endif; ?>
 </div><!--close content id-->
 

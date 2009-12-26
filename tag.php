@@ -15,8 +15,8 @@
 		</div><!--close post class and post# id-->
 		<!--The Loop has ended-->	
 		<div class="navigation">
-			<div class="txtalignleft"><?php previous_posts_link('&laquo; Newer Entries') ?></div>
-			<div class="txtalignright"><?php next_posts_link('Older Entries &raquo;') ?></div>
+                  <div class="txtalignleft"><?php previous_posts_link('&laquo; Newer Entries') ?></div>
+                  <div class="txtalignright"><?php next_posts_link('Older Entries &raquo;') ?></div>
 		</div>
 	<?php endif; ?>
 </div><!--close content id-->

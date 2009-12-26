@@ -467,6 +467,14 @@ img.wp-smiley {
 	border: 1px solid #e7e7e7;
 	}
 
+.navigation {
+	overflow: hidden;
+        margin: 0 0 20px 0;
+        padding: 10px 21px 5px 21px;
+        background: #fff;
+        border: 1px solid #e7e7e7;
+	}
+
 /* Post title (and other titles) */
 .entry-title, .series-title, .related-title {
 	margin: 0 0 5px 0;

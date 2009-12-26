@@ -26,7 +26,7 @@ class random_image_widget extends WP_Widget {
        'numberposts' => -1,
        'post_status' => null,
        'post_parent' => $post->ID,
-       'post_category' => '4',
+       'post_category' => '2323232323232323232323232323232323232323232323',
        'orderby' => 'rand'
     );
     $attachments = get_posts($args);
