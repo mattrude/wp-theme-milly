@@ -19,29 +19,42 @@ class random_image_widget extends WP_Widget {
     global $wpdb;
     
     //http://codex.wordpress.org/Template_Tags/get_posts
-    $random_postid = $args = array(
-	'post_type' => 'attachment',
-	'category_name' => 'gallery',
-	'numberposts' => '1',
-	'order_by' => 'rand',
-	'post_status' => null,
-	); 
-    $attachments = get_posts($random_postid);
-    
-    $image_meta = wp_get_attachment_metadata( $random_pageid, true );
-    $title = $image_meta->post_title;
-    ?><div class="widget bookmarks widget-bookmarks">
-      <h3 class="widget-title" >Random Image</h3>
-      <div class"one-image">
-        <a href="<?php echo get_permalink( $random_postid ) ?>" >
-          <img src="<?php echo wp_get_attachment_thumb_url( $random_postid ) ?>" />
-        </ a>
-      </div>
-        <br />
-        <?php echo $title; ?>
-      
-    </div><?php
-  
+    $args = array(
+       'post_type' => 'attachment',
+       'numberposts' => -1,
+       'post_status' => null,
+       'post_parent' => $post->ID,
+       'orderby' => 'rand'
+    );
+    $attachments = get_posts($args);
+    $noimages = count($attachments);
+     
+    if ($attachments) {
+ 
+      foreach ($attachments as $attachment) {
+        $alttxt = $attachment->post_title;
+        $imgid = $attachment->ID;
+        $fileurl = $attachment->guid;
+         
+        $meta = wp_get_attachment_metadata($imgid);
+        $imgw = $meta['sizes']['thumbnail']['width'];
+        $imgh = $meta['sizes']['thumbnail']['height'];
+          
+        $imgext = substr($fileurl, -4);
+        $fileurl = substr($fileurl, 0, -4);
+        $fileurl = $fileurl."-".$imgw."x".$imgh.$imgext;
+         
+        // construct the image
+        ?><div class="widget bookmarks widget-bookmarks">
+          <h3 class="widget-title" >Random Image</h3>
+          <div class"one-image">
+            <a href="<?php echo get_permalink( $imgid ) ?>" ><?php 
+            echo"<img src='".$fileurl."' alt='".$alttxt."' class='center highlightimg' /></ a>";
+            break;
+      }
+      echo "</div>";
+      echo "</div>";
+    }
   }
   
   function update($new_instance, $old_instance) {
