@@ -236,7 +236,7 @@ img.alignleft, img.alignright {
 	}
 .center, .aligncenter {
 	display: block;
-	margin: 0 auto 21px auto;
+	margin: 0 auto 15px auto;
 	}
 .block, .alignnone {
 	display: block;
@@ -686,7 +686,6 @@ p.pages a {
 
 .widget img {
 	padding: 0 !important;
-	margin: 0;
 	}
 
 
