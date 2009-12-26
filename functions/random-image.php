@@ -34,7 +34,8 @@ class random_image_widget extends WP_Widget {
      
     if ($attachments) {
       foreach ($attachments as $attachment) {
-        $alttxt = $attachment->post_title;
+        $imgtitle = $attachment->post_title;
+        $alttxt = $attachment->image_alt;
         $imgid = $attachment->ID;
         $fileurl = $attachment->guid;
          
@@ -51,8 +52,8 @@ class random_image_widget extends WP_Widget {
           <h3 class="widget-title" >Random Image</h3>
           <div class"one-image">
             <a href="<?php echo get_permalink( $imgid ) ?>" ><?php 
-            echo "<div class='aligncenter'><img src='".$fileurl."' alt='".$alttxt."' class='center highlightimg' /></div></ a>";
-            //echo "$alttxt";
+            echo "<div class='aligncenter'><img src='".$fileurl."' alt='".$imgtitle."' class='center highlightimg' /></div></ a>";
+            echo "$alttxt";
             break;
       }
       echo "</div>";
