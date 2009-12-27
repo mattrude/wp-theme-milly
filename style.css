@@ -281,6 +281,9 @@ img.wp-smiley {
 	border: 1px solid #e2e2e2;
 	margin: 20px auto 10px;
 	}
+.random-widget p {
+        margin: 0;
+	}
 /* WP Captions [caption] */
 .wp-caption {
 	overflow: hidden;

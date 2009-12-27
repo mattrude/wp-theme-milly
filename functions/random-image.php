@@ -15,8 +15,12 @@ class random_image_widget extends WP_Widget {
   
   function widget($args, $instance) {
     extract($args);
-    $image_height = empty($instance['image_height']) ? '&nbsp;' : apply_filters('image_height', $instance['image_height']);
+    $mdr_random_image_widget_title = empty($instance['widget_title']) ? '&nbsp;' : apply_filters('widget_title', $instance['widget_title']);
     global $wpdb;
+    
+    if ($mdr_random_image_widget_title == "&nbsp;") {
+      $mdr_random_image_widget_title = __('Random Image','mdr_random_image_widget');
+    }
     
     $args = array(
        'post_type' => 'attachment',
@@ -34,9 +38,10 @@ class random_image_widget extends WP_Widget {
       foreach ($attachments as $attachment) {
         $imgtitle = $attachment->post_title;
         $caption = $attachment->post_excerpt;
-        $description = $attachment->post_content;
         $imgid = $attachment->ID;
         $fileurl = $attachment->guid;
+        $albumid = $attachment->post_parent;
+        $albumtitle = get_the_title($albumid);
          
         $meta = wp_get_attachment_metadata($imgid);
         $imgw = $meta['sizes']['thumbnail']['width'];
@@ -47,34 +52,30 @@ class random_image_widget extends WP_Widget {
         $fileurl = $fileurl."-".$imgw."x".$imgh.$imgext;
          
         // construct the image
-        ?><div class="widget bookmarks widget-bookmarks">
-          <h3 class="widget-title" >Random Image</h3>
-          <div class"one-image">
-            <a href="<?php echo get_permalink( $imgid ) ?>" ><?php 
-            echo "<div class='random-widget'><img src='".$fileurl."' alt='".$imgtitle."' class='center' /></div></ a>";
-            echo "$caption";
-            echo "$description";
-            break;
+        echo "<div class='widget bookmarks widget-bookmarks'>";
+          echo "<h3 class='widget-title' >$mdr_random_image_widget_title</h3>";
+          echo "<div class='random-widget'>";
+            echo "<a href=".get_permalink( $imgid )." >";
+            echo "<img src='".$fileurl."' alt='".$imgtitle."' class='center' />";
+            echo "</a>";
+            echo "<p><center><strong>$caption</strong></center></p>";
+            echo "<p><small>Album: <a href=".get_permalink( $albumid ).">$albumtitle</a></small></p>";
+          echo "</div>";
+        echo "</div>";
+        break;
       }
-      echo "</div>";
-      echo "</div>";
     }
   }
   
   function update($new_instance, $old_instance) {
     $instance = $old_instance;
-    $instance['image_height'] = strip_tags($new_instance['image_height']);
+    $instance['widget_title'] = strip_tags($new_instance['widget_title']);
     return $instance;
   }
   
   function form($instance) {
-    $posts_per_page = strip_tags($instance['image_height']);
-    $posts_per_page = strip_tags($instance['image_width']);
-    $posts_per_page = strip_tags($instance['gallery_category']);
-    ?>
-    <p><label for="<?php echo $this->get_field_id('image_height'); ?>"><?php _e('Image Height in pix', 'mdr_random_image_widget')?>:<input class="widefat" id="<?php echo $this->get_field_id('image_height'); ?>" name="<?php echo $this->get_field_name('image_height'); ?>" type="text" value="<?php echo attribute_escape($image_height); ?>" /></label></p>
-    <p><label for="<?php echo $this->get_field_id('image_width'); ?>"><?php _e('Image Width in pix', 'mdr_random_image_widget')?>:<input class="widefat" id="<?php echo $this->get_field_id('image_width'); ?>" name="<?php echo $this->get_field_name('image_width'); ?>" type="text" value="<?php echo attribute_escape($image_height); ?>" /></label></p>
-    <p><label for="<?php echo $this->get_field_id('gallery_category'); ?>"><?php _e('Your Gallery Category', 'mdr_random_image_widget')?>:<input class="widefat" id="<?php echo $this->get_field_id('gallery_category'); ?>" name="<?php echo $this->get_field_name('gallery_category'); ?>" type="text" value="<?php echo attribute_escape($image_height); ?>" /></label></p>
+    $mdr_random_image_widget_title = strip_tags($instance['widget_title']);
+    ?><p><label for="<?php echo $this->get_field_id('widget_title'); ?>"><?php _e('Widget title', 'mdr_random_image_widget')?>:<input class="widefat" id="<?php echo $this->get_field_id('widget_title'); ?>" name="<?php echo $this->get_field_name('widget_title'); ?>" type="text" value="<?php echo attribute_escape($mdr_random_image_widget_title); ?>" /></label></p>
     <?php
   }
   
