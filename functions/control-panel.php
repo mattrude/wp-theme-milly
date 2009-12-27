@@ -170,4 +170,59 @@ class ControlPanel
 		return $this->Settings[$Option];
 	}
 }
+
+$Options =
+array
+(
+array
+(
+'Type'=>'Title',
+'Value'=>'Google Analytics Options'
+),
+array
+(
+'Type'=>'CheckBox',
+'ID'=>'GoogleAnalyticsEnabled',
+'Label'=>'<strong>Enable Google Analytics</strong>',
+'Description' => 'This module requres a <a href="http://analytics.google.com">Google Analytics</a> account.<br />The Google Analytics code will NOT be displayed for logged in users.',
+'Default'=> 'false'
+),
+array
+(
+'Type'=>'Text',
+'ID'=>'GoogleAnalyticsID',
+'Label'=>'<strong>Google Analytics ID</strong>',
+'Description'=>'Enter your <a href="http://analytics.google.com">Google Analytics</a> account ID.'
+),
+array
+(
+Type=>'End'
+),
+array
+(
+                'Type'=>'Title',
+                'Value'=>'Copyright logo'
+        ),
+        array
+        (
+                'Type'=>'CheckBox',
+                'ID'=>'copyenable',
+                'Label'=>'<strong>Enable CC Copyright Logo</strong>',
+                'Description' => '',
+                'Default'=> 'false'
+        ),
+        array
+        (
+                Type=>'End'
+        ),
+array
+(
+Type=>'Close'
+)
+);
+ 
+$Panel = new ControlPanel('Milly');
+$Panel->SetOptions($Options);
+$Panel->Initialize();
+
 ?>
