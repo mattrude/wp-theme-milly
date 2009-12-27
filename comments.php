@@ -76,8 +76,8 @@ if($comments) {
 <?php else : ?>
 
 <div class="comment-left">
-	<input id="author" type="text" onblur="if ( value == '' ) { this.value='Your name' }" onfocus="if ( value == 'Your name' ) { this.value='' }" tabindex="1" size="22" value="Your name" name="author"/>
-	<input id="email" type="text" onblur="if ( value == '' ) { this.value='Your email' }" onfocus="if ( value == 'Your email' ) { this.value='' }" tabindex="2" size="22" value="Your email" name="email"/>
+	<input id="author" type="text" onblur="if ( value == '' ) { this.value='Your name (Required)' }" onfocus="if ( value == 'Your name (Required)' ) { this.value='' }" tabindex="1" size="22" value="Your name (Required)" name="author"/>
+	<input id="email" type="text" onblur="if ( value == '' ) { this.value='Your email (Required)' }" onfocus="if ( value == 'Your email (Required)' ) { this.value='' }" tabindex="2" size="22" value="Your email (Required)" name="email"/>
 	<input id="url" type="text" tabindex="3" size="22" value="http://" name="url"/>
 	<div class="comment-submit">
 		<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />

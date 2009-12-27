@@ -14,10 +14,7 @@
       include('functions/post-full.php');
     } endwhile; ?>
   <!--The Loop has ended-->	
-  <div class="navigation">
-    <div class="txtalignleft"><?php previous_posts_link('&laquo; Newer Entries') ?></div>
-    <div class="txtalignright"><?php next_posts_link('Older Entries &raquo;') ?></div>
-  </div>
+  <?php include('navigation-category.php'); ?>
 </div><!--close content id-->
 
 <?php get_sidebar(); ?>
