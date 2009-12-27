@@ -11,9 +11,10 @@ Version 1.3
 Features
 
   Version 1.3
-    * Add custom post type of twitter
+    * Added Random Image Widget
+    * Added Rebuild Image functions
 
-  Version 0.1
+  Version 1.1
     * Google Analytics Support (analytics.google.com)
     * Lightbox 2 support (www.huddletogether.com/projects/lightbox2)
     * Category Exclusion (Main, RSS, Archive)
@@ -25,6 +26,7 @@ Features
 
 Wanted Features/Bugs
 
+    * Custom post type, twitter
     * W3 compliance
     * Auto set rel=lightbox for images when lightbox support is enabled
 
