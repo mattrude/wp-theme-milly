@@ -52,7 +52,7 @@ class random_image_widget extends WP_Widget {
           <h3 class="widget-title" >Random Image</h3>
           <div class"one-image">
             <a href="<?php echo get_permalink( $imgid ) ?>" ><?php 
-            echo "<div class='aligncenter'><img src='".$fileurl."' alt='".$imgtitle."' class='center highlightimg' /></div></ a>";
+            echo "<div class='random-widget'><img src='".$fileurl."' alt='".$imgtitle."' class='center' /></div></ a>";
             echo "$alttxt";
             break;
       }

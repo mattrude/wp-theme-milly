@@ -281,7 +281,11 @@ img.wp-smiley {
 	background: #EFF1E1;
 	border: 1px solid #e2e2e2;
 	}
-
+.random-widget img {
+	background: #EFF1E1;
+	border: 1px solid #e2e2e2;
+	margin: 20px auto 10px;
+	}
 /* WP Captions [caption] */
 .wp-caption {
 	overflow: hidden;
@@ -689,10 +693,6 @@ p.pages a {
 	padding: 0 0 3px 15px;
 	background: url(images/bullet-alt.png) no-repeat 0 6px;
 	border-bottom: none;
-	}
-
-.widget img {
-	padding: 0 !important;
 	}
 
 #primary #text-330321621 {
