@@ -11,11 +11,6 @@ Tags: Widgets, Avatars
 /* Get base CSS */
 @import url('base.css');
 
-/* Get plugins CSS */
-/*
-@import url('plugins.css');
-*/
-
 body {
 	font: 14px/21px Verdana, Arial, sans-serif;
 	color: #666;
