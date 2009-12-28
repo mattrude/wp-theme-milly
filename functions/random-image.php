@@ -44,12 +44,12 @@ class random_image_widget extends WP_Widget {
           // construct the image
           echo "<div class='widget bookmarks widget-bookmarks'>";
             echo "<h3 class='widget-title' >$riw_widget_title</h3>";
-            echo "<div class='random-widget'>";
+            echo "<div class='random-image'>";
               echo "<a href=".get_permalink( $imgid )." >";
               echo "<img src='".wp_get_attachment_thumb_url($imgid)."' alt='".$attachment->post_title."' />";
               echo "</a>";
-              echo "<p id='riw-caption'><strong>$attachment->post_excerpt</strong></p>";
-              echo "<p id='riw-album'><small>".__('Album:','mdr_random_image_widget')." <a href=".get_permalink( $albumid ).">".get_the_title($albumid)."</a></small></p>";
+              echo "<p class='random-image-caption'><strong>$attachment->post_excerpt</strong></p>";
+              echo "<p class='random-image-album'><small>".__('Album:','mdr_random_image_widget')." <a href=".get_permalink( $albumid ).">".get_the_title($albumid)."</a></small></p>";
             echo "</div>";
           echo "</div>";
           break;
@@ -69,10 +69,8 @@ class random_image_widget extends WP_Widget {
     $riw_widget_title = strip_tags($instance['widget_title']);
     $riw_cat_slug = strip_tags($instance['gallery_category']);
     ?><p><label for="<?php echo $this->get_field_id('widget_title'); ?>"><?php _e('Widget title', 'mdr_random_image_widget')?>:<input class="widefat" id="<?php echo $this->get_field_id('widget_title'); ?>" name="<?php echo $this->get_field_name('widget_title'); ?>" type="text" value="<?php echo attribute_escape($riw_widget_title); ?>" /></label></p><?php
-
     ?><p><label for="<?php echo $this->get_field_id('gallery_category'); ?>"><?php _e('Gallery Category slug (only one)', 'mdr_random_image_widget')?>:<input class="widefat" id="<?php echo $this->get_field_id('gallery_category'); ?>" name="<?php echo $this->get_field_name('gallery_category'); ?>" type="text" value="<?php echo attribute_escape($riw_cat_slug); ?>" /></label></p><?php
   }
-  
 }
 
 add_action('widgets_init', 'random_image_widget_init');
