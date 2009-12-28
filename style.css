@@ -277,9 +277,10 @@ img.wp-smiley {
 	border: 1px solid #e2e2e2;
 	}
 .random-widget img {
+	display: block;
 	background: #EFF1E1;
 	border: 1px solid #e2e2e2;
-	margin: 10px auto 10px;
+	margin: 10px auto 10px auto;
 	}
 .random-widget p {
         margin: 0;

@@ -46,7 +46,7 @@ class random_image_widget extends WP_Widget {
             echo "<h3 class='widget-title' >$riw_widget_title</h3>";
             echo "<div class='random-widget'>";
               echo "<a href=".get_permalink( $imgid )." >";
-              echo "<img src='".wp_get_attachment_thumb_url($imgid)."' alt='".$attachment->post_title."' class='center' />";
+              echo "<img src='".wp_get_attachment_thumb_url($imgid)."' alt='".$attachment->post_title."' />";
               echo "</a>";
               echo "<p id='riw-caption'><strong>$attachment->post_excerpt</strong></p>";
               echo "<p id='riw-album'><small>".__('Album:','mdr_random_image_widget')." <a href=".get_permalink( $albumid ).">".get_the_title($albumid)."</a></small></p>";
