@@ -11,6 +11,17 @@ Tags: Widgets, Avatars
 /* Get base CSS */
 @import url('base.css');
 
+/* Fonts */
+@font-face {
+  font-family: Graublau Sans Web;
+  src: url(fonts/GraublauWeb.otf) format("opentype");
+}
+
+@font-face {
+  font-family: Graublau Sans Web Bold;
+  src: url(fonts/GraublauWebBold.otf) format("opentype");
+}
+
 body {
 	font: 14px/21px Verdana, Arial, sans-serif;
 	color: #666;
@@ -32,18 +43,17 @@ a:hover, a:active {
 
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
-	font-family: arial, verdana, sans-serif;
+	font-family: Graublau Sans Web, arial, verdana, sans-serif;
 	}
 .post h1 {
 	-x-system-font:none;
 	border-bottom:1px solid #E2E2E2;
-	font-family:arial,verdana,sans-serif;
+	font-weight:bold;
 	font-size:20px;
 	font-size-adjust:none;
 	font-stretch:normal;
 	font-style:normal;
 	font-variant:normal;
-	font-weight:bold;
 	line-height:21px;
 	margin: 0;
 	padding:0 0 2px;
@@ -51,7 +61,6 @@ h1, h2, h3, h4, h5, h6 {
 .page h1 {
 	-x-system-font:none;
 	border-bottom:1px solid #E2E2E2;
-	font-family:arial,verdana,sans-serif;
 	font-size:20px;
 	font-size-adjust:none;
 	font-stretch:normal;
@@ -365,6 +374,7 @@ img.wp-smiley {
 #site-title {
 	margin: 6px 0 0 10px;
 	font-size: 26px;
+	font-family: Graublau Sans Web, arial, verdana, sans-serif;
 	}
 #site-title a:link, a:visited {
 	color: #eff1e1;
@@ -416,6 +426,7 @@ img.wp-smiley {
 	height: 33px;
 	margin: 0 auto;
 	background: url(images/nav-border.png) repeat-y left  0;
+	font-family: Graublau Sans Web, Verdana, Arial, sans-serif;
 	}
 #menu ul {
 	overflow: hidden;
@@ -481,14 +492,14 @@ img.wp-smiley {
 /* Post title (and other titles) */
 .entry-title, .series-title, .related-title {
 	margin: 0 0 5px 0;
-	font: normal normal bold 18px/21px arial, verdana, sans-serif;
+	font: normal normal bold 18px/21px;
 	}
 .home .post-title, .page-title, .single-title, .attachment-title, .page-title, .series-title, .related-title, 
 .category-title, .tag-title, .author-title, .date-title, .search-title  {
 	margin: 0 0 10px 0;
 	padding: 0 6px 9px 3px;
 	border-bottom: 1px solid #e2e2e2;
-	font: normal normal bold 18px/21px arial, verdana, sans-serif;
+	font: normal normal bold 18px/21px;
 	}
 .page-template-excerpts .post-title, .home .post-title, .page-title {
 	margin: 0 0 5px 0;
@@ -671,7 +682,7 @@ p.pages a {
 .widget-title, .page-template-widgets #content .widget-title {
 	margin: 0 0 6px 0;
 	padding: 0 5px 5px 0;
-	font: normal normal bold 18px/21px arial, verdana, sans-serif;
+	font: normal normal bold 18px/21px;
 	border-bottom: 1px solid #e2e2e2;
 	}
 .widget ul {

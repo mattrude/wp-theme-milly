@@ -28,7 +28,7 @@
 			<div id="header-title">
 				<div id="site-title">
 					<a class="standard" href="<?php bloginfo('url'); ?>">
-						<?php bloginfo('description'); ?>
+						<b><?php bloginfo('description'); ?></b>
 					</a>
 				</div>
 			</div>
