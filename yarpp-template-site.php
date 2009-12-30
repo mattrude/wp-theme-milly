@@ -4,7 +4,6 @@ Author: mitcho (Michael Yoshitaka Erlewine)
 */ 
 ?>
 <?php if ($related_query->have_posts()):?>
-<br />
 <h3>Related Posts</h3>
 <ol>
 	<?php while ($related_query->have_posts()) : $related_query->the_post(); ?>

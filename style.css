@@ -872,7 +872,7 @@ a.comment-link:hover {
 	}
 .related-entries h3 {
 	padding: 15px 0 0 0;
-	border-top: 1px solid #E2E2E2;
+	border-bottom: 1px solid #e2e2e2
 	}
 .related-entries p {
 	margin: 0;
@@ -881,10 +881,9 @@ a.comment-link:hover {
 	-moz-background-clip:border;
 	-moz-background-inline-policy:continuous;
 	-moz-background-origin:padding;
-	background:transparent url(images/bullet.png) no-repeat scroll 0 6px;
-	border-bottom:1px solid #E2E2E2;
-	margin:0 0 6px;
-	padding:0 0 6px 15px;
+	background:transparent url(images/bullet.png) no-repeat scroll 5px 6px;
+	padding:0 0 6px 20px;
+	list-style-type: none;
 	}
 .txtalignleft {
 	float: left;
