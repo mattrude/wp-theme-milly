@@ -1036,7 +1036,7 @@ a.comment-link:hover {
 	}
 #footer-logo {
 	text-align: center;
-	margin: 5px 10px 5px 5px;
+	margin: 5px 10px 5px 15px;
 	left:19px;
 	float: left;
 	width: 110px;
@@ -1046,6 +1046,9 @@ a.comment-link:hover {
 	display: block;
 	padding: 40px 80px 10px 10px;
 	float: right;
+	}
+#footer-text a {
+	color: #efe1e1;
 	}
 #footer p {
 	margin: 0;
@@ -1061,7 +1064,7 @@ a.comment-link:hover {
 	}
 #exif-lable {
 	margin: 0;
-	width: 120px;
+	width: 125px;
 	}
 #exif-lable p {
 	margin: 0;
@@ -1073,7 +1076,7 @@ a.comment-link:hover {
 	overflow: hidden;
 	margin: 0;
 	float: right;
-	width: 560px;
+	width: 540px;
 	}
 #exif-data p {
 	margin: 0;
