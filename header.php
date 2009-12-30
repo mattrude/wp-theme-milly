@@ -33,7 +33,7 @@
 				</div>
 			</div>
 			<div id="header">
-				<img src='<?php bloginfo('template_url') ?>/images/StAnthonyFalls.jpg' alt='Saint Anthony Falls, Mpls, MN'/></div>
+				<img src='<?php bloginfo('template_url') ?>/images/header-cabin.jpg' alt='Saint Anthony Falls, Mpls, MN'/></div>
 		</div><!--close header id-->
 		<div id="navigation">
 			<div id="menu" class="menu">

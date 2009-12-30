@@ -34,7 +34,7 @@ body {
 
 /* Links */
 a:link, a:visited {
-	color: #4b6e85;
+	color: #eff1e1;
 	text-decoration: none;
 	}
 a:hover, a:active {
@@ -359,9 +359,9 @@ img.wp-smiley {
 	-moz-background-clip:border;
 	-moz-background-inline-policy:continuous;
 	-moz-background-origin:padding;
-	background:#0A2A35 none repeat scroll 0 0;
-	border-bottom:1px solid #081E26;
-	border-top:1px solid #081E26;
+	background:#4c6347 none repeat scroll 0 0;
+	border-bottom:1px solid #424f3c;
+	border-top:1px solid #424f3c;
 	height:35px;
 	margin:0 auto;
 	overflow:hidden;
@@ -377,11 +377,9 @@ img.wp-smiley {
 	font-family: Graublau Sans Web, arial, verdana, sans-serif;
 	}
 #site-title a:link, a:visited {
-	color: #eff1e1;
 	text-decoration: none;
 	}	
 #site-title a:visited, a:link {
-        color: #eff1e1;
         text-decoration: none;
         }
 
@@ -416,9 +414,9 @@ img.wp-smiley {
 	width: 984px;
 	margin: 0px auto;
 	padding: none;
-	background:#0A2A35 none repeat scroll 0 0;
-	border-top: 1px solid #081e26;
-	border-bottom: 1px solid #081e26;
+	background:#4c6347 none repeat scroll 0 0;
+	border-top: 1px solid #424f3c;
+	border-bottom: 1px solid #424f3c;
 	}
 #menu {
 	overflow: hidden;
@@ -438,7 +436,9 @@ img.wp-smiley {
 #menu a {
 	float: left;
 	padding: 5px 28px;
-	background: url(images/nav-border.png) repeat-y right 0;
+        border-right: 1px solid #3d4f43;
+	height: 33px;
+	line-height: none;
 	}
 #menu li.current_page_item a {
 	color: #fff;
@@ -454,7 +454,7 @@ img.wp-smiley {
 	margin: 20px auto;
 	}
 #container a {
-	color: #01527a;
+	color: #985c35;
 	}
 #content {
 	overflow: hidden;
@@ -522,9 +522,6 @@ img.wp-smiley {
 	}
 .archive .byline, .search .byline, .page-template-excerpts .byline, .home .byline {
 	margin: 0;
-	}
-.byline a {
-	color: #486472 !important;
 	}
 
 /* Post meta data */
@@ -692,7 +689,7 @@ p.pages a {
 	margin: 0 0 6px 0;
 	padding: 0 0 6px 15px;
 	background: url(images/bullet.png) no-repeat 0 6px;
-	border-bottom: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
 	}
 .widget ul ul {
 	margin: 6px 0 0 0;
@@ -1016,7 +1013,7 @@ a.comment-link:hover {
 	width: 100%;
 	padding: 20px 0 0 0;
 	color: #aaa;
-	background: #0a2a35;
+	background: #4c6347;
 	border-top: 2px solid #000;
 	}
 #footer {
