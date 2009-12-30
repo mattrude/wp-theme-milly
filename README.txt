@@ -12,6 +12,10 @@ Features
 
   Version 1.4
     * Green! with a new header image of the cabin
+      * Background color = 596852
+      * Border color = 3d4f43
+      * Font main color = 985c35
+      * Font header/footer = same as background
     * Added native random gallery widget
     * Added native EXIF function
 
