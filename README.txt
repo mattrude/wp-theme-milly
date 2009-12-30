@@ -10,6 +10,11 @@ Version 1.3
 
 Features
 
+  Version 1.4
+    * Green! with a new header image of the cabin
+    * Added native random gallery widget
+    * Added native EXIF function
+
   Version 1.3
     * Added Random Image Widget
     * Added Rebuild Image functions

@@ -47,7 +47,8 @@
 				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
 	
 </div><!--close entry class-->
-<br />
+	<?php include('functions/exif.php'); ?>
+	<br />
 </div><!--close post class & post# id-->
 <div id="image-comments" >
   <?php comments_template(); ?>
