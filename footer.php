@@ -2,7 +2,7 @@
 <div id="footer-container">
 	<div id="footer">
 		<div id="footer-logo">
-			<a href="http://wordpress.org/" rel="nofollow"><img src="<?php bloginfo('template_url') ?>/images/wordpress-logo.png" alt="WordPress Logo" /></a>
+			<a href="http://wordpress.org/" rel="nofollow"><img src="<?php bloginfo('template_url') ?>/images/wordpress-logo.png" height='100' width='100' alt="WordPress Logo" /></a>
 		</div>
 		<?php global $Panel;
 		$copyright = $Panel->Settings('copyenable');

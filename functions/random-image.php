@@ -40,13 +40,16 @@ class random_image_widget extends WP_Widget {
         $albumid = $attachment->post_parent;
         if ( in_category( $riw_cat_id, $albumid )) { 
           $imgid = $attachment->ID;
+          $meta = wp_get_attachment_metadata($imgid);
+          $imgw = $meta['sizes']['thumbnail']['width'];
+          $imgh = $meta['sizes']['thumbnail']['height'];
 
           // construct the image
           echo "<div class='widget bookmarks widget-bookmarks'>";
             echo "<h3 class='widget-title' >$riw_widget_title</h3>";
             echo "<div class='random-image'>";
               echo "<a href=".get_permalink( $imgid )." >";
-              echo "<img src='".wp_get_attachment_thumb_url($imgid)."' alt='".$attachment->post_title."' />";
+              echo "<img src='".wp_get_attachment_thumb_url($imgid)."' height='".$imgh."' width='".$imgw."' alt='Random image: ".$attachment->post_title."' />";
               echo "</a>";
               echo "<p class='random-image-caption'><strong>$attachment->post_excerpt</strong></p>";
               echo "<p class='random-image-album'><small>".__('Album:','mdr_random_image_widget')." <a href=".get_permalink( $albumid ).">".get_the_title($albumid)."</a></small></p>";
