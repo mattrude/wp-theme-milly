@@ -1017,8 +1017,8 @@ a.comment-link:hover {
 	border-top: 2px solid #3d4f43;
 	}
 #footer {
-	width: 984px;
 	margin: auto;
+        width: 984px
 	}
 #footer-text {
 	display: block;
@@ -1078,4 +1078,6 @@ a.comment-link:hover {
 #exif-data p {
 	margin: 0;
 	}
+/* Remove the WordPres stats Smiley */
+img#wpstats{width:0px;height:0px;padding:0px;border:none;overflow:hidden}
 
