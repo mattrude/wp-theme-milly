@@ -67,7 +67,7 @@ function mdr_ga_controlpanel() {
         <input type="hidden" name="page_options" value="GoogleAnalyticsEnabled,GoogleAnalyticsID" />
         <input type="hidden" name="action" value="update" />
         <p class="submit">
-          <input type="submit" class="button" value="<?php _e('Save Above Changes') ?>" />
+          <input type="submit" class="button" value="<?php _e('Save Above Changes','mdr-theme-milly') ?>" />
         </p>
       </form>
     </div>
