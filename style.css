@@ -133,6 +133,9 @@ code {
 	background: transparent;
 	border: 1px solid #e2e2e2;
 	}
+del {
+	text-decoration: line-through;
+	}
 
 /* Tables */
 table {
@@ -489,7 +492,7 @@ img.wp-smiley {
 	}
 
 /* Posts (and other general sections) */
-.attachment, .post, .page, .series, .related, .category-info, .tag-info, .author-info, .date-info, .search-info, .single .author-profile {
+.attachment, .post, .page, .series, .related, .category-info, .tag-info, .author-info, .date-info, .search-info, .single .author-profile .comment {
 	overflow: hidden;
 	margin: 0 0 20px 0;
 	padding: 19px 19px 19px 19px;
@@ -747,12 +750,9 @@ p.pages a {
 #comments li, p.comments-closed {
 	overflow: hidden;
 	margin: 20px 0;
-	padding: 19px 5px 0 19px;
+	padding: 19px;
 	background: #fff;
 	border: 1px solid #e7e7e7;
-	}
-#comments li.thread-even, #comments li.thread-odd {
-	padding-bottom: 9px;
 	}
 p.comments-closed {
 	padding: 19px;
@@ -777,17 +777,15 @@ p.comments-closed {
 /* Comment avatars */
 #comments .avatar {
 	float: left;
-	width: 32px;
-	height: 32px;
-	margin: 0 15px 5px 0;
+	margin: 0 10px 0 0;
 	padding: 4px;
 	background: #EFF1E1;
 	border: 1px solid #e2e2e2;
 	}
 
 /* Comment meta data */
-#comments .comment-meta-data {
-	margin: 10px 0;
+#comments .comment-meta {
+	margin-bottom: 25px;
 	}
 #comments .comment-meta-data cite {
 	font-size: 15px;
