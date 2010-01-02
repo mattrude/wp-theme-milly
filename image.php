@@ -6,9 +6,9 @@
 	
 	<div class="single"><!--Slightly different styling for single posts and single pages-->
 		<?php if ( !empty($post->post_excerpt) ) {
-		echo "<div class='post'><h3>";
-		the_excerpt();
-		echo "</h3></div>" ;// this is the "caption"
+		echo "<div class='post'><div class='comment-title'><h2>";
+		  the_excerpt();
+		echo "</h2></div></div>" ;// this is the "caption"
 		} ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<small class="attr"><?php the_time('F jS, Y') ?></small>
