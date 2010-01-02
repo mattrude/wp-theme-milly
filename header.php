@@ -23,30 +23,28 @@
 </head>
 
 <body>
-<div id="body-container">
-		<div id="header-container">
-			<div id="header-title">
-				<div id="site-title">
-					<a class="standard" href="<?php bloginfo('url'); ?>">
-						<b><?php bloginfo('description'); ?></b>
-					</a>
-				</div>
-			</div>
-			<div id="header">
-				<img src='<?php bloginfo('template_url') ?>/images/header-cabin.jpg' height='200' width='984' alt='Saint Anthony Falls, Mpls, MN'/></div>
-		</div><!--close header id-->
-		<div id="navigation">
-			<div id="menu" class="menu">
-				<ul class="menu sf-menu">
-				    <li>
-					<a rel="me" href="<?php bloginfo('url'); ?>">Home</a> 
-					<a rel="me" href="<?php bloginfo('url'); ?>/contact-me/">Contact Me</a> 
-					<a rel="me" href="<?php bloginfo('url'); ?>/category/gallery/">Photo Gallery</a> 
-					<a rel="me" href="<?php bloginfo('url'); ?>/projects/">Projects</a> 
-					<a rel="me" href="<?php bloginfo('url'); ?>/category/tech/">Technology</a> 
-					<a rel="me" href="<?php bloginfo('url'); ?>/category/tweets/">Twitter</a> 
-				    </li>
-				</ul>
-			</div>
-		</div>
-		<div id="container">
+  <div id="header-container">
+    <div id="header-title">
+      <div id="site-title">
+        <a class="standard" href="<?php bloginfo('url'); ?>"><b><?php bloginfo('description'); ?></b></a>
+      </div>
+    </div>
+    <div id="header">
+      <img src='<?php bloginfo('template_url') ?>/images/header-cabin.jpg' height='200' width='984' alt='Picture of my familes cabin'/>
+    </div>
+    <div id="navigation">
+      <div id="menu" class="menu">
+        <ul class="menu sf-menu">
+          <li>
+            <a rel="me" href="<?php bloginfo('url'); ?>">Home</a> 
+            <a rel="me" href="<?php bloginfo('url'); ?>/contact-me/">Contact Me</a> 
+            <a rel="me" href="<?php bloginfo('url'); ?>/category/gallery/">Photo Gallery</a> 
+            <a rel="me" href="<?php bloginfo('url'); ?>/projects/">Projects</a> 
+            <a rel="me" href="<?php bloginfo('url'); ?>/category/tech/">Technology</a> 
+            <a rel="me" href="<?php bloginfo('url'); ?>/twitter/">Twitter</a> 
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="container">
