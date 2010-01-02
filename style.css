@@ -946,7 +946,7 @@ a.comment-link:hover {
 	}
 .tweet_post {
         font-size: 18px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         font-weight: bold;
         height: 65px;
         top:50%;
@@ -956,9 +956,9 @@ a.comment-link:hover {
 	float: left;
 	background: #fff;
 	}
-#tweet_date {
-        color: #AAA;
-        font-size: 9px;
+.tweet_date {
+	border-top: 1px solid #E2E2E2;
+	width: 350px;
 	}
 
 #tweet_head {
