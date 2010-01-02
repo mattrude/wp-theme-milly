@@ -16,6 +16,7 @@ class random_image_widget extends WP_Widget {
   function widget($args, $instance) {
     extract($args);
     $riw_widget_title = empty($instance['widget_title']) ? '&nbsp;' : apply_filters('widget_title', $instance['widget_title']);
+    $riw_cat_single = empty($instance['single_category']) ? 'empty' : apply_filters('single_category', $instance['single_category']);
     $riw_cat_slug = empty($instance['gallery_category']) ? 'empty' : apply_filters('gallery_category', $instance['gallery_category']);
     global $wpdb;
 
@@ -31,14 +32,24 @@ class random_image_widget extends WP_Widget {
        'post_parent' => $post->ID,
        'orderby' => 'rand'
     );
-    $riw_cat_id = get_category_by_slug($riw_cat_slug);
     $attachments = get_posts($args);
+
+    if (get_category_by_slug($riw_cat_slug) == null) {
+      $riw_cat_single = "off";
+    } else {
+      $riw_cat_id = get_category_by_slug($riw_cat_slug)->term_id;
+    }
     $noimages = count($attachments);
-     
     if ($attachments) {
       foreach ($attachments as $attachment) {
-        $albumid = $attachment->post_parent;
-        if ( in_category( $riw_cat_id, $albumid )) { 
+        if ( "$riw_cat_single" == "on" ) {
+          $albumid = $attachment->post_parent;
+        } else {
+          $albumid = $attachment->post_parent;
+	  $riw_cat_id = $attachment->post_parent;
+	}
+
+        if (in_category($riw_cat_id, $albumid)) { 
           $imgid = $attachment->ID;
           $meta = wp_get_attachment_metadata($imgid);
 
@@ -62,15 +73,21 @@ class random_image_widget extends WP_Widget {
   function update($new_instance, $old_instance) {
     $instance = $old_instance;
     $instance['widget_title'] = strip_tags($new_instance['widget_title']);
+    $instance['single_category'] = strip_tags($new_instance['single_category']);
     $instance['gallery_category'] = strip_tags($new_instance['gallery_category']);
     return $instance;
   }
   
   function form($instance) {
     $riw_widget_title = strip_tags($instance['widget_title']);
+    $riw_cat_single = $instance['single_category'];
     $riw_cat_slug = strip_tags($instance['gallery_category']);
-    ?><p><label for="<?php echo $this->get_field_id('widget_title'); ?>"><?php _e('Widget title', 'mdr_random_image_widget')?>:<input class="widefat" id="<?php echo $this->get_field_id('widget_title'); ?>" name="<?php echo $this->get_field_name('widget_title'); ?>" type="text" value="<?php echo attribute_escape($riw_widget_title); ?>" /></label></p><?php
-    ?><p><label for="<?php echo $this->get_field_id('gallery_category'); ?>"><?php _e('Category slug (only 1) required', 'mdr_random_image_widget')?>:<input class="widefat" id="<?php echo $this->get_field_id('gallery_category'); ?>" name="<?php echo $this->get_field_name('gallery_category'); ?>" type="text" value="<?php echo attribute_escape($riw_cat_slug); ?>" /></label></p><?php
+    ?><p><label for="<?php echo $this->get_field_id('widget_title'); ?>"><?php _e('Widget title', 'mdr_random_image_widget')?>:<input class="widefat" id="<?php echo $this->get_field_id('widget_title'); ?>" name="<?php echo $this->get_field_name('widget_title'); ?>" type="text" value="<?php echo attribute_escape($riw_widget_title); ?>" /></label></p>
+
+    <p><input class="checkbox" type="checkbox" <?php if ("$riw_cat_single" == "on" ){echo 'checked="checked"';} ?> id="<?php echo $this->get_field_id('single_category'); ?>" name="<?php echo $this->get_field_name('single_category'); ?>" />
+    <label for="<?php echo $this->get_field_id('single_category'); ?>"><?php _e('Display from a single Category?', 'mdr_random_image_widget')?></label></p>
+
+    <p><label for="<?php echo $this->get_field_id('gallery_category'); ?>"><?php _e('Category slug (only 1) required', 'mdr_random_image_widget')?>:<input class="widefat" id="<?php echo $this->get_field_id('gallery_category'); ?>" name="<?php echo $this->get_field_name('gallery_category'); ?>" type="text" value="<?php echo attribute_escape($riw_cat_slug); ?>" /></label></p><?php
   }
 }
 
