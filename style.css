@@ -89,10 +89,10 @@ h1, h2, h3, h4, h5, h6 {
 #content ul {
 	list-style: none;
 	margin-left: 12px;
+	margin: 15px 0 15px 12px;
 	}
 #content ul li {
 	overflow: hidden;
-	
 	padding: 2px 0 2px 15px;
 	background: url(images/bullet.png) no-repeat 0 8px;
 	}
@@ -530,8 +530,8 @@ img.wp-smiley {
 .entry-content, .entry-summary {
 	overflow: hidden;
 	}
-.entry {
-	margin: 10px 0 0 0;
+.entry-content p {
+	margin: 15px 0;
 	}
 
 /* Byline */
@@ -558,7 +558,6 @@ img.wp-smiley {
 .post-meta-data .categories, .post-meta-data .tags .separator {
 	display: none;
 	}
-
 /* Using <!--nextpage--> */
 p.pages a {
 	margin: 0 0 0 3px;
@@ -567,7 +566,6 @@ p.pages a {
 	background: #e7e7e7;
 	border: 1px solid #ddd;
 	}
-
 /* Attachments (post meta data) */
 .attachment-image .post-meta-data {
 	clear: left;
@@ -954,9 +952,11 @@ a.comment-link:hover {
 	float: left;
 	background: #fff;
 	}
+.tweet_post p {
+	padding: 10px 0 0 0;
+	}
 .tweet_date {
 	border-top: 1px solid #E2E2E2;
-	width: 350px;
 	}
 
 #tweet_head {
