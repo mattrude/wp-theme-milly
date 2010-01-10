@@ -78,7 +78,7 @@ function mdr_timesince($atts, $content = null) {
   }
   $mdr_unix_date = strtotime($date);
   $mdr_time_difference = time() - $mdr_unix_date ;
-  $years = round($mdr_time_difference / 31556926 );
+  $years = floor($mdr_time_difference / 31556926 );
   $num_years_since = $years;
   return $num_years_since;
 }
