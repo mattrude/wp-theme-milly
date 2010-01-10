@@ -37,6 +37,7 @@
         <ul class="menu sf-menu">
           <li>
             <a rel="me" href="<?php bloginfo('url'); ?>">Home</a> 
+            <a rel="me" href="<?php bloginfo('url'); ?>/about/">About</a> 
             <a rel="me" href="<?php bloginfo('url'); ?>/contact-me/">Contact Me</a> 
             <a rel="me" href="<?php bloginfo('url'); ?>/category/gallery/">Photo Gallery</a> 
             <a rel="me" href="<?php bloginfo('url'); ?>/projects/">Projects</a> 
