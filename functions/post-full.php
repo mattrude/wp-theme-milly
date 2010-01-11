@@ -3,7 +3,11 @@
 } else { ?>
 
 	<h1 class="single-title entry-title">
+		<?php if (is_single()) {
+			the_title();
+		} else { ?>
 		<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+		<?php } ?>
 	</h1>
 	<p class="byline">
 		<span class="byline-prep byline-prep-author text">Posted by </span>
