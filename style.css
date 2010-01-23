@@ -305,8 +305,13 @@ img.wp-smiley {
 	background: #EFF1E1;
 	border: 1px solid #e2e2e2;
 	}
+#random-images {
+	overflow: hidden;
+	text-align: center;
+	}
 .random-image img {
 	display: block;
+	vertical-align:middle;
 	background: #EFF1E1;
 	border: 1px solid #e2e2e2;
 	margin: 10px auto 10px auto;

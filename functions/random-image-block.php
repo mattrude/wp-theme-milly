@@ -70,7 +70,7 @@ class random_image_widget extends WP_Widget {
           echo "<div class='widget bookmarks widget-bookmarks'>";
             echo "<h3 class='widget-title' >$riw_widget_title</h3>";
             echo "<div class='random-image'>";
-              echo "<a href=".get_permalink( $imgid )." >";
+              echo "<a href=".get_permalink( $imgid )." title='$attachment->post_excerpt'>";
               echo "<img width='".$meta['sizes']['thumbnail']['width']."'  height='".$meta['sizes']['thumbnail']['height']."' src='".wp_get_attachment_thumb_url($imgid)."' alt='Random image: ".$attachment->post_title."' />";
               echo "</a>";
               echo "<p class='random-image-caption'><strong>$attachment->post_excerpt</strong></p>";

@@ -5,6 +5,7 @@ require_once('functions/google-analytics.php');
 require_once('functions/random-image-block.php');
 require_once('functions/regenerate-thumbnails.php');
 require_once('functions/robots.php');
+require_once('functions/random-image-function.php');
 
 // Add Post Thumbnails for WordPress 2.9
 if (function_exists(add_theme_support)) {
