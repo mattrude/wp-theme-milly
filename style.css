@@ -28,12 +28,11 @@ h2,h3,h4,h5,h6{font-style:normal;font-weight:normal;margin:15px 0 5px 0;}
 h1{font-size:1.8em;}
 h2{font-size:1.7em;}
 h3{font-size:1.55em;}
-h4{font-size:1.4em;}
-h5{font-size:1.25em;}
-h6{font-size:1.1em;}
+h4{font-size:1.2em;}
+h5{font-size:1.1em;}
+h6{font-size:1em;}
 a{cursor: pointer;}
 a img{border:medium none;}
-code{font:.9em Monaco,monospace,Courier,"Courier New";}
 pre code{font-size:1em;}
 
 body {
@@ -85,6 +84,9 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding:0 0 2px;
 	}
+.comment-body p {
+	margin: 10px 0;
+	}
 /* Lists */
 #content ul {
 	list-style: none;
@@ -115,23 +117,14 @@ blockquote {
 	font-style: normal;
 	}
 
-pre {
+pre, code {
 	font-size: 12px;
 	overflow: auto;
-	padding: 9px;
+	padding: 5px;
 	color: black;
 	background: #F9F9F9;
 	border: 1px solid #e2e2e2;
 	line-height:16px;
-	margin: 5px 0;
-	}
-code {
-	font-size: 12px;
-	overflow: auto;
-	padding: 9px;
-	color: black;
-	background: transparent;
-	border: 1px solid #e2e2e2;
 	}
 del {
 	text-decoration: line-through;
@@ -140,7 +133,6 @@ del {
 /* Tables */
 table {
 	width: 100%;
-	background: #0C2E3B;
 	border: 1px solid #e2e2e2;
 	}
 caption {
@@ -305,8 +297,13 @@ img.wp-smiley {
 	background: #EFF1E1;
 	border: 1px solid #e2e2e2;
 	}
+#random-images {
+	overflow: hidden;
+	text-align: center;
+	}
 .random-image img {
 	display: block;
+	vertical-align:middle;
 	background: #EFF1E1;
 	border: 1px solid #e2e2e2;
 	margin: 10px auto 10px auto;
