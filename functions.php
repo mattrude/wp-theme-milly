@@ -63,14 +63,23 @@ if(function_exists('register_sidebar'))
 		'after_title' => '</h3>',
 	));
 	
-/*
-This shortcode displays the years since the date provided.
-To use this shortcode, add some text to a post or page simmiler to:
+// Change all post in category Twitter to post type twitter
+function twitter_post_type() {
+  global $wpdb;
+  $postslist = get_posts('numberposts=-1&post_type=post&category_name=tweets');
+  foreach ($postslist as $post) {
+    $postid = $post->ID;
+    $wpdb->query("UPDATE $wpdb->posts SET post_type = 'twitter' WHERE ID = $postid");
+  }
+}
+twitter_post_type();
 
-    [ts date='1983-09-02']
+/* This shortcode displays the years since the date provided.
+   To use this shortcode, add some text to a post or page simmiler to:
 
-The date format is YYYY-MM-DD
-*/
+     [ts date='1980-06-19']
+
+   The date format is YYYY-MM-DD */
 
 function mdr_timesince($atts, $content = null) {
   extract(shortcode_atts(array("date" => ''), $atts));

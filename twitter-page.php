@@ -9,7 +9,7 @@ function my_get_posts( $query ) {
 <div id="content">
   <?php query_posts('posts_per_page=20');
   if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <div <?php post_class(); ?> id="tweet_template-<?php echo $wp_query->post->ID; ?>">
+    <div class="post" id="tweet_template-<?php echo $wp_query->post->ID; ?>">
       <div id='tweet-<?php echo $wp_query->post->ID; ?>' class='tweet_post' >
         <img src="<?php bloginfo('template_url'); ?>/images/twitter-bird.png" class='tweet-image' width="60" height="60" style='margin-right: 5px;' alt='Twitter bird' />
         <?php the_content(); ?>
