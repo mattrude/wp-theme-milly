@@ -54,7 +54,8 @@
 </div>
 <br />
 <div id='random-images'>
-  <?php // random_images() . random_images() . random_images() . random_images(); ?>
+  <?php random_images() . random_images() . random_images() ?>
+  <?php random_images() ?>
 </div>
 </div>
 </div><!--close single class-->
