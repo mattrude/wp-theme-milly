@@ -32,10 +32,12 @@
       </div>	
     </div><!--close post class and post# id-->
   <?php endforeach; ?>
+<!--
  <div class="navigation">
  <div class="txtalignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
    <div class="txtalignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
  </div>
+-->
  <?php endif; ?>
 </div><!--close content id-->
 
