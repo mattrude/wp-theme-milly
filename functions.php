@@ -23,7 +23,8 @@ add_action( 'init', 'create_my_taxonomies', 0 );
 
 // Add Custom Post Types
 function milly_post_type_init() {
-        register_post_type('twitter',array('exclude_from_search' => true) );
+        register_post_type('twitter', array('label' => __('Twitter'), 'exclude_from_search' => true) );
+	register_taxonomy_for_object_type('post_tag', 'twitter');
         }
 add_action('init','milly_post_type_init');
 
@@ -63,13 +64,16 @@ if(function_exists('register_sidebar'))
 		'after_title' => '</h3>',
 	));
 	
+
 // Change all post in category Twitter to post type twitter
 function twitter_post_type() {
   global $wpdb;
-  $postslist = get_posts('numberposts=-1&post_type=post&category_name=tweets');
-  foreach ($postslist as $post) {
-    $postid = $post->ID;
-    $wpdb->query("UPDATE $wpdb->posts SET post_type = 'twitter' WHERE ID = $postid");
+  $mdr_postslist = get_posts('numberposts=-1&post_type=post&category_name=tweets');
+  foreach ($mdr_postslist as $post) {
+    $mdr_postid = $post->ID;
+    $wpdb->query("UPDATE $wpdb->posts SET post_type = 'twitter' WHERE ID = $mdr_postid");
+    $mdr_term_id = $wpdb->get_row("SELECT * FROM $wpdb->terms WHERE slug = 'tweets'");
+    $wpdb->query("UPDATE $wpdb->term_taxonomy SET count = 0 WHERE term_id = $mdr_term_id->term_id");
   }
 }
 twitter_post_type();
