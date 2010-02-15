@@ -27,7 +27,7 @@
         //$tweet_id = get_post_meta( $wp_query->post->ID, 'aktt_twitter_id', true );
         $post_id = $post->ID;
         $tweet_id = get_post_meta( $post_id, 'aktt_twitter_id', true);
-	?> Posted to <a href="http://twitter.com">Twitter</a> by <?php the_author_posts_link(); ?> on <a href="http://twitter.com/mdrude/status/<?php echo $tweet_id ?>"><?php the_time('F jS, h:ma T Y ') ?></a>
+	?> Posted to <a href="http://twitter.com">Twitter</a> by <a href="http://twitter.com/mdrude/">Matt Rude</a> on <a href="http://twitter.com/mdrude/status/<?php echo $tweet_id ?>"><?php the_time('F jS, h:ma T Y ') ?></a>
 	<?php edit_post_link('Edit', ' | '); ?>
       </div>	
     </div><!--close post class and post# id-->
