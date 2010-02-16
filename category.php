@@ -6,8 +6,6 @@
   <?php while (have_posts()) : the_post();
     if ( is_category( 'gallery' )) {
       include('functions/gallery-index.php');
-    } elseif ( is_category( 'tweets' )) {
-      include('functions/twitter-index.php');
     } else {
       include('functions/post-full.php');
     } endwhile; ?>
