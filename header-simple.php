@@ -22,6 +22,8 @@
 
 <body>
 
+<?php google_analytics(); ?>
+
 <div id="body-container">
 		<div id="header-container">
 			<div id="header-title">

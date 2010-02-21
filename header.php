@@ -23,6 +23,8 @@
 </head>
 
 <body>
+<?php google_analytics(); ?>
+
   <div id="header-container">
     <div id="header-title">
       <div id="site-title">

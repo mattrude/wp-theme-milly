@@ -27,8 +27,6 @@
 </div>
 </div>
 
-<?php google_analytics(); ?>
-
 <!--Closeing tags-->
 </body>
 </html>
