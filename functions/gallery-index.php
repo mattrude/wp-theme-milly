@@ -18,7 +18,7 @@
 		<p><?php echo get_the_term_list( $post->ID, 'events', 'What: ', ', ', '<br />' ); ?></p>
              	<p><?php echo get_the_term_list( $post->ID, 'places', 'Where: ', ', ', '' ); ?></p>
 	</div>
-	<div id"gallerypost_sub_right-<?php the_ID(); ?>" class="gallerypost_sub_right">
+	<div id="gallerypost_sub_right-<?php the_ID(); ?>" class="gallerypost_sub_right">
 		This Album contains <?php echo $wpdb->get_var( "SELECT COUNT(*) FROM $wpdb->posts WHERE post_parent = '$post->ID' AND post_type = 'attachment'" ); ?> items.
 	</div>
     </div>
