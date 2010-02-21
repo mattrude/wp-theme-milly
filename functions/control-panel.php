@@ -200,6 +200,30 @@ Type=>'End'
 ),
 array
 (
+'Type'=>'Title',
+'Value'=>'Google Webmaster Tools Options'
+),
+array
+(
+'Type'=>'CheckBox',
+'ID'=>'GoogleWebmasterToolsEnabled',
+'Label'=>'<strong>Enable Google Webmaster Tools</strong>',
+'Description' => 'This module requres a <a href="http://www.google.com/webmasters/tools">Google Webmaster Tools</a> account.',
+'Default'=> 'false'
+),
+array
+(
+'Type'=>'Text',
+'ID'=>'GoogleWebmasterToolsID',
+'Label'=>'<strong>Google Webmaster Tools ID</strong>',
+'Description'=>'Enter your <a href="http://www.google.com/webmasters/tools">Google Webmaster Tools</a> account ID.'
+),
+array
+(
+Type=>'End'
+),
+array
+(
                 'Type'=>'Title',
                 'Value'=>'Copyright logo'
         ),

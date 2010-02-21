@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-
+    <?php if (function_exists(google_webmaster_tools)) { google_webmaster_tools(); } ?>
     <!--This is a plugin hook-->
     <?php wp_head(); ?>
 
@@ -22,7 +21,7 @@
 
 <body>
 
-<?php google_analytics(); ?>
+<?php if (function_exists(google_analytics)) { google_analytics(); } ?>
 
 <div id="body-container">
 		<div id="header-container">

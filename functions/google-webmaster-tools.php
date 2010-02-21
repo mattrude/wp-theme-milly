@@ -8,12 +8,13 @@ function google_webmaster_tools() {
   $GWTID = $Panel->Settings('GoogleWebmasterToolsID');
   if ($GWTEnabled == 'true') {
     if ($GWTID != NULL) { 
-      ?><meta name="google-site-verification" content="<?php echo $GWTID; ?>" /><?php
+    ?><meta name="google-site-verification" content="<?php echo $GWTID; ?>" />
+<?php
     }
   }
 }
 
-function register_mysettings() {
+function register_gwt_settings() {
   register_setting( $theme_name, 'GoogleWebmasterToolsEnabled' );
   register_setting( $theme_name, 'GoogleWebmasterToolsID' );
 }
@@ -36,7 +37,7 @@ function mdr_gwt_controlpanel() {
         <label for="GoogleWebmasterToolsID">
           <strong>Google Webmaster Tools ID</strong>
           <br>
-          <input class="textbox" id="GoogleAnalyticsID" name="GoogleAnalyticsID" value="<?php echo get_option('GoogleAnalyticsID'); ?>" type="text">
+          <input class="textbox" id="GoogleWebmasterToolsID" name="GoogleWebmasterToolsID" value="<?php echo get_option('GoogleWebmasterToolsID'); ?>" type="text">
         </label>
         <p class="description">Enter your <a href="http://www.google.com/webmasters/tools">Google Webmaster Tools</a> site ID.</p>
         <input type="hidden" name="page_options" value="GoogleWebmasterToolsEnabled,GoogleWebmasterToolsID" />
