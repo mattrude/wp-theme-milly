@@ -1,6 +1,10 @@
 <?php /* Template Name: Twitter Page */ ?>
 <?php get_header();
 
+global $Panel;
+$twitterid = $Panel->Settings('TwitterID');
+$twittername = $Panel->Settings('TwitterName');
+
 ?><div id="content"><?php
  $querystr = "
     SELECT wposts.* 
@@ -27,8 +31,17 @@
         //$tweet_id = get_post_meta( $wp_query->post->ID, 'aktt_twitter_id', true );
         $post_id = $post->ID;
         $tweet_id = get_post_meta( $post_id, 'aktt_twitter_id', true);
-	?> Posted to <a href="http://twitter.com">Twitter</a> by <a href="http://twitter.com/mdrude/">Matt Rude</a> on <a href="http://twitter.com/mdrude/status/<?php echo $tweet_id ?>"><?php the_time('F jS, h:ma T Y ') ?></a>
-	<?php edit_post_link('Edit', ' | '); ?>
+	?> Posted to <a href="http://twitter.com">Twitter</a> by <a href="http://twitter.com/<?php echo $twitterid; ?>"><?php echo $twittername; ?></a><?php
+        if ($tweet_id) { 
+          echo " on ";
+          echo "<a href='http://twitter.com/$twitterid/status/$tweet_id'>";
+          the_time('F jS, h:ma T Y ');
+          echo "</a>";
+        } else {
+          echo " off ";
+          the_time('F jS, h:ma T Y ');
+        }
+	edit_post_link('Edit', ' | '); ?>
       </div>	
     </div><!--close post class and post# id-->
   <?php endforeach; ?>

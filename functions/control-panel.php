@@ -147,6 +147,12 @@ class ControlPanel
 					if(isset($Label)) $ToPrint .= $Label . '</label>';
 					if(isset($Description)) $ToPrint .= '<p class="description">' .  $Description . '</p>';
 					break; 
+				case 'CategoryList':
+					echo "<label for='" .  $ID . "'>" . $Label . "</label><br />";
+                                        wp_dropdown_categories('hide_empty=0&hierarchical=1&selected=' . $Settings[$ID] . '&name=' . $ID);
+                                        if(isset($Description)) $ToPrint .= '<p class="description">' .  $Description . '</p>';
+                                        break;
+
 			}
 			if($ToPrint) echo $ToPrint;
 		}
@@ -217,6 +223,44 @@ array
 'ID'=>'GoogleWebmasterToolsID',
 'Label'=>'<strong>Google Webmaster Tools ID</strong>',
 'Description'=>'Enter your <a href="http://www.google.com/webmasters/tools">Google Webmaster Tools</a> account ID.'
+),
+array
+(
+Type=>'End'
+),
+array
+(
+'Type'=>'Title',
+'Value'=>'Twitter Options'
+),
+array
+(
+'Type'=>'CheckBox',
+'ID'=>'TwitterEnabled',
+'Label'=>'<strong>Enable Twitter Post Type</strong>',
+'Description' => '',
+'Default'=> 'false'
+),
+array
+(
+'Type'=>'CategoryList',
+'ID'=>'TwitterCategory',
+'Label'=>'Twitter Category',
+'Description'=>'Select the Category you wish to move to the Twitter Post Type.  Once a post is moved, it can NOT be unmoved.'
+),
+array
+(
+'Type'=>'Text',
+'ID'=>'TwitterID',
+'Label'=>'Twitter ID',
+'Description'=>''
+),
+array
+(
+'Type'=>'Text',
+'ID'=>'TwitterName',
+'Label'=>'Twitter Name',
+'Description'=>''
 ),
 array
 (

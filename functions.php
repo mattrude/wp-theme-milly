@@ -7,6 +7,7 @@ require_once('functions/random-image-block.php');
 require_once('functions/regenerate-thumbnails.php');
 require_once('functions/robots.php');
 require_once('functions/random-image-function.php');
+require_once('functions/twitter-post-type.php');
 
 // Add Post Thumbnails for WordPress 2.9
 if (function_exists(add_theme_support)) {
@@ -69,19 +70,6 @@ if(function_exists('register_sidebar'))
 		'after_title' => '</h3>',
 	));
 	
-
-// Change all post in category Twitter to post type twitter
-function twitter_post_type() {
-  global $wpdb;
-  $mdr_postslist = get_posts('numberposts=-1&post_type=post&category_name=tweets');
-  foreach ($mdr_postslist as $post) {
-    $mdr_postid = $post->ID;
-    $wpdb->query("UPDATE $wpdb->posts SET post_type = 'twitter' WHERE ID = $mdr_postid");
-    $mdr_term_id = $wpdb->get_row("SELECT * FROM $wpdb->terms WHERE slug = 'tweets'");
-    $wpdb->query("UPDATE $wpdb->term_taxonomy SET count = 0 WHERE term_id = $mdr_term_id->term_id");
-  }
-}
-twitter_post_type();
 
 /* This shortcode displays the years since the date provided.
    To use this shortcode, add some text to a post or page simmiler to:
