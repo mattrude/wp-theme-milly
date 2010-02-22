@@ -238,7 +238,7 @@ array
 'Type'=>'CheckBox',
 'ID'=>'TwitterEnabled',
 'Label'=>'<strong>Enable Twitter Post Type</strong>',
-'Description' => '',
+'Description' => 'To use this funiction, it is assumed you have the <a href="http://alexking.org/projects/wordpress">Twitter Tools</a> Plugin installed. <br /> You also need to create a page and select the "Twitter Page" page template, to view your tweets.',
 'Default'=> 'false'
 ),
 array
@@ -246,21 +246,21 @@ array
 'Type'=>'CategoryList',
 'ID'=>'TwitterCategory',
 'Label'=>'Twitter Category',
-'Description'=>'Select the Category you wish to move to the Twitter Post Type.  Once a post is moved, it can NOT be unmoved.'
+'Description'=>'Select the Category you wish to move to the Twitter Post Type.  Once a post is moved, it can NOT be undone. <br /> Note: you may not use the "Uncategorized" category as this is the default category.'
 ),
 array
 (
 'Type'=>'Text',
 'ID'=>'TwitterID',
 'Label'=>'Twitter ID',
-'Description'=>''
+'Description'=>'This is your Twitter username or ID, for display purpuses only.'
 ),
 array
 (
 'Type'=>'Text',
 'ID'=>'TwitterName',
 'Label'=>'Twitter Name',
-'Description'=>''
+'Description'=>'This is the Display name for the twitter page.'
 ),
 array
 (
