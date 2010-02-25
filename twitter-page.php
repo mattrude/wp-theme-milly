@@ -56,4 +56,5 @@ $twittername = $Panel->Settings('TwitterName');
 
 <?php get_sidebar(); ?>
 
+
 <?php get_footer(); ?>
