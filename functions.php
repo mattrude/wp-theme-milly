@@ -34,11 +34,6 @@ if (function_exists(register_post_type)) {
   add_action('init','milly_post_type_init');
 }
 
-// Add RSS & ATOM feeds to site
-if (function_exists('automatic_feed_links')) {
-    automatic_feed_links();
-}
-
 // Add Custom User Contact Methods
 function add_milly_contactmethod( $contactmethods ) {
   // Add Twitter
