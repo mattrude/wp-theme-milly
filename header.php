@@ -23,8 +23,7 @@
 
 <body>
 <?php if (function_exists(google_analytics)) { google_analytics(); } ?>
-
-  <div id="header-container">
+  <div id="wrapper" >
     <div id="header-title">
       <div id="site-title">
         <a class="standard" href="<?php bloginfo('url'); ?>"><b><?php bloginfo('description'); ?></b></a>
@@ -33,10 +32,7 @@
     <div id="header">
       <img src='<?php bloginfo('template_url') ?>/images/header-cabin.jpg' height='200' width='984' alt='Picture of my familes cabin'/>
     </div>
-    <div id="navigation">
-      <div id="menu" class="menu">
-        <?php wp_nav_menu( 'sort_column=menu_order' ); ?>
-      </div>
+    <div id="access">
+      <?php wp_nav_menu( 'sort_column=menu_order' ); ?>
     </div>
-  </div>
   <div id="container">

@@ -28,5 +28,7 @@
 </div>
 
 <!--Closeing tags-->
+</div>
+</div>
 </body>
 </html>

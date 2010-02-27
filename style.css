@@ -87,6 +87,67 @@ h1, h2, h3, h4, h5, h6 {
 .comment-body p {
 	margin: 10px 0;
 	}
+#wrapper {
+        margin: 0 auto;
+}
+#8ccess {
+	margin: 0 auto;
+	padding: auto;
+	}
+.menu {
+        background: #596852;
+        border: 1px solid #424F3C;
+	height: 38px;
+        margin: 0 auto;
+}
+#access .menu {
+        font-size: 13px;
+        margin: 0 auto;
+}
+#access .menu ul {
+        list-style: none;
+}
+#access .menu li {
+        float:left;
+        position: relative;
+}
+#access a {
+        display:block;
+        text-decoration:none;
+        color:#EFF1E1;
+        padding:0 10px;
+        line-height:38px;
+}
+#access ul ul {
+        display:none;
+        position:absolute;
+        top:38px;
+        left:0;
+        float:left;
+        -webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+        box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+        z-index: 99999;
+}
+#access ul ul ul {
+        left:100%;
+        top:0;
+}
+#access ul ul a {
+        background:#333;
+        height:auto;
+        line-height:1em;
+        padding:10px;
+        width: 130px;
+}
+#access li:hover > a,
+#access ul ul :hover > a {
+        color:#fff;
+        background:#333;
+}
+#wrapper ul li:hover > ul {
+        display:block;
+}
 /* Lists */
 #content ul {
 	list-style: none;
@@ -425,19 +486,16 @@ img.wp-smiley {
 /**
 * Navigation
 ************************************************/
-#navigation {overflow: hidden;width: 984px;margin: 0px auto;padding: none;background:#596852 none repeat scroll 0 0;border-top: 1px solid #424f3c;border-bottom: 1px solid #424f3c;}
-#menu {overflow: hidden;width: 984px;margin: 0 auto;font-family: Graublau Sans Web, Verdana, Arial, sans-serif;}
-#menu ul {overflow:hidden;list-style:none;margin: 0 auto;}
-#menu li {display: inline;}
-#menu a {float: left;padding: 5px 27px;border-right: 1px solid #3d4f43;line-height: none;}
-#menu li.current_page_item a {color: #fff;}
+.menu {width: 982px;margin: 0 auto;font-family: Graublau Sans Web, Verdana, Arial, sans-serif;}
+.menu ul {list-style:none;margin: 0 auto;}
+.menu a {float: left;padding: 5px 27px;border-right: 1px solid #3d4f43;line-height: none;}
+.menu li.current_page_item a {color: #fff;}
 
 /**
 * Containers
 ************************************************/
 #container {
 	overflow: hidden;
-	
 	width: 984px;
 	margin: 20px auto;
 	}
@@ -468,13 +526,6 @@ img.wp-smiley {
 	border: 1px solid #e7e7e7;
 	}
 
-.navigation {
-	overflow: hidden;
-        margin: 0 0 20px 0;
-        padding: 10px 21px 5px 21px;
-        background: #fff;
-        border: 1px solid #e7e7e7;
-	}
 
 /* Post title (and other titles) */
 .entry-title, .series-title, .related-title {
