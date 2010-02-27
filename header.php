@@ -35,17 +35,7 @@
     </div>
     <div id="navigation">
       <div id="menu" class="menu">
-        <ul class="menu sf-menu">
-          <li>
-            <a rel="me" href="<?php bloginfo('url'); ?>">Home</a> 
-            <a rel="me" href="<?php bloginfo('url'); ?>/about/">About</a> 
-            <a rel="me" href="<?php bloginfo('url'); ?>/contact-me/">Contact Me</a> 
-            <a rel="me" href="<?php bloginfo('url'); ?>/category/gallery/">Photo Gallery</a> 
-            <a rel="me" href="<?php bloginfo('url'); ?>/projects/">Projects</a> 
-            <a rel="me" href="<?php bloginfo('url'); ?>/category/tech/">Technology</a> 
-            <a rel="me" href="<?php bloginfo('url'); ?>/twitter/">Twitter</a> 
-          </li>
-        </ul>
+        <?php wp_nav_menu( 'sort_column=menu_order' ); ?>
       </div>
     </div>
   </div>
