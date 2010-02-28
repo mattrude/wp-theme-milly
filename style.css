@@ -133,17 +133,21 @@ h1, h2, h3, h4, h5, h6 {
         top:0;
 }
 #access ul ul a {
-        background:#333;
+        background: #596852;
+        border-top: 0.5px solid #424F3C;
         height:auto;
         line-height:1em;
         padding:10px;
-        width: 130px;
+        width: 150px;
 }
-#access li:hover > a {
+#access :hover > a {
         background:#333;
 	}
+#access li:hover > a {
+        background: #666;
+	}
 #access ul ul :hover > a {
-        color: #666666;
+        background:#666;
 }
 #wrapper ul li:hover > ul {
         display:block;
