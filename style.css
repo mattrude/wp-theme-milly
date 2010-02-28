@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 #wrapper {
         margin: 0 auto;
 }
-#8ccess {
+#access {
 	margin: 0 auto;
 	padding: auto;
 	}
@@ -101,7 +101,6 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0 auto;
 }
 #access .menu {
-        font-size: 13px;
         margin: 0 auto;
 }
 #access .menu ul {
@@ -115,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
         display:block;
         text-decoration:none;
         color:#EFF1E1;
-        padding:0 10px;
+        padding:0 30px;
         line-height:38px;
 }
 #access ul ul {
@@ -140,10 +139,11 @@ h1, h2, h3, h4, h5, h6 {
         padding:10px;
         width: 130px;
 }
-#access li:hover > a,
-#access ul ul :hover > a {
-        color:#fff;
+#access li:hover > a {
         background:#333;
+	}
+#access ul ul :hover > a {
+        color: #666666;
 }
 #wrapper ul li:hover > ul {
         display:block;
@@ -441,7 +441,7 @@ img.wp-smiley {
 	border-bottom:1px solid #424f3c;
 	border-top:1px solid #424f3c;
 	height:35px;
-	margin:0 auto;
+	margin: 10px auto 0;
 	overflow:hidden;
 	width:984px;
 	}
