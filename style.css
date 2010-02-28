@@ -141,12 +141,15 @@ h1, h2, h3, h4, h5, h6 {
         width: 150px;
 }
 #access :hover > a {
+	color: #fff;
         background:#333;
 	}
 #access li:hover > a {
+	color: #fff;
         background: #666;
 	}
 #access ul ul :hover > a {
+	color: #fff;
         background:#666;
 }
 #wrapper ul li:hover > ul {
