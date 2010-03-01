@@ -15,6 +15,16 @@ if (function_exists(add_theme_support)) {
   set_post_thumbnail_size(200, 200);
 }
 
+// Add Custom Navigation Menu
+if ( ! get_term_by( 'name', 'Top Navigation Menu', 'nav_menu' ) ) {
+  echo " Creating Top Navigation Menu ";
+  wp_create_nav_menu('Top Navigation Menu');
+}
+if ( ! get_term_by( 'name', 'Side Navigation Menu', 'nav_menu' ) ) {
+  echo " Creating Side Navigation Menu ";
+  wp_create_nav_menu('Side Navigation Menu');
+}
+
 // Add Custom Taxonomies for WordPress 2.9
 if (function_exists(register_taxonomy)) {
   function create_milly_taxonomies() {
