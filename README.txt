@@ -1,5 +1,5 @@
 Wordpress Theme Milly
-Version 1.4
+Version 1.5
 
    1. Features
    2. Wanted Features/Bugs
@@ -9,6 +9,18 @@ Version 1.4
 
 
 Features
+  Version 1.5
+    * Added Twiter Custom Post Type.
+      * Added function to convert all posts in category "Tweets" to,
+          Custome Post Type "Twitter"
+      * Added Page Temeplate for displaying Custom Post Type Twitter
+      * Added Twitter settings to Milly Options page.
+    * Added Naviagtion Menu Support from WordPress 3.0
+      * Auto create "Top Navigation Menu" & "Side Navigation Menu".
+      * Added Drop down cabiblity to top Naviagtion Menu.
+    * Added "Google Webmaster Tools" functions to Theme
+    * Changed to Google Analytics asinc code
+    * Upgraded to version 0.7 of the Random Image Block widget
 
   Version 1.4
     * Green! with a new header image of the cabin
@@ -35,7 +47,6 @@ Features
 
 Wanted Features/Bugs
 
-    * Custom post type, twitter
     * W3 compliance
     * Auto set rel=lightbox for images when lightbox support is enabled
 
