@@ -17,12 +17,17 @@ if (function_exists(add_theme_support)) {
 
 // Add Custom Navigation Menu
 if ( ! get_term_by( 'name', 'Top Navigation Menu', 'nav_menu' ) ) {
-  echo " Creating Top Navigation Menu ";
+  echo "Creating Top Navigation Menu<br />";
   wp_create_nav_menu('Top Navigation Menu');
 }
 if ( ! get_term_by( 'name', 'Side Navigation Menu', 'nav_menu' ) ) {
-  echo " Creating Side Navigation Menu ";
+  echo "Creating Side Navigation Menu<br />";
   wp_create_nav_menu('Side Navigation Menu');
+}
+if ( get_term_by( 'name', 'Menu 1', 'nav_menu' ) ) {
+  echo "Deleting unwanted Menu 1 Navigation Menu";
+  $milly_menu_1_id = get_term_by('name', 'Menu 1', 'nav_menu');
+  wp_delete_nav_menu( $milly_menu_1_id );
 }
 
 // Add Custom Taxonomies for WordPress 2.9
