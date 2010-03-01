@@ -89,34 +89,39 @@ h1, h2, h3, h4, h5, h6 {
 	}
 #wrapper {
         margin: 0 auto;
-}
-#access {
-	margin: 0 auto;
-	padding: auto;
 	}
-.menu {
+/**
+* Navigation
+************************************************/
+#access .menu {width: 982px;margin: 0 auto;font-family: Graublau Sans Web, Verdana, Arial, sans-serif;}
+#access .menu ul {list-style:none;margin: 0 auto;}
+#access .menu li.current_page_item a {color: #fff;}
+#access .menu {
         background: #596852;
         border: 1px solid #424F3C;
 	height: 38px;
-        margin: 0 auto;
-}
+        margin: 5px auto;
+        line-height: 38px;
+	}
 #access .menu {
         margin: 0 auto;
-}
+	}
 #access .menu ul {
         list-style: none;
-}
+	}
 #access .menu li {
         float:left;
         position: relative;
-}
+	}
 #access a {
         display:block;
         text-decoration:none;
         color:#EFF1E1;
-        padding:0 30px;
-        line-height:38px;
-}
+	float: left;
+	padding: 0 30px;
+	border-right: 1px solid #3d4f43;
+	line-height: none;
+	}
 #access ul ul {
         display:none;
         position:absolute;
@@ -127,11 +132,11 @@ h1, h2, h3, h4, h5, h6 {
         -moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
         box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
         z-index: 99999;
-}
+	}
 #access ul ul ul {
         left:100%;
         top:0;
-}
+	}
 #access ul ul a {
         background: #596852;
         border-top: 0.5px solid #424F3C;
@@ -139,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
         line-height:1em;
         padding:10px;
         width: 150px;
-}
+	}
 #access :hover > a {
 	color: #fff;
         background:#333;
@@ -151,10 +156,10 @@ h1, h2, h3, h4, h5, h6 {
 #access ul ul :hover > a {
 	color: #fff;
         background:#666;
-}
+	}
 #wrapper ul li:hover > ul {
         display:block;
-}
+	}
 /* Lists */
 #content ul {
 	list-style: none;
@@ -490,13 +495,6 @@ img.wp-smiley {
 	display: none;	
 	}
 
-/**
-* Navigation
-************************************************/
-.menu {width: 982px;margin: 0 auto;font-family: Graublau Sans Web, Verdana, Arial, sans-serif;}
-.menu ul {list-style:none;margin: 0 auto;}
-.menu a {float: left;padding: 5px 27px;border-right: 1px solid #3d4f43;line-height: none;}
-.menu li.current_page_item a {color: #fff;}
 
 /**
 * Containers
