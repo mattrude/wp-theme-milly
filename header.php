@@ -33,6 +33,13 @@
       <img src='<?php bloginfo('template_url') ?>/images/header-cabin.jpg' height='200' width='984' alt='Picture of my familes cabin'/>
     </div>
     <div id="access">
-      <?php wp_nav_menu( 'sort_column=menu_order&slug=top-navigation-menu' ); ?>
+      <?php // If the Top Naviagtion Menu has entries in it, display it.
+      $menu_id = get_term_by('slug', 'top-navigation-menu', 'nav_menu');
+      if ( wp_get_nav_menu_items( $menu_id->term_id ) ) {
+        wp_nav_menu( 'sort_column=menu_order&slug=top-navigation-menu' );
+      } else {
+        // If Not, Display the default page menu instead.
+        wp_page_menu();
+      }?>
     </div>
   <div id="container">
