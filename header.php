@@ -33,6 +33,6 @@
       <img src='<?php bloginfo('template_url') ?>/images/header-cabin.jpg' height='200' width='984' alt='Picture of my familes cabin'/>
     </div>
     <div id="access">
-      <?php wp_nav_menu( 'sort_column=menu_order' ); ?>
+      <?php wp_nav_menu( 'sort_column=menu_order&slug=top-navigation-menu' ); ?>
     </div>
   <div id="container">
