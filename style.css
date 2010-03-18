@@ -91,28 +91,22 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0 auto;
 	}
 /**
-* Navigation
+* Navigation Menu
 ************************************************/
-#access .menu {width: 982px;margin: 0 auto;font-family: Graublau Sans Web, Verdana, Arial, sans-serif;}
+#access ul {list-style:none outside none;}
+#access .menu {
+	width: 982px;
+	margin: 0 auto;
+	font-family: Graublau Sans Web, Verdana, Arial, sans-serif;
+	background:#596852;
+	border:1px solid #424F3C;
+	height:38px;
+	margin:0 auto;
+	line-height:38px;
+	}
 #access .menu ul {list-style:none;margin: 0 auto;}
+#access .menu li {float:left;position:relative;}
 #access .menu li.current_page_item a {color: #fff;}
-#access .menu {
-        background: #596852;
-        border: 1px solid #424F3C;
-	height: 38px;
-        margin: 5px auto;
-        line-height: 38px;
-	}
-#access .menu {
-        margin: 0 auto;
-	}
-#access .menu ul {
-        list-style: none;
-	}
-#access .menu li {
-        float:left;
-        position: relative;
-	}
 #access a {
         display:block;
         text-decoration:none;
@@ -160,6 +154,7 @@ h1, h2, h3, h4, h5, h6 {
 #wrapper ul li:hover > ul {
         display:block;
 	}
+
 /* Lists */
 #content ul {
 	list-style: none;
