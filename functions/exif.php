@@ -1,4 +1,6 @@
-<?php //Using WordPress functions to retrieve the extracted EXIF information from database ?>
+<?php //Using WordPress functions to retrieve the extracted EXIF information from database
+function mdr_exif() {
+?>
 <div id="exif">
   <h3 class='comment-title exif-title'><?php _e('Images EXIF Data','mdr-theme-milly'); ?></h3>
   <div id="exif-data">
@@ -40,4 +42,4 @@
   echo "<p><span>".__('ISO:','mdr-theme-milly')."</span>";
   echo "<p><span>".__('Shutter Speed:','mdr-theme-milly')."</span>"; ?>
 </div>
-
+<?php }
