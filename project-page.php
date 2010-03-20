@@ -30,6 +30,9 @@
 		<?php endwhile; endif; ?>
 	<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 	<?php comments_template(); ?>
+	<div class="post">
+		<?php adsensem_ad('Projects'); ?><!--adsense--> 
+	</div>
 	</div>
 
 <?php get_sidebar(); ?>
