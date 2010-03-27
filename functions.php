@@ -13,7 +13,7 @@ require_once('functions/twitter-post-type.php');
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size(200, 200);
 
-// Add Custom Navigation Menu
+// Add Custom Navigation Menu for WordPress 3.0
 add_theme_support( 'nav-menus' );
 if ( ! get_term_by( 'name', 'Top Navigation Menu', 'nav_menu' ) ) {
   echo "Creating Top Navigation Menu<br />";
@@ -31,7 +31,7 @@ if ( get_term_by( 'name', 'Menu 1', 'nav_menu' ) ) {
 
 // Make theme available for translation
 // Translations can be filed in the /languages/ directory
-//load_theme_textdomain( 'milly', TEMPLATEPATH . '/languages' );
+load_theme_textdomain( 'milly', TEMPLATEPATH . '/languages' );
 
 // Add Custom Taxonomies for WordPress 2.9
 function create_milly_taxonomies() {
@@ -43,7 +43,14 @@ add_action( 'init', 'create_milly_taxonomies', 0 );
 
 // Add Custom Post Types for WordPress 2.9
 function milly_post_type_init() {
-  register_post_type('twitter', array('label' => __('Twitter'), 'exclude_from_search' => true) );
+  register_post_type('twitter', array(
+      'label' => __('Twitter'), 
+      'description' => __('Imported Twitter Posts'),
+      'exclude_from_search' => true,
+      'public' => true,
+      'show_ui' => true,
+      'supports' => array('title', 'editor', 'author')
+  ));
   register_taxonomy_for_object_type('post_tag', 'twitter');
 }
 add_action('init','milly_post_type_init');
@@ -52,6 +59,7 @@ add_action('init','milly_post_type_init');
 function add_milly_contactmethod( $contactmethods ) {
   // Add Twitter
   $contactmethods['facebook'] = 'Facebook URL';
+  $contactmethods['googletalk'] = 'Google Talk';
   $contactmethods['twitter'] = 'Twitter ID';
  
   // Remove Yahoo IM
