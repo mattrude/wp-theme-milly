@@ -9,6 +9,8 @@ Version 1.5
 
 
 Features
+  Version trunk
+    * Added Twitter Custome Post Type UI
   Version 1.5
     * Added Twiter Custom Post Type.
       * Added function to convert all posts in category "Tweets" to,
