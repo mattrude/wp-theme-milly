@@ -13,6 +13,9 @@ Features
     * Added Top Naviation Custom Menu
     * Use WordPress internal functions for EXIF data.
     * Added Twitter Custome Post Type UI
+    * Added Footer Widget Area
+      * Added new widget Footer Text
+      * Added new widget Random Footer Image
 
   Version 1.5
     * Added Twiter Custom Post Type.

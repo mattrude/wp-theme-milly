@@ -1,10 +1,10 @@
 <?php
-class random_gallery_footer extends WP_Widget {
-  function random_gallery_footer() {
-    $random_gallery_footer_name = __('Random Gallery Footer Widget');
-    $random_gallery_footer_description = __('Displays a randome image from the Gallery category about this site in the footer.');
-    $widget_ops = array('classname' => 'random_gallery_footer', 'description' => $random_gallery_footer_description );
-    $this->WP_Widget('random_gallery_footer', $random_gallery_footer_name, $widget_ops);
+class random_footer_image extends WP_Widget {
+  function random_footer_image() {
+    $random_footer_image_name = __('Random Footer Image');
+    $random_footer_image_description = __('Displays a random image from the Gallery category with no other data.');
+    $widget_ops = array('classname' => 'random_footer_image', 'description' => $random_footer_image_description );
+    $this->WP_Widget('random_footer_image', $random_footer_image_name, $widget_ops);
   }  
   
   function widget($args, $instance) { 
@@ -48,9 +48,9 @@ class random_gallery_footer extends WP_Widget {
   }
 }
 
-add_action('widgets_init', 'random_gallery_footer_init');
-function random_gallery_footer_init() {
-        register_widget('random_gallery_footer');
+add_action('widgets_init', 'random_footer_image_init');
+function random_footer_image_init() {
+        register_widget('random_footer_image');
 }
 
 ?>
