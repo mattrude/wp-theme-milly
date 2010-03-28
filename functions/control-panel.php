@@ -92,8 +92,8 @@ class ControlPanel
 	function OptionsMenu()
 	{
 		echo '<div class="ajaxmessage updated fade below-h2 message"><p></p></div>';
-		echo '<div class="metabox-holder wrap" id="poststuff" class="stuffbox">';
-		echo '<h2 class="custom">' . $this->Name . ' Settings</h2>';
+		echo '<div class="icon32" id="icon-themes"></div><h2>' . $this->Name . ' Settings</h2>';
+		echo '<div class="wrap" id="poststuff">';
 		if ( $_REQUEST['saved'] ) echo '<div id="message" class="updated fade below-h2" style="background-color: rgb(255, 251, 204); margin-bottom:16px;"><p style="font-style:normal;font-size:13px;">' . $this->Name . ' Settings Saved Successfully.</p></div>';
 		echo '<form method="post" action="themes.php?page=' . basename(__FILE__) . '" id="settings">';
 		$Settings = $this->Settings;

@@ -686,6 +686,11 @@ p.pages a {margin: 0 0 0 3px;padding: 4px 7px;color: #486472 !important;backgrou
 	background: url(images/bullet-alt.png) no-repeat 0 6px;
 	border-bottom: none;
 	}
+#footer-widget-area .widget-area {
+	float:left;
+	margin-right:20px;
+	width:220px;
+	}
 
 #primary #text-330321621 {
 	padding-top: 15px;

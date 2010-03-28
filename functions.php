@@ -6,7 +6,9 @@ require_once('functions/google-webmaster-tools.php');
 require_once('functions/random-image-block.php');
 require_once('functions/regenerate-thumbnails.php');
 require_once('functions/robots.php');
+require_once('functions/footer-txt.php');
 require_once('functions/random-image-function.php');
+require_once('functions/random-image-footer.php');
 require_once('functions/twitter-post-type.php');
 
 // Add Post Thumbnails for WordPress 2.9
@@ -84,13 +86,56 @@ function new_excerpt_more($more) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 // Add Widget sidebar to Theme
-if(function_exists('register_sidebar'))
+if(function_exists('register_sidebar')) {
   register_sidebar(array (
+    'name' => 'Sidebar Widget Area',
     'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
     'after_widget' => '</div>',
     'before_title' => '<h3 class="widget-title">',
     'after_title' => '</h3>',
   ));
+    
+  register_sidebar( array (
+    'name' => 'First Footer Widget Area',
+    'id' => 'first-footer-widget-area',
+    'description' => __( 'The first footer widget area' , 'twentyten' ),
+    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+    'after_widget' => "</li>",
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ));
+
+  register_sidebar( array (
+    'name' => 'Second Footer Widget Area',
+    'id' => 'second-footer-widget-area',
+    'description' => __( 'The second footer widget area' , 'twentyten' ),
+    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+    'after_widget' => "</li>",
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ));
+     
+  register_sidebar( array (
+    'name' => 'Third Footer Widget Area',
+    'id' => 'third-footer-widget-area',
+    'description' => __( 'The third footer widget area' , 'twentyten' ),
+    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+    'after_widget' => "</li>",
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ));
+      
+  register_sidebar( array (
+    'name' => 'Fourth Footer Widget Area',
+    'id' => 'fourth-footer-widget-area',
+    'description' => __( 'The fourth footer widget area' , 'twentyten' ),
+    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+    'after_widget' => "</li>",
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ));
+}
+
 	
 
 /* This shortcode displays the years since the date provided.
