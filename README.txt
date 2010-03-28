@@ -10,7 +10,10 @@ Version 1.5
 
 Features
   Version trunk
+    * Added Top Naviation Custom Menu
+    * Use WordPress internal functions for EXIF data.
     * Added Twitter Custome Post Type UI
+
   Version 1.5
     * Added Twiter Custom Post Type.
       * Added function to convert all posts in category "Tweets" to,
