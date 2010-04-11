@@ -13,12 +13,12 @@ Tags: Widgets, Avatars
 /* Fonts */
 @font-face {
   font-family: Graublau Sans Web;
-  src: url( fonts/GraublauWeb.otf ) format("opentype");
+  src: url( fonts/GraublauWeb.otf );
 }
 
 @font-face {
   font-family: Graublau Sans Web Bold;
-  src: url( fonts/GraublauWebBold.otf ) format("opentype");
+  src: url( fonts/GraublauWebBold.otf );
 }
 
 html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;vertical-align:baseline;outline:none;background:transparent;border:none;text-decoration:none;}
@@ -448,7 +448,7 @@ img.wp-smiley {
 	border-bottom:1px solid #424f3c;
 	border-top:1px solid #424f3c;
 	height:35px;
-	margin: 10px auto 0;
+	margin: 20px auto 0;
 	overflow:hidden;
 	width:984px;
 	}
