@@ -30,7 +30,7 @@
       </div>
     </div>
     <div id="header">
-      <img src='<?php bloginfo('template_url') ?>/images/header-cabin.jpg' height='200' width='984' alt='Picture of my familes cabin'/>
+      <img src='<?php bloginfo('template_url') ?>/images/header-cabin.jpg' height='201' width='985' alt='Picture of my familes cabin'/>
     </div>
     <div id="access">
       <?php // If the Top Naviagtion Menu has entries in it, display it.
