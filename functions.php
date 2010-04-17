@@ -37,9 +37,9 @@ load_theme_textdomain( 'milly', TEMPLATEPATH . '/languages' );
 
 // Add Custom Taxonomies for WordPress 2.9
 function create_milly_taxonomies() {
-  register_taxonomy( 'people', 'post', array( 'hierarchical' => false, 'label' => 'People', 'query_var' => true, 'rewrite' => true ) );
-  register_taxonomy( 'places', 'post', array( 'hierarchical' => false, 'label' => 'Places', 'query_var' => true, 'rewrite' => true ) );
-  register_taxonomy( 'events', 'post', array( 'hierarchical' => false, 'label' => 'Events', 'query_var' => true, 'rewrite' => true ) );
+  register_taxonomy( 'people', 'post', array( 'hierarchical' => false, 'label' => __('People'), 'query_var' => true, 'rewrite' => true ) );
+  register_taxonomy( 'places', 'post', array( 'hierarchical' => false, 'label' => __('Places'), 'query_var' => true, 'rewrite' => true ) );
+  register_taxonomy( 'events', 'post', array( 'hierarchical' => false, 'label' => __('Events'), 'query_var' => true, 'rewrite' => true ) );
 }
 add_action( 'init', 'create_milly_taxonomies', 0 );
 
@@ -61,9 +61,9 @@ add_action('init','milly_post_type_init');
 // Add Custom User Contact Methods
 function add_milly_contactmethod( $contactmethods ) {
   // Add Twitter
-  $contactmethods['facebook'] = 'Facebook URL';
-  $contactmethods['googletalk'] = 'Google Talk';
-  $contactmethods['twitter'] = 'Twitter ID';
+  $contactmethods['facebook'] = __('Facebook URL');
+  $contactmethods['googletalk'] = __('Google Talk');
+  $contactmethods['twitter'] = __('Twitter ID');
  
   // Remove Yahoo IM
   unset($contactmethods['aim']);
@@ -89,7 +89,8 @@ add_filter('excerpt_more', 'new_excerpt_more');
 // Add Widget sidebar to Theme
 if(function_exists('register_sidebar')) {
   register_sidebar(array (
-    'name' => 'Sidebar Widget Area',
+    'name' => __('Sidebar Widget Area'),
+    'description' => __('This is the Main Right Hand Sidebar'),
     'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
     'after_widget' => '</div>',
     'before_title' => '<h3 class="widget-title">',
@@ -97,9 +98,9 @@ if(function_exists('register_sidebar')) {
   ));
     
   register_sidebar( array (
-    'name' => 'First Footer Widget Area',
+    'name' => __('First Footer Widget Area'),
     'id' => 'first-footer-widget-area',
-    'description' => __( 'The first footer widget area' , 'twentyten' ),
+    'description' => __('The first footer widget area'),
     'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
     'after_widget' => "</li>",
     'before_title' => '<h3 class="widget-title">',
@@ -107,9 +108,9 @@ if(function_exists('register_sidebar')) {
   ));
 
   register_sidebar( array (
-    'name' => 'Second Footer Widget Area',
+    'name' => __('Second Footer Widget Area'),
     'id' => 'second-footer-widget-area',
-    'description' => __( 'The second footer widget area' , 'twentyten' ),
+    'description' => __('The second footer widget area'),
     'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
     'after_widget' => "</li>",
     'before_title' => '<h3 class="widget-title">',
@@ -117,9 +118,9 @@ if(function_exists('register_sidebar')) {
   ));
      
   register_sidebar( array (
-    'name' => 'Third Footer Widget Area',
+    'name' => __('Third Footer Widget Area'),
     'id' => 'third-footer-widget-area',
-    'description' => __( 'The third footer widget area' , 'twentyten' ),
+    'description' => __('The third footer widget area'),
     'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
     'after_widget' => "</li>",
     'before_title' => '<h3 class="widget-title">',
@@ -127,9 +128,9 @@ if(function_exists('register_sidebar')) {
   ));
       
   register_sidebar( array (
-    'name' => 'Fourth Footer Widget Area',
+    'name' => __('Fourth Footer Widget Area'),
     'id' => 'fourth-footer-widget-area',
-    'description' => __( 'The fourth footer widget area' , 'twentyten' ),
+    'description' => __('The fourth footer widget area'),
     'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
     'after_widget' => "</li>",
     'before_title' => '<h3 class="widget-title">',
@@ -162,23 +163,25 @@ add_shortcode('ts', 'mdr_timesince');
 // Using WordPress functions to retrieve the extracted EXIF information from database
 function mdr_exif() { ?>
   <div id="exif">
-    <h3 class='comment-title exif-title'><?php _e('Images EXIF Data','mdr-theme-milly'); ?></h3>
+    <h3 class='comment-title exif-title'><?php _e('Images EXIF Data'); ?></h3>
     <div id="exif-data">
       <?php
       $imgmeta = wp_get_attachment_metadata( $id );
       // Convert the shutter speed retrieve from database to fraction
-      if ((1 / $imgmeta['image_meta']['shutter_speed']) > 1)
-      {
-        if ((number_format((1 / $imgmeta['image_meta']['shutter_speed']), 1)) == 1.3
-          or number_format((1 / $imgmeta['image_meta']['shutter_speed']), 1) == 1.5
-          or number_format((1 / $imgmeta['image_meta']['shutter_speed']), 1) == 1.6
-          or number_format((1 / $imgmeta['image_meta']['shutter_speed']), 1) == 2.5){
-          $pshutter = "1/" . number_format((1 / $imgmeta['image_meta']['shutter_speed']), 1, '.', '') ." ".__('second','mdr-theme-milly');
-        } else{
-          $pshutter = "1/" . number_format((1 / $imgmeta['image_meta']['shutter_speed']), 0, '.', '') ." ".__('second','mdr-theme-milly');
+      $image_shutter_speed = $imgmeta['image_meta']['shutter_speed'];
+      if ($image_shutter_speed > 0) {
+        if ((1 / $image_shutter_speed) > 1) {
+          if ((number_format((1 / $image_shutter_speed), 1)) == 1.3
+            or number_format((1 / $image_shutter_speed), 1) == 1.5
+            or number_format((1 / $image_shutter_speed), 1) == 1.6
+            or number_format((1 / $image_shutter_speed), 1) == 2.5){
+            $pshutter = "1/" . number_format((1 / $image_shutter_speed), 1, '.', '') ." ".__('second');
+          } else {
+            $pshutter = "1/" . number_format((1 / $image_shutter_speed), 0, '.', '') ." ".__('second');
+          }
+        } else {
+          $pshutter = $image_shutter_speed ." ".__('seconds');
         }
-      } else{
-        $pshutter = $imgmeta['image_meta']['shutter_speed'] ." ".__('seconds','mdr-theme-milly');
       }
 
       // Start to display EXIF and IPTC data of digital photograph
@@ -192,12 +195,12 @@ function mdr_exif() { ?>
     </div>
     <div id="exif-lable">
       <?php // EXIF Titles
-      echo "<p><span>".__('Date Taken:','mdr-theme-milly')."</span>";
-      echo "<p><span>".__('Camera:','mdr-theme-milly')."</span>";
-      echo "<p><span>".__('Focal Length:','mdr-theme-milly')."</span>";
-      echo "<p><span>".__('Aperture:','mdr-theme-milly')."</span>";
-      echo "<p><span>".__('ISO:','mdr-theme-milly')."</span>";
-      echo "<p><span>".__('Shutter Speed:','mdr-theme-milly')."</span>"; ?>
+      echo "<p><span>".__('Date Taken:')."</span>";
+      echo "<p><span>".__('Camera:')."</span>";
+      echo "<p><span>".__('Focal Length:')."</span>";
+      echo "<p><span>".__('Aperture:')."</span>";
+      echo "<p><span>".__('ISO:')."</span>";
+      echo "<p><span>".__('Shutter Speed:')."</span>"; ?>
     </div>
   </div>
 <?php }
