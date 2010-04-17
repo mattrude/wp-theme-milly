@@ -58,24 +58,6 @@ function milly_post_type_init() {
 }
 add_action('init','milly_post_type_init');
 
-add_action('template_redirect', 'milly_template_redirect');
- 
-function milly_template_redirect()
-{
-  global $wp;
-  global $wp_query;
-  if ($wp->query_vars['post_type'] == 'twitter')
-  {
-    if (have_posts())
-    {
-      include(TEMPLATEPATH . '/twitter.php');
-      die();
-    } else {
-      $wp_query->is_404 = true;
-    }
-  }
-}
-
 // Add Custom User Contact Methods
 function add_milly_contactmethod( $contactmethods ) {
   // Add Twitter
