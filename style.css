@@ -735,13 +735,6 @@ p.pages a {margin: 0 0 0 3px;padding: 4px 7px;color: #486472 !important;backgrou
 	list-style: none;
 	margin-left: 0;
 	}
-#comments li, p.comments-closed {
-	overflow: hidden;
-	margin: 20px 0;
-	padding: 19px;
-	background: #fff;
-	border: 1px solid #e7e7e7;
-	}
 p.comments-closed {
 	padding: 19px;
 	}
@@ -749,16 +742,23 @@ p.comments-closed {
 	border: none;
 	padding: 0;
 	}
-#comments li li, #comments li li li li, #comments li li li li li li, #comments li li li li li li li li, #comments li li li li li li li li li li {
-	margin: 15px 0 0 15px;
-	padding: 5px;
-	background: #EFF1E1;
+#comments li.depth-1 {
+	overflow: hidden;
+	margin: 20px 0;
+	padding: 19px;
+	background: #fff;
 	border: 1px solid #e7e7e7;
 	}
-#comments li li li, #comments li li li li li, #comments li li li li li li li, #comments li li li li li li li li li {
+#comments li.depth-3, li.depth-5, li.depth-7, li.depth-9 {
 	margin: 15px 0 0 15px;
 	padding: 5px;
 	background: #fff;
+	border: 1px solid #e7e7e7;
+	}
+#comments li.depth-2, li.depth-4, li.depth-6, li.depth-8, li.depth-10 {
+	margin: 15px 0 0 15px;
+	padding: 5px;
+	background: #EFF1E1;
 	border: 1px solid #e7e7e7;
 	}
 
@@ -767,8 +767,37 @@ p.comments-closed {
 	float: left;
 	margin: 0 10px 0 0;
 	padding: 4px;
-	background: #EFF1E1;
 	border: 1px solid #e2e2e2;
+	}
+li.depth-1 img {
+	background: #EFF1E1;
+	}
+li.depth-2 img {
+	background: #FFF;
+	}
+li.depth-3 img {
+	background: #EFF1E1;
+	}
+li.depth-4 img {
+	background: #FFF;
+	}
+li.depth-5 img {
+	background: #EFF1E1;
+	}
+li.depth-6 img {
+	background: #FFF;
+	}
+li.depth-7 img {
+	background: #EFF1E1;
+	}
+li.depth-8 img {
+	background: #FFF;
+	}
+li.depth-9 img {
+	background: #EFF1E1;
+	}
+li.depth-10 img {
+	background: #FFF;
 	}
 
 /* Comment meta data */
