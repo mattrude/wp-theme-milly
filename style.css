@@ -800,6 +800,9 @@ li.depth-10 img {
 	background: #FFF;
 	}
 
+.rsswidget img {
+	background: #FFF !important;
+	}
 /* Comment meta data */
 #comments .comment-meta {
 	margin-bottom: 25px;
