@@ -20,7 +20,7 @@ class ControlPanel
 		
 		/* Get Current Settings */
 		$this->Settings = get_option($this->Name . 'Settings');
-		//if($this->Settings) $this->Settings = unserialize($this->Settings);
+		if($this->Settings) $this->Settings = unserialize($this->Settings);
 		
 		/* Initialize Options */
 		$this->SetDefaultSettings();
