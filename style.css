@@ -588,14 +588,17 @@ p.pages a {margin: 0 0 0 3px;padding: 4px 7px;color: #486472 !important;backgrou
 	}
 
 /* Navigation links */
+.navigation {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #E7E7E7;
+	padding: 19px 19px;
+	}
 .navigation-attachment {
 	overflow: hidden;
-	
 	margin: 0 0 21px 0;
 	}
 .navigation-links {
 	overflow: hidden;
-	
 	padding: 19px 19px 19px 19px;
 	background: #fff;
 	border: 1px solid #e7e7e7;
