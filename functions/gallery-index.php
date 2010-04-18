@@ -18,8 +18,11 @@
 		<p><?php echo get_the_term_list( $post->ID, 'events', 'What: ', ', ', '<br />' ); ?></p>
              	<p><?php echo get_the_term_list( $post->ID, 'places', 'Where: ', ', ', '' ); ?></p>
 	</div>
-	<div id="gallerypost_sub_right-<?php the_ID(); ?>" class="gallerypost_sub_right">
-		This Album contains <?php echo $wpdb->get_var( "SELECT COUNT(*) FROM $wpdb->posts WHERE post_parent = '$post->ID' AND post_type = 'attachment'" ); ?> items.
-	</div>
+        <?php $num_gallery_posts = $wpdb->get_var( "SELECT COUNT(*) FROM $wpdb->posts WHERE post_parent = '$post->ID' AND post_type = 'attachment'" );
+        if ( $num_gallery_posts > 1 ) {
+	  ?><div id="gallerypost_sub_right-<?php the_ID(); ?>" class="gallerypost_sub_right">
+	    This Album contains <?php echo $num_gallery_posts; ?> items.
+	  </div>
+        <?php } ?>
     </div>
 </div>
