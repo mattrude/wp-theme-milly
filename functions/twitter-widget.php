@@ -10,7 +10,7 @@ class milly_twitter_widget extends WP_Widget {
   function widget($args, $instance) { 
     extract($args);
     $widget_title = strip_tags($instance['widget_title']);
-    echo "{$before_widget}{$before_title}$widget_title{$after_title}<ul class='tweets'>";
+    echo "{$before_widget}{$before_title}<a href='/twitter/'>$widget_title</a>{$after_title}<ul class='tweets'>";
     global $wp_query;
     $wp_query = new WP_Query("post_type=twitter&posts_per_page=8");
     while (have_posts()) : the_post();
