@@ -10,6 +10,7 @@ require_once('functions/footer-txt.php');
 require_once('functions/random-image-function.php');
 require_once('functions/random-image-footer.php');
 require_once('functions/twitter-post-type.php');
+require_once('functions/twitter-widget.php');
 
 // Add Post Thumbnails for WordPress 2.9
 add_theme_support('post-thumbnails');
@@ -57,6 +58,11 @@ function milly_post_type_init() {
   register_taxonomy_for_object_type('post_tag', 'twitter');
 }
 add_action('init','milly_post_type_init');
+
+if( function_exists( 'add_meta_box' )) {
+  add_meta_box('twitter-meta', 'Twitter Post ID', 'test', 'twitter', 'side', 'low');
+  function my_property_meta() { echo "Boo!"; }
+}
 
 // Add Custom User Contact Methods
 function add_milly_contactmethod( $contactmethods ) {
