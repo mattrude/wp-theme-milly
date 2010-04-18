@@ -4,22 +4,13 @@
 global $Panel;
 $twitterid = $Panel->Settings('TwitterID');
 $twittername = $Panel->Settings('TwitterName');
+$twittercount = $Panel->Settings('TwitterCount');
 
-?><div id="content"><?php
- $querystr = "
-    SELECT wposts.* 
-    FROM $wpdb->posts wposts
-    WHERE 
-    wposts.post_status = 'publish' 
-    AND wposts.post_type = 'twitter' 
-    AND wposts.post_date < NOW() 
-    ORDER BY wposts.post_date DESC
- ";
-
- $pageposts = $wpdb->get_results($querystr, OBJECT); ?>
- <?php if ($pageposts): ?>
-  <?php foreach ($pageposts as $post): ?>
-    <?php setup_postdata($post); ?>
+echo "<div id='content'>";
+global $wp_query;
+$wp_query = new WP_Query("post_type=twitter&post_status=publish&posts_per_page=20");
+while (have_posts()) : the_post();
+    setup_postdata($post); ?>
     <?php global $post; ?>
     <div class="post" id="tweet_template-<?php echo $post->ID; ?>">
       <div id='tweet-<?php echo $post->ID; ?>' class='tweet_post' >
@@ -28,7 +19,6 @@ $twittername = $Panel->Settings('TwitterName');
       </div>
       <div id='tweet_date-<?php echo $post->ID; ?>' class='byline tweet_date' >
         <?php 
-        //$tweet_id = get_post_meta( $wp_query->post->ID, 'aktt_twitter_id', true );
         $post_id = $post->ID;
         $tweet_id = get_post_meta( $post_id, 'aktt_twitter_id', true);
 	?> Posted to <a href="http://twitter.com">Twitter</a> by <a href="http://twitter.com/<?php echo $twitterid; ?>"><?php echo $twittername; ?></a><?php
@@ -44,14 +34,15 @@ $twittername = $Panel->Settings('TwitterName');
 	edit_post_link('Edit', ' | '); ?>
       </div>	
     </div><!--close post class and post# id-->
-  <?php endforeach; ?>
 <!--
  <div class="navigation">
  <div class="txtalignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
    <div class="txtalignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
  </div>
 -->
- <?php endif; ?>
+
+<?php endwhile; ?>
+
 </div><!--close content id-->
 
 <?php get_sidebar(); ?>
