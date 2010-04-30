@@ -1,5 +1,5 @@
 Wordpress Theme Milly
-Version 1.5
+Version 1.6
 
    1. Features
    2. Wanted Features/Bugs
@@ -8,7 +8,7 @@ Version 1.5
    4. Git Commit Change Log
 
 Features
-  Version trunk
+  Version 1.6
     * Added Twitter post-type Widget
     * Added Top Naviation Custom Menu
     * Use WordPress internal functions for EXIF data.
