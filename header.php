@@ -34,12 +34,17 @@
     </div>
     <div id="access">
       <?php // If the Top Naviagtion Menu has entries in it, display it.
-      $menu_id = get_term_by('slug', 'top-navigation-menu', 'nav_menu');
-      if ( wp_get_nav_menu_items( $menu_id->term_id ) ) {
-        wp_nav_menu( 'sort_column=menu_order&slug=top-navigation-menu' );
-      } else {
+//      $menu_id = get_term_by('slug', 'top-navigation-menu', 'nav_menu');
+//      if ( wp_get_nav_menu_items( $menu_id->term_id ) ) {
+//        wp_nav_menu( 'sort_column=menu_order&slug=top-navigation-menu' );
+//      } else {
         // If Not, Display the default page menu instead.
-        wp_page_menu();
-      }?>
+//        wp_page_menu();
+//      }?>
+      <?php /* Our navigation menu.  If one isn't filled out, 
+      wp_nav_menu falls back to wp_page_menu. The menu assiged
+      to the primary position is the one used. If none is
+      assigned, the menu with the lowest ID is used.  */ ?>
+      <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header', 'theme_location' => 'header' ) ); ?>
     </div>
   <div id="container">

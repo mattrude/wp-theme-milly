@@ -31,6 +31,10 @@ if ( get_term_by( 'name', 'Menu 1', 'nav_menu' ) ) {
   $milly_menu_1_id = get_term_by('name', 'Menu 1', 'nav_menu');
   wp_delete_nav_menu( $milly_menu_1_id );
 }
+// This theme uses wp_nav_menu() in one location.
+register_nav_menus( array(
+    'header' => __( 'Header Navigation menu', 'milly' ),
+) );
 
 // Make theme available for translation
 // Translations can be filed in the /languages/ directory
