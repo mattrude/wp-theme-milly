@@ -100,6 +100,13 @@ function milly_admin_header_style() {
 
 // ... and thus ends the changeable header business.
 
+// Disable gallery CSS insertes
+add_filter('gallery_style',
+	create_function(
+		'$css',
+		'return preg_replace("#<style type=\'text/css\'>(.*?)</style>#s", "", $css);'
+		)
+	);
 
 // Add Custom User Contact Methods
 function add_milly_contactmethod( $contactmethods ) {

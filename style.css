@@ -913,6 +913,17 @@ a.comment-link:hover {
 	float: right; 
         text-align: right;
 	}
+
+.gallery-item {
+	margin: auto;
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+	width: 33%;
+	}
+.gallery-caption {
+	margin-left: 0;
+	}
 .gallerypost {
 	background-color:#fff;
 	display: block;
