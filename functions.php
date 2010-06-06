@@ -68,6 +68,50 @@ if( function_exists( 'add_meta_box' )) {
   function my_property_meta() { echo "Boo!"; }
 }
 
+// Your changeable header business starts here
+define( 'HEADER_TEXTCOLOR', '' );
+// No CSS, just IMG call. The %s is a placeholder for the theme template directory URI.
+define( 'HEADER_IMAGE', '%s/images/header-cabin.jpg' );
+
+// The height and width of your custom header. You can hook into the theme's own filters to change these values.
+// Add a filter to twentyten_header_image_width and twentyten_header_image_height to change these values.
+define( 'HEADER_IMAGE_WIDTH', apply_filters( 'twentyten_header_image_width', 985 ) );
+define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'twentyten_header_image_height', 200 ) );
+
+// We'll be using post thumbnails for custom header images on posts and pages.
+// We want them to be 940 pixels wide by 198 pixels tall.
+// Larger images will be auto-cropped to fit, smaller ones will be ignored. See header.php.
+set_post_thumbnail_size( HEADER_IMAGE_WIDTH, HEADER_IMAGE_HEIGHT, true );
+
+// Don't support text inside the header image.
+define( 'NO_HEADER_TEXT', true );
+
+// Add a way for the custom header to be styled in the admin panel that controls
+// custom headers. See twentyten_admin_header_style(), below.
+add_custom_image_header( '', 'twentyten_admin_header_style' );
+
+function twentyten_admin_header_style() {
+?>
+<style type="text/css">
+/* Shows the same border as on front end */
+#headimg {
+        border-bottom: 1px solid #000000;
+        border-top: 4px solid #000000;
+}
+
+/* If NO_HEADER_TEXT is false, you can style here the header text preview */
+#headimg #name {
+}
+
+#headimg #desc {
+}
+</style>
+<?php
+}
+
+// ... and thus ends the changeable header business.
+
+
 // Add Custom User Contact Methods
 function add_milly_contactmethod( $contactmethods ) {
   // Add Twitter

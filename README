@@ -8,11 +8,14 @@ Version 1.6
    4. Git Commit Change Log
 
 Features
+  Version Devel
+    * Added dashboard custom image header function
+
   Version 1.6
     * Added Twitter post-type Widget
     * Added Top Naviation Custom Menu
     * Use WordPress internal functions for EXIF data.
-    * Added Twitter Custome Post Type UI
+    * Added Twitter Custom Post Type UI
     * Added Footer Widget Area
       * Added new widget Footer Text
       * Added new widget Random Footer Image
