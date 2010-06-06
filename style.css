@@ -805,6 +805,7 @@ li.depth-10 img {
 .rsswidget img {
 	background: #FFF !important;
 	}
+
 /* Comment meta data */
 #comments .comment-meta {
 	margin-bottom: 25px;
@@ -848,6 +849,7 @@ a.comment-link:hover {
 .comment-submit input {
 	width: 130px;
 	}
+
 /* Comment form */
 #respond {
 	overflow: hidden;
@@ -914,6 +916,7 @@ a.comment-link:hover {
         text-align: right;
 	}
 
+/* Gallery Items */
 .gallery-item {
 	margin: auto;
 	float: left;
@@ -936,9 +939,6 @@ a.comment-link:hover {
 	width: 430px;
 	margin: 0 20px 0 0;
 	}
-/*.gallerypost_body p {
-	margin: 50px 0px 0px 0px;
-	}*/
 .gallerypost_body .entry p {
 	margin: 0px 0px 0px 0px;
 	}
@@ -972,6 +972,8 @@ a.comment-link:hover {
 	margin: 0 0 0 10px;
 	color: #000;
 	}
+
+/* Twitter Posts */
 #tweet_template {
         position:relative
 	}
