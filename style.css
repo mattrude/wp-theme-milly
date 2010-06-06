@@ -1075,6 +1075,12 @@ a.comment-link:hover {
 	line-height: 16px;
 	}
 
+.image_entry img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}	
+
 /*EXIF table*/
 #exif {
 	overflow: hidden;
