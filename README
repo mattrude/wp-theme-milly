@@ -1,17 +1,18 @@
 Wordpress Theme Milly
-Version 1.6
+Version 1.7-devel
 
    1. Features
    2. Wanted Features/Bugs
       2.1. Options still needed in the Control Panel
    3. Known Bugs
-   4. Git Commit Change Log
 
 Features
-  Version Devel
+  Version 1.7-devel
+  http://github.com/mattrude/wp-theme-milly/commits/master
     * Added dashboard custom image header function
 
   Version 1.6
+  http://github.com/mattrude/wp-theme-milly/commits/1.6
     * Added Twitter post-type Widget
     * Added Top Naviation Custom Menu
     * Use WordPress internal functions for EXIF data.
@@ -21,6 +22,7 @@ Features
       * Added new widget Random Footer Image
 
   Version 1.5
+  http://github.com/mattrude/wp-theme-milly/commits/1.5
     * Added Twiter Custom Post Type.
       * Added function to convert all posts in category "Tweets" to,
           Custome Post Type "Twitter"
@@ -34,6 +36,7 @@ Features
     * Upgraded to version 0.7 of the Random Image Block widget
 
   Version 1.4
+  http://github.com/mattrude/wp-theme-milly/commits/1.4
     * Green! with a new header image of the cabin
       * Background color = 596852
       * Border color = 3d4f43
@@ -43,10 +46,12 @@ Features
     * Added native EXIF function
 
   Version 1.3
+  http://github.com/mattrude/wp-theme-milly/commits/1.3
     * Added Random Image Widget
     * Added Rebuild Image functions
 
   Version 1.1
+  http://github.com/mattrude/wp-theme-milly/commits/1.1
     * Google Analytics Support (analytics.google.com)
     * Lightbox 2 support (www.huddletogether.com/projects/lightbox2)
     * Category Exclusion (Main, RSS, Archive)
@@ -69,6 +74,3 @@ Options still needed in the Control Panel
 Known Bugs
     * None
 
-
-Git Commit Change Log
-http://github.com/mattrude/wp-theme-milly/commits/master
