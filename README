@@ -10,8 +10,7 @@ Features
   Version 1.7-devel - http://github.com/mattrude/wp-theme-milly/commits
     * Added dashboard custom image header function
 
-  Version 1.6
-  http://github.com/mattrude/wp-theme-milly/commits/1.6
+  Version 1.6 - http://github.com/mattrude/wp-theme-milly/commits/1.6
     * Added Twitter post-type Widget
     * Added Top Naviation Custom Menu
     * Use WordPress internal functions for EXIF data.
@@ -57,14 +56,11 @@ Features
     * Licenced under the GPLv2
 
 Wanted Features/Bugs
-
     * W3 compliance
     * Auto set rel=lightbox for images when lightbox support is enabled
 
 Options still needed in the Control Panel
-
     * Customisable fav-icon
-
 
 Known Bugs
     * None
