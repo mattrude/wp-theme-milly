@@ -26,10 +26,8 @@
 	<!--footer plugin hook-->
 	<?php wp_footer(); ?>
 </div>
-</div>
 
 <!--Closeing tags-->
-</div>
 </div>
 </body>
 </html>
