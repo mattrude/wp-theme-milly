@@ -42,8 +42,11 @@
 			<a href="<?php echo $previous_url; ?>"><?php echo wp_get_attachment_image( $post->ID-1, 'thumbnail' ); ?></a>
 		</p>
 		<?php } ?>
+		<div class="floatright">
+			<?php edit_post_link('Edit Image'); ?>
+                </div>
 	</div>
-				<p><a class="wrapper" href="<?php echo get_permalink($post->post_parent); ?>" rev="up post">&larr; <?php printf(__('back to &#8220;%s&#8221;', 'mdr-milly-theme'), get_the_title($post->post_parent)); ?></a></p>
+	<p><a class="wrapper" href="<?php echo get_permalink($post->post_parent); ?>" rev="up post">&larr; <?php printf(__('back to &#8220;%s&#8221;', 'mdr-milly-theme'), get_the_title($post->post_parent)); ?></a></p>
 	
 </div><!--close entry class-->
         <?php mdr_exif(); ?>
