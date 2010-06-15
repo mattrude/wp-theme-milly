@@ -18,13 +18,13 @@ set_post_thumbnail_size(200, 200);
 
 // Add Custom Navigation Menu for WordPress 3.0
 add_theme_support( 'nav-menus' );
-if ( ! get_term_by( 'name', 'Top Navigation Menu', 'nav_menu' ) ) {
-  echo "Creating Top Navigation Menu<br />";
-  wp_create_nav_menu('Top Navigation Menu');
+if ( ! get_term_by( 'name', 'Header Navigation Menu', 'nav_menu' ) ) {
+  echo "Creating Header Navigation Menu<br />";
+  wp_create_nav_menu('Header Navigation Menu');
 }
-if ( ! get_term_by( 'name', 'Side Navigation Menu', 'nav_menu' ) ) {
-  echo "Creating Side Navigation Menu<br />";
-  wp_create_nav_menu('Side Navigation Menu');
+if ( ! get_term_by( 'name', 'Sidebar Navigation Menu', 'nav_menu' ) ) {
+  echo "Creating Sidebar Navigation Menu<br />";
+  wp_create_nav_menu('Sidebar Navigation Menu');
 }
 if ( get_term_by( 'name', 'Menu 1', 'nav_menu' ) ) {
   echo "Deleting unwanted Menu 1 Navigation Menu";
@@ -33,7 +33,7 @@ if ( get_term_by( 'name', 'Menu 1', 'nav_menu' ) ) {
 }
 // This theme uses wp_nav_menu() in one location.
 register_nav_menus( array(
-    'header' => __( 'Header Navigation menu', 'milly' ),
+    'header' => __( 'The Header Navigation Menu', 'milly' ),
 ) );
 
 // Make theme available for translation
