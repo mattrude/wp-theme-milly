@@ -686,6 +686,7 @@ p.pages a {margin: 0 0 0 3px;padding: 4px 7px;color: #486472 !important;backgrou
 	padding: 0 0 3px 15px;
 	background: url(images/bullet-alt.png) no-repeat 0 6px;
 	border-bottom: none;
+	border-top: 1px solid #e2e2e2;
 	}
 #footer-widget-area .widget-area {
 	float:left;
