@@ -9,6 +9,8 @@ Version 1.7-devel
 Features
   Version 1.7-devel - http://github.com/mattrude/wp-theme-milly/commits
     * Added dashboard custom image header function
+    * Rewrite of Header Navigation Menu functions
+    * UI clean up
 
   Version 1.6 - http://github.com/mattrude/wp-theme-milly/commits/1.6
     * Added Twitter post-type Widget
