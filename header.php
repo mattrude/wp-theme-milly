@@ -15,13 +15,13 @@
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-  <?php if (function_exists(google_webmaster_tools)) { google_webmaster_tools(); } ?>
+  <?php if (function_exists('google_webmaster_tools')) { google_webmaster_tools(); } ?>
   <!--This is a plugin hook-->
   <?php wp_head(); ?>
 </head>
 
 <body>
-  <?php if (function_exists(google_analytics)) { google_analytics(); } ?>
+  <?php if (function_exists('google_analytics')) { google_analytics(); } ?>
   <div id="wrapper" >
     <div id="header-title">
       <div id="site-title">
