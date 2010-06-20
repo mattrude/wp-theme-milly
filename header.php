@@ -32,8 +32,8 @@
       <img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
     </div>
     <div id="access">
-      <?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assiged
+      <?php /* The navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assiged
       to the primary position is the one used. If none is assigned, the menu with the lowest ID is used.  */
-      wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header', 'theme_location' => 'header' ) ); ?>
+      wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header', 'theme_location' => 'header', 'fallback_cb' => 'milly_nav_fallback' ) ); ?>
     </div>
   <div id="container">
