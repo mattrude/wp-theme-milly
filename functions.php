@@ -53,30 +53,23 @@ add_action( 'init', 'create_milly_taxonomies', 0 );
 
 // Add Custom Post Types for WordPress 2.9
 function milly_post_type_init() {
-  $args = array(
-    'labels' => array(
-	'name' => __('Twitter'), 
-	'singular_name' => _x('Tweet','Tweet'),
-	'add_new' => __('Add New Tweet', 'tweet'),
-	'add_new_item' => __('Add New Tweet'),
-	'edit_item' => __('Edit Tweet'),
-	'new_item' => __('New Tweet'),
-	'view_item' => __('View Tweet'),
-	'search_items' => __('Search Tweets'),
-	'not_found' =>  __('No tweets found'),
-	'not_found_in_trash' => __('No tweets found in Trash')
-    ),
-    'description' => __('Imported Twitter Posts'),
-    'exclude_from_search' => true,
-    'public' => true,
-    'show_ui' => true,
-    'hierarchical' => false,
-    'rewrite' => array('slug' => 'twitter'),
-    'supports' => array('title', 'editor', 'custom-fields')
-  );
-  register_post_type('twitter',$args);
+  register_post_type('twitter', array(
+      'label' => __('Twitter'), 
+      'description' => __('Imported Twitter Posts'),
+      'exclude_from_search' => true,
+      'public' => true,
+      'show_ui' => true,
+      'rewrite' => array('slug' => 'twitter'),
+      'supports' => array('title', 'editor', 'author')
+  ));
+  register_taxonomy_for_object_type('post_tag', 'twitter');
 }
 add_action('init','milly_post_type_init');
+
+if( function_exists( 'add_meta_box' )) {
+  add_meta_box('twitter-meta', 'Twitter Post ID', 'test', 'twitter', 'side', 'low');
+  function my_property_meta() { echo "Boo!"; }
+}
 
 // Your changeable header business starts here
 define( 'HEADER_TEXTCOLOR', '' );
@@ -158,16 +151,47 @@ if(function_exists('register_sidebar')) {
   ));
     
   register_sidebar( array (
-    'name' => __('Footer Widget Area'),
-    'id' => 'footer-widget-area',
-    'description' => __('The footer widget area'),
+    'name' => __('First Footer Widget Area'),
+    'id' => 'first-footer-widget-area',
+    'description' => __('The first footer widget area'),
     'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
     'after_widget' => "</li>",
     'before_title' => '<h3 class="widget-title">',
     'after_title' => '</h3>',
   ));
 
+  register_sidebar( array (
+    'name' => __('Second Footer Widget Area'),
+    'id' => 'second-footer-widget-area',
+    'description' => __('The second footer widget area'),
+    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+    'after_widget' => "</li>",
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ));
+     
+  register_sidebar( array (
+    'name' => __('Third Footer Widget Area'),
+    'id' => 'third-footer-widget-area',
+    'description' => __('The third footer widget area'),
+    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+    'after_widget' => "</li>",
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ));
+      
+  register_sidebar( array (
+    'name' => __('Fourth Footer Widget Area'),
+    'id' => 'fourth-footer-widget-area',
+    'description' => __('The fourth footer widget area'),
+    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+    'after_widget' => "</li>",
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ));
 }
+
+	
 
 /* This shortcode displays the years since the date provided.
    To use this shortcode, add some text to a post or page simmiler to:
