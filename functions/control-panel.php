@@ -1,5 +1,9 @@
 <?php
 
+if (!isset($_REQUEST['saved'])) {
+  $_REQUEST['saved'] = false;
+}
+
 class ControlPanel
 {
 	var $Name = null;
@@ -26,9 +30,16 @@ class ControlPanel
 		$this->SetDefaultSettings();
 		
 		/* Saving Settings */
+                if (!isset($_GET['page'])) {
+                  $_GET['page'] = "unknown_page";
+                }
 		if ( $_GET['page'] == basename(__FILE__) )
 		{
 		
+
+                	if (!isset($_REQUEST['action'])) {
+                	  $_REQUEST['action'] = "unknown_page";
+                	}
 			if ( 'save' == $_REQUEST['action'] )
 			{
 				$NewSettings = array();
@@ -99,6 +110,14 @@ class ControlPanel
 		$Settings = $this->Settings;
 		foreach( $this->Options as $Option)
 		{
+
+			if (!isset($Option['Type'])) {$Option['Type'] = 'null';}
+			if (!isset($Option['Label'])) {$Option['Label'] = 'null';}
+			if (!isset($Option['ID'])) {$Option['ID'] = 'null';}
+			if (!isset($Option['Description'])) {$Option['Description'] = 'null';}
+			if (!isset($Option['Value'])) {$Option['Value'] = 'null';}
+			if (!isset($Option['Values'])) {$Option['Values'] = 'null';}
+
 			$Type = $Option['Type'];
 			$Label = $Option['Label'];
 			$ID = $Option['ID'];
@@ -106,7 +125,6 @@ class ControlPanel
 			$Value = $Option['Value'];
 			$Values = $Option['Values'];
 			$ToPrint = '';
-
 			/* Print Options */
 			switch ($Type)
 			{
@@ -202,7 +220,7 @@ array
 ),
 array
 (
-Type=>'End'
+'Type'=>'End'
 ),
 array
 (
@@ -226,7 +244,7 @@ array
 ),
 array
 (
-Type=>'End'
+'Type'=>'End'
 ),
 array
 (
@@ -264,7 +282,7 @@ array
 ),
 array
 (
-Type=>'End'
+'Type'=>'End'
 ),
 array
 (
@@ -281,11 +299,11 @@ array
         ),
         array
         (
-                Type=>'End'
+                'Type'=>'End'
         ),
 array
 (
-Type=>'Close'
+'Type'=>'Close'
 )
 );
  
