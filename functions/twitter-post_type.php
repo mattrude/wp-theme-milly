@@ -66,4 +66,85 @@ function twitter_post_type_convert() {
 }
 
 twitter_post_type_convert();
+
+
+// Get the users image from twitter
+class twitterImage
+{
+  var $user='';
+  var $image='';
+  var $displayName='';
+  var $url='';
+  var $format='json';
+  var $requestURL='http://twitter.com/users/show/';
+  var $imageNotFound=''; //any generic image/avatar. It will display when the twitter user is invalid
+  var $noUser=true;
+ 
+  function __construct($user)
+  {
+    $this->user=$user;
+    $this->__init();
+ 
+  }
+  /*
+   * fetches user info from twitter
+   * and populates the related vars
+   */
+  private function __init()
+  {
+    $data=json_decode($this->get_data($this->requestURL.$this->user.'.'.$this->format)); //gets the data in json format and decodes it
+    if(strlen($data->error)<=0) //check if the twitter profile is valid
+ 
+    {
+      $this->image=$data->profile_image_url;
+      $this->displayName=$data->name;
+      $this->url=(strlen($data->url)<=0)?'http://twitter.com/'.$this->user:$data->url;
+      $this->location=$data->location;
+    }
+    else
+    {
+      $this->image=$this->imageNotFound;
+    }
+ 
+ 
+  }
+  /* creates image tag
+   * @params
+   * passing linked true -- will return an image which will link to the user's url defined on twitter profile
+   * passing display true -- will render the image, else return
+   */
+  function profile_image($linked=false,$display=false)
+  {
+    $img="<img src='$this->image' border='0' alt='$this->displayName' />";
+    $linkedImg="<a href='$this->url' rel='nofollow' title='$this->displayName'>$img</a>";
+    if(!$linked && !$display) //the default case
+      return $img;
+ 
+    if($linked && $display)
+      echo $linkedImg;
+ 
+    if($linked && !$display)
+      return $linkedImg;
+ 
+    if($display && !$linked)
+      echo $img;
+ 
+ 
+  }
+  /* gets the data from a URL */
+ 
+  private function get_data($url)
+  {
+    $ch = curl_init();
+    $timeout = 5;
+    curl_setopt($ch,CURLOPT_URL,$url);
+    curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+    curl_setopt($ch,CURLOPT_CONNECTTIMEOUT,$timeout);
+    $data = curl_exec($ch);
+    curl_close($ch);
+    return $data;
+  }
+ 
+}
+
 ?>
