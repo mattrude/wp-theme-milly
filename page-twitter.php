@@ -5,6 +5,7 @@ global $Panel;
 $twitterid = $Panel->Settings('TwitterID');
 $twittername = $Panel->Settings('TwitterName');
 $twittercount = $Panel->Settings('TwitterCount');
+$twitterimgenabled = $Panel->Settings('TwitterImgEnabled');
 
 echo "<div id='content'>";
 global $wp_query;
@@ -14,8 +15,15 @@ while (have_posts()) : the_post();
     <?php global $post; ?>
     <div class="post" id="tweet_template-<?php echo $post->ID; ?>">
       <div id='tweet-<?php echo $post->ID; ?>' class='tweet_post' >
-        <img src="<?php bloginfo('template_url'); ?>/images/twitter-bird.png" class='tweet-image' width="60" height="60" style='margin-right: 5px;' alt='Twitter bird' />
-        <?php the_content(); ?>
+        <?php
+        if ( $twitterimgenabled == 'true' ) {
+          $t=new twitterImage($twitterid);
+          $t->profile_image(true,true);
+        } else {
+           ?><img src="<?php bloginfo('template_url'); ?>/images/twitter-bird.png" class='tweet-image' width="60" height="60" style='margin-right: 5px;' alt='Twitter bird' /><?php
+        }
+        the_content(); 
+        ?>
       </div>
       <div id='tweet_date-<?php echo $post->ID; ?>' class='byline tweet_date' >
         <?php 
@@ -23,23 +31,15 @@ while (have_posts()) : the_post();
         $tweet_id = get_post_meta( $post_id, 'aktt_twitter_id', true);
 	?> Posted to <a href="http://twitter.com">Twitter</a> by <a href="http://twitter.com/<?php echo $twitterid; ?>"><?php echo $twittername; ?></a><?php
         if ($tweet_id) { 
-          echo " on ";
           echo "<a href='http://twitter.com/$twitterid/status/$tweet_id'>";
           the_time('F jS, h:ma T Y ');
           echo "</a>";
         } else {
-          echo " off ";
           the_time('F jS, h:ma T Y ');
         }
 	edit_post_link('Edit', ' | '); ?>
       </div>	
     </div><!--close post class and post# id-->
-<!--
- <div class="navigation">
- <div class="txtalignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-   <div class="txtalignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
- </div>
--->
 
 <?php endwhile; ?>
 

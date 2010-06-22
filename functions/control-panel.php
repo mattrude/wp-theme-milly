@@ -264,6 +264,13 @@ array
 ),
 array
 (
+'Type'=>'CheckBox',
+'ID'=>'TwitterImgEnabled',
+'Label'=>'Enable Twitter Profile Image',
+'Description'=>'This will display your Titter profile image next to your twitter posts.'
+),
+array
+(
 Type=>'End'
 ),
 array
