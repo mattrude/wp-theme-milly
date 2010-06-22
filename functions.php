@@ -51,33 +51,6 @@ function create_milly_taxonomies() {
 }
 add_action( 'init', 'create_milly_taxonomies', 0 );
 
-// Add Custom Post Types for WordPress 2.9
-function milly_post_type_init() {
-  $args = array(
-    'labels' => array(
-	'name' => __('Twitter'), 
-	'singular_name' => _x('Tweet','Tweet'),
-	'add_new' => __('Add New Tweet', 'tweet'),
-	'add_new_item' => __('Add New Tweet'),
-	'edit_item' => __('Edit Tweet'),
-	'new_item' => __('New Tweet'),
-	'view_item' => __('View Tweet'),
-	'search_items' => __('Search Tweets'),
-	'not_found' =>  __('No tweets found'),
-	'not_found_in_trash' => __('No tweets found in Trash')
-    ),
-    'description' => __('Imported Twitter Posts'),
-    'exclude_from_search' => true,
-    'public' => true,
-    'show_ui' => true,
-    'hierarchical' => false,
-    'rewrite' => array('slug' => 'twitter'),
-    'supports' => array('title', 'editor', 'custom-fields')
-  );
-  register_post_type('twitter',$args);
-}
-add_action('init','milly_post_type_init');
-
 // Your changeable header business starts here
 define( 'HEADER_TEXTCOLOR', '' );
 define( 'HEADER_IMAGE', '%s/images/header-cabin.jpg' );
