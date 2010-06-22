@@ -9,7 +9,7 @@ require_once('functions/robots.php');
 require_once('functions/footer-txt.php');
 require_once('functions/random-image-function.php');
 require_once('functions/random-image-footer.php');
-require_once('functions/twitter-post-type.php');
+require_once('functions/twitter-post_type.php');
 require_once('functions/twitter-widget.php');
 
 // Add Post Thumbnails for WordPress 2.9
