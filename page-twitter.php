@@ -6,6 +6,7 @@ $twitterid = $Panel->Settings('TwitterID');
 $twittername = $Panel->Settings('TwitterName');
 $twittercount = $Panel->Settings('TwitterCount');
 $twitterimgenabled = $Panel->Settings('TwitterImgEnabled');
+$t=new twitterImage($twitterid);
 
 echo "<div id='content'>";
 global $wp_query;
@@ -17,7 +18,6 @@ while (have_posts()) : the_post();
       <div id='tweet-<?php echo $post->ID; ?>' class='tweet_post' >
         <?php
         if ( $twitterimgenabled == 'true' ) {
-          $t=new twitterImage($twitterid);
           $t->profile_image(true,true);
         } else {
            ?><img src="<?php bloginfo('template_url'); ?>/images/twitter-bird.png" class='tweet-image' width="60" height="60" style='margin-right: 5px;' alt='Twitter bird' /><?php
