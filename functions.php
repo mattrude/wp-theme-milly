@@ -107,6 +107,26 @@ function add_milly_contactmethod( $contactmethods ) {
 }
 add_filter('user_contactmethods','add_milly_contactmethod',10,1);
 
+// Change the page naviagion forward and back buttons
+function milly_pre_next_post() {
+  ?>
+  <div class="navigation">
+     <div class="floatleft"><?php next_post_link('&laquo; %link') ?></div>
+     <div class="floatright"><?php previous_post_link('%link &raquo;') ?></div>
+     <div class="clearfloatthick">&nbsp;</div>
+   </div>
+  <?php
+}
+
+function milly_pre_next_post_cat() {
+  ?>
+  <div class="navigation">
+    <div class="txtalignleft"><?php previous_posts_link('&laquo; Newer Entries'); ?></div>
+    <div class="txtalignright"><?php next_posts_link('Older Entries &raquo;') ?></div>
+    <div class="clearfloatthick">&nbsp;</div>
+  </div>
+  <?php
+}
 // Changing excerpt length
 function new_excerpt_length($length) {
 	return 80;

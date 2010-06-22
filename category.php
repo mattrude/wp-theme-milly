@@ -10,7 +10,7 @@
       include('functions/post-full.php');
     } endwhile; ?>
   <!--The Loop has ended-->	
-  <?php include('navigation-category.php'); ?>
+  <?php milly_pre_next_post_cat(); ?>
 </div><!--close content id-->
 
 <?php get_sidebar(); ?>

@@ -4,7 +4,7 @@
   <?php if (have_posts()) : while (have_posts()) : the_post();
     include('functions/post-full.php');
     comments_template();
-    include('navigation.php');
+    milly_pre_next_post();
   endwhile; endif; ?>
 </div><!--close content id-->
 
