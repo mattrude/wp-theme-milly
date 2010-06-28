@@ -74,7 +74,7 @@ class twitterImage
   var $user='';
   var $image='';
   var $displayName='';
-  var $url='';
+  var $url='http://twitter.com/';
   var $format='json';
   var $requestURL='http://twitter.com/users/show/';
   var $imageNotFound=''; //any generic image/avatar. It will display when the twitter user is invalid
@@ -116,7 +116,7 @@ class twitterImage
   function profile_image($linked=false,$display=false)
   {
     $img="<img src='$this->image?size=bigger' class='tweet-image' width='60' height='60' style='margin-right: 5px;' alt='$this->displayName' />";
-    $linkedImg="<a href='$this->url' rel='nofollow' title='$this->displayName'>$img</a>";
+    $linkedImg="<a href='http://twitter.com/$this->user' rel='nofollow' title='$this->displayName'>$img</a>";
     if(!$linked && !$display) //the default case
       return $img;
  
