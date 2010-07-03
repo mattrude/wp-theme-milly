@@ -2,16 +2,25 @@
 
 global $Panel;
 $twitterid = $Panel->Settings('TwitterID');
-$twittername = $Panel->Settings('TwitterName'); ?>
+$twittername = $Panel->Settings('TwitterName');
+$twittercount = $Panel->Settings('TwitterCount');
+$twitterimgenabled = $Panel->Settings('TwitterImgEnabled');
+$t=new twitterImage($twitterid);
 
+?>
 <div id='content'>
   <?php $pageposts = $wpdb->get_results($querystr, OBJECT); ?>
   <?php setup_postdata($post); ?>
   <?php global $post; ?>
   <div class="post" id="tweet_template-<?php echo $post->ID; ?>">
     <div id='tweet-<?php echo $post->ID; ?>' class='tweet_post' >
-      <img src="<?php bloginfo('template_url'); ?>/images/twitter-bird.png" class='tweet-image' width="60" height="60" style='margin-right: 5px;' alt='Twitter bird' />
-      <?php the_content(); ?>
+    <?php
+        if ( $twitterimgenabled == 'true' ) {
+          $t->profile_image(true,true);
+        } else {
+           ?><img src="<?php bloginfo('template_url'); ?>/images/twitter-bird.png" class='tweet-image' width="60" height="60" style='margin-right: 5px;' alt='Twitter bird' /><?php
+        }
+      the_content(); ?>
     </div>
     <div id='tweet_date-<?php echo $post->ID; ?>' class='byline tweet_date' >
       <?php 
@@ -31,10 +40,12 @@ $twittername = $Panel->Settings('TwitterName'); ?>
       edit_post_link('Edit', ' | '); ?>
     </div><!--close tweet_post class-->	
   </div><!--close post class-->
+<!--
   <div class="navigation">
-    <div class="txtalignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-    <div class="txtalignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+    <div class="txtalignleft"><?php next_post_link('&laquo; Older Entries') ?></div>
+    <div class="txtalignright"><?php previous_post_link('Newer Entries &raquo;') ?></div>
   </div>
+-->
 </div><!--close content class-->
 
 <?php get_sidebar(); ?>
