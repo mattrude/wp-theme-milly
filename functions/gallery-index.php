@@ -6,7 +6,7 @@
 	<div id="gallerypost_body-<?php the_ID(); ?>" class="gallerypost_body">
 		<?php $images =& get_children( 'post_type=attachment&post_mime_type=image' ); ?>
 		<h1><a rel="bookmark" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-		<div><p class="byline">Posted by <?php the_author(); ?> on <?php the_time('F jS, Y') . edit_post_link('Edit', ' | '); ?></p></div>
+		<div><p class="byline">Album created by <?php the_author(); ?> on <?php the_time('F jS, Y') . edit_post_link('Edit', ' | '); ?></p></div>
 		<div class="entry">
 			<?php the_excerpt(); ?>
 		</div>
@@ -21,7 +21,7 @@
         <?php $num_gallery_posts = $wpdb->get_var( "SELECT COUNT(*) FROM $wpdb->posts WHERE post_parent = '$post->ID' AND post_type = 'attachment'" );
         if ( $num_gallery_posts > 1 ) {
 	  ?><div id="gallerypost_sub_right-<?php the_ID(); ?>" class="gallerypost_sub_right">
-	    This Album contains <?php echo $num_gallery_posts; ?> items.
+	    <small>This Album contains <?php echo $num_gallery_posts; ?> items.</small>
 	  </div>
         <?php } ?>
     </div>
