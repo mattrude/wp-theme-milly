@@ -29,7 +29,7 @@ while (have_posts()) : the_post();
         <?php 
         $post_id = $post->ID;
         $tweet_id = get_post_meta( $post_id, 'aktt_twitter_id', true);
-	?> Posted to <a href="http://twitter.com">Twitter</a> by <a href="http://twitter.com/<?php echo $twitterid; ?>"><?php echo $twittername; ?></a><?php
+	?> Posted to <a href="http://twitter.com">Twitter</a> by <a href="http://twitter.com/<?php echo $twitterid; ?>"><?php echo $twittername; ?></a>, <?php
         if ($tweet_id) { 
           echo "<a href='http://twitter.com/$twitterid/status/$tweet_id'>";
           the_time('F jS, h:ma T Y ');

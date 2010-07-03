@@ -74,7 +74,7 @@ class twitterImage
   var $user='';
   var $image='';
   var $displayName='';
-  var $url='http://twitter.com/';
+  var $url='';
   var $format='json';
   var $requestURL='http://twitter.com/users/show/';
   var $imageNotFound=''; //any generic image/avatar. It will display when the twitter user is invalid
