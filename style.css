@@ -224,6 +224,11 @@ td a, th a {
 	font-weight: bold;
 	}
 
+/* Numbered Lists */
+ol {
+	margin: 10px 0 10px 30px;
+	}
+
 /* Forms */
 textarea {
 	width: 98%;
