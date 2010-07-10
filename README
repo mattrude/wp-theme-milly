@@ -9,6 +9,7 @@ Change Log
 
  * Added dashboard custom image header function
  * Rewrite of Header Navigation Menu functions
+ * Added footnote function
  * UI clean up
 
 
