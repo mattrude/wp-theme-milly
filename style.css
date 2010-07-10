@@ -1112,7 +1112,7 @@ a.comment-link:hover {
 #content .simple-footnotes ol { margin-top: 0; }
 #content .simple-footnotes li { padding-top: 10px }
 .entry-content sup, .entry-content sub { font-size: 8px }
-sup { height: 0px; line-height: 1; position: relative; bottom: 1ex; }
+sup { height: 0px; line-height: 1; position: relative; bottom: 1ex; margin-left: -1ex; }
 
 /* Remove the WordPres stats Smiley */
 img#wpstats{width:0px;height:0px;padding:0px;border:none;overflow:hidden}
