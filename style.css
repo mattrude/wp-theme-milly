@@ -1124,6 +1124,15 @@ a.comment-link:hover {
 #exif-data p {
 	margin: 0 10px;
 	}
+/* Adds styling for footnotes */
+#content .simple-footnotes { font-size: 12px; line-height: 17px; margin-top: 20px; }
+#content .simple-footnotes p.notes { margin-bottom: 0 }
+#content .simple-footnotes ol { margin-top: 0; }
+#content .simple-footnotes li { padding-top: 10px }
+
+.entry-content sup, .entry-content sub { font-size: 8px }
+sup { height: 0px; line-height: 1; position: relative; bottom: 1ex; }
+
 /* Remove the WordPres stats Smiley */
 img#wpstats{width:0px;height:0px;padding:0px;border:none;overflow:hidden}
 
