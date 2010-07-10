@@ -27,7 +27,7 @@ class mdr_footnotes {
         global $id;
         if ( empty( $this->footnotes[$id] ) )
             return $content;
-        $content .= '<div class="simple-footnotes"><p class="notes">Notes:</p><ol>';
+        $content .= '<div class="simple-footnotes"><h2 class="notes">Notes:</h2><ol>';
         foreach ( array_filter( $this->footnotes[$id] ) as $num => $note )
             $content .= '<li id="note-' . $id . '-' . $num . '">' . do_shortcode( $note ) . ' <a href="#return-note-' . $id . '-' . $num . '">&#8617;</a></li>';
         $content .= '</ol></div>';
