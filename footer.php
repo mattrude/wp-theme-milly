@@ -21,7 +21,6 @@
 			<?php global $Panel; echo $Panel->Settings('FooterText'); ?><br />
 			</p>
 		</div>
-                <?php get_sidebar( 'footer' ); ?>
 	</div>
 	<!--footer plugin hook-->
 	<?php wp_footer(); ?>
