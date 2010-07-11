@@ -34,7 +34,7 @@
 	        } elseif ( in_category( 'tweets' )) {
 	                include('functions/twitter-index.php');
 	        } else {
-			include('functions/post-full.php');
+			milly_post_full();
 		}
 		endwhile; ?>
 		<!--The Loop has ended-->	

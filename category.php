@@ -7,7 +7,7 @@
     if ( is_category( 'gallery' )) {
       include('functions/gallery-index.php');
     } else {
-      include('functions/post-full.php');
+      milly_post_full();
     } endwhile; ?>
   <!--The Loop has ended-->	
   <?php milly_pre_next_post_cat(); ?>
