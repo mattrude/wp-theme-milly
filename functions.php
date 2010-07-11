@@ -8,12 +8,9 @@ require_once('functions/google-webmaster-tools.php');
 require_once('functions/robots.php');
 require_once('functions/footnotes.php');
 #require_once('functions/footer-txt.php');
-#require_once('functions/random-image-function.php');
-#require_once('functions/random-image-footer.php');
 require_once('functions/twitter-post_type.php');
-#require_once('functions/twitter-widget.php');
 
-/*********************************************************************
+/********************************************************************************
   Add Custom Navigation Menu for WordPress 3.0
 */
 
@@ -41,7 +38,7 @@ register_nav_menus( array(
 ) );
 
 
-/****************************************************************************
+/********************************************************************************
   Add Custom Taxonomies for WordPress 2.9
 */
 
@@ -53,7 +50,7 @@ function create_milly_taxonomies() {
 add_action( 'init', 'create_milly_taxonomies', 0 );
 
 
-/**************************************************************************
+/********************************************************************************
   Add Custom User Contact Methods
 */
 
@@ -72,7 +69,11 @@ function add_milly_contactmethod( $contactmethods ) {
 }
 add_filter('user_contactmethods','add_milly_contactmethod',10,1);
 
-// Add Widget sidebar to Theme
+
+/********************************************************************************
+  Add Widget sidebar to Theme
+*/
+
 if(function_exists('register_sidebar')) {
   register_sidebar(array (
     'name' => __('Sidebar Widget Area'),
@@ -96,7 +97,7 @@ if(function_exists('register_sidebar')) {
 }
 
 
-/***********************************************************************
+/********************************************************************************
   Make theme available for translation
   Translations can be filed in the /languages/ directory
 */
@@ -104,7 +105,7 @@ if(function_exists('register_sidebar')) {
 load_theme_textdomain( 'milly', TEMPLATEPATH . '/languages' );
 
 
-/************************************************************************
+/********************************************************************************
   Random Settings Changes
 */
 
@@ -132,7 +133,7 @@ add_filter('gallery_style',
   )
 );
 
-/************************************************************************
+/********************************************************************************
   This is the Posts section
 */
 
@@ -193,7 +194,7 @@ function milly_post_short() { ?>
 <?php }
 
 
-/*********************************************************************************
+/********************************************************************************
  Your changeable header business starts here
 */
 
@@ -227,7 +228,7 @@ function milly_admin_header_style() {
 }
 
 
-/**************************************************************************
+/*********************************************************************************
  Change the page naviagion forward and back buttons
 */
 
@@ -252,7 +253,7 @@ function milly_pre_next_post_cat() {
 }
 
 
-/************************************************************************
+/*********************************************************************************
    This shortcode displays the years since the date provided.
    To use this shortcode, add some text to a post or page simmiler to:
 
@@ -274,8 +275,9 @@ function mdr_timesince($atts, $content = null) {
 add_shortcode('ts', 'mdr_timesince');
 
 
-/************************************************************************
-  Using WordPress functions to retrieve the extracted EXIF information from database
+/*********************************************************************************
+  Using WordPress functions to retrieve the extracted EXIF 
+  information from database
 */
 function mdr_exif() { ?>
   <div id="exif">
