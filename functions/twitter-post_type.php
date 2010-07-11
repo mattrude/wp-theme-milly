@@ -23,13 +23,51 @@ function Twiiter_post_type_init() {
     'show_ui' => true,
     'hierarchical' => false,
     'rewrite' => array('slug' => 'twitter'),
-    'supports' => array('title', 'editor', 'custom-fields')
+    'supports' => array('title', 'editor'),
+    'register_meta_box_cb' => 'twitter_id_callback'
   );
   register_post_type('twitter',$args);
+  
+  register_taxonomy( 'user', 'twitter', 
+    array(
+      'hierarchical' => false,
+      'label' => __('Twitter User'),
+      'query_var' => 'user',
+      'rewrite' => array('slug' => 'User' )
+    )
+  );
 }
 add_action('init','Twiiter_post_type_init');
 
+add_action('admin_menu', 'twitter_id_add_metabox');
+add_action('save_post', 'twitter_id_save_metabox');
 
+function twitter_id_add_metabox() {
+  add_meta_box('twitter-id', __('Twitter ID'), 'twitter_id_metabox', 'twitter', 'side');
+}
+
+function twitter_id_metabox() {
+  echo '<input type="hidden" name="twitter_id_metabox" id="twitter_id_metabox" value="' . 
+    wp_create_nonce( plugin_basename(__FILE__) ) . '" />';
+
+  // The actual fields for data entry
+  global $post;
+  $post_id_var = get_post_meta($post->ID, 'aktt_twitter_id', true);
+  echo '<label for="aktt_twitter_id">' . __("Tweet ID: ") . '</label> ';
+  echo '<input type="text" name="aktt_twitter_id" value="' . $post_id_var . '" size="25" />';
+}
+
+function twitter_id_save_metabox() {
+  global $post;
+  $post_id = $post->ID;
+  $post_id_var = $_POST['aktt_twitter_id'];
+  if(get_post_meta($post_id, 'aktt_twitter_id') == "") 
+    add_post_meta($post_id, 'aktt_twitter_id', $post_id_var, true);
+  elseif($post_id_var != get_post_meta($post_id, 'aktt_twitter_id', true))
+    update_post_meta($post_id, 'aktt_twitter_id', $post_id_var); 
+  elseif($post_id_var == "")
+    delete_post_meta($post_id, 'aktt_twitter_id');  
+}
 
 // Change all post in category Twitter to post type twitter
 function twitter_post_type_convert() {
@@ -49,6 +87,7 @@ function twitter_post_type_convert() {
               'category_name' => $TwitterCatSlug->slug,
               'post_type' => 'post'
           );
+           
           $mdr_postslist = get_posts($args);
           foreach ($mdr_postslist as $post) {
             $mdr_postid = $post->ID;
