@@ -1,14 +1,14 @@
 <?php // Do not delete these lines
-  if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
-    die ('Please do not load this page directly. Thanks!');
-  if ( post_password_required() ) {
-    echo 'This post is password protected. Enter the password to view comments.';
-    return;
-  }
+if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
+  die ('Please do not load this page directly. Thanks!');
+if ( post_password_required() ) {
+  echo 'This post is password protected. Enter the password to view comments.';
+  return;
+}
+
 /* This variable is for alternating comment background */
 $oddcomment = 'alt'; ?>
 
-<!-- You can start editing here. -->
 <?php //count comments, trackbacks, and pingbacks
 if($comments) {
   $trackping_count = 0; $comment_count = 0;
@@ -18,9 +18,9 @@ if($comments) {
       $comment_count++;
     }else{
       $trackping_count++;
-    } //endif
-  } //end foreach
-} //endif
+    }
+  }
+}
 ?>
 
 <?php if (have_comments($comment_type = 'comment')) : ?>
