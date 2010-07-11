@@ -104,6 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 #access .menu ul {list-style:none;margin: 0 auto;}
 #access .menu li {float:left;position:relative;}
+#access .menu ul li {border-top: 1px solid #3D4F43;}
 #access .menu li.current_page_item a {color: #fff;}
 #access a {
         display:block;
