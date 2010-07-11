@@ -87,8 +87,8 @@ if(function_exists('register_sidebar')) {
     'name' => __('Footer Widget Area'),
     'id' => 'footer-widget-area',
     'description' => __('The footer widget area'),
-    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-    'after_widget' => "</li>",
+    'before_widget' => '<div class="widget-footer">',
+    'after_widget' => '</div>',
     'before_title' => '<h3 class="widget-title">',
     'after_title' => '</h3>',
   ));

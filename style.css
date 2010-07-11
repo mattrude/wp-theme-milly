@@ -589,6 +589,9 @@ p.pages a {margin: 0 0 0 3px;padding: 4px 7px;color: #486472 !important;backgrou
 	background: #fff;
 	border: 1px solid #e7e7e7;
 	}
+.wiget-footer {
+	overflow: hidden;
+	}
 
 /* Navigation links */
 .navigation {

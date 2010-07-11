@@ -1,6 +1,9 @@
 </div> 
 <div id="footer-container">
 	<div id="footer">
+                <div id="primary" class="aside">
+		  <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-widget-area') ) ?>
+		</div>
 		<div id="footer-logo">
 			<a href="http://wordpress.org/" rel="nofollow"><img src="<?php bloginfo('template_url') ?>/images/wordpress-logo.png" height='100' width='100' alt="WordPress Logo" /></a>
 		</div>
