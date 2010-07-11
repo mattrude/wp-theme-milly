@@ -13,11 +13,10 @@ require_once('functions/footnotes.php');
 require_once('functions/twitter-post_type.php');
 require_once('functions/twitter-widget.php');
 
-// Add Post Thumbnails for WordPress 2.9
-add_theme_support('post-thumbnails');
-set_post_thumbnail_size(200, 200);
+/*********************************************************************
+  Add Custom Navigation Menu for WordPress 3.0
+*/
 
-// Add Custom Navigation Menu for WordPress 3.0
 add_theme_support( 'nav-menus' );
 if ( ! get_term_by( 'name', 'Header Navigation Menu', 'nav_menu' ) ) {
   echo "Creating Header Navigation Menu<br />";
@@ -35,16 +34,17 @@ if ( get_term_by( 'name', 'Menu 1', 'nav_menu' ) ) {
 function milly_nav_fallback() {
     wp_page_menu( 'number=10&show_home=Home' );
 }
+
 // This theme uses wp_nav_menu() in one location.
 register_nav_menus( array(
     'header' => __( 'The Header Navigation Menu', 'milly' ),
 ) );
 
-// Make theme available for translation
-// Translations can be filed in the /languages/ directory
-load_theme_textdomain( 'milly', TEMPLATEPATH . '/languages' );
 
-// Add Custom Taxonomies for WordPress 2.9
+/****************************************************************************
+  Add Custom Taxonomies for WordPress 2.9
+*/
+
 function create_milly_taxonomies() {
   register_taxonomy( 'people', 'post', array( 'hierarchical' => false, 'label' => __('People'), 'query_var' => true, 'rewrite' => true ) );
   register_taxonomy( 'places', 'post', array( 'hierarchical' => false, 'label' => __('Places'), 'query_var' => true, 'rewrite' => true ) );
@@ -52,47 +52,11 @@ function create_milly_taxonomies() {
 }
 add_action( 'init', 'create_milly_taxonomies', 0 );
 
-// Your changeable header business starts here
-define( 'HEADER_TEXTCOLOR', '' );
-define( 'HEADER_IMAGE', '%s/images/header-cabin.jpg' );
-define( 'HEADER_IMAGE_WIDTH', apply_filters( 'milly_header_image_width', 984 ) );
-define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'milly_header_image_height', 200 ) );
-define( 'NO_HEADER_TEXT', true );
 
-// Add a way for the custom header to be styled in the admin panel that controls
-// custom headers. See milly_admin_header_style(), below.
-add_custom_image_header( '', 'milly_admin_header_style' );
+/**************************************************************************
+  Add Custom User Contact Methods
+*/
 
-function milly_admin_header_style() {
-?>
-<style type="text/css">
-/* Shows the same border as on front end */
-#headimg {
-        border-bottom: 1px solid #000000;
-        border-top: 4px solid #000000;
-}
-
-/* If NO_HEADER_TEXT is false, you can style here the header text preview */
-#headimg #name {
-}
-
-#headimg #desc {
-}
-</style>
-<?php
-}
-
-// ... and thus ends the changeable header business.
-
-// Disable gallery CSS insertes
-add_filter('gallery_style',
-	create_function(
-		'$css',
-		'return preg_replace("#<style type=\'text/css\'>(.*?)</style>#s", "", $css);'
-		)
-	);
-
-// Add Custom User Contact Methods
 function add_milly_contactmethod( $contactmethods ) {
   // Add Twitter
   $contactmethods['facebook'] = __('Facebook URL');
@@ -107,38 +71,6 @@ function add_milly_contactmethod( $contactmethods ) {
   return $contactmethods;
 }
 add_filter('user_contactmethods','add_milly_contactmethod',10,1);
-
-// Change the page naviagion forward and back buttons
-function milly_pre_next_post() {
-  ?>
-  <div class="navigation">
-     <div class="floatleft"><?php next_post_link('&laquo; %link') ?></div>
-     <div class="floatright"><?php previous_post_link('%link &raquo;') ?></div>
-     <div class="clearfloatthick">&nbsp;</div>
-   </div>
-  <?php
-}
-
-function milly_pre_next_post_cat() {
-  ?>
-  <div class="navigation">
-    <div class="txtalignleft"><?php previous_posts_link('&laquo; Newer Entries'); ?></div>
-    <div class="txtalignright"><?php next_posts_link('Older Entries &raquo;') ?></div>
-    <div class="clearfloatthick">&nbsp;</div>
-  </div>
-  <?php
-}
-// Changing excerpt length
-function new_excerpt_length($length) {
-	return 80;
-}
-add_filter('excerpt_length', 'new_excerpt_length');
- 
-// Changing excerpt more
-function new_excerpt_more($more) {
-	return '...';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
 
 // Add Widget sidebar to Theme
 if(function_exists('register_sidebar')) {
@@ -163,25 +95,46 @@ if(function_exists('register_sidebar')) {
 
 }
 
-/* This shortcode displays the years since the date provided.
-   To use this shortcode, add some text to a post or page simmiler to:
 
-     [ts date='1980-06-19']
+/***********************************************************************
+  Make theme available for translation
+  Translations can be filed in the /languages/ directory
+*/
 
-   The date format is YYYY-MM-DD */
-function mdr_timesince($atts, $content = null) {
-  extract(shortcode_atts(array("date" => ''), $atts));
-  if(empty($date)) {
-    return "<br /><br />************No date provided************<br /><br />";
-  }
-  $mdr_unix_date = strtotime($date);
-  $mdr_time_difference = time() - $mdr_unix_date ;
-  $years = floor($mdr_time_difference / 31556926 );
-  $num_years_since = $years;
-  return $num_years_since;
+load_theme_textdomain( 'milly', TEMPLATEPATH . '/languages' );
+
+
+/************************************************************************
+  Random Settings Changes
+*/
+
+// Add Post Thumbnails for WordPress 2.9
+add_theme_support('post-thumbnails');
+set_post_thumbnail_size(200, 200);
+
+// Changing excerpt more
+function new_excerpt_more($more) {
+  return '...';
 }
-add_shortcode('ts', 'mdr_timesince');
+add_filter('excerpt_more', 'new_excerpt_more');
 
+// Changing excerpt length
+function new_excerpt_length($length) {
+  return 80;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
+ 
+// Disable gallery CSS insertes
+add_filter('gallery_style',
+  create_function(
+    '$css',
+    'return preg_replace("#<style type=\'text/css\'>(.*?)</style>#s", "", $css);'
+  )
+);
+
+/************************************************************************
+  This is the Posts section
+*/
 
 // This is the Full Message Block, Most posts show this block.
 function milly_post_full() { ?>
@@ -216,7 +169,6 @@ function milly_post_full() { ?>
   </div><!--close post class-->
 <?php }
 
-
 // This is the Short Message Block
 function milly_post_short() { ?>
   <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -241,7 +193,90 @@ function milly_post_short() { ?>
 <?php }
 
 
-// Using WordPress functions to retrieve the extracted EXIF information from database
+/*********************************************************************************
+ Your changeable header business starts here
+*/
+
+define( 'HEADER_TEXTCOLOR', '' );
+define( 'HEADER_IMAGE', '%s/images/header-cabin.jpg' );
+define( 'HEADER_IMAGE_WIDTH', apply_filters( 'milly_header_image_width', 984 ) );
+define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'milly_header_image_height', 200 ) );
+define( 'NO_HEADER_TEXT', true );
+
+// Add a way for the custom header to be styled in the admin panel that controls
+// custom headers. See milly_admin_header_style(), below.
+add_custom_image_header( '', 'milly_admin_header_style' );
+
+function milly_admin_header_style() {
+?>
+<style type="text/css">
+/* Shows the same border as on front end */
+#headimg {
+        border-bottom: 1px solid #000000;
+        border-top: 4px solid #000000;
+}
+
+/* If NO_HEADER_TEXT is false, you can style here the header text preview */
+#headimg #name {
+}
+
+#headimg #desc {
+}
+</style>
+<?php
+}
+
+
+/**************************************************************************
+ Change the page naviagion forward and back buttons
+*/
+
+function milly_pre_next_post() {
+  ?>
+  <div class="navigation">
+     <div class="floatleft"><?php next_post_link('&laquo; %link') ?></div>
+     <div class="floatright"><?php previous_post_link('%link &raquo;') ?></div>
+     <div class="clearfloatthick">&nbsp;</div>
+   </div>
+  <?php
+}
+
+function milly_pre_next_post_cat() {
+  ?>
+  <div class="navigation">
+    <div class="txtalignleft"><?php previous_posts_link('&laquo; Newer Entries'); ?></div>
+    <div class="txtalignright"><?php next_posts_link('Older Entries &raquo;') ?></div>
+    <div class="clearfloatthick">&nbsp;</div>
+  </div>
+  <?php
+}
+
+
+/************************************************************************
+   This shortcode displays the years since the date provided.
+   To use this shortcode, add some text to a post or page simmiler to:
+
+     [ts date='1980-06-19']
+
+   The date format is YYYY-MM-DD 
+*/
+function mdr_timesince($atts, $content = null) {
+  extract(shortcode_atts(array("date" => ''), $atts));
+  if(empty($date)) {
+    return "<br /><br />************No date provided************<br /><br />";
+  }
+  $mdr_unix_date = strtotime($date);
+  $mdr_time_difference = time() - $mdr_unix_date ;
+  $years = floor($mdr_time_difference / 31556926 );
+  $num_years_since = $years;
+  return $num_years_since;
+}
+add_shortcode('ts', 'mdr_timesince');
+
+
+/************************************************************************
+  Using WordPress functions to retrieve the extracted EXIF information from database
+*/
 function mdr_exif() { ?>
   <div id="exif">
     <h3 class='comment-title exif-title'><?php _e('Images EXIF Data'); ?></h3>
