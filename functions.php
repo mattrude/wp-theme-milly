@@ -11,7 +11,7 @@ require_once('functions/footnotes.php');
 #require_once('functions/random-image-function.php');
 #require_once('functions/random-image-footer.php');
 require_once('functions/twitter-post_type.php');
-require_once('functions/twitter-widget.php');
+#require_once('functions/twitter-widget.php');
 
 /*********************************************************************
   Add Custom Navigation Menu for WordPress 3.0
