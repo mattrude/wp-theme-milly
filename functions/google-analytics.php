@@ -28,6 +28,12 @@ function google_analytics() {
 
       </script>
       <!--End Google Analytics tracking script-->
+      <!-- Woopra Code Start -->
+        <script type="text/javascript" src="//static.woopra.com/js/woopra.v2.js"></script>
+        <script type="text/javascript">
+          woopraTracker.track();
+        </script>
+      <!-- Woopra Code End -->
       <?php } else {
         ?>
         <!--No user is logged in and Google Analytics is enabled, but there is not Google Analytics ID filled in-->
