@@ -204,7 +204,8 @@ class milly_twitter_widget extends WP_Widget {
       global $post;
       echo "<li>";
       the_content();
-      echo "</li>";
+      ?><small><a href='<?php echo get_permalink(); ?>'><?php relative_post_the_date(); ?></a></small>
+      </li><?php
     endwhile;
     echo "</ul>";
     echo $after_widget;
