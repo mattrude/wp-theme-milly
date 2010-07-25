@@ -3,10 +3,9 @@ require_once('functions/control-panel.php');
 require_once('functions/category-excluder.php');
 require_once('functions/google-analytics.php');
 require_once('functions/google-webmaster-tools.php');
-#require_once('functions/regenerate-thumbnails.php');
 require_once('functions/robots.php');
 require_once('functions/footnotes.php');
-#require_once('functions/footer-txt.php');
+require_once('functions/keep-in-touch-widget.php');
 require_once('functions/twitter-post_type.php');
 
 /********************************************************************************
