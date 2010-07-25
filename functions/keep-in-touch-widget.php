@@ -16,8 +16,8 @@ class milly_keep_in_touch_widget extends WP_Widget {
     echo "{$before_widget}{$before_title}$widget_title{$after_title}<ul class='keep-in-touch'>";
     echo "<li id='twitter'><a href='http://twitter.com/$twitter_id'>Twitter</a></li>";
     echo "<li id='facebook'><a href='http://facebook.com/$facebook_id'>Facebook</a></li>";
-    echo "<li id=feed><a href='" .get_bloginfo_rss('rss2_url'). "'>RSS Feed</a></li>";
-    echo "<li id=feed><a href='" .get_bloginfo_rss('atom_url'). "'>ATOM Feed</a></li>";
+    echo "<li id=feed><a href='" .get_bloginfo_rss('atom_url'). "'>ATOM</a> |<a href='" .get_bloginfo_rss('rss2_url'). "'>RSS</a> Post Feeds</li>";
+    echo "<li id=feed><a href='" .get_bloginfo_rss('comments_atom_url'). "'>ATOM</a> |<a href='" .get_bloginfo_rss('comments_rss2_url'). "'>RSS</a> Comments</li>";
     echo "</ul>";
     echo $after_widget;
   }
