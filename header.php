@@ -5,14 +5,14 @@
 <head>
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
   <link rel='shortcut icon' href='<?php bloginfo('template_url') ?>/images/favicon.ico' />
-  <?php wp_head(); ?>
   <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
   <?php if ( $paged != '0' ) {
     ?><title><?php wp_title(' - ', true, 'right'); ?><?php bloginfo('name'); echo " - Page $paged" ?></title><?php
   } else {
     ?><title><?php wp_title(' - ', true, 'right'); ?><?php bloginfo('name'); ?></title><?php
   } ?>
-  <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
+  <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="http://mattrude.com/feed/atom" />
+  <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Comments Feed" href="http://mattrude.com/comments/feed/atom" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
   <?php if (function_exists('google_webmaster_tools')) { google_webmaster_tools(); } ?>
