@@ -5,6 +5,7 @@ require_once('functions/google-analytics.php');
 require_once('functions/google-webmaster-tools.php');
 require_once('functions/robots.php');
 require_once('functions/footnotes.php');
+require_once('functions/relative-date.php');
 require_once('functions/keep-in-touch-widget.php');
 require_once('functions/twitter-post_type.php');
 
