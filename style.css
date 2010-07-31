@@ -38,7 +38,7 @@ pre code{font-size:1em;}
 body {
 	font: 14px/21px Verdana, Arial, sans-serif;
 	color: #666;
-	background: #eff1e1 ;
+	background: #e7e7de;
 	}
 #body-container {
 	overflow: hidden;
@@ -47,7 +47,7 @@ body {
 
 /* Links */
 a:link, a:visited {
-	color: #eff1e1;
+	color: #e7e7de;
 	text-decoration: none;
 	}
 a:hover, a:active {
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 #access a {
         display:block;
         text-decoration:none;
-        color:#EFF1E1;
+        color:#e7e7de;
 	float: left;
 	padding: 0 30px;
 	border-right: 1px solid #3d4f43;
@@ -213,7 +213,7 @@ td {
 	border: 1px solid #e2e2e2;
 	}
 tr {
-	background: #EFF1E1;
+	background: #e7e7de;
 	}
 th {
 	padding: .3em;
@@ -280,7 +280,7 @@ input {
 /* Notes */
 .note {
 	padding: 6px 9px;
-	background: #EFF1E1;
+	background: #e7e7de;
 	border: 1px solid #e2e2e2;
 	}
 
@@ -301,7 +301,7 @@ input {
 /* Downloads */
 .download {
 	padding: 6px 9px;
-	background: #EFF1E1;
+	background: #e7e7de;
 	border: 1px solid #e2e2e2;
 	}
 
@@ -347,7 +347,7 @@ img, a img {
 .post img {
 	max-width: 590px;
 	padding: 4px;
-	background: #EFF1E1;
+	background: #e7e7de;
 	border: 1px solid #e2e2e2;
 	}
 
@@ -366,7 +366,7 @@ img.wp-smiley {
 	height: 100px;
 	margin: 0 15px 10px 0;
 	padding: 4px;
-	background: #EFF1E1;
+	background: #e7e7de;
 	border: 1px solid #e2e2e2;
 	}
 #random-images {
@@ -376,7 +376,7 @@ img.wp-smiley {
 .random-image img {
 	display: block;
 	vertical-align:middle;
-	background: #EFF1E1;
+	background: #e7e7de;
 	border: 1px solid #e2e2e2;
 	margin: 10px auto 10px auto;
 	}
@@ -388,7 +388,7 @@ img.wp-smiley {
 	overflow: hidden;
 	max-width: 598px;
 	padding: 5px 0;
-	background: #EFF1E1;
+	background: #e7e7de;
 	border: 1px solid #e2e2e2;
 	text-align: center;
 	}
@@ -414,7 +414,7 @@ img.wp-smiley {
 	}
 .gallery img {
 	padding: 4px;
-	background: #EFF1E1;
+	background: #e7e7de;
 	border: 1px solid #e2e2e2;
 	}
 .giInfo {
@@ -425,7 +425,7 @@ img.wp-smiley {
 	float: left;
 	margin: 0 15px 5px 0;
 	padding: 4px;
-	background: #EFF1E1;
+	background: #e7e7de;
 	border: 1px solid #e2e2e2;
 	}
 
@@ -435,7 +435,7 @@ img.wp-smiley {
 #header-container {
 	overflow: hidden;
 	width: 100%;
-	background: #EFF1E1;
+	background: #e7e7de;
 	margin: 20px 0 0 0;
 	}
 #header {
@@ -769,7 +769,7 @@ p.comments-closed {
 #comments li.depth-2, li.depth-4, li.depth-6, li.depth-8, li.depth-10 {
 	margin: 15px 0 0 15px;
 	padding: 5px;
-	background: #EFF1E1;
+	background: #e7e7de;
 	border: 1px solid #e7e7e7;
 	}
 
@@ -781,31 +781,31 @@ p.comments-closed {
 	border: 1px solid #e2e2e2;
 	}
 li.depth-1 img {
-	background: #EFF1E1;
+	background: #e7e7de;
 	}
 li.depth-2 img {
 	background: #FFF;
 	}
 li.depth-3 img {
-	background: #EFF1E1;
+	background: #e7e7de;
 	}
 li.depth-4 img {
 	background: #FFF;
 	}
 li.depth-5 img {
-	background: #EFF1E1;
+	background: #e7e7de;
 	}
 li.depth-6 img {
 	background: #FFF;
 	}
 li.depth-7 img {
-	background: #EFF1E1;
+	background: #e7e7de;
 	}
 li.depth-8 img {
 	background: #FFF;
 	}
 li.depth-9 img {
-	background: #EFF1E1;
+	background: #e7e7de;
 	}
 li.depth-10 img {
 	background: #FFF;
