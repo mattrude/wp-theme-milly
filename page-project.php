@@ -3,9 +3,11 @@
 
 	<div id="content">
 		<div class="hfeed content">
+		<?php if (function_exists('adsensem_ad')) { ?>
 		<div class="post">
 			<?php adsensem_ad('Projects'); ?><!--adsense--> 
 		</div>
+		<?php } ?>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 		<h1 class="attr"><?php the_title(); ?></h1>
@@ -24,15 +26,19 @@
 			</div>
 			</div>
 		</div>
+		<?php if (function_exists('adsensem_ad')) { ?>
 		<div class="post">
 			<?php adsensem_ad('Projects'); ?><!--adsense--> 
 		</div>
+		<?php } ?>
 		<?php endwhile; endif; ?>
 	<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 	<?php comments_template(); ?>
+	<?php if (function_exists('adsensem_ad')) { ?>
 	<div class="post">
 		<?php adsensem_ad('Projects'); ?><!--adsense--> 
 	</div>
+	<?php } ?>
 	</div>
 
 <?php get_sidebar(); ?>
