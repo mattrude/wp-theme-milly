@@ -8,7 +8,6 @@ require_once('functions/footnotes.php');
 require_once('functions/relative-date.php');
 require_once('functions/keep-in-touch-widget.php');
 require_once('functions/twitter-post_type.php');
-require_once('functions/twitter-import.php');
 
 /********************************************************************************
   Add Custom Navigation Menu for WordPress 3.0

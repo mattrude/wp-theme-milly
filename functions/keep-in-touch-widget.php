@@ -34,9 +34,9 @@ class milly_keep_in_touch_widget extends WP_Widget {
     $widget_title = strip_tags($instance['widget_title']);
     $twitter_id = strip_tags($instance['twitter_id']);
     $facebook_id = strip_tags($instance['facebook_id']);
-    ?><p><label for="<?php echo $this->get_field_id('widget_title'); ?>"><?php _e('Widget Title')?>:<input class="widefat" id="<?php echo $this->get_field_id('widget_title'); ?>" name="<?php echo $this->get_field_name('widget_title'); ?>" type="text" value="<?php echo esc_attr($widget_title); ?>" /></label></p><?php
-    ?><p><label for="<?php echo $this->get_field_id('twitter_id'); ?>"><?php _e('Twitter ID')?>:<input class="widefat" id="<?php echo $this->get_field_id('twitter_id'); ?>" name="<?php echo $this->get_field_name('twitter_id'); ?>" type="text" value="<?php echo esc_attr($twitter_id); ?>" /></label></p><?php
-    ?><p><label for="<?php echo $this->get_field_id('facebook_id'); ?>"><?php _e('Facebook ID')?>:<input class="widefat" id="<?php echo $this->get_field_id('facebook_id'); ?>" name="<?php echo $this->get_field_name('facebook_id'); ?>" type="text" value="<?php echo esc_attr($facebook_id); ?>" /></label></p><?php
+    ?><p><label for="<?php echo $this->get_field_id('widget_title'); ?>"><?php _e('Widget Title')?>:<input class="widefat" id="<?php echo $this->get_field_id('widget_title'); ?>" name="<?php echo $this->get_field_name('widget_title'); ?>" type="text" value="<?php echo attribute_escape($widget_title); ?>" /></label></p><?php
+    ?><p><label for="<?php echo $this->get_field_id('twitter_id'); ?>"><?php _e('Twitter ID')?>:<input class="widefat" id="<?php echo $this->get_field_id('twitter_id'); ?>" name="<?php echo $this->get_field_name('twitter_id'); ?>" type="text" value="<?php echo attribute_escape($twitter_id); ?>" /></label></p><?php
+    ?><p><label for="<?php echo $this->get_field_id('facebook_id'); ?>"><?php _e('Facebook ID')?>:<input class="widefat" id="<?php echo $this->get_field_id('facebook_id'); ?>" name="<?php echo $this->get_field_name('facebook_id'); ?>" type="text" value="<?php echo attribute_escape($facebook_id); ?>" /></label></p><?php
   }
 }
 
