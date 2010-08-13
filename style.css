@@ -8,19 +8,6 @@ Version: 1.7-devel
 Tags: Widgets, Avatars
 */
 
-/* Get base CSS */
-
-/* Fonts */
-@font-face {
-  font-family: Graublau Sans Web;
-  src: url( fonts/GraublauWeb.otf );
-}
-
-@font-face {
-  font-family: Graublau Sans Web Bold;
-  src: url( fonts/GraublauWebBold.otf );
-}
-
 html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;vertical-align:baseline;outline:none;background:transparent;border:none;text-decoration:none;}
 b,i,hr,u,center,menu,layer,s,strike,font,xmp{margin:0;padding:0;vertical-align:baseline;outline:none;font-size:100%;font-weight:normal;font-style:normal;background:transparent;border:none;text-decoration:none;}
 h1{font-style:normal;font-weight:normal;margin:0;}
@@ -56,7 +43,7 @@ a:hover, a:active {
 
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
-	font-family: Graublau Sans Web, arial, verdana, sans-serif;
+	font-family: "brevia-1","brevia-2",sans-serif;
 	}
 .post h1 {
 	-x-system-font:none;
@@ -94,8 +81,9 @@ h1, h2, h3, h4, h5, h6 {
 #access ul {list-style:none outside none;}
 #access .menu {
 	width: 982px;
+	font-size: 15px;
 	margin: 0 auto;
-	font-family: Graublau Sans Web, Verdana, Arial, sans-serif;
+	font-family: "ff-cocon-web-pro-1","ff-cocon-web-pro-2",Graublau Sans Web, Verdana, Arial, sans-serif;
 	background:#596852;
 	border:1px solid #424F3C;
 	height:38px;
@@ -106,13 +94,12 @@ h1, h2, h3, h4, h5, h6 {
 #access .menu li {float:left;position:relative;}
 #access ul.children li {border-top: 1px solid #3D4F43;}
 #access ul.sub-menu li {border-top: 1px solid #3D4F43;}
-/* #access .menu li.current_page_item a {color: #fff; background:#666;} */
 #access a {
         display:block;
         text-decoration:none;
         color:#e7e7de;
 	float: left;
-	padding: 0 30px;
+	padding: 0 25px;
 	border-right: 1px solid #3d4f43;
 	line-height: none;
 	}
@@ -273,7 +260,6 @@ input {
 	line-height: 39px;
 	margin-right: 3px;
 	font-size: 48px;
-	font-family: "Warnock Pro", "Goudy Old Style", Palatino,"Book Antiqua", Cambria, Georgia, serif;
 	color: #666;
 	}
 
@@ -463,7 +449,7 @@ img.wp-smiley {
 #site-title {
 	margin: 6px 0 0 10px;
 	font-size: 26px;
-	font-family: Graublau Sans Web, arial, verdana, sans-serif;
+	font-family: "ff-cocon-web-pro-1","ff-cocon-web-pro-2", Graublau Sans Web, arial, verdana, sans-serif;
 	}
 #site-title a:link, a:visited {
 	text-decoration: none;
@@ -534,7 +520,8 @@ img.wp-smiley {
 /* Post title (and other titles) */
 .entry-title, .series-title, .related-title {
 	margin: 0 0 5px 0;
-	font: normal normal bold 18px/21px;
+	font-family: "brevia-1","brevia-2",sans-serif;
+	font: normal 18px/21px;
 	}
 .home .post-title, .page-title, .single-title, .attachment-title, .page-title, .series-title, .related-title, 
 .category-title, .tag-title, .author-title, .date-title, .search-title  {
@@ -675,6 +662,7 @@ p.pages a {margin: 0 0 0 3px;padding: 4px 7px;color: #486472 !important;backgrou
 	margin: 0 0 6px 0;
 	padding: 0 5px 5px 0;
 	font: normal normal bold 18px/21px;
+	font-family: "ff-cocon-web-pro-1","ff-cocon-web-pro-2";
 	border-bottom: 1px solid #e2e2e2;
 	}
 .widget ul {

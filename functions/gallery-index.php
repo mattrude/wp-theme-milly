@@ -5,7 +5,7 @@
 	</div>
 	<div id="gallerypost_body-<?php the_ID(); ?>" class="gallerypost_body">
 		<?php $images =& get_children( 'post_type=attachment&post_mime_type=image' ); ?>
-		<h1><a rel="bookmark" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+		<h1 class="single-title entry-title"><a rel="bookmark" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 		<div><p class="byline">Album created by <?php the_author(); ?> on <?php the_time('F jS, Y') . edit_post_link('Edit', ' | '); ?></p></div>
 		<div class="entry">
 			<?php the_excerpt(); ?>

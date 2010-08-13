@@ -16,6 +16,8 @@
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
   <?php if (function_exists('google_webmaster_tools')) { google_webmaster_tools(); } ?>
+  <script type="text/javascript" src="http://use.typekit.com/iqz0som.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <!--This is a plugin hook-->
   <?php wp_head(); ?>
 </head>
