@@ -1,9 +1,8 @@
 <?php
 //This plugin will create a custom post-type 
 
-
 // Add Custom Post Types for WordPress 2.9
-function Twiiter_post_type_init() {
+function Twitter_post_type_init() {
   $args = array(
     'labels' => array(
         'name' => __('Twitter'),
@@ -28,45 +27,60 @@ function Twiiter_post_type_init() {
   );
   register_post_type('twitter',$args);
   
-  register_taxonomy( 'user', 'twitter', 
-    array(
-      'hierarchical' => false,
-      'label' => __('Twitter User'),
-      'query_var' => 'user',
-      'rewrite' => array('slug' => 'User' )
-    )
-  );
 }
-add_action('init','Twiiter_post_type_init');
+add_action('init','Twitter_post_type_init');
 
-add_action('admin_menu', 'twitter_id_add_metabox');
-add_action('save_post', 'twitter_id_save_metabox');
+// Twitter Posts Meta Data
+add_action('admin_menu', 'twitter_add_metabox');
+add_action('save_post', 'twitter_save_metabox');
 
-function twitter_id_add_metabox() {
-  add_meta_box('twitter-id', __('Twitter ID'), 'twitter_id_metabox', 'twitter', 'side');
+function twitter_add_metabox() {
+  add_meta_box('twitter-id', __('Tweets Meta Data'), 'twitter_metabox', 'twitter', 'side');
 }
 
-function twitter_id_metabox() {
+function twitter_metabox() {
   echo '<input type="hidden" name="twitter_id_metabox" id="twitter_id_metabox" value="' . 
     wp_create_nonce( plugin_basename(__FILE__) ) . '" />';
 
   // The actual fields for data entry
   global $post;
   $post_id_var = get_post_meta($post->ID, 'aktt_twitter_id', true);
-  echo '<label for="aktt_twitter_id">' . __("Tweet ID: ") . '</label> ';
+  $post_name_var = get_post_meta($post->ID, 'twitter_name', true);
+  $post_user_var = get_post_meta($post->ID, 'twitter_user', true);
   echo '<input type="text" name="aktt_twitter_id" value="' . $post_id_var . '" size="25" />';
+  echo '<label for="aktt_twitter_id">' . __(" Tweet Post ID") . '</label><br />';
+  echo '<input type="text" name="twitter_name" value="' . $post_name_var . '" size="25" />';
+  echo '<label for="twitter_user">' . __(" Twitter Name") . '</label>';
+  echo '<input type="text" name="twitter_user" value="' . $post_user_var . '" size="25" />';
+  echo '<label for="twitter_user">' . __(" Twitter User") . '</label>';
 }
 
-function twitter_id_save_metabox() {
+function twitter_save_metabox() {
   global $post;
   $post_id = $post->ID;
   $post_id_var = $_POST['aktt_twitter_id'];
+  $post_user_var = $_POST['twitter_user'];
+  
   if(get_post_meta($post_id, 'aktt_twitter_id') == "") 
     add_post_meta($post_id, 'aktt_twitter_id', $post_id_var, true);
   elseif($post_id_var != get_post_meta($post_id, 'aktt_twitter_id', true))
     update_post_meta($post_id, 'aktt_twitter_id', $post_id_var); 
   elseif($post_id_var == "")
     delete_post_meta($post_id, 'aktt_twitter_id');  
+
+  if(get_post_meta($post_id, 'twitter_user') == "") 
+    add_post_meta($post_id, 'twitter_user', $post_user_var, true);
+  elseif($post_user_var != get_post_meta($post_id, 'twitter_user', true))
+    update_post_meta($post_id, 'twitter_user', $post_user_var); 
+  elseif($post_user_var == "")
+    delete_post_meta($post_id, 'twitter_user');  
+
+  if(get_post_meta($post_id, 'twitter_name') == "") 
+    add_post_meta($post_id, 'twitter_name', $post_name_var, true);
+  elseif($post_name_var != get_post_meta($post_id, 'twitter_name', true))
+    update_post_meta($post_id, 'twitter_name', $post_user_var); 
+  elseif($post_name_var == "")
+    delete_post_meta($post_id, 'twitter_name');  
 }
 
 // Change all post in category Twitter to post type twitter

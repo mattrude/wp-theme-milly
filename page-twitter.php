@@ -2,8 +2,6 @@
 <?php get_header();
 
 global $Panel;
-$twitterid = $Panel->Settings('TwitterID');
-$twittername = $Panel->Settings('TwitterName');
 $twittercount = $Panel->Settings('TwitterCount');
 $twitterimgenabled = $Panel->Settings('TwitterImgEnabled');
 $t=new twitterImage($twitterid);
@@ -28,10 +26,12 @@ while (have_posts()) : the_post();
       <div id='tweet_date-<?php echo $post->ID; ?>' class='byline tweet_date' >
         <?php 
         $post_id = $post->ID;
-        $tweet_id = get_post_meta( $post_id, 'aktt_twitter_id', true);
-	?> Posted to <a href="http://twitter.com">Twitter</a> by <a href="http://twitter.com/<?php echo $twitterid; ?>"><?php echo $twittername; ?></a>, <?php
+        $tweet_id = get_post_meta( $post_id, 'twitter_id', true);
+        $twitter_user = get_post_meta( $post_id, 'twitter_user', true);
+        $twitter_name = get_post_meta( $post_id, 'twitter_name', true);
+	?> Posted to <a href="http://twitter.com">Twitter</a> by <a href="http://twitter.com/<?php echo $twitter_user; ?>"><?php echo $twitter_name; ?></a>, <?php
         if ($tweet_id) { 
-          echo "<a href='http://twitter.com/$twitterid/status/$tweet_id'>";
+          echo "<a href='http://twitter.com/$twitter_user/status/$tweet_id'>";
           the_time('F jS, h:ma T Y ');
           echo "</a>";
         } else {
