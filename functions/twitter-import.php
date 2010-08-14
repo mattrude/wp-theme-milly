@@ -66,5 +66,5 @@ if (!wp_next_scheduled('twitter_import_hook')) {
 
 add_action( 'twitter_import_hook', 'twitter_import' );
 
-twitter_import();
+//twitter_import();
 ?>
