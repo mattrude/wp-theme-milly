@@ -23,7 +23,7 @@ a img{border:medium none;}
 pre code{font-size:1em;}
 
 body {
-	font: 14px/21px Verdana, Arial, sans-serif;
+	font: 15px/21px Verdana, Arial, sans-serif;
 	color: #666;
 	background: #e7e7de;
 	}
@@ -31,6 +31,12 @@ body {
 	overflow: hidden;
 	width: 100%;
 	}
+
+/* Fonts */
+h1, h2, h3, h4, h5, h6 { font-family: "brevia-1","brevia-2",sans-serif; }
+#site-title, .widget-title, #access, .menu { font-family: "ff-cocon-web-pro-1","ff-cocon-web-pro-2",verdana,sans-serif; }
+.entry-title, .series-title, .related-title { font-family: "brevia-1","brevia-2",sans-serif; }
+#content { font-family: georgia,"scheme-1","scheme-2",sans-serif }
 
 /* Links */
 a:link, a:visited {
@@ -42,10 +48,7 @@ a:hover, a:active {
 	}
 
 /* Headers */
-h1, h2, h3, h4, h5, h6 {
-	font-family: "brevia-1","brevia-2",sans-serif;
-	}
-.post h1 {
+.post h1, .idc-head h3 {
 	-x-system-font:none;
 	border-bottom:1px solid #E2E2E2;
 	font-weight:bold;
@@ -83,7 +86,6 @@ h1, h2, h3, h4, h5, h6 {
 	width: 982px;
 	font-size: 15px;
 	margin: 0 auto;
-	font-family: "ff-cocon-web-pro-1","ff-cocon-web-pro-2",Graublau Sans Web, Verdana, Arial, sans-serif;
 	background:#596852;
 	border:1px solid #424F3C;
 	height:38px;
@@ -449,7 +451,6 @@ img.wp-smiley {
 #site-title {
 	margin: 6px 0 0 10px;
 	font-size: 26px;
-	font-family: "ff-cocon-web-pro-1","ff-cocon-web-pro-2", Graublau Sans Web, arial, verdana, sans-serif;
 	}
 #site-title a:link, a:visited {
 	text-decoration: none;
@@ -520,7 +521,6 @@ img.wp-smiley {
 /* Post title (and other titles) */
 .entry-title, .series-title, .related-title {
 	margin: 0 0 5px 0;
-	font-family: "brevia-1","brevia-2",sans-serif;
 	font: normal 18px/21px;
 	}
 .home .post-title, .page-title, .single-title, .attachment-title, .page-title, .series-title, .related-title, 
@@ -570,10 +570,10 @@ p.pages a {margin: 0 0 0 3px;padding: 4px 7px;color: #486472 !important;backgrou
 .page-template-no-widgets #content, .no-widgets #content, .attachment #content {
 	width: 984px;
 	}
-.post-box, .page-template-widgets #content .widget {
+.post-box,#idc-container,.widget {
 	overflow: hidden;
 	margin: 0 0 20px 0;
-	padding: 19px 19px 0 19px;
+	padding: 19px;
 	background: #fff;
 	border: 1px solid #e7e7e7;
 	}
@@ -662,7 +662,6 @@ p.pages a {margin: 0 0 0 3px;padding: 4px 7px;color: #486472 !important;backgrou
 	margin: 0 0 6px 0;
 	padding: 0 5px 5px 0;
 	font: normal normal bold 18px/21px;
-	font-family: "ff-cocon-web-pro-1","ff-cocon-web-pro-2";
 	border-bottom: 1px solid #e2e2e2;
 	}
 .widget ul {
@@ -851,7 +850,7 @@ a.comment-link:hover {
 #respond {
 	overflow: hidden;
 	margin: 0 0 20px 0;
-	padding: 19px 19px 0 19px;
+	padding: 19px;
 	background: #fff;
 	border: 1px solid #e7e7e7;
 	}
