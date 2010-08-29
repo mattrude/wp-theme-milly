@@ -23,9 +23,10 @@ a img{border:medium none;}
 pre code{font-size:1em;}
 
 body {
-	font: 15px/21px Verdana, Arial, sans-serif;
+	font: 15px/21px;
 	color: #666;
 	background: #e7e7de;
+	font-family: "myriad-pro-1","myriad-pro-2",georgia,sans-serif;
 	}
 #body-container {
 	overflow: hidden;
@@ -33,10 +34,9 @@ body {
 	}
 
 /* Fonts */
-h1, h2, h3, h4, h5, h6 { font-family: "brevia-1","brevia-2",sans-serif; }
 #site-title, .widget-title, #access, .menu { font-family: "ff-cocon-web-pro-1","ff-cocon-web-pro-2",verdana,sans-serif; }
-.entry-title, .series-title, .related-title { font-family: "brevia-1","brevia-2",sans-serif; }
-#content { font-family: georgia,"scheme-1","scheme-2",sans-serif }
+h1, h2, h3, h4, h5, h6, .entry-title, .series-title, .related-title { font-family: "brevia-1","brevia-2",sans-serif; }
+body, #footer p, #content { font-family: "myriad-pro-1","myriad-pro-2",georgia,sans-serif; }
 
 /* Links */
 a:link, a:visited {
@@ -57,7 +57,7 @@ a:hover, a:active {
 	font-style:normal;
 	font-variant:normal;
 	margin: 0;
-	padding:10px 0 2px;
+	padding:10px 0 0;
 	}
 .page h1 {
 	-x-system-font:none;
@@ -178,7 +178,7 @@ pre, code {
 	overflow: auto;
 	padding: 5px;
 	color: black;
-	background: #F9F9F9;
+	background: #E7E7DE;
 	border: 1px solid #e2e2e2;
 	line-height:16px;
 	}
@@ -439,7 +439,7 @@ img.wp-smiley {
 	background:#596852 none repeat scroll 0 0;
 	border-bottom:1px solid #424f3c;
 	border-top:1px solid #424f3c;
-	height:35px;
+	height:40px;
 	margin: 20px auto 0;
 	overflow:hidden;
 	width:984px;
@@ -449,7 +449,7 @@ img.wp-smiley {
 	padding: 0;
 	}
 #site-title {
-	margin: 6px 0 0 10px;
+	margin: 0px 0 0 25px;
 	font-size: 26px;
 	}
 #site-title a:link, a:visited {
@@ -539,10 +539,10 @@ img.wp-smiley {
 /* Entry content */
 .entry-content, .entry-summary {overflow: hidden;}
 .entry p {margin: 15px 0;}
+.entry {font-size: 18px;}
 
 /* Byline */
-.byline {font-size: 11px;color: #999;margin: 0;}
-.archive .byline, .search .byline, .page-template-excerpts .byline, .home .byline {margin: 0;}
+.byline {font-size: 11px;color: #999;margin: 5px 0;}
 
 /* Post meta data */
 .post-meta-data {clear: both;font-size: 11px;color: #999;padding: 9px 5px 0 5px;border-top: 1px solid #e2e2e2;}
