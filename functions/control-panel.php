@@ -62,7 +62,7 @@ class ControlPanel
 	}
 	function AdminMenu()
 	{
-		add_theme_page($this->Name . ' Control Panel', $this->Name . ' Control Panel', 'edit_themes', basename(__FILE__), array(&$this, 'OptionsMenu'));
+		add_theme_page('Theme Options', 'Theme Options', 'edit_themes', basename(__FILE__), array(&$this, 'OptionsMenu'));
 	}
 	
 	function AdminHead()
