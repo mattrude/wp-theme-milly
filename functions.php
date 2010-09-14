@@ -264,19 +264,20 @@ function milly_pre_next_post_cat() {
 
    The date format is YYYY-MM-DD 
 */
-function mdr_timesince($atts, $content = null) {
-  extract(shortcode_atts(array("date" => ''), $atts));
-  if(empty($date)) {
-    return "<br /><br />************No date provided************<br /><br />";
+if ( !function_exists('mdr_timesince') ) {
+  function mdr_timesince($atts, $content = null) {
+    extract(shortcode_atts(array("date" => ''), $atts));
+    if(empty($date)) {
+      return "<br /><br />************No date provided************<br /><br />";
+    }
+    $mdr_unix_date = strtotime($date);
+    $mdr_time_difference = time() - $mdr_unix_date ;
+    $years = floor($mdr_time_difference / 31556926 );
+    $num_years_since = $years;
+    return $num_years_since;
   }
-  $mdr_unix_date = strtotime($date);
-  $mdr_time_difference = time() - $mdr_unix_date ;
-  $years = floor($mdr_time_difference / 31556926 );
-  $num_years_since = $years;
-  return $num_years_since;
-}
 add_shortcode('ts', 'mdr_timesince');
-
+}
 
 /*********************************************************************************
   Using WordPress functions to retrieve the extracted EXIF 
