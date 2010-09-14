@@ -10,8 +10,8 @@ Tags: Widgets, Avatars
 
 html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;vertical-align:baseline;outline:none;background:transparent;border:none;text-decoration:none;}
 b,i,hr,u,center,menu,layer,s,strike,font,xmp{margin:0;padding:0;vertical-align:baseline;outline:none;font-size:100%;font-weight:normal;font-style:normal;background:transparent;border:none;text-decoration:none;}
-h1{font-style:normal;font-weight:normal;margin:0;}
-h2,h3,h4,h5,h6{font-style:normal;font-weight:normal;margin:15px 0 5px 0;}
+h1{color: #666;font-style:normal;font-weight:normal;margin:0;}
+h2,h3,h4,h5,h6{color: #666;font-style:normal;font-weight:normal;margin:15px 0 5px 0;}
 h1{font-size:1.9em;}
 h2{font-size:1.6em;}
 h3{font-size:1.2em;}
@@ -24,9 +24,7 @@ pre code{font-size:1em;}
 
 body {
 	font: 15px/21px;
-	color: #666;
 	background: #e7e7de;
-	font-family: "myriad-pro-1","myriad-pro-2",georgia,sans-serif;
 	}
 #body-container {
 	overflow: hidden;
@@ -34,9 +32,11 @@ body {
 	}
 
 /* Fonts */
+/*
 #site-title, .widget-title, #access, .menu { font-family: "ff-cocon-web-pro-1","ff-cocon-web-pro-2",verdana,sans-serif; }
 h1, h2, h3, h4, h5, h6, .entry-title, .series-title, .related-title { font-family: "brevia-1","brevia-2",sans-serif; }
 body, #footer p, #content { font-family: "myriad-pro-1","myriad-pro-2",georgia,sans-serif; }
+*/
 
 /* Links */
 a:link, a:visited {
@@ -167,7 +167,6 @@ blockquote {
 	}
 .post blockquote {
 	font-style: italic;
-	color: #777;
 	}
 .post blockquote em {
 	font-style: normal;
@@ -195,7 +194,6 @@ caption {
 	font-size: .8em;
 	font-style: italic;
 	text-align: right;
-	color: #666;
 	}
 td {
 	padding: .3em;
@@ -262,7 +260,6 @@ input {
 	line-height: 39px;
 	margin-right: 3px;
 	font-size: 48px;
-	color: #666;
 	}
 
 /* Notes */
@@ -521,14 +518,12 @@ img.wp-smiley {
 /* Post title (and other titles) */
 .entry-title, .series-title, .related-title {
 	margin: 0 0 5px 0;
-	font: normal 18px/21px;
 	}
 .home .post-title, .page-title, .single-title, .attachment-title, .page-title, .series-title, .related-title, 
 .category-title, .tag-title, .author-title, .date-title, .search-title  {
 	margin: 0 0 10px 0;
 	padding: 0 6px 9px 3px;
 	border-bottom: 1px solid #e2e2e2;
-	font: normal normal bold 18px/21px;
 	}
 .page-template-excerpts .post-title, .home .post-title, .page-title {
 	margin: 0 0 5px 0;
@@ -539,7 +534,6 @@ img.wp-smiley {
 /* Entry content */
 .entry-content, .entry-summary {overflow: hidden;}
 .entry p {margin: 15px 0;}
-.entry {font-size: 18px;}
 
 /* Byline */
 .byline {font-size: 11px;color: #999;margin: 5px 0;}
@@ -572,6 +566,7 @@ p.pages a {margin: 0 0 0 3px;padding: 4px 7px;color: #486472 !important;backgrou
 	}
 .post-box,#idc-container,.widget {
 	overflow: hidden;
+	color: #666;
 	margin: 0 0 20px 0;
 	padding: 19px;
 	background: #fff;
@@ -661,7 +656,6 @@ p.pages a {margin: 0 0 0 3px;padding: 4px 7px;color: #486472 !important;backgrou
 .widget-title, .page-template-widgets #content .widget-title {
 	margin: 0 0 6px 0;
 	padding: 0 5px 5px 0;
-	font: normal normal bold 18px/21px;
 	border-bottom: 1px solid #e2e2e2;
 	}
 .widget ul {
@@ -727,7 +721,7 @@ p.pages a {margin: 0 0 0 3px;padding: 4px 7px;color: #486472 !important;backgrou
 	padding: 19px;
 	background: #fff;
 	border: 1px solid #e7e7e7;
-	font: normal normal bold 18px/21px arial, verdana, sans-serif;
+	font: normal normal bold arial, verdana, sans-serif;
 	}
 #comments ol {
 	list-style: none;
@@ -857,7 +851,7 @@ a.comment-link:hover {
 #reply {
 	margin: 0 0 10px 0;
 	padding: 0 6px 9px 6px;
-	font: normal normal bold 18px/21px arial, verdana, sans-serif;
+	font: normal normal bold arial, verdana, sans-serif;
 	border-bottom: 1px solid #e2e2e2;
 	}
 .trackback {
@@ -932,7 +926,6 @@ a.comment-link:hover {
         position:relative
 	}
 .tweet_post {
-        font-size: 18px;
         margin-bottom: 10px;
         font-weight: bold;
         height: 65px;
@@ -973,7 +966,7 @@ a.comment-link:hover {
 #secondary .widget-title {
 	margin: 0 0 6px 0;
 	padding: 0 6px 9px 6px;
-	font: normal normal bold 18px/21px arial, verdana, sans-serif;
+	font: normal normal bold arial, verdana, sans-serif;
 	border-bottom: 1px solid #213a4b;
 	}
 #secondary .widget ul {

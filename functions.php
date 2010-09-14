@@ -6,10 +6,10 @@ require_once('functions/google-webmaster-tools.php');
 #require_once('functions/robots.php');
 require_once('functions/footnotes.php');
 require_once('functions/relative-date.php');
-require_once('functions/typekit-fonts.php');
+#require_once('functions/typekit-fonts.php');
 require_once('functions/keep-in-touch-widget.php');
 require_once('functions/twitter-post_type.php');
-require_once('functions/twitter-import.php');
+#require_once('functions/twitter-import.php');
 
 /********************************************************************************
   Add Custom Navigation Menu for WordPress 3.0
