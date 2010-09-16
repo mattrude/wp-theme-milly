@@ -39,10 +39,10 @@ class milly_keep_in_touch_widget extends WP_Widget {
   }
 }
 
-//function milly_keep_in_touch_widget_init() {
-//        register_widget('milly_keep_in_touch_widget');
-//}
+function milly_keep_in_touch_widget_init() {
+        register_widget('milly_keep_in_touch_widget');
+}
 
-//add_action('widgets_init', 'milly_keep_in_touch_widget_init');
+add_action('widgets_init', 'milly_keep_in_touch_widget_init');
 
 ?>
