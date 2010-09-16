@@ -1,6 +1,6 @@
 <?php
 require_once('functions/control-panel.php');
-require_once('functions/category-excluder.php');
+#require_once('functions/category-excluder.php');
 require_once('functions/google-analytics.php');
 require_once('functions/google-webmaster-tools.php');
 #require_once('functions/robots.php');
@@ -38,6 +38,15 @@ register_nav_menus( array(
     'header' => __( 'The Header Navigation Menu', 'milly' ),
 ) );
 
+function milly_admin_favicon() {
+    $url = get_option('siteurl');
+    $url = $url . '/wp-content/themes/milly/images/favicon.ico';
+    echo '
+    <link rel="shortcut icon" href="' . $url . '" />
+    ';
+}
+
+add_action('admin_head', 'milly_admin_favicon');
 
 /********************************************************************************
   Add Custom Taxonomies for WordPress 2.9
