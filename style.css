@@ -1062,10 +1062,98 @@ sup { height: 0px; line-height: 1; position: relative; bottom: 1ex; margin-left:
 img#wpstats{width:0px;height:0px;padding:0px;border:none;overflow:hidden}
 
 /* Keep In Touch Widget */
-.widget li#feed { background: url(./images/keep-in-touch.png) no-repeat scroll 0 1px transparent; }
+.widget li#rss { background: url(./images/keep-in-touch.png) no-repeat scroll 0 1px transparent; }
 .widget li#twitter { background: url(./images/keep-in-touch.png) no-repeat scroll 0 -28px transparent; }
 .widget li#facebook { background: url(images/keep-in-touch.png) no-repeat scroll 0 -58px transparent; }
-.widget li#feed a { padding: 0 0 0 10px; }
+.widget li#rss a { padding: 0 0 0 10px; }
 .widget li#twitter a { padding: 0 0 0 10px; }
 .widget li#facebook a { padding: 0 0 0 10px; }
 
+.rss a {
+   position:relative;
+   width:60px;
+   padding:0 2px;
+   border-color:#ea6635;
+   text-transform:lowercase;
+   text-indent:-186px;
+   font-size:64px;
+   font-weight:bold;
+   color:#fff;
+   background:#e36443;
+
+   /* css3 */
+   -moz-box-shadow:0 0 4px rgba(0,0,0,0.4);
+   -webkit-box-shadow:0 0 4px rgba(0,0,0,0.4);
+   box-shadow:0 0 4px rgba(0,0,0,0.4);
+   background:-webkit-gradient(linear, left top, left bottom, from(#f19242), to(#e36443));
+   background:-moz-linear-gradient(top, #f19242, #e36443);
+   background:linear-gradient(top, #f19242, #e36443);
+}
+
+/* create circle */
+.rss a:before {
+   content:"\00a0";
+   position:absolute;
+   bottom:10px;
+   left:10px;
+   width:12px;
+   height:12px;
+   background:#fff;
+
+   /* css3 */
+   -moz-border-radius:12px;
+   -webkit-border-radius:12px;
+   border-radius:12px;
+}
+
+/* create the two arcs */
+.rss a:after {
+   content:"\00a0";
+   position:absolute;
+   bottom:10px;
+   left:10px;
+   width:22px;
+   height:22px;
+   border-style:double;
+   border-width:24px 24px 0 0;
+   border-color:#fff;
+
+   /* css3 */
+   -moz-border-radius:0 50px 0 0;
+   -webkit-border-radius:0 50px 0 0;
+   border-radius:0 50px 0 0;
+}
+
+.twitter a {
+   display: clear;
+   -webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 0px 4px;
+   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DBF7F8), to(#88E1E6));
+   border-color: #A8EAEC;
+   color: #76DDF8;
+   font: normal normal bold 60px/1 Tahoma, sans-serif;
+   letter-spacing: 40px;
+   line-height: 60px;
+   position: relative;
+   text-indent: 20px;
+   text-shadow: white 3px 3px 1px, white -3px -3px 1px, white 3px -3px 1px, white -3px 3px 1px;
+   text-transform: lowercase;
+}
+
+li.twitter a {
+   border: 1px solid transparent;
+   border-bottom-left-radius: 5px 5px;
+   border-bottom-left-radius: 5px 5px;
+   border-bottom-right-radius: 5px 5px;
+   border-bottom-right-radius: 5px 5px;
+   border-top-left-radius: 5px 5px;
+   border-top-left-radius: 5px 5px;
+   border-top-right-radius: 5px 5px;
+   border-top-right-radius: 5px 5px;
+   display: block;
+   height: 64px;
+   line-height: 64px;
+   overflow: hidden;
+   text-decoration: none;
+   text-shadow: rgba(0, 0, 0, 0.496094) 0px -1px 0px;
+   width: 64px;
+}
