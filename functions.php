@@ -1,11 +1,11 @@
 <?php
 require_once('functions/control-panel.php');
 #require_once('functions/category-excluder.php');
-require_once('functions/google-analytics.php');
-require_once('functions/google-webmaster-tools.php');
+#require_once('functions/google-analytics.php');
+#require_once('functions/google-webmaster-tools.php');
 #require_once('functions/robots.php');
-require_once('functions/footnotes.php');
-require_once('functions/relative-date.php');
+#require_once('functions/footnotes.php');
+#require_once('functions/relative-date.php');
 #require_once('functions/typekit-fonts.php');
 require_once('functions/keep-in-touch-widget.php');
 require_once('functions/twitter-post_type.php');
@@ -167,6 +167,7 @@ function milly_post_full() { ?>
 	<span class="byline-prep byline-prep-author text"> on </span>
 	<span class="published"><?php the_time('F jS, Y') ?></span>
 	<span > | Filed Under: <?php the_category(', '); the_tags(' | Tagged as: ', ', ', ''); ?></span>
+	<span><?php if ( function_exists('the_shortlink') ) the_shortlink( __('Shortlink'), __('A smaller version of this pages URL'), ' | ' ); ?></span>
         <span><?php edit_post_link('Edit', ' | '); ?></span>
       </p>
     <?php } ?>

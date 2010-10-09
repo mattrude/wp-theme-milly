@@ -26,12 +26,12 @@ while (have_posts()) : the_post();
       <div id='tweet_date-<?php echo $post->ID; ?>' class='byline tweet_date' >
         <?php 
         $post_id = $post->ID;
-        $tweet_id = get_post_meta( $post_id, 'twitter_id', true);
+        $tweet_id = get_post_meta( $post_id, 'ozh_ta_id', true);
         $twitter_user = get_post_meta( $post_id, 'twitter_user', true);
         $twitter_name = get_post_meta( $post_id, 'twitter_name', true);
-	?> Posted to <a href="http://twitter.com">Twitter</a> by <a href="http://twitter.com/<?php echo $twitter_user; ?>"><?php echo $twitter_name; ?></a>, <?php
+	?> Posted to <a href="http://twitter.com">Twitter</a> by <a href="http://twitter.com/<?php echo $twitter_user; ?>">Matt Rude</a>, <?php
         if ($tweet_id) { 
-          echo "<a href='http://twitter.com/$twitter_user/status/$tweet_id'>";
+          echo "<a href='http://twitter.com/mdrude/status/$tweet_id'>";
           the_time('F jS, h:ma T Y ');
           echo "</a>";
         } else {

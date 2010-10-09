@@ -227,12 +227,12 @@ input {
 	font: normal normal normal 13px/21px arial, verdana, sans-serif;
 	}
 .floatleft {
+	overflow: hidden;
 	float: left;
-	padding: 0 6px 9px 6px;
 	}
 .floatright {
 	float: right;
-	padding: 0 6px 9px 6px;
+	text-align: right;
 	}
 .text-input {
 	display: block;
@@ -582,6 +582,10 @@ p.pages a {margin: 0 0 0 3px;padding: 4px 7px;color: #486472 !important;backgrou
 	background: none repeat scroll 0 0 #FFFFFF;
 	border: 1px solid #E7E7E7;
 	padding: 19px 19px;
+	}
+.navigation .floatright, .navigation .floatleft {
+	overflow: hidden;
+	width: 48%;
 	}
 .navigation-attachment {
 	overflow: hidden;
@@ -1062,10 +1066,10 @@ sup { height: 0px; line-height: 1; position: relative; bottom: 1ex; margin-left:
 img#wpstats{width:0px;height:0px;padding:0px;border:none;overflow:hidden}
 
 /* Keep In Touch Widget */
-.widget li#rss { background: url(./images/keep-in-touch.png) no-repeat scroll 0 1px transparent; }
+.widget li#feed { background: url(./images/keep-in-touch.png) no-repeat scroll 0 1px transparent; }
 .widget li#twitter { background: url(./images/keep-in-touch.png) no-repeat scroll 0 -28px transparent; }
 .widget li#facebook { background: url(images/keep-in-touch.png) no-repeat scroll 0 -58px transparent; }
-.widget li#rss a { padding: 0 0 0 10px; }
+.widget li#feed a { padding: 0 0 0 10px; }
 .widget li#twitter a { padding: 0 0 0 10px; }
 .widget li#facebook a { padding: 0 0 0 10px; }
 
