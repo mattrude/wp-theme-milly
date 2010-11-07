@@ -77,7 +77,7 @@ function add_milly_contactmethod( $contactmethods ) {
  
   return $contactmethods;
 }
-add_filter('user_contactmethods','add_milly_contactmethod',10,1);
+//add_filter('user_contactmethods','add_milly_contactmethod',10,1);
 
 
 /********************************************************************************
