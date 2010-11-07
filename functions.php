@@ -12,6 +12,12 @@ require_once('functions/twitter-post_type.php');
 #require_once('functions/twitter-import.php');
 
 /********************************************************************************
+  Add Post Format for WordPress 3.1
+*/
+
+add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
+
+/********************************************************************************
   Add Custom Navigation Menu for WordPress 3.0
 */
 
@@ -77,7 +83,7 @@ function add_milly_contactmethod( $contactmethods ) {
  
   return $contactmethods;
 }
-//add_filter('user_contactmethods','add_milly_contactmethod',10,1);
+add_filter('user_contactmethods','add_milly_contactmethod',10,1);
 
 
 /********************************************************************************
@@ -152,8 +158,6 @@ add_filter('gallery_style',
 // This is the Full Message Block, Most posts show this block.
 function milly_post_full() { ?>
   <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-    <?php if ( is_sticky() ) {
-    } else { ?>
       <h1 class="single-title entry-title">
         <?php if (is_single()) {
           the_title();
@@ -170,7 +174,6 @@ function milly_post_full() { ?>
 	<span><?php if ( function_exists('the_shortlink') ) the_shortlink( __('Shortlink'), __('A smaller version of this pages URL'), ' | ' ); ?></span>
         <span><?php edit_post_link('Edit', ' | '); ?></span>
       </p>
-    <?php } ?>
     <div class="entry-content entry">
       <?php the_content(); ?>
     </div><!--close entry class-->
@@ -186,8 +189,6 @@ function milly_post_full() { ?>
 // This is the Short Message Block
 function milly_post_short() { ?>
   <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-    <?php if ( is_sticky() ) {
-      } else { ?>
         <h1 class="single-title entry-title">
 	  <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 	</h1>
@@ -199,9 +200,17 @@ function milly_post_short() { ?>
 	  <span > | Filed Under: <?php the_category(', '); the_tags(' | Tagged as: ', ', ', ''); ?></span>
 	  <span><?php edit_post_link('Edit', ' | '); ?></span>
 	</p>
-    <?php } ?>
     <div class="entry-content entry">
       <?php the_excerpt(); ?>
+    </div><!--close entry class-->
+  </div><!--close post class-->
+<?php }
+
+// The Post format Aside
+function milly_post_aside() { ?>
+  <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+    <div class="entry-content entry">
+      <?php the_content(); ?>
     </div><!--close entry class-->
   </div><!--close post class-->
 <?php }

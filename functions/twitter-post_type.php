@@ -17,12 +17,14 @@ function Twitter_post_type_init() {
         'not_found_in_trash' => __('No tweets found in Trash')
     ),
     'description' => __('Imported Twitter Posts'),
+    'archive' => true,
     'exclude_from_search' => true,
     'public' => true,
     'show_ui' => true,
     'hierarchical' => false,
     'rewrite' => array('slug' => 'twitter'),
     'supports' => array('title', 'editor'),
+    'feed' => true,
     'register_meta_box_cb' => 'twitter_id_callback'
   );
   register_post_type('twitter',$args);

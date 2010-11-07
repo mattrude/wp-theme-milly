@@ -2,12 +2,25 @@
 
 <div id="content">
 	<?php if (have_posts()) : ?>
-		<!--This is "The Loop"-->
+		<!--Starting "The Loop"-->
 		<?php while (have_posts()) : the_post();
-			if ( in_category( 'gallery' )) {
-				include('functions/gallery-index.php');
+			if( function_exists( 'get_post_format' ) ) {
+				$current_posts_format = get_post_format();
+				if ( $current_posts_format == 'gallery' ) {
+					include( 'functions/gallery-index.php' );
+				} elseif ( $current_posts_format == 'aside' ) {
+					milly_post_aside();
+				} else {
+					milly_post_full();
+				}
 			} else {
-				milly_post_full();
+				if ( in_category( 'gallery' ) ) {
+					include( 'functions/gallery-index.php' );
+                                } elseif ( in_category( 'aside' ) ) {
+                                        milly_post_aside();
+				} else {
+				        milly_post_full();
+                                }
 			}
 		endwhile; ?>
 		<!--The Loop has ended-->	
