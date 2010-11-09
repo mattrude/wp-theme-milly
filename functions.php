@@ -90,8 +90,10 @@ add_filter('user_contactmethods','add_milly_contactmethod',10,1);
   Add Widget sidebar to Theme
 */
 
-if(function_exists('register_sidebar')) {
+add_action( 'widgets_init', 'milly_register_sidebars' );
+function milly_register_sidebars() {
   register_sidebar(array (
+    'id' => 'sidebar-widget-area',
     'name' => __('Sidebar Widget Area'),
     'description' => __('This is the Main Right Hand Sidebar'),
     'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
@@ -101,15 +103,14 @@ if(function_exists('register_sidebar')) {
   ));
     
   register_sidebar( array (
-    'name' => __('Footer Widget Area'),
     'id' => 'footer-widget-area',
+    'name' => __('Footer Widget Area'),
     'description' => __('The footer widget area'),
     'before_widget' => '<div class="widget-footer">',
     'after_widget' => '</div>',
     'before_title' => '<h3 class="widget-title">',
     'after_title' => '</h3>',
   ));
-
 }
 
 
