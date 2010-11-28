@@ -49,7 +49,7 @@ a:hover, a:active {
 	}
 
 /* Headers */
-.post h1, .idc-head h3 {
+.post h1, .idc-head h3, .technology h1 {
 	-x-system-font:none;
 	border-bottom:1px solid #E2E2E2;
 	font-weight:bold;
@@ -507,7 +507,7 @@ img.wp-smiley {
 	}
 
 /* Posts (and other general sections) */
-.attachment, .post, .page, .series, .related, .category-info, .tag-info, .author-info, .date-info, .search-info, .single .author-profile .comment {
+.attachment, .post, .page, .tweet, .technology, .series, .related, .category-info, .tag-info, .author-info, .date-info, .search-info, .single .author-profile .comment {
 	overflow: hidden;
 	margin: 0 0 20px 0;
 	padding: 19px 19px 19px 19px;
@@ -520,13 +520,13 @@ img.wp-smiley {
 .entry-title, .series-title, .related-title {
 	margin: 0 0 5px 0;
 	}
-.home .post-title, .page-title, .single-title, .attachment-title, .page-title, .series-title, .related-title, 
+.home .post-title, .page-title, .single-title, .technology-title, .attachment-title, .page-title, .series-title, .related-title, 
 .category-title, .tag-title, .author-title, .date-title, .search-title  {
 	margin: 0 0 10px 0;
 	padding: 0 6px 9px 3px;
 	border-bottom: 1px solid #e2e2e2;
 	}
-.page-template-excerpts .post-title, .home .post-title, .page-title {
+.page-template-excerpts .post-title, .home .post-title, .technology-title, .page-title {
 	margin: 0 0 5px 0;
 	padding: 0;
 	border: none;

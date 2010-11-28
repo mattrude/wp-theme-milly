@@ -2,8 +2,7 @@
 //This plugin will create a custom post-type 
 
 // Add Custom Post Types for WordPress 2.9
-function Twitter_post_type_init() {
-  $args = array(
+  register_post_type('twitter', array(
     'labels' => array(
         'name' => __('Twitter'),
         'singular_name' => _x('Tweet','Tweet'),
@@ -17,19 +16,17 @@ function Twitter_post_type_init() {
         'not_found_in_trash' => __('No tweets found in Trash')
     ),
     'description' => __('Imported Twitter Posts'),
-    'archive' => true,
     'exclude_from_search' => true,
     'public' => true,
+    'has_archive' => true,
     'show_ui' => true,
     'hierarchical' => false,
     'rewrite' => array('slug' => 'twitter'),
     'supports' => array('title', 'editor'),
     'feed' => true,
-    'register_meta_box_cb' => 'twitter_id_callback'
-  );
-  register_post_type('twitter',$args);
+    'register_meta_box_cb' => 'twitter_save_metabox'
+  ));
   
-}
 add_action('init','Twitter_post_type_init');
 
 // Twitter Posts Meta Data
@@ -200,6 +197,25 @@ class twitterImage
     return $data;
   }
  
+}
+
+function milly_twiiter_byline() { ?>
+<div id='tweet_date-<?php echo $post->ID; ?>' class='byline tweet_date' >
+      <?php
+      //$tweet_id = get_post_meta( $wp_query->post->ID, 'aktt_twitter_id', true );
+      $post_id = $post->ID;
+      $tweet_id = get_post_meta( $post_id, 'aktt_twitter_id', true);
+      ?> Posted to <a href="http://twitter.com">Twitter</a> by <a href="http://twitter.com/<?php echo $twitterid; ?>"><?php echo $twittername; ?></a><?php
+      if ($tweet_id) {
+        echo " on ";
+        echo "<a href='http://twitter.com/$twitterid/status/$tweet_id'>";
+        the_time('F jS, h:ma T Y ');
+        echo "</a>";
+      } else {
+        the_time('F jS, h:ma T Y ');
+      }
+      edit_post_link('Edit', ' | '); ?>
+    </div><!--close tweet_post class--><?php
 }
 
 class milly_twitter_widget extends WP_Widget {

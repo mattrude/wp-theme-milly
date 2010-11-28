@@ -11,10 +11,7 @@
 			}
 		endwhile; ?>
 		<!--The Loop has ended-->	
-		<div class="navigation">
-			<div class="txtalignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-			<div class="txtalignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
-		</div>
+		<?php milly_pre_next_post_cat(); ?>
 	<?php endif; ?>
 </div><!--close content id-->
 

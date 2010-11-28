@@ -8,6 +8,7 @@ require_once('functions/control-panel.php');
 #require_once('functions/relative-date.php');
 #require_once('functions/typekit-fonts.php');
 require_once('functions/keep-in-touch-widget.php');
+#require_once('functions/tech-post_type.php');
 require_once('functions/twitter-post_type.php');
 #require_once('functions/twitter-import.php');
 
@@ -15,7 +16,50 @@ require_once('functions/twitter-post_type.php');
   Add Post Format for WordPress 3.1
 */
 
-add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
+add_theme_support( 'post-formats', array( 'aside', 'gallery', 'image', 'link', 'status', 'video' ) );
+
+/********************************************************************************
+  Add Post Type Technology for WordPress 3.1
+*/
+register_post_type('technology', array(
+	'label' => __('Technology'),
+	'public' => true,
+	'show_ui' => true,
+	'capability_type' => 'post',
+	'hierarchical' => false,
+	'rewrite' => 'technology/%year%/%monthnum%/',
+    	'has_archive' => true,
+	'query_var' => true,
+	'supports' => array('title', 'editor', 'author', 'excerpt', 'sticky', 'trackbacks', 'comments', 'revisions' ),
+	'taxonomies' => array('category', 'post_tag')
+));
+
+add_action('init', 'technology_add_default_boxes');
+function technology_add_default_boxes() {
+    register_taxonomy_for_object_type('category', 'technology');
+    register_taxonomy_for_object_type('post_tag', 'technology');
+}
+
+// Change all post in category Technology to post type technology
+function technology_post_type_convert() {
+    global $wpdb;
+    $args = array(
+       'numberposts' => 5,
+       'category_name' => 'technology',
+       'post_type' => 'post'
+    );
+
+    $mdr_postslist2 = get_posts($args);
+    foreach ($mdr_postslist2 as $post) {
+      $mdr_postid2 = $post->ID;
+      if ($mdr_postid2 > 0) {
+         $wpdb->query("UPDATE $wpdb->posts SET post_type = 'technology' WHERE ID = $mdr_postid2");
+         $wpdb->query("UPDATE $wpdb->term_taxonomy SET count = 0 WHERE term_id = 'technology'");
+      }
+    }
+}
+//technology_post_type_convert();
+
 
 /********************************************************************************
   Add Custom Navigation Menu for WordPress 3.0

@@ -1,7 +1,7 @@
 <div id="primary" class="aside">
 	<?php
  	/* Widgetized sidebar, if you have the plugin installed. */
-	if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
+	if ( !function_exists('dynamic_sidebar') || dynamic_sidebar('sidebar-widget-area') ) : ?>
 		<div id="primary" class="aside">
 		<div class="widget bookmarks widget-bookmarks">
 		Welcome to your new site!<br />
