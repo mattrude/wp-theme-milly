@@ -20,8 +20,10 @@
 				}
 			} else {
 				if ( in_category( 'gallery' ) ) {
+					set_post_format( $post->ID, 'gallery');
 					include( 'functions/gallery-index.php' );
                                 } elseif ( in_category( 'aside' ) ) {
+					set_post_format( $post->ID, 'aside' );
                                         milly_post_aside();
 				} else {
 				        milly_post_full();
