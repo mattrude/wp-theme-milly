@@ -438,7 +438,7 @@ img.wp-smiley {
 	border-bottom:1px solid #424f3c;
 	border-top:1px solid #424f3c;
 	height:40px;
-	margin: 20px auto 0;
+	margin:30px auto 0;
 	overflow:hidden;
 	width:984px;
 	}
@@ -582,6 +582,7 @@ p.pages a {margin: 0 0 0 3px;padding: 4px 7px;color: #486472 !important;backgrou
 	background: none repeat scroll 0 0 #FFFFFF;
 	border: 1px solid #E7E7E7;
 	padding: 19px 19px;
+	overflow: hidden;
 	}
 .navigation .floatright, .navigation .floatleft {
 	overflow: hidden;
