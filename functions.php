@@ -44,7 +44,7 @@ add_action( 'init', 'create_technology_taxonomies', 0 );
 // Create the Technology Category Widget
 class milly_technology_cat_widget extends WP_Widget {
   function milly_technology_cat_widget() {
-    $milly_technology_cat_widget_name = __('Technology Category Widget');
+    $milly_technology_cat_widget_name = __('Technology Category');
     $milly_technology_cat_widget_description = __('Displays Technology Category.');
     $widget_ops = array('classname' => 'milly_technology_cat_widget', 'description' => $milly_technology_widget_cat_description );
     $this->WP_Widget('milly_technology_cat_widget', $milly_technology_cat_widget_name, $widget_ops);
@@ -87,7 +87,7 @@ function milly_technology_cat_widget_init() {
 // Create the Technology Tag Widget
 class milly_technology_tag_widget extends WP_Widget {
   function milly_technology_tag_widget() {
-    $milly_technology_tag_widget_name = __('Technology Tag Widget');
+    $milly_technology_tag_widget_name = __('Technology Tags');
     $milly_technology_tag_widget_description = __('Displays Technology Tags.');
     $widget_ops = array('classname' => 'milly_technology_tag_widget', 'description' => $milly_technology_widget_tag_description );
     $this->WP_Widget('milly_technology_tag_widget', $milly_technology_tag_widget_name, $widget_ops);
