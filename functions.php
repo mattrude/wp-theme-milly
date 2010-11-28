@@ -34,11 +34,17 @@ register_post_type('technology', array(
 	'taxonomies' => array('category', 'post_tag')
 ));
 
-add_action('init', 'technology_add_default_boxes');
-function technology_add_default_boxes() {
-    register_taxonomy_for_object_type('category', 'technology');
-    register_taxonomy_for_object_type('post_tag', 'technology');
+function create_technology_taxonomies() {
+  register_taxonomy( 'tech_category', 'technology', array( 'hierarchical' => true, 'label' => __('Category'), 'query_var' => true, 'rewrite' => true ) );
+  register_taxonomy( 'tech_tag', 'technology', array( 'hierarchical' => false, 'label' => __('Tag'), 'query_var' => true, 'rewrite' => true ) );
 }
+add_action( 'init', 'create_technology_taxonomies', 0 );
+
+//add_action('init', 'technology_add_default_boxes');
+//function technology_add_default_boxes() {
+//    register_taxonomy_for_object_type('tech_category', 'technology');
+//    register_taxonomy_for_object_type('tech_tag', 'technology');
+//}
 
 // Change all post in category Technology to post type technology
 function technology_post_type_convert() {
@@ -140,6 +146,16 @@ function milly_register_sidebars() {
     'id' => 'sidebar-widget-area',
     'name' => __('Sidebar Widget Area'),
     'description' => __('This is the Main Right Hand Sidebar'),
+    'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ));
+    
+  register_sidebar(array (
+    'id' => 'technology-widget-area',
+    'name' => __('Technology Widget Area'),
+    'description' => __('This widget area is only used on the technology pages and archives.'),
     'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
     'after_widget' => '</div>',
     'before_title' => '<h3 class="widget-title">',
