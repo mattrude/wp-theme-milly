@@ -53,7 +53,7 @@ class milly_technology_cat_widget extends WP_Widget {
   function widget($args, $instance) { 
     extract($args);
     $widget_title = strip_tags($instance['widget_title']);
-    echo "{$before_widget}{$before_title}$widget_title{$after_title}<div class='technology_cat'>";
+    echo "{$before_widget}{$before_title}$widget_title{$after_title}<ul class='technology_cat'>";
     $args=array(
 	'orderby' => 'name',
 	'order' => 'ASC',
@@ -63,7 +63,7 @@ class milly_technology_cat_widget extends WP_Widget {
 	'taxonomy' => 'tech_category'
     );
     wp_list_categories($args);
-    echo "</div>";
+    echo "</ul>";
     echo $after_widget;
   }
   
