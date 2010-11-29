@@ -1,5 +1,9 @@
 <?php
+require_once('functions/community-tags.php');
 require_once('functions/control-panel.php');
+require_once('functions/keep-in-touch-widget.php');
+require_once('functions/keep-in-touch-widget2.php');
+require_once('functions/twitter-post_type.php');
 #require_once('functions/category-excluder.php');
 #require_once('functions/google-analytics.php');
 #require_once('functions/google-webmaster-tools.php');
@@ -7,9 +11,6 @@ require_once('functions/control-panel.php');
 #require_once('functions/footnotes.php');
 #require_once('functions/relative-date.php');
 #require_once('functions/typekit-fonts.php');
-require_once('functions/keep-in-touch-widget.php');
-#require_once('functions/tech-post_type.php');
-require_once('functions/twitter-post_type.php');
 #require_once('functions/twitter-import.php');
 
 /********************************************************************************
@@ -259,7 +260,7 @@ load_theme_textdomain( 'milly', TEMPLATEPATH . '/languages' );
   Random Settings Changes
 */
 // Add Automatic Feed Links to theme for WordPress 3.0
-add_theme_support( 'automatic-feed-links' );
+//add_theme_support( 'automatic-feed-links' );
 
 // Add Post Thumbnails for WordPress 2.9
 add_theme_support('post-thumbnails');

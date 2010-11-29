@@ -11,8 +11,12 @@
   } else {
     ?><title><?php wp_title(' - ', true, 'right'); ?><?php bloginfo('name'); ?></title><?php
   } ?>
+  <link rel="alternate" type="application/rss2+xml" title="<?php bloginfo('name'); ?> &raquo; RSS 2 Feed" href="<?php bloginfo('url'); ?>/feed/rss2/" />
   <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> &raquo; Atom Feed" href="<?php bloginfo('url'); ?>/feed/atom/" />
+  <link rel="alternate" type="application/rss2+xml" title="<?php bloginfo('name'); ?> &raquo; RSS 2 Comments Feed" href="<?php bloginfo('url'); ?>/comments/feed/rss2/" />
   <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> &raquo; Atom Comments Feed" href="<?php bloginfo('url'); ?>/comments/feed/atom/" />
+  <link rel="alternate" type="application/rss2+xml" title="<?php bloginfo('name'); ?> &raquo; Technology RSS 2 Feed" href="<?php bloginfo('url'); ?>/technology/feed/rss2/" />
+  <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> &raquo; Technology Atom Feed" href="<?php bloginfo('url'); ?>/technology/feed/atom/" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
   <?php if (function_exists('google_webmaster_tools')) { google_webmaster_tools(); } ?>
