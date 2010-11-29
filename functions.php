@@ -36,8 +36,8 @@ register_post_type('technology', array(
 
 // Create the Technology Tag & Category taxonomies.
 function create_technology_taxonomies() {
-  register_taxonomy( 'tech_category', 'technology', array( 'hierarchical' => true, 'label' => __('Category'), 'query_var' => true, 'rewrite' => true ) );
-  register_taxonomy( 'tech_tag', 'technology', array( 'hierarchical' => false, 'label' => __('Tag'), 'query_var' => true, 'rewrite' => true ) );
+  register_taxonomy( 'tech_category', 'technology', array( 'hierarchical' => true, 'label' => __('Categories'), 'query_var' => true, 'rewrite' => true ) );
+  register_taxonomy( 'tech_tag', 'technology', array( 'hierarchical' => false, 'label' => __('Technology Tags'), 'query_var' => true, 'rewrite' => true ) );
 }
 add_action( 'init', 'create_technology_taxonomies', 0 );
 
