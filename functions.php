@@ -239,8 +239,6 @@ load_theme_textdomain( 'milly', TEMPLATEPATH . '/languages' );
 /********************************************************************************
   Random Settings Changes
 */
-// Add Automatic Feed Links to theme for WordPress 3.0
-//add_theme_support( 'automatic-feed-links' );
 
 // Add Post Thumbnails for WordPress 2.9
 add_theme_support('post-thumbnails');
