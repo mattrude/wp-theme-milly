@@ -47,7 +47,9 @@
                 </div>
 	</div>
 	<p><a class="wrapper" href="<?php echo get_permalink($post->post_parent); ?>" rev="up post">&larr; <?php printf(__('back to &#8220;%s&#8221;', 'mdr-milly-theme'), get_the_title($post->post_parent)); ?></a></p>
-	
+	<h3 class="comment-title exif-title">Who is this?</h3>	
+	<div id="tagthis"></div>
+	<p><?php echo get_the_term_list( $post->ID, 'people', '<br />Already Tagged: ', ', ', '<br />' ); ?></p>
 </div><!--close entry class-->
         <?php mdr_exif(); ?>
 	<br />
