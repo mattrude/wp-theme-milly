@@ -1162,3 +1162,12 @@ li.twitter a {
    text-shadow: rgba(0, 0, 0, 0.496094) 0px -1px 0px;
    width: 64px;
 }
+
+/* Grunion Contact Form styling */
+.contact-form input {
+   width: 300px;
+}
+
+.contact-submit input {
+   width: 100px;
+}
