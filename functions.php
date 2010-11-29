@@ -120,26 +120,6 @@ function milly_technology_tag_widget_init() {
         register_widget('milly_technology_tag_widget');
 }
 
-// Change all post in category Technology to post type technology
-function technology_post_type_convert() {
-    global $wpdb;
-    $args = array(
-       'numberposts' => 5,
-       'category_name' => 'technology',
-       'post_type' => 'post'
-    );
-
-    $mdr_postslist2 = get_posts($args);
-    foreach ($mdr_postslist2 as $post) {
-      $mdr_postid2 = $post->ID;
-      if ($mdr_postid2 > 0) {
-         $wpdb->query("UPDATE $wpdb->posts SET post_type = 'technology' WHERE ID = $mdr_postid2");
-         $wpdb->query("UPDATE $wpdb->term_taxonomy SET count = 0 WHERE term_id = 'technology'");
-      }
-    }
-}
-//technology_post_type_convert();
-
 
 /********************************************************************************
   Add Custom Navigation Menu for WordPress 3.0
