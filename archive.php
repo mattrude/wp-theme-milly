@@ -15,6 +15,12 @@
 	<?php endif; ?>
 </div><!--close content id-->
 
-<?php get_sidebar(); ?>
+<?php if ( get_post_type() == 'technology' ) { ?>
+	<div id="primary" class="aside"> 
+        <?php dynamic_sidebar('technology-widget-area'); ?>
+	</div> <?php
+} else {
+	get_sidebar();
+}
 
-<?php get_footer(); ?>
+get_footer(); ?>
