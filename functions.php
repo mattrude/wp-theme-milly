@@ -304,14 +304,14 @@ function milly_post_full() { ?>
 	<span class="author vcard"><?php the_author(); ?></span>
 	<span class="byline-prep byline-prep-author text"> on </span>
 	<span class="published"><?php the_time('F jS, Y') ?></span>
-      <?php if ( get_post_type() == 'technology' ) {
-	echo "<span>";
-	echo get_the_term_list( $post->ID, 'tech_category', ' | Filed Under: ', ', ', '' );
-	echo get_the_term_list( $post->ID, 'tech_tag', ' | Tagged as: ', ', ', '' );
-	echo "</span>";
-      } else { ?>
-	<span > | Filed Under: <?php the_category(', '); the_tags(' | Tagged as: ', ', ', ''); ?></span>
-      <?php } ?>
+        <?php if ( get_post_type() == 'technology' ) {
+	  echo "<span>";
+	  echo get_the_term_list( $post->ID, 'tech_category', ' | Filed Under: ', ', ', '' );
+	  echo get_the_term_list( $post->ID, 'tech_tag', ' | Tagged as: ', ', ', '' );
+	  echo "</span>";
+        } else { ?>
+	  <span > | Filed Under: <?php the_category(', '); the_tags(' | Tagged as: ', ', ', ''); ?></span>
+        <?php } ?>
 	<span><?php if ( function_exists('the_shortlink') ) the_shortlink( __('Shortlink'), __('A smaller version of this pages URL'), ' | ' ); ?></span>
         <span><?php edit_post_link('Edit', ' | '); ?></span>
       </p>
@@ -338,7 +338,14 @@ function milly_post_short() { ?>
 	  <span class="author vcard"><?php the_author(); ?></span>
 	  <span class="byline-prep byline-prep-author text"> on </span>
 	  <span class="published"><?php the_time('F jS, Y') ?></span>
-	  <span > | Filed Under: <?php the_category(', '); the_tags(' | Tagged as: ', ', ', ''); ?></span>
+      	  <?php if ( get_post_type() == 'technology' ) {
+	    echo "<span>";
+	    echo get_the_term_list( $post->ID, 'tech_category', ' | Filed Under: ', ', ', '' );
+	    echo get_the_term_list( $post->ID, 'tech_tag', ' | Tagged as: ', ', ', '' );
+	    echo "</span>";
+          } else { ?>
+	    <span > | Filed Under: <?php the_category(', '); the_tags(' | Tagged as: ', ', ', ''); ?></span>
+          <?php } ?>
 	  <span><?php edit_post_link('Edit', ' | '); ?></span>
 	</p>
     <div class="entry-content entry">
