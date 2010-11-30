@@ -29,9 +29,10 @@ add_action( 'init', 'mct_init' );
 
 function mct_script() {
 	global $posts;
+	$template_url = get_bloginfo('template_url');
 ?>
-<script type='text/javascript' src='http://s.ma.tt/photos/suggest.js'></script>
-<link rel="stylesheet" href="http://s.ma.tt/photos/suggest.css" />
+<script type='text/javascript' src='<?php echo $template_url; ?>/functions/community-tags/suggest.js'></script>
+<link rel="stylesheet" href="<?php echo $template_url; ?>/functions/community-tags/suggest.css" />
 <script type="text/javascript">
 <!--
 var $j = jQuery.noConflict();
