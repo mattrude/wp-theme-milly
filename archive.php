@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
 <div id="content">
-	<?php if (have_posts()) : ?>
+	<?php
+	if (have_posts()) : ?>
 		<!--This is "The Loop"-->
 		<?php while (have_posts()) : the_post();
 			if ( in_category( 'gallery' )) {
@@ -11,16 +12,20 @@
 			}
 		endwhile; ?>
 		<!--The Loop has ended-->	
-		<?php milly_pre_next_post_cat(); ?>
-	<?php endif; ?>
+		<?php milly_pre_next_post_cat();
+	endif;
+	query_posts( array( 'post_type' => 'attachment' ) );
+	have_posts();
+	if (have_posts()) : ?>
+		<!--This is "The Loop"-->
+		<?php while (have_posts()) : the_post();
+			echo "test";
+			the_content();
+		endwhile; ?>
+		<!--The Loop has ended-->	
+		<?php milly_pre_next_post_cat();
+	endif; ?>
 </div><!--close content id-->
 
-<?php if ( get_post_type() == 'technology' ) { ?>
-	<div id="primary" class="aside"> 
-        <?php dynamic_sidebar('technology-widget-area'); ?>
-	</div> <?php
-} else {
-	get_sidebar();
-}
-
-get_footer(); ?>
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
