@@ -42,6 +42,7 @@ if($comments) {
   <?php endif; ?>
 <?php endif; ?>
 
+<?php paginate_comments_links(); ?>
 
 <?php if ('open' == $post->comment_status) : ?>
 
