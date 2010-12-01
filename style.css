@@ -4,6 +4,8 @@ Theme URI: http://trac.mattrude.com/milly
 Description: The Current mattrude.com theme, with custom post-types, custom taxonomy, Google Analytics, Google Webmaster Tools, Category Excluder Options, & a Robots.txt Editor.
 Author: Matt Rude
 Author URI: http://mattrude.com
+License: GNU GENERAL PUBLIC LICENSE, Version 2, June 1991
+Licence URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Version: 1.7-devel
 Tags: Widgets, Avatars
 */
@@ -1170,4 +1172,10 @@ li.twitter a {
 
 .contact-submit input {
    width: 100px;
+}
+
+/* Community-tags plugin styling */
+#community-tags {
+   overflow: hidden;
+   padding: 0px 10px 0px 0px;
 }
