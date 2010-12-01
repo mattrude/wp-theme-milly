@@ -137,7 +137,7 @@ class RegenerateThumbnails {
 					if ( rt_images.length ) {
 						RegenThumbs( rt_images.shift() );
 					} else {
-						$("#message").html("<p><strong><?php echo js_escape( sprintf( __( 'All done! Processed %d images.', 'regenerate-thumbnails' ), $count ) ); ?></strong></p>");
+						$("#message").html("<p><strong><?php echo esc_js( sprintf( __( 'All done! Processed %d images.', 'regenerate-thumbnails' ), $count ) ); ?></strong></p>");
 						$("#message").show();
 					}
 
