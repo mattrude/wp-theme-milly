@@ -292,7 +292,7 @@ foreach ( $proposed as $p ) {
 		$tags = explode( ',', $tags );
 		foreach ( $tags as $tag ) {
 			++$i;
-			$tag_attr = trim( attribute_escape( $tag ) );
+			$tag_attr = trim( esc_attr( $tag ) );
 			$drop = ts_dropdown( 'post', "mct_{$i}", $tax );
 			$tag = strtolower( trim( $tag ) );
 			if ( is_array( $ps ) && in_array( $tag, $ps ) ) { // if it's already a tag
