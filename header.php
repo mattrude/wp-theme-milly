@@ -24,7 +24,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body>
   <?php if (function_exists('google_analytics')) { google_analytics(); } ?>
   <div id="wrapper" >
     <div id="header-title">
