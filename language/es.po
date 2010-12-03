@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Milly Theme package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2010-12-03 21:14:31+0000\n"
+"PO-Revision-Date: 2010-12-03 23:42:18+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,398 +12,398 @@ msgstr ""
 
 #: 404.php:6 functions.php:26 functions/tech-post_type.php:7
 msgid "Technology"
-msgstr ""
+msgstr "Tecnología"
 
 #: 404.php:6
 msgid "or"
-msgstr ""
+msgstr "o"
 
 #: 404.php:6
 msgid "Photo Gallery"
-msgstr ""
+msgstr "Galería de fotos"
 
 #: 404.php:6
 msgid "No sense sticking around here for very long. Check out the sidebar where you will be able to search, or checkout my"
-msgstr ""
+msgstr "No tiene sentido que se pegue por aquí por mucho tiempo. Echa un vistazo a la barra lateral donde se pueden buscar, o pago mi"
 
 #: 404.php:5
 msgid "Oops! - 404 Error"
-msgstr ""
+msgstr "¡Uy! - Error 404"
 
 #: 404.php:6
 msgid "section if your into those sorts of things. If you feel you've reached this page as an error on my part, please"
-msgstr ""
+msgstr "sección si en ese tipo de cosas. Si usted siente que ha llegado a esta página como un error por mi parte, por favor"
 
 #: 404.php:6
 msgid "contact me"
-msgstr ""
+msgstr "póngase en contacto conmigo"
 
 #: author.php:14
 msgid "Posts written by "
-msgstr ""
+msgstr "Mensajes escritos por"
 
 #: author.php:19 author.php:23
 msgid "You may also follow"
-msgstr ""
+msgstr "También puede seguir"
 
 #: author.php:21 author.php:25
 msgid " on "
-msgstr ""
+msgstr "en"
 
 #: author.php:28
 msgid "Twitter as "
-msgstr ""
+msgstr "Twitter como"
 
 #: author.php:31
 msgid " or "
-msgstr ""
+msgstr "o"
 
 #: author.php:35
 msgid "on Facebook as "
-msgstr ""
+msgstr "en Facebook como"
 
 #: functions.php:40
 msgid "Categories"
-msgstr ""
+msgstr "Categorías"
 
 #: functions.php:41 functions.php:91
 msgid "Technology Tags"
-msgstr ""
+msgstr "Tecnología Etiquetas"
 
 #: functions.php:48
 msgid "Technology Category"
-msgstr ""
+msgstr "Categoría Tecnología"
 
 #: functions.php:49
 msgid "Displays Technology Category."
-msgstr ""
+msgstr "Muestra la categoría de Tecnología."
 
 #: functions.php:79 functions.php:114 functions/keep-in-touch-widget2.php:36
 #: functions/keep-in-touch-widget.php:36 functions/twitter-post_type.php:254
 msgid "Widget Title"
-msgstr ""
+msgstr "Widget Título"
 
 #: functions.php:92
 msgid "Displays Technology Tags."
-msgstr ""
+msgstr "Muestra Etiquetas Tecnología."
 
 #: functions.php:148
 msgid "The Header Navigation Menu"
-msgstr ""
+msgstr "El menú de navegación de cabecera"
 
 #: functions.php:166
 msgid "People"
-msgstr ""
+msgstr "Las personas"
 
 #: functions.php:167
 msgid "Places"
-msgstr ""
+msgstr "Lugares"
 
 #: functions.php:168
 msgid "Events"
-msgstr ""
+msgstr "Eventos"
 
 #: functions.php:179
 msgid "Facebook URL"
-msgstr ""
+msgstr "URL de Facebook"
 
 #: functions.php:180
 msgid "Google Talk"
-msgstr ""
+msgstr "Google Talk"
 
 #: functions.php:181 functions/keep-in-touch-widget2.php:37
 #: functions/keep-in-touch-widget.php:37
 msgid "Twitter ID"
-msgstr ""
+msgstr "Twitter ID"
 
 #: functions.php:201
 msgid "Sidebar Widget Area"
-msgstr ""
+msgstr "Área de la barra lateral Widget"
 
 #: functions.php:202
 msgid "This is the Main Right Hand Sidebar"
-msgstr ""
+msgstr "Esta es la barra lateral derecha Mano principal"
 
 #: functions.php:211
 msgid "Technology Widget Area"
-msgstr ""
+msgstr "Área de Tecnología Widget"
 
 #: functions.php:212
 msgid "This widget area is only used on the technology pages and archives."
-msgstr ""
+msgstr "Esta área widget es utilizado en las páginas de la tecnología y los archivos."
 
 #: functions.php:221
 msgid "Footer Widget Area"
-msgstr ""
+msgstr "Pie de página Widget"
 
 #: functions.php:222
 msgid "The footer widget area"
-msgstr ""
+msgstr "La zona de pie de página flash"
 
 #: functions.php:294
 msgid "Shortlink"
-msgstr ""
+msgstr "Shortlink"
 
 #: functions.php:294
 msgid "A smaller version of this pages URL"
-msgstr ""
+msgstr "Una versión más pequeña de esta URL páginas"
 
 #: functions.php:434
 msgid "Images EXIF Data"
-msgstr ""
+msgstr "Los datos EXIF de las imágenes"
 
 #: functions.php:446 functions.php:448
 msgid "second"
-msgstr ""
+msgstr "segundo"
 
 #: functions.php:451
 msgid "seconds"
-msgstr ""
+msgstr "segundo"
 
 #: functions.php:466
 msgid "Date Taken:"
-msgstr ""
+msgstr "Fecha:"
 
 #: functions.php:467
 msgid "Camera:"
-msgstr ""
+msgstr "Cámara:"
 
 #: functions.php:468
 msgid "Focal Length:"
-msgstr ""
+msgstr "Distancia focal:"
 
 #: functions.php:469
 msgid "Aperture:"
-msgstr ""
+msgstr "Apertura:"
 
 #: functions.php:470
 msgid "ISO:"
-msgstr ""
+msgstr "ISO:"
 
 #: functions.php:471
 msgid "Shutter Speed:"
-msgstr ""
+msgstr "Velocidad de obturación:"
 
 #: image.php:34
 msgid "Next Image"
-msgstr ""
+msgstr "Siguiente imagen"
 
 #: image.php:41
 msgid "Previous Image"
-msgstr ""
+msgstr "Previous Image"
 
 #: image.php:49
 msgid "back to &#8220;%s&#8221;"
-msgstr ""
+msgstr "de nuevo a &quot;%s&quot;"
 
 #: image.php:69
 msgid "Sorry, no posts matched your criteria."
-msgstr ""
+msgstr "Lo sentimos, no hay puestos corresponde a sus criterios."
 
 #: sidebar.php:8 sidebar.php:19
 msgid "Welcome to your new site!"
-msgstr ""
+msgstr "Bienvenido a su nuevo sitio!"
 
 #: sidebar.php:9
 msgid "This is your Technology Widget area.  To add items to this sidebar, go to the"
-msgstr ""
+msgstr "Esta es su área de Tecnología Widget. Para agregar elementos a esta barra lateral, vaya a la"
 
 #: sidebar.php:10 sidebar.php:21
 msgid "widgets page"
-msgstr ""
+msgstr "Widgets de la página"
 
 #: sidebar.php:11
 msgid "from your admin Dashboard, and add items to the 'Technology Widget Area' on the right hand side."
-msgstr ""
+msgstr "de su panel de administración, y agregar elementos a la &quot;Tecnología de control de área&quot; en el lado derecho."
 
 #: sidebar.php:20
 msgid "To add items to your sidebar, go to the"
-msgstr ""
+msgstr "Para agregar elementos a la barra lateral, vaya a la"
 
 #: sidebar.php:22
 msgid "from your admin Dashboard, and add items to the 'Sidebar Widget Area' on the right hand side."
-msgstr ""
+msgstr "de su panel de administración, y añadir elementos a la &#39;barra lateral de control de área &quot;en el lado derecho."
 
 #: functions/community-tags.php:239 functions/community-tags.php:335
 msgid "Community Tags"
-msgstr ""
+msgstr "Comunidad Etiquetas"
 
 #: functions/community-tags.php:247 functions/community-tags.php:311
 msgid "Moderate Tags &raquo;"
-msgstr ""
+msgstr "Etiquetas moderado »"
 
 #: functions/community-tags.php:335
 msgid "Community Tags123"
-msgstr ""
+msgstr "Comunidad Tags123"
 
 #: functions/footer-txt.php:4
 msgid "Footer Text Widget"
-msgstr ""
+msgstr "Widget de texto de pie de página"
 
 #: functions/footer-txt.php:5
 msgid "Displays infromation about this site in the footer."
-msgstr ""
+msgstr "Muestra infromation acerca de este sitio en el pie de página."
 
 #: functions/google-analytics.php:73 functions/google-webmaster-tools.php:46
 msgid "Save Above Changes"
-msgstr ""
+msgstr "Guardar encima de Cambios"
 
 #: functions/keep-in-touch-widget2.php:5
 msgid "Keep In Touch Widget Tech"
-msgstr ""
+msgstr "Mantenga En Widget tecnología táctil"
 
 #: functions/keep-in-touch-widget2.php:6 functions/keep-in-touch-widget.php:6
 msgid "Displays Methods of Keeping in touch such as via Twitter, Facebook, RSS & Atom."
-msgstr ""
+msgstr "Muestra los métodos de mantenerse en contacto como a través de Twitter, Facebook, RSS y Atom."
 
 #: functions/keep-in-touch-widget2.php:38 functions/keep-in-touch-widget.php:38
 msgid "Facebook ID"
-msgstr ""
+msgstr "Facebook ID"
 
 #: functions/keep-in-touch-widget.php:5
 msgid "Keep In Touch Widget"
-msgstr ""
+msgstr "Mantenga En Widget táctil"
 
 #: functions/regenerate-thumbnails.php:50
 #: functions/regenerate-thumbnails.php:70
 msgid "Regenerate Thumbnails"
-msgstr ""
+msgstr "Regenerar Miniaturas"
 
 #: functions/regenerate-thumbnails.php:50
 msgid "Regen. Thumbnails"
-msgstr ""
+msgstr "Regen. Miniaturas"
 
 #: functions/regenerate-thumbnails.php:78
 msgid "Cheatin&#8217; uh?"
-msgstr ""
+msgstr "Cheatin &#39;eh?"
 
 #: functions/regenerate-thumbnails.php:95
 msgid "Unable to find any images. Are you sure <a href='%s'>some exist</a>?"
-msgstr ""
+msgstr "No se puede encontrar alguna de las imágenes. ¿Estás seguro de <a href='%s'>algunos existen</a> ?"
 
 #: functions/regenerate-thumbnails.php:100
 msgid "Please be patient while all thumbnails are regenerated. This can take a while if your server is slow (cheap hosting) or if you have many images. Do not navigate away from this page until this script is done or all thumbnails won't be resized. You will be notified via this page when all regenerating is completed."
-msgstr ""
+msgstr "Por favor, sea paciente, mientras que todas las miniaturas se regeneran. Esto puede llevar un tiempo si el servidor es lento (hosting barato) o si tiene muchas imágenes. No salir de esta página hasta que esta secuencia de comandos que se hace o todas las miniaturas no se cambia el tamaño. Se le notificará a través de esta página cuando se complete la regeneración de todos."
 
 #: functions/regenerate-thumbnails.php:112
 #: functions/regenerate-thumbnails.php:170
 msgid "You must enable Javascript in order to proceed!"
-msgstr ""
+msgstr "Debe habilitar JavaScript para poder continuar!"
 
 #: functions/regenerate-thumbnails.php:140
 msgid "All done! Processed %d images."
-msgstr ""
+msgstr "¡Ya está! Procesado%d imágenes."
 
 #: functions/regenerate-thumbnails.php:158
 msgid "Use this tool to regenerate thumbnails for all images that you have uploaded to your blog. This is useful if you've changed any of the thumbnail dimensions on the <a href='%s'>media settings page</a>. Old thumbnails will be kept to avoid any broken images due to hard-coded URLs."
-msgstr ""
+msgstr "Utilice esta herramienta para regenerar las miniaturas de todas las imágenes que has subido a tu blog. Esto es útil si ha cambiado alguna de las dimensiones en miniatura en la <a href='%s'>página de configuración de los medios de comunicación</a> . miniaturas Viejo se mantendrá para evitar imágenes rotas debido a la URL en el código."
 
 #: functions/regenerate-thumbnails.php:160
 msgid "This process is not reversible, although you can just change your thumbnail dimensions back to the old values and click the button again if you don't like the results."
-msgstr ""
+msgstr "Este proceso no es reversible, aunque sólo puede cambiar las dimensiones de la miniatura de nuevo a los viejos valores y haga clic en el botón de nuevo, si no te gusta el resultado."
 
 #: functions/regenerate-thumbnails.php:162
 msgid "To begin, just press the button below."
-msgstr ""
+msgstr "Para empezar, basta con pulsar el botón de abajo."
 
 #: functions/regenerate-thumbnails.php:168
 msgid "Regenerate All Thumbnails"
-msgstr ""
+msgstr "Regenerar todas las miniaturas"
 
 #: functions/relative-date.php:15 functions/relative-date.php:53
 #: functions/relative-date.php:121
 msgid "Today"
-msgstr ""
+msgstr "Hoy en día"
 
 #: functions/relative-date.php:17 functions/relative-date.php:55
 #: functions/relative-date.php:123
 msgid "Yesterday"
-msgstr ""
+msgstr "Ayer"
 
 #: functions/twitter-import.php:57
 msgid "Every 5 Mins"
-msgstr ""
+msgstr "Cada 5 minutos"
 
 #: functions/twitter-post_type.php:7
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: functions/twitter-post_type.php:9 functions/twitter-post_type.php:10
 msgid "Add New Tweet"
-msgstr ""
+msgstr "Añadir Tweet Nueva"
 
 #: functions/twitter-post_type.php:11
 msgid "Edit Tweet"
-msgstr ""
+msgstr "Editar Tweet"
 
 #: functions/twitter-post_type.php:12
 msgid "New Tweet"
-msgstr ""
+msgstr "Nueva Tweet"
 
 #: functions/twitter-post_type.php:13
 msgid "View Tweet"
-msgstr ""
+msgstr "Ver Tweet"
 
 #: functions/twitter-post_type.php:14
 msgid "Search Tweets"
-msgstr ""
+msgstr "Buscar Tweets"
 
 #: functions/twitter-post_type.php:15
 msgid "No tweets found"
-msgstr ""
+msgstr "No tweets que se encuentran"
 
 #: functions/twitter-post_type.php:16
 msgid "No tweets found in Trash"
-msgstr ""
+msgstr "No tweets que se encuentran en la papelera"
 
 #: functions/twitter-post_type.php:18
 msgid "Imported Twitter Posts"
-msgstr ""
+msgstr "Importados Mensajes Twitter"
 
 #: functions/twitter-post_type.php:37
 msgid "Tweets Meta Data"
-msgstr ""
+msgstr "Tweets datos Meta"
 
 #: functions/twitter-post_type.php:50
 msgid " Tweet Post ID"
-msgstr ""
+msgstr "Tweet ID"
 
 #: functions/twitter-post_type.php:52
 msgid " Twitter Name"
-msgstr ""
+msgstr "Twitter Nombre"
 
 #: functions/twitter-post_type.php:54
 msgid " Twitter User"
-msgstr ""
+msgstr "Usuario de Twitter"
 
 #: functions/twitter-post_type.php:223
 msgid "Twitter Widget"
-msgstr ""
+msgstr "Twitter Widget"
 
 #: functions/twitter-post_type.php:224
 msgid "Displays Tweets from the tweet post type."
-msgstr ""
+msgstr "Muestra hacer una pregunta para el tipo de mensaje tweet."
 
 #: functions/typekit-fonts.php:19
 msgid "You cannot edit the search-by-category options."
-msgstr ""
+msgstr "No es posible editar las opciones de búsqueda por categoría."
 
 #: functions/typekit-fonts.php:32
 msgid "is the easiest way to use real fonts on the web. It&rsquo;s a subscription-based service for linking to high-quality Open Type fonts from some of the worlds best type foundries. Typekit fonts are served from a global network on redundant servers, offering bulletproof service and incredible speed. And it couldn&rsquo;t be easier to use."
-msgstr ""
+msgstr "es la forma más fácil de utilizar fuentes reales en la web. Es un servicio basado en suscripción para ligarse a la alta calidad de fuentes Open Type de algunos de los mejores del mundo fundiciones. Fuentes de la Typekit se sirve de una red mundial de servidores redundantes, ofreciendo un servicio a prueba de balas y una velocidad increíble. Y no podría ser más fácil de usar."
 
 #: functions/typekit-fonts.php:37
 msgid "You can find your Typekit ID on typekit.com under Kit Editor -> Embed Code."
-msgstr ""
+msgstr "Puedes encontrar tu ID Typekit en typekit.com en Kit de edición -&gt; Insertar Código."
 
 #: functions/typekit-fonts.php:40
 msgid "Update ID"
-msgstr ""
+msgstr "Actualización de ID"
 
 #: functions/typekit-fonts.php:47
 msgid "If you don&#8217;t have a Typekit ID yet you can sign up on their site for free and enable it on your site with just a few clicks."
-msgstr ""
+msgstr "Si usted no tiene una identificación Typekit sin embargo, usted puede inscribirse en su sitio de forma gratuita y le permitirá en su sitio con sólo unos clics."
 
 #: functions/typekit-fonts.php:49
 msgid "Sign up in seconds"
-msgstr ""
+msgstr "Regístrate en segundos"
