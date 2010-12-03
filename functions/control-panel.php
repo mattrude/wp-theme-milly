@@ -67,8 +67,8 @@ class ControlPanel
 	
 	function AdminHead()
 	{
-		echo '<link rel="stylesheet" href="'.get_bloginfo('template_url').'/control-panel.css" type="text/css" media="screen" />';
-		wp_enqueue_script('jquery-form', get_bloginfo('template_url').'/js/jquery.form.js', array('jquery'), '1.0');
+		echo '<link rel="stylesheet" href="'.get_template_directory_uri().'/control-panel.css" type="text/css" media="screen" />';
+		wp_enqueue_script('jquery-form', get_template_directory_uri().'/js/jquery.form.js', array('jquery'), '1.0');
 	}
 	function SetOptions($Options)
 	{
