@@ -9,22 +9,31 @@
 				$curauth = get_userdata(intval($author));
 			endif; ?>
 
-		<div class="author-head post">
-			<h1>Posts written by <?php echo $curauth->display_name; ?></h1>
-			<?php if ($curauth->twitter or $curauth->facebook) { ?>
-				<?php if ($curauth->user_url) { ?>
-					You may also follow <a href="<?php echo $curauth->user_url;?>"><?php echo $curauth->first_name; ?></a> on 
-				<?php } else { ?>
-					You may also follow <?php echo $curauth->first_name; ?> on 
-				<?php } ?>
-				<?php if ($curauth->twitter){ ?>
-					Twitter as <strong><a rel="nofollow" href="http://twitter.com/<?php echo $curauth->twitter; ?>">@<?php echo $curauth->twitter; ?></a></strong>
-					<?php if ($curauth->facebook) { ?>
-						or
-					<?php } ?>
-				<?php } ?>
-				<?php if ($curauth->facebook) { ?>
-				on Facebook as <strong><a rel="nofollow" href="http://www.facebook.com/<?php echo $curauth->facebook; ?>"><?php echo $curauth->facebook; ?></a></strong>.
+		<div class="author-head post"> <?php
+			echo "<h1>";
+			_e('Posts written by ');
+			echo $curauth->display_name;
+			echo "</h1>";
+			if ($curauth->twitter or $curauth->facebook) {
+				if ($curauth->user_url) {
+					_e('You may also follow'); ?> 
+					<a href="<?php echo $curauth->user_url;?>"><?php echo $curauth->first_name; ?></a><?php 
+					_e(' on ');
+				} else {
+					_e('You may also follow');
+					echo $curauth->first_name;
+					_e(' on ');
+				} ?>
+				<?php if ($curauth->twitter){
+					_e('Twitter as '); ?>
+					<strong><a rel="nofollow" href="http://twitter.com/<?php echo $curauth->twitter; ?>">@<?php echo $curauth->twitter; ?></a></strong>
+					<?php if ($curauth->facebook) {
+						_e(' or ');
+					}
+				}
+				if ($curauth->facebook) {
+				_e('on Facebook as '); ?>
+				<strong><a rel="nofollow" href="http://www.facebook.com/<?php echo $curauth->facebook; ?>"><?php echo $curauth->facebook; ?></a></strong>.
 				<?php } ?>
 			<?php } ?>
 		</div>
