@@ -27,8 +27,6 @@
     'register_meta_box_cb' => 'twitter_save_metabox'
   ));
   
-add_action('init','Twitter_post_type_init');
-
 // Twitter Posts Meta Data
 add_action('admin_menu', 'twitter_add_metabox');
 add_action('save_post', 'twitter_save_metabox');
