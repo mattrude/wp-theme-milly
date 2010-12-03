@@ -5,10 +5,10 @@
 			dynamic_sidebar( 'technology-widget-area' );
         	} else { ?>
 			<div class="widget bookmarks widget-bookmarks">
-				<p>Welcome to your new site!</p>
-               			<p>This is your Technology Widget area.  To add items to this sidebar, go to the
-				<a href="<?php bloginfo('url'); ?>/wp-admin/widgets.php">widgets page</a>
-				from your admin Dashboard, and add items to the 'Technology Widget Area' on the right hand side.</p>
+				<p><?php _e('Welcome to your new site!'); ?></p>
+               			<p><?php _e('This is your Technology Widget area.  To add items to this sidebar, go to the'); ?>
+				<a href="<?php bloginfo('url'); ?>/wp-admin/widgets.php"><?php _e('widgets page'); ?></a>
+				<?php _e("from your admin Dashboard, and add items to the 'Technology Widget Area' on the right hand side."); ?></p>
 			</div> <?php
 		}
 	} else {
@@ -16,10 +16,10 @@
 	    		dynamic_sidebar( 'sidebar-widget-area' );
 		} else { ?>
 			<div class="widget bookmarks widget-bookmarks">
-				<p>Welcome to your new site!</p>
-				<p>To add items to your sidebar, go to the
-				<a href="<?php bloginfo('url'); ?>/wp-admin/widgets.php">widgets page</a>
-				from your admin Dashboard, and add items to the 'Sidebar Widget Area' on the right hand side.</p>	
+				<p><?php _e('Welcome to your new site!'); ?></p>
+				<p><?php _e('To add items to your sidebar, go to the'); ?>
+				<a href="<?php bloginfo('url'); ?>/wp-admin/widgets.php"><?php _e('widgets page'); ?></a>
+				<?php _e("from your admin Dashboard, and add items to the 'Sidebar Widget Area' on the right hand side."); ?></p>	
 			</div> <?php
 		}
 	} ?>
