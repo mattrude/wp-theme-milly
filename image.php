@@ -28,17 +28,16 @@
 
 		$next_url =  isset($attachments[$k+1]) ? get_permalink($attachments[$k+1]->ID) : get_permalink($attachments[0]->ID);
 		$previous_url =  isset($attachments[$k-1]) ? get_permalink($attachments[$k-1]->ID) : get_permalink($attachments[0]->ID);
-		?>
-		<?php if ( wp_get_attachment_image( $post->ID+1 ) != null ) { ?>
+		if ( wp_get_attachment_image( $post->ID+1 ) != null ) { ?>
 		<p class="attachment">
-			<?php _e('Next Image', 'mdr-milly-theme') ?><br />
+			<?php _e('Next Image', 'milly') ?><br />
 			<a href="<?php echo $next_url; ?>"><?php echo wp_get_attachment_image( $post->ID+1, 'thumbnail' ); ?></a>
 		</p>
-		<?php } ?>
+		<?php }
 
-		<?php if ( wp_get_attachment_image( $post->ID-1 ) != null ) { ?>
+		if ( wp_get_attachment_image( $post->ID-1 ) != null ) { ?>
 		<p class="attachment">
-			<?php _e('Previous Image', 'mdr-milly-theme') ?><br />
+			<?php _e('Previous Image', 'milly') ?><br />
 			<a href="<?php echo $previous_url; ?>"><?php echo wp_get_attachment_image( $post->ID-1, 'thumbnail' ); ?></a>
 		</p>
 		<?php } ?>
@@ -51,7 +50,7 @@
 	<div id="community-tags">
 		<h3 class="comment-title exif-title">Who is this?</h3>	
 		<div id="tagthis"></div>
-		<p><?php echo get_the_term_list( $post->ID, 'people', '<br />Already Tagged: ', ', ', '<br />' ); ?></p>
+		<p><?php echo get_the_term_list( $post->ID, 'people', '<br />' .__('Already Tagged', 'milly'). ': ', ', ', '' ); ?></p>
 	</div>
         <?php mdr_exif(); ?>
 	<br />
@@ -66,7 +65,7 @@
 </div>
 </div><!--close single class-->
 <?php endwhile; else: ?>
-	<p><?php _e('Sorry, no posts matched your criteria.', 'mdr-milly-theme') ?></p>
+	<p><?php _e('Sorry, no posts matched your criteria.', 'milly') ?></p>
 <?php endif; ?>
 </div><!--close content id-->
 <?php get_footer(); ?>
