@@ -18,7 +18,7 @@ $t=new twitterImage($twitterid);
         if ( $twitterimgenabled == 'true' ) {
           $t->profile_image(true,true);
         } else {
-           ?><img src="<?php bloginfo('template_url'); ?>/images/twitter-bird.png" class='tweet-image' width="60" height="60" style='margin-right: 5px;' alt='Twitter bird' /><?php
+           ?><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-bird.png" class='tweet-image' width="60" height="60" style='margin-right: 5px;' alt='Twitter bird' /><?php
         }
       the_content(); ?>
     </div>
