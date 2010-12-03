@@ -240,6 +240,10 @@ load_theme_textdomain( 'milly', TEMPLATEPATH . '/languages' );
   Random Settings Changes
 */
 
+// This theme allows users to set a custom background
+add_custom_background();
+
+
 // Add Post Thumbnails for WordPress 2.9
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size(200, 200);
