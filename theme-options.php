@@ -6,7 +6,7 @@ add_action( 'admin_menu', 'milly_theme_options_add_page' );
 /**
  * Add theme options page styles
  */
-wp_register_style( 'milly', get_bloginfo( 'template_directory' ) . '/theme-options.css', '', '0.1' );
+wp_register_style( 'milly', get_template_directory_uri() . '/theme-options.css', '', '0.1' );
 if ( isset( $_GET['page'] ) && $_GET['page'] == 'theme_options' ) {
 	wp_enqueue_style( 'milly' );
 }
@@ -168,7 +168,7 @@ function milly_theme_options_do_page() {
 								<label class="description">
 									<input type="radio" name="milly_theme_options[theme_layout]" value="<?php esc_attr_e( $option['value'] ); ?>" <?php echo $checked; ?> />
 									<span>
-										<img src="<?php bloginfo( 'template_directory' ); ?>/images/<?php echo $option['value']; ?>.png"/>
+										<img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $option['value']; ?>.png"/>
 										<?php echo $option['label']; ?>
 									</span>
 								</label>
