@@ -13,6 +13,23 @@ require_once('functions/twitter-post_type.php');
 #require_once('functions/typekit-fonts.php');
 #require_once('functions/twitter-import.php');
 
+
+/**
+ * Set the content width based on the theme's design and stylesheet.
+ */
+if ( ! isset( $content_width ) )
+        $content_width = 500;
+
+$themecolors = array(
+        'bg' => 'ffffff',
+        'text' => '000000',
+        'link' => '0060ff'
+);
+
+/** Tell WordPress to run milly_setup() when the 'after_setup_theme' hook is run. */
+add_action( 'after_setup_theme', 'milly_setup' );
+
+
 /********************************************************************************
   Add Post Format for WordPress 3.1
 */
@@ -239,34 +256,68 @@ load_theme_textdomain( 'milly', TEMPLATEPATH . '/languages' );
 /********************************************************************************
   Random Settings Changes
 */
+function milly_setup() {
 
-// This theme allows users to set a custom background
-add_custom_background();
+        // This theme has some pretty cool theme options
+        require_once ( get_template_directory() . '/theme-options.php' );
 
-
-// Add Post Thumbnails for WordPress 2.9
-add_theme_support('post-thumbnails');
-set_post_thumbnail_size(200, 200);
-
-// Changing excerpt more
-function new_excerpt_more($more) {
-  return '...';
+	// This theme allows users to set a custom background
+	add_custom_background();
+	
+	// Add Post Thumbnails for WordPress 2.9
+	add_theme_support('post-thumbnails');
+	set_post_thumbnail_size(200, 200);
+	
+	// Changing excerpt more
+	function new_excerpt_more($more) {
+	  return '...';
+	}
+	add_filter('excerpt_more', 'new_excerpt_more');
+	
+	// Changing excerpt length
+	function new_excerpt_length($length) {
+	  return 80;
+	}
+	add_filter('excerpt_length', 'new_excerpt_length');
+	 
+	// Disable gallery CSS insertes
+	add_filter('gallery_style',
+	  create_function(
+	    '$css',
+	    'return preg_replace("#<style type=\'text/css\'>(.*?)</style>#s", "", $css);'
+	  )
+	);
 }
-add_filter('excerpt_more', 'new_excerpt_more');
+	
+/**
+ *  Returns the current Milly layout as selected in the theme options
+ *
+ * @since Milly 1.7
+ */
+function milly_current_layout() {
+        $options = get_option( 'milly_theme_options' );
+        $current_layout = $options['theme_layout'];
 
-// Changing excerpt length
-function new_excerpt_length($length) {
-  return 80;
+        $two_columns = array( 'content-sidebar', 'sidebar-content' );
+
+        if ( in_array( $current_layout, $two_columns ) )
+                return 'two-column ' . $current_layout;
+        else
+                return 'three-column ' . $current_layout;
 }
-add_filter('excerpt_length', 'new_excerpt_length');
- 
-// Disable gallery CSS insertes
-add_filter('gallery_style',
-  create_function(
-    '$css',
-    'return preg_replace("#<style type=\'text/css\'>(.*?)</style>#s", "", $css);'
-  )
-);
+
+/**
+ *  Adds milly_current_layout() to the array of body classes
+ *
+ * @since Milly 1.7
+ */
+function milly_body_class($classes) {
+        $classes[] = milly_current_layout();
+
+        return $classes;
+}
+add_filter( 'body_class', 'milly_body_class' );
+
 
 /********************************************************************************
   This is the Posts section
