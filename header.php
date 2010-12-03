@@ -4,19 +4,19 @@
 
 <head>
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-  <link rel='shortcut icon' href='<?php bloginfo('template_url') ?>/images/favicon.ico' />
+  <link rel='shortcut icon' href='<?php echo get_template_directory_uri(); ?>/images/favicon.ico' />
   <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
   <?php if ( $paged != '0' ) {
     ?><title><?php wp_title(' - ', true, 'right'); ?><?php bloginfo('name'); echo " - Page $paged" ?></title><?php
   } else {
     ?><title><?php wp_title(' - ', true, 'right'); ?><?php bloginfo('name'); ?></title><?php
   } ?>
-  <link rel="alternate" type="application/rss2+xml" title="<?php bloginfo('name'); ?> &raquo; RSS 2 Feed" href="<?php bloginfo('url'); ?>/feed/rss2/" />
-  <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> &raquo; Atom Feed" href="<?php bloginfo('url'); ?>/feed/atom/" />
-  <link rel="alternate" type="application/rss2+xml" title="<?php bloginfo('name'); ?> &raquo; RSS 2 Comments Feed" href="<?php bloginfo('url'); ?>/comments/feed/rss2/" />
-  <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> &raquo; Atom Comments Feed" href="<?php bloginfo('url'); ?>/comments/feed/atom/" />
-  <link rel="alternate" type="application/rss2+xml" title="<?php bloginfo('name'); ?> &raquo; Technology RSS 2 Feed" href="<?php bloginfo('url'); ?>/technology/feed/rss2/" />
-  <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> &raquo; Technology Atom Feed" href="<?php bloginfo('url'); ?>/technology/feed/atom/" />
+  <link rel="alternate" type="application/rss2+xml" title="<?php bloginfo('name'); ?> &raquo; RSS 2 Feed" href="<?php echo home_url(); ?>/feed/rss2/" />
+  <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> &raquo; Atom Feed" href="<?php echo home_url(); ?>/feed/atom/" />
+  <link rel="alternate" type="application/rss2+xml" title="<?php bloginfo('name'); ?> &raquo; RSS 2 Comments Feed" href="<?php echo home_url(); ?>/comments/feed/rss2/" />
+  <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> &raquo; Atom Comments Feed" href="<?php echo home_url(); ?>/comments/feed/atom/" />
+  <link rel="alternate" type="application/rss2+xml" title="<?php bloginfo('name'); ?> &raquo; Technology RSS 2 Feed" href="<?php echo home_url(); ?>/technology/feed/rss2/" />
+  <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> &raquo; Technology Atom Feed" href="<?php echo home_url(); ?>/technology/feed/atom/" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
   <?php if (function_exists('google_webmaster_tools')) { google_webmaster_tools(); } ?>
@@ -29,7 +29,7 @@
   <div id="wrapper" >
     <div id="header-title">
       <div id="site-title">
-        <a class="standard" href="<?php bloginfo('url'); ?>"><b><?php bloginfo('description'); ?></b></a>
+        <a class="standard" href="<?php echo home_url(); ?>"><b><?php bloginfo('description'); ?></b></a>
       </div>
     </div>
     <div id="header">

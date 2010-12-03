@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 
 <head>
-    <link rel='shortcut icon' href='<?php bloginfo('template_url') ?>/images/favicon.ico' />
+    <link rel='shortcut icon' href='<?php echo get_template_directory_uri(); ?>/images/favicon.ico' />
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <title><?php wp_title(' - ', true, 'right'); ?><?php bloginfo('name'); ?></title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
@@ -24,7 +24,7 @@
 		<div id="header-container">
 			<div id="header-title">
 				<div id="site-title">
-					<a class="standard" href="<?php bloginfo('url'); ?>">
+					<a class="standard" href="<?php echo home_url(); ?>">
 						<?php bloginfo('description'); ?>
 					</a>
 				</div>
