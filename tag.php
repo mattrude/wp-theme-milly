@@ -9,16 +9,13 @@
 		<div class="post" id="tag-list">
 		<?php while (have_posts()) : the_post(); ?>
 				<h2 class="single-title entry-title">
-					<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+					<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e('Permanent Link to', 'milly') . the_title_attribute(); ?>"><?php the_title(); ?></a>
 				</h2>
 		<?php endwhile; ?>
 		</div><!--close post class and post# id-->
 		<!--The Loop has ended-->	
-		<div class="navigation">
-                  <div class="txtalignleft"><?php previous_posts_link('&laquo; Newer Entries') ?></div>
-                  <div class="txtalignright"><?php next_posts_link('Older Entries &raquo;') ?></div>
-		</div>
-	<?php endif; ?>
+		<?php milly_pre_next_post_cat();
+	endif; ?>
 </div><!--close content id-->
 
 <?php get_sidebar(); ?>
