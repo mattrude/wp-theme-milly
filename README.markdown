@@ -1,6 +1,6 @@
 Wordpress Theme Milly
 ---------------------
-**Version 1.7-devel**
+The Current  mattrude.com theme, with custom post-types & custom taxonomy.
 
 Change Log
 ----------
