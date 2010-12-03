@@ -76,7 +76,7 @@ class milly_technology_cat_widget extends WP_Widget {
   
   function form($instance) {
     $widget_title = strip_tags($instance['widget_title']);
-    ?><p><label for="<?php echo $this->get_field_id('widget_title'); ?>"><?php _e('Widget Title')?>:<input class="widefat" id="<?php echo $this->get_field_id('widget_title'); ?>" name="<?php echo $this->get_field_name('widget_title'); ?>" type="text" value="<?php echo attribute_escape($widget_title); ?>" /></label></p><?php
+    ?><p><label for="<?php echo $this->get_field_id('widget_title'); ?>"><?php _e('Widget Title')?>:<input class="widefat" id="<?php echo $this->get_field_id('widget_title'); ?>" name="<?php echo $this->get_field_name('widget_title'); ?>" type="text" value="<?php echo esc_attr($widget_title); ?>" /></label></p><?php
   }
 }
 
@@ -111,7 +111,7 @@ class milly_technology_tag_widget extends WP_Widget {
   
   function form($instance) {
     $widget_title = strip_tags($instance['widget_title']);
-    ?><p><label for="<?php echo $this->get_field_id('widget_title'); ?>"><?php _e('Widget Title')?>:<input class="widefat" id="<?php echo $this->get_field_id('widget_title'); ?>" name="<?php echo $this->get_field_name('widget_title'); ?>" type="text" value="<?php echo attribute_escape($widget_title); ?>" /></label></p><?php
+    ?><p><label for="<?php echo $this->get_field_id('widget_title'); ?>"><?php _e('Widget Title')?>:<input class="widefat" id="<?php echo $this->get_field_id('widget_title'); ?>" name="<?php echo $this->get_field_name('widget_title'); ?>" type="text" value="<?php echo esc_attr($widget_title); ?>" /></label></p><?php
   }
 }
 
