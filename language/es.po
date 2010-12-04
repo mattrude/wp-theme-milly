@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Milly Theme package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2010-12-03 23:42:18+0000\n"
+"PO-Revision-Date: 2010-12-04 00:02:02+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,7 +10,91 @@ msgstr ""
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: Milly Theme\n"
 
-#: 404.php:6 functions.php:26 functions/tech-post_type.php:7
+#: theme-options.php:35
+msgid "Light"
+msgstr ""
+
+#: theme-options.php:25
+msgid "Theme Options"
+msgstr ""
+
+#: image.php:53
+msgid "Already Tagged"
+msgstr ""
+
+#: tag.php:12
+msgid "Permanent Link to"
+msgstr ""
+
+#: theme-options.php:39
+msgid "Dark"
+msgstr ""
+
+#: theme-options.php:53
+msgid "Content-Sidebar"
+msgstr ""
+
+#: theme-options.php:57
+msgid "Sidebar-Content"
+msgstr ""
+
+#: theme-options.php:61
+msgid "Content-Sidebar-Sidebar"
+msgstr ""
+
+#: theme-options.php:65
+msgid "Sidebar-Sidebar-Content"
+msgstr ""
+
+#: theme-options.php:69
+msgid "Sidebar-Content-Sidebar"
+msgstr ""
+
+#: theme-options.php:104
+msgid "%1$s Theme Options"
+msgstr ""
+
+#: theme-options.php:108
+msgid "Options saved"
+msgstr ""
+
+#: theme-options.php:122
+msgid "Color Scheme"
+msgstr ""
+
+#: theme-options.php:141
+msgid "Select a default color scheme"
+msgstr ""
+
+#: theme-options.php:150 theme-options.php:152
+msgid "Default Layout"
+msgstr ""
+
+#: theme-options.php:188
+msgid "Aside Category"
+msgstr ""
+
+#: theme-options.php:191 theme-options.php:219
+msgid "Select a category &hellip;"
+msgstr ""
+
+#: theme-options.php:207
+msgid "Select a category to use for shorter aside posts"
+msgstr ""
+
+#: theme-options.php:216
+msgid "Gallery Category"
+msgstr ""
+
+#: theme-options.php:235
+msgid "Select a category to use for posts with image galleries"
+msgstr ""
+
+#: theme-options.php:243
+msgid "Save Options"
+msgstr ""
+
+#: 404.php:6 functions.php:43 functions/tech-post_type.php:7
 msgid "Technology"
 msgstr "Tecnología"
 
@@ -62,141 +146,141 @@ msgstr "o"
 msgid "on Facebook as "
 msgstr "en Facebook como"
 
-#: functions.php:40
+#: functions.php:57
 msgid "Categories"
 msgstr "Categorías"
 
-#: functions.php:41 functions.php:91
+#: functions.php:58 functions.php:108
 msgid "Technology Tags"
 msgstr "Tecnología Etiquetas"
 
-#: functions.php:48
+#: functions.php:65
 msgid "Technology Category"
 msgstr "Categoría Tecnología"
 
-#: functions.php:49
+#: functions.php:66
 msgid "Displays Technology Category."
 msgstr "Muestra la categoría de Tecnología."
 
-#: functions.php:79 functions.php:114 functions/keep-in-touch-widget2.php:36
-#: functions/keep-in-touch-widget.php:36 functions/twitter-post_type.php:254
+#: functions.php:96 functions.php:131 functions/keep-in-touch-widget2.php:36
+#: functions/keep-in-touch-widget.php:36 functions/twitter-post_type.php:252
 msgid "Widget Title"
 msgstr "Widget Título"
 
-#: functions.php:92
+#: functions.php:109
 msgid "Displays Technology Tags."
 msgstr "Muestra Etiquetas Tecnología."
 
-#: functions.php:148
+#: functions.php:165
 msgid "The Header Navigation Menu"
 msgstr "El menú de navegación de cabecera"
 
-#: functions.php:166
+#: functions.php:183
 msgid "People"
 msgstr "Las personas"
 
-#: functions.php:167
+#: functions.php:184
 msgid "Places"
 msgstr "Lugares"
 
-#: functions.php:168
+#: functions.php:185
 msgid "Events"
 msgstr "Eventos"
 
-#: functions.php:179
+#: functions.php:196
 msgid "Facebook URL"
 msgstr "URL de Facebook"
 
-#: functions.php:180
+#: functions.php:197
 msgid "Google Talk"
 msgstr "Google Talk"
 
-#: functions.php:181 functions/keep-in-touch-widget2.php:37
+#: functions.php:198 functions/keep-in-touch-widget2.php:37
 #: functions/keep-in-touch-widget.php:37
 msgid "Twitter ID"
 msgstr "Twitter ID"
 
-#: functions.php:201
+#: functions.php:218
 msgid "Sidebar Widget Area"
 msgstr "Área de la barra lateral Widget"
 
-#: functions.php:202
+#: functions.php:219
 msgid "This is the Main Right Hand Sidebar"
 msgstr "Esta es la barra lateral derecha Mano principal"
 
-#: functions.php:211
+#: functions.php:228
 msgid "Technology Widget Area"
 msgstr "Área de Tecnología Widget"
 
-#: functions.php:212
+#: functions.php:229
 msgid "This widget area is only used on the technology pages and archives."
 msgstr "Esta área widget es utilizado en las páginas de la tecnología y los archivos."
 
-#: functions.php:221
+#: functions.php:238
 msgid "Footer Widget Area"
 msgstr "Pie de página Widget"
 
-#: functions.php:222
+#: functions.php:239
 msgid "The footer widget area"
 msgstr "La zona de pie de página flash"
 
-#: functions.php:294
+#: functions.php:349
 msgid "Shortlink"
 msgstr "Shortlink"
 
-#: functions.php:294
+#: functions.php:349
 msgid "A smaller version of this pages URL"
 msgstr "Una versión más pequeña de esta URL páginas"
 
-#: functions.php:434
+#: functions.php:489
 msgid "Images EXIF Data"
 msgstr "Los datos EXIF de las imágenes"
 
-#: functions.php:446 functions.php:448
+#: functions.php:501 functions.php:503
 msgid "second"
 msgstr "segundo"
 
-#: functions.php:451
+#: functions.php:506
 msgid "seconds"
 msgstr "segundo"
 
-#: functions.php:466
+#: functions.php:521
 msgid "Date Taken:"
 msgstr "Fecha:"
 
-#: functions.php:467
+#: functions.php:522
 msgid "Camera:"
 msgstr "Cámara:"
 
-#: functions.php:468
+#: functions.php:523
 msgid "Focal Length:"
 msgstr "Distancia focal:"
 
-#: functions.php:469
+#: functions.php:524
 msgid "Aperture:"
 msgstr "Apertura:"
 
-#: functions.php:470
+#: functions.php:525
 msgid "ISO:"
 msgstr "ISO:"
 
-#: functions.php:471
+#: functions.php:526
 msgid "Shutter Speed:"
 msgstr "Velocidad de obturación:"
 
-#: image.php:34
+#: image.php:33
 msgid "Next Image"
 msgstr "Siguiente imagen"
 
-#: image.php:41
+#: image.php:40
 msgid "Previous Image"
 msgstr "Previous Image"
 
-#: image.php:49
+#: image.php:48
 msgid "back to &#8220;%s&#8221;"
 msgstr "de nuevo a &quot;%s&quot;"
 
-#: image.php:69
+#: image.php:68
 msgid "Sorry, no posts matched your criteria."
 msgstr "Lo sentimos, no hay puestos corresponde a sus criterios."
 
@@ -236,14 +320,6 @@ msgstr "Etiquetas moderado »"
 msgid "Community Tags123"
 msgstr "Comunidad Tags123"
 
-#: functions/footer-txt.php:4
-msgid "Footer Text Widget"
-msgstr "Widget de texto de pie de página"
-
-#: functions/footer-txt.php:5
-msgid "Displays infromation about this site in the footer."
-msgstr "Muestra infromation acerca de este sitio en el pie de página."
-
 #: functions/google-analytics.php:73 functions/google-webmaster-tools.php:46
 msgid "Save Above Changes"
 msgstr "Guardar encima de Cambios"
@@ -263,52 +339,6 @@ msgstr "Facebook ID"
 #: functions/keep-in-touch-widget.php:5
 msgid "Keep In Touch Widget"
 msgstr "Mantenga En Widget táctil"
-
-#: functions/regenerate-thumbnails.php:50
-#: functions/regenerate-thumbnails.php:70
-msgid "Regenerate Thumbnails"
-msgstr "Regenerar Miniaturas"
-
-#: functions/regenerate-thumbnails.php:50
-msgid "Regen. Thumbnails"
-msgstr "Regen. Miniaturas"
-
-#: functions/regenerate-thumbnails.php:78
-msgid "Cheatin&#8217; uh?"
-msgstr "Cheatin &#39;eh?"
-
-#: functions/regenerate-thumbnails.php:95
-msgid "Unable to find any images. Are you sure <a href='%s'>some exist</a>?"
-msgstr "No se puede encontrar alguna de las imágenes. ¿Estás seguro de <a href='%s'>algunos existen</a> ?"
-
-#: functions/regenerate-thumbnails.php:100
-msgid "Please be patient while all thumbnails are regenerated. This can take a while if your server is slow (cheap hosting) or if you have many images. Do not navigate away from this page until this script is done or all thumbnails won't be resized. You will be notified via this page when all regenerating is completed."
-msgstr "Por favor, sea paciente, mientras que todas las miniaturas se regeneran. Esto puede llevar un tiempo si el servidor es lento (hosting barato) o si tiene muchas imágenes. No salir de esta página hasta que esta secuencia de comandos que se hace o todas las miniaturas no se cambia el tamaño. Se le notificará a través de esta página cuando se complete la regeneración de todos."
-
-#: functions/regenerate-thumbnails.php:112
-#: functions/regenerate-thumbnails.php:170
-msgid "You must enable Javascript in order to proceed!"
-msgstr "Debe habilitar JavaScript para poder continuar!"
-
-#: functions/regenerate-thumbnails.php:140
-msgid "All done! Processed %d images."
-msgstr "¡Ya está! Procesado%d imágenes."
-
-#: functions/regenerate-thumbnails.php:158
-msgid "Use this tool to regenerate thumbnails for all images that you have uploaded to your blog. This is useful if you've changed any of the thumbnail dimensions on the <a href='%s'>media settings page</a>. Old thumbnails will be kept to avoid any broken images due to hard-coded URLs."
-msgstr "Utilice esta herramienta para regenerar las miniaturas de todas las imágenes que has subido a tu blog. Esto es útil si ha cambiado alguna de las dimensiones en miniatura en la <a href='%s'>página de configuración de los medios de comunicación</a> . miniaturas Viejo se mantendrá para evitar imágenes rotas debido a la URL en el código."
-
-#: functions/regenerate-thumbnails.php:160
-msgid "This process is not reversible, although you can just change your thumbnail dimensions back to the old values and click the button again if you don't like the results."
-msgstr "Este proceso no es reversible, aunque sólo puede cambiar las dimensiones de la miniatura de nuevo a los viejos valores y haga clic en el botón de nuevo, si no te gusta el resultado."
-
-#: functions/regenerate-thumbnails.php:162
-msgid "To begin, just press the button below."
-msgstr "Para empezar, basta con pulsar el botón de abajo."
-
-#: functions/regenerate-thumbnails.php:168
-msgid "Regenerate All Thumbnails"
-msgstr "Regenerar todas las miniaturas"
 
 #: functions/relative-date.php:15 functions/relative-date.php:53
 #: functions/relative-date.php:121
@@ -360,27 +390,27 @@ msgstr "No tweets que se encuentran en la papelera"
 msgid "Imported Twitter Posts"
 msgstr "Importados Mensajes Twitter"
 
-#: functions/twitter-post_type.php:37
+#: functions/twitter-post_type.php:35
 msgid "Tweets Meta Data"
 msgstr "Tweets datos Meta"
 
-#: functions/twitter-post_type.php:50
+#: functions/twitter-post_type.php:48
 msgid " Tweet Post ID"
 msgstr "Tweet ID"
 
-#: functions/twitter-post_type.php:52
+#: functions/twitter-post_type.php:50
 msgid " Twitter Name"
 msgstr "Twitter Nombre"
 
-#: functions/twitter-post_type.php:54
+#: functions/twitter-post_type.php:52
 msgid " Twitter User"
 msgstr "Usuario de Twitter"
 
-#: functions/twitter-post_type.php:223
+#: functions/twitter-post_type.php:221
 msgid "Twitter Widget"
 msgstr "Twitter Widget"
 
-#: functions/twitter-post_type.php:224
+#: functions/twitter-post_type.php:222
 msgid "Displays Tweets from the tweet post type."
 msgstr "Muestra hacer una pregunta para el tipo de mensaje tweet."
 
