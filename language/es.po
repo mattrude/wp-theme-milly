@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Milly Theme package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2010-12-04 00:02:02+0000\n"
+"PO-Revision-Date: 2010-12-04 00:27:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,87 +12,87 @@ msgstr ""
 
 #: theme-options.php:35
 msgid "Light"
-msgstr ""
+msgstr "Luz"
 
 #: theme-options.php:25
 msgid "Theme Options"
-msgstr ""
+msgstr "Opciones del tema"
 
 #: image.php:53
 msgid "Already Tagged"
-msgstr ""
+msgstr "Ya con la etiqueta"
 
 #: tag.php:12
 msgid "Permanent Link to"
-msgstr ""
+msgstr "Enlace permanente a"
 
 #: theme-options.php:39
 msgid "Dark"
-msgstr ""
+msgstr "Oscuro"
 
 #: theme-options.php:53
 msgid "Content-Sidebar"
-msgstr ""
+msgstr "Contenido de la barra lateral-"
 
 #: theme-options.php:57
 msgid "Sidebar-Content"
-msgstr ""
+msgstr "Sidebar-Contenido"
 
 #: theme-options.php:61
 msgid "Content-Sidebar-Sidebar"
-msgstr ""
+msgstr "Contenido-lateral-lateral"
 
 #: theme-options.php:65
 msgid "Sidebar-Sidebar-Content"
-msgstr ""
+msgstr "Barra lateral-lateral-Content"
 
 #: theme-options.php:69
 msgid "Sidebar-Content-Sidebar"
-msgstr ""
+msgstr "Sidebar-contenido-la barra lateral"
 
 #: theme-options.php:104
 msgid "%1$s Theme Options"
-msgstr ""
+msgstr "%1$s Opciones del tema"
 
 #: theme-options.php:108
 msgid "Options saved"
-msgstr ""
+msgstr "Opciones de guardado"
 
 #: theme-options.php:122
 msgid "Color Scheme"
-msgstr ""
+msgstr "Combinación de colores"
 
 #: theme-options.php:141
 msgid "Select a default color scheme"
-msgstr ""
+msgstr "Seleccione un esquema de color por defecto"
 
 #: theme-options.php:150 theme-options.php:152
 msgid "Default Layout"
-msgstr ""
+msgstr "Por defecto de diseño"
 
 #: theme-options.php:188
 msgid "Aside Category"
-msgstr ""
+msgstr "Aparte Categoría"
 
 #: theme-options.php:191 theme-options.php:219
 msgid "Select a category &hellip;"
-msgstr ""
+msgstr "Seleccione una categoría ..."
 
 #: theme-options.php:207
 msgid "Select a category to use for shorter aside posts"
-msgstr ""
+msgstr "Seleccione una categoría para el uso de los puestos a un lado más corto"
 
 #: theme-options.php:216
 msgid "Gallery Category"
-msgstr ""
+msgstr "Galería Categoría"
 
 #: theme-options.php:235
 msgid "Select a category to use for posts with image galleries"
-msgstr ""
+msgstr "Seleccione una categoría para el uso de mensajes con galerías de imágenes"
 
 #: theme-options.php:243
 msgid "Save Options"
-msgstr ""
+msgstr "Opciones para guardar"
 
 #: 404.php:6 functions.php:43 functions/tech-post_type.php:7
 msgid "Technology"
