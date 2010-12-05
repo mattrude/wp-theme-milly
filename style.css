@@ -1179,3 +1179,9 @@ li.twitter a {
    overflow: hidden;
    padding: 0px 10px 0px 0px;
 }
+
+/* Sharedaddy plugin styling */
+
+.sharing a {
+   color:#666 !important;
+}
