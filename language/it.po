@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Milly Theme package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2010-12-04 06:14:26+0000\n"
+"PO-Revision-Date: 2010-12-12 22:17:23+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,245 +12,245 @@ msgstr ""
 
 #: theme-options.php:35
 msgid "Light"
-msgstr ""
+msgstr "Luce"
 
 #: theme-options.php:25
 msgid "Theme Options"
-msgstr ""
+msgstr "Tema Opzioni"
 
 #: image.php:53
 msgid "Already Tagged"
-msgstr ""
+msgstr "Già Tagged"
 
 #: tag.php:12
 msgid "Permanent Link to"
-msgstr ""
+msgstr "Link permanente a"
 
 #: theme-options.php:39
 msgid "Dark"
-msgstr ""
+msgstr "Dark"
 
 #: theme-options.php:53
 msgid "Content-Sidebar"
-msgstr ""
+msgstr "Content-Sidebar"
 
 #: theme-options.php:57
 msgid "Sidebar-Content"
-msgstr ""
+msgstr "Sidebar-Content"
 
 #: theme-options.php:61
 msgid "Content-Sidebar-Sidebar"
-msgstr ""
+msgstr "Content-sidebar-Sidebar"
 
 #: theme-options.php:65
 msgid "Sidebar-Sidebar-Content"
-msgstr ""
+msgstr "Sidebar-Sidebar-Content"
 
 #: theme-options.php:69
 msgid "Sidebar-Content-Sidebar"
-msgstr ""
+msgstr "Sidebar-Content-Sidebar"
 
 #: theme-options.php:104
 msgid "%1$s Theme Options"
-msgstr ""
+msgstr "%1$s Opzioni tema"
 
 #: theme-options.php:108
 msgid "Options saved"
-msgstr ""
+msgstr "Opzioni di salvataggio"
 
 #: theme-options.php:122
 msgid "Color Scheme"
-msgstr ""
+msgstr "Schema di colori"
 
 #: theme-options.php:141
 msgid "Select a default color scheme"
-msgstr ""
+msgstr "Selezionare una combinazione di colori predefinita"
 
 #: theme-options.php:150 theme-options.php:152
 msgid "Default Layout"
-msgstr ""
+msgstr "Default Layout"
 
 #: theme-options.php:188
 msgid "Aside Category"
-msgstr ""
+msgstr "Oltre Categoria"
 
 #: theme-options.php:191 theme-options.php:219
 msgid "Select a category &hellip;"
-msgstr ""
+msgstr "Seleziona una categoria ..."
 
 #: theme-options.php:207
 msgid "Select a category to use for shorter aside posts"
-msgstr ""
+msgstr "Seleziona una categoria da utilizzare per i messaggi brevi da parte"
 
 #: theme-options.php:216
 msgid "Gallery Category"
-msgstr ""
+msgstr "Galleria Categoria"
 
 #: theme-options.php:235
 msgid "Select a category to use for posts with image galleries"
-msgstr ""
+msgstr "Seleziona una categoria da utilizzare per i messaggi con gallerie di immagini"
 
 #: theme-options.php:243
 msgid "Save Options"
-msgstr ""
+msgstr "Opzioni di salvataggio"
 
 #: 404.php:6 functions.php:43 functions/tech-post_type.php:7
 msgid "Technology"
-msgstr ""
+msgstr "Tecnologia"
 
 #: 404.php:6
 msgid "or"
-msgstr ""
+msgstr "o"
 
 #: 404.php:6
 msgid "Photo Gallery"
-msgstr ""
+msgstr "Foto Gallery"
 
 #: 404.php:6
 msgid "No sense sticking around here for very long. Check out the sidebar where you will be able to search, or checkout my"
-msgstr ""
+msgstr "Non ha senso attaccare in giro qui per molto tempo. Scopri la barra laterale dove si sarà in grado di cercare, o checkout la mia"
 
 #: 404.php:5
 msgid "Oops! - 404 Error"
-msgstr ""
+msgstr "Oops! - Errore 404"
 
 #: 404.php:6
 msgid "section if your into those sorts of things. If you feel you've reached this page as an error on my part, please"
-msgstr ""
+msgstr "sezione se la vostra in questo genere di cose. Se ritieni di aver raggiunto questa pagina come un errore da parte mia, per favore"
 
 #: 404.php:6
 msgid "contact me"
-msgstr ""
+msgstr "contatto con me"
 
 #: author.php:14
 msgid "Posts written by "
-msgstr ""
+msgstr "Messaggi scritti da"
 
 #: author.php:19 author.php:23
 msgid "You may also follow"
-msgstr ""
+msgstr "Si può anche seguire"
 
 #: author.php:21 author.php:25
 msgid " on "
-msgstr ""
+msgstr "su"
 
 #: author.php:28
 msgid "Twitter as "
-msgstr ""
+msgstr "Twitter"
 
 #: author.php:31
 msgid " or "
-msgstr ""
+msgstr "o"
 
 #: author.php:35
 msgid "on Facebook as "
-msgstr ""
+msgstr "su Facebook come"
 
 #: functions.php:57
 msgid "Categories"
-msgstr ""
+msgstr "Categorie"
 
 #: functions.php:58 functions.php:108
 msgid "Technology Tags"
-msgstr ""
+msgstr "La tecnologia Tag"
 
 #: functions.php:65
 msgid "Technology Category"
-msgstr ""
+msgstr "Categoria Tecnologia"
 
 #: functions.php:66
 msgid "Displays Technology Category."
-msgstr ""
+msgstr "Display Technology Categoria."
 
 #: functions.php:96 functions.php:131 functions/keep-in-touch-widget.php:36
 #: functions/keep-in-touch-widget2.php:36 functions/twitter-post_type.php:252
 msgid "Widget Title"
-msgstr ""
+msgstr "Widget titolo"
 
 #: functions.php:109
 msgid "Displays Technology Tags."
-msgstr ""
+msgstr "Display Technology Tag."
 
 #: functions.php:165
 msgid "The Header Navigation Menu"
-msgstr ""
+msgstr "L&#39;intestazione del menu di navigazione"
 
 #: functions.php:183
 msgid "People"
-msgstr ""
+msgstr "Persone"
 
 #: functions.php:184
 msgid "Places"
-msgstr ""
+msgstr "Luoghi"
 
 #: functions.php:185
 msgid "Events"
-msgstr ""
+msgstr "Eventi"
 
 #: functions.php:196
 msgid "Facebook URL"
-msgstr ""
+msgstr "Facebook URL"
 
 #: functions.php:197
 msgid "Google Talk"
-msgstr ""
+msgstr "Google Talk"
 
 #: functions.php:198 functions/keep-in-touch-widget.php:37
 #: functions/keep-in-touch-widget2.php:37
 msgid "Twitter ID"
-msgstr ""
+msgstr "Twitter ID"
 
 #: functions.php:218
 msgid "Sidebar Widget Area"
-msgstr ""
+msgstr "Sidebar Widget Area"
 
 #: functions.php:219
 msgid "This is the Main Right Hand Sidebar"
-msgstr ""
+msgstr "Questo è il principale Sidebar Mano Destra"
 
 #: functions.php:228
 msgid "Technology Widget Area"
-msgstr ""
+msgstr "Tecnologia Widget Area"
 
 #: functions.php:229
 msgid "This widget area is only used on the technology pages and archives."
-msgstr ""
+msgstr "Questa zona widget è usato solo nelle pagine della tecnologia e degli archivi."
 
 #: functions.php:238
 msgid "Footer Widget Area"
-msgstr ""
+msgstr "Piè di pagina Widget Area"
 
 #: functions.php:239
 msgid "The footer widget area"
-msgstr ""
+msgstr "Il piè di pagina area widget"
 
 #: functions.php:349
 msgid "Shortlink"
-msgstr ""
+msgstr "Shortlink"
 
 #: functions.php:349
 msgid "A smaller version of this pages URL"
-msgstr ""
+msgstr "Una versione più piccola di questo URL pagine"
 
 #: functions.php:489
 msgid "Images EXIF Data"
-msgstr ""
+msgstr "Immagini dei dati EXIF"
 
 #: functions.php:501 functions.php:503
 msgid "second"
-msgstr ""
+msgstr "secondo"
 
 #: functions.php:506
 msgid "seconds"
-msgstr ""
+msgstr "secondo"
 
 #: functions.php:521
 msgid "Date Taken:"
-msgstr ""
+msgstr "Data di scatto:"
 
 #: functions.php:522
 msgid "Camera:"
-msgstr ""
+msgstr "Fotocamera:"
 
 #: functions.php:523
 msgid "Focal Length:"
