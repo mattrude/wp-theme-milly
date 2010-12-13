@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Milly Theme package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2010-12-04 06:14:37+0000\n"
+"PO-Revision-Date: 2010-12-13 06:15:16+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,428 +12,428 @@ msgstr ""
 
 #: theme-options.php:35
 msgid "Light"
-msgstr ""
+msgstr "光"
 
 #: theme-options.php:25
 msgid "Theme Options"
-msgstr ""
+msgstr "主題選項"
 
 #: image.php:53
 msgid "Already Tagged"
-msgstr ""
+msgstr "已標記"
 
 #: tag.php:12
 msgid "Permanent Link to"
-msgstr ""
+msgstr "永久鏈接"
 
 #: theme-options.php:39
 msgid "Dark"
-msgstr ""
+msgstr "黑暗"
 
 #: theme-options.php:53
 msgid "Content-Sidebar"
-msgstr ""
+msgstr "內容邊欄"
 
 #: theme-options.php:57
 msgid "Sidebar-Content"
-msgstr ""
+msgstr "側欄內容"
 
 #: theme-options.php:61
 msgid "Content-Sidebar-Sidebar"
-msgstr ""
+msgstr "內容補充工具欄，側邊欄"
 
 #: theme-options.php:65
 msgid "Sidebar-Sidebar-Content"
-msgstr ""
+msgstr "側欄側欄內容"
 
 #: theme-options.php:69
 msgid "Sidebar-Content-Sidebar"
-msgstr ""
+msgstr "側欄內容的補充工具欄"
 
 #: theme-options.php:104
 msgid "%1$s Theme Options"
-msgstr ""
+msgstr "％1 $ s的主題選項"
 
 #: theme-options.php:108
 msgid "Options saved"
-msgstr ""
+msgstr "選項已保存"
 
 #: theme-options.php:122
 msgid "Color Scheme"
-msgstr ""
+msgstr "配色方案"
 
 #: theme-options.php:141
 msgid "Select a default color scheme"
-msgstr ""
+msgstr "選擇一個默認的配色方案"
 
 #: theme-options.php:150 theme-options.php:152
 msgid "Default Layout"
-msgstr ""
+msgstr "默認佈局"
 
 #: theme-options.php:188
 msgid "Aside Category"
-msgstr ""
+msgstr "除了分類"
 
 #: theme-options.php:191 theme-options.php:219
 msgid "Select a category &hellip;"
-msgstr ""
+msgstr "選擇一個類別 ..."
 
 #: theme-options.php:207
 msgid "Select a category to use for shorter aside posts"
-msgstr ""
+msgstr "選擇一個類別，使用較短的預留職位"
 
 #: theme-options.php:216
 msgid "Gallery Category"
-msgstr ""
+msgstr "圖庫分類"
 
 #: theme-options.php:235
 msgid "Select a category to use for posts with image galleries"
-msgstr ""
+msgstr "選擇一個類別職位，使用圖像畫廊"
 
 #: theme-options.php:243
 msgid "Save Options"
-msgstr ""
+msgstr "保存選項"
 
 #: 404.php:6 functions.php:43 functions/tech-post_type.php:7
 msgid "Technology"
-msgstr ""
+msgstr "技術"
 
 #: 404.php:6
 msgid "or"
-msgstr ""
+msgstr "或"
 
 #: 404.php:6
 msgid "Photo Gallery"
-msgstr ""
+msgstr "照片庫"
 
 #: 404.php:6
 msgid "No sense sticking around here for very long. Check out the sidebar where you will be able to search, or checkout my"
-msgstr ""
+msgstr "在這裡沒有意義的堅持很長時間。看看側邊欄在這裡您將能夠搜索，或結帳我的"
 
 #: 404.php:5
 msgid "Oops! - 404 Error"
-msgstr ""
+msgstr "哎呀！ - 404錯誤"
 
 #: 404.php:6
 msgid "section if your into those sorts of things. If you feel you've reached this page as an error on my part, please"
-msgstr ""
+msgstr "如果您到這些節各種各樣的事情。如果你覺得你已經達到了這個頁面，錯誤就我而言，請"
 
 #: 404.php:6
 msgid "contact me"
-msgstr ""
+msgstr "與我聯繫"
 
 #: author.php:14
 msgid "Posts written by "
-msgstr ""
+msgstr "貼文寫的"
 
 #: author.php:19 author.php:23
 msgid "You may also follow"
-msgstr ""
+msgstr "您也可以按照"
 
 #: author.php:21 author.php:25
 msgid " on "
-msgstr ""
+msgstr "關於"
 
 #: author.php:28
 msgid "Twitter as "
-msgstr ""
+msgstr "Twitter作為"
 
 #: author.php:31
 msgid " or "
-msgstr ""
+msgstr "或"
 
 #: author.php:35
 msgid "on Facebook as "
-msgstr ""
+msgstr "在Facebook作為"
 
 #: functions.php:57
 msgid "Categories"
-msgstr ""
+msgstr "分類"
 
 #: functions.php:58 functions.php:108
 msgid "Technology Tags"
-msgstr ""
+msgstr "科技標籤"
 
 #: functions.php:65
 msgid "Technology Category"
-msgstr ""
+msgstr "技術類"
 
 #: functions.php:66
 msgid "Displays Technology Category."
-msgstr ""
+msgstr "顯示技術的範疇。"
 
 #: functions.php:96 functions.php:131 functions/keep-in-touch-widget.php:36
 #: functions/keep-in-touch-widget2.php:36 functions/twitter-post_type.php:252
 msgid "Widget Title"
-msgstr ""
+msgstr "工具標題"
 
 #: functions.php:109
 msgid "Displays Technology Tags."
-msgstr ""
+msgstr "顯示科技標籤。"
 
 #: functions.php:165
 msgid "The Header Navigation Menu"
-msgstr ""
+msgstr "該標題導航菜單"
 
 #: functions.php:183
 msgid "People"
-msgstr ""
+msgstr "人"
 
 #: functions.php:184
 msgid "Places"
-msgstr ""
+msgstr "學位"
 
 #: functions.php:185
 msgid "Events"
-msgstr ""
+msgstr "活動"
 
 #: functions.php:196
 msgid "Facebook URL"
-msgstr ""
+msgstr "網址註冊 Facebook！"
 
 #: functions.php:197
 msgid "Google Talk"
-msgstr ""
+msgstr "谷歌對話"
 
 #: functions.php:198 functions/keep-in-touch-widget.php:37
 #: functions/keep-in-touch-widget2.php:37
 msgid "Twitter ID"
-msgstr ""
+msgstr "Twitter的身份證"
 
 #: functions.php:218
 msgid "Sidebar Widget Area"
-msgstr ""
+msgstr "邊欄區"
 
 #: functions.php:219
 msgid "This is the Main Right Hand Sidebar"
-msgstr ""
+msgstr "這是主要的右手邊欄"
 
 #: functions.php:228
 msgid "Technology Widget Area"
-msgstr ""
+msgstr "區科技小工具"
 
 #: functions.php:229
 msgid "This widget area is only used on the technology pages and archives."
-msgstr ""
+msgstr "這個小部件面積只有網頁上使用的技術和檔案。"
 
 #: functions.php:238
 msgid "Footer Widget Area"
-msgstr ""
+msgstr "頁腳控件區"
 
 #: functions.php:239
 msgid "The footer widget area"
-msgstr ""
+msgstr "頁腳部件領域"
 
 #: functions.php:349
 msgid "Shortlink"
-msgstr ""
+msgstr "捷徑連接"
 
 #: functions.php:349
 msgid "A smaller version of this pages URL"
-msgstr ""
+msgstr "一個較小的版本本網頁的URL"
 
 #: functions.php:489
 msgid "Images EXIF Data"
-msgstr ""
+msgstr "圖片的EXIF數據"
 
 #: functions.php:501 functions.php:503
 msgid "second"
-msgstr ""
+msgstr "第二"
 
 #: functions.php:506
 msgid "seconds"
-msgstr ""
+msgstr "秒"
 
 #: functions.php:521
 msgid "Date Taken:"
-msgstr ""
+msgstr "拍攝日期："
 
 #: functions.php:522
 msgid "Camera:"
-msgstr ""
+msgstr "照相機："
 
 #: functions.php:523
 msgid "Focal Length:"
-msgstr ""
+msgstr "焦距："
 
 #: functions.php:524
 msgid "Aperture:"
-msgstr ""
+msgstr "光圈："
 
 #: functions.php:525
 msgid "ISO:"
-msgstr ""
+msgstr "通過 ISO："
 
 #: functions.php:526
 msgid "Shutter Speed:"
-msgstr ""
+msgstr "快門速度："
 
 #: image.php:33
 msgid "Next Image"
-msgstr ""
+msgstr "下一張圖片"
 
 #: image.php:40
 msgid "Previous Image"
-msgstr ""
+msgstr "上一張圖片"
 
 #: image.php:48
 msgid "back to &#8220;%s&#8221;"
-msgstr ""
+msgstr "返回到“％s”"
 
 #: image.php:68
 msgid "Sorry, no posts matched your criteria."
-msgstr ""
+msgstr "對不起，沒有職位符合您的標準。"
 
 #: sidebar.php:8 sidebar.php:19
 msgid "Welcome to your new site!"
-msgstr ""
+msgstr "歡迎您的新網站！"
 
 #: sidebar.php:9
 msgid "This is your Technology Widget area.  To add items to this sidebar, go to the"
-msgstr ""
+msgstr "這是您的技術小工具區。要將項目添加到這個欄，轉到"
 
 #: sidebar.php:10 sidebar.php:21
 msgid "widgets page"
-msgstr ""
+msgstr "部件頁"
 
 #: sidebar.php:11
 msgid "from your admin Dashboard, and add items to the 'Technology Widget Area' on the right hand side."
-msgstr ""
+msgstr "從你的管理控制台，並添加項目到&#39;科技小工具區就在右手邊。"
 
 #: sidebar.php:20
 msgid "To add items to your sidebar, go to the"
-msgstr ""
+msgstr "要將項目添加到您的補充工具欄，轉到"
 
 #: sidebar.php:22
 msgid "from your admin Dashboard, and add items to the 'Sidebar Widget Area' on the right hand side."
-msgstr ""
+msgstr "從你的管理控制台，並添加項目到&#39;邊欄區，右手邊。"
 
 #: functions/community-tags.php:239 functions/community-tags.php:335
 msgid "Community Tags"
-msgstr ""
+msgstr "社區標籤"
 
 #: functions/community-tags.php:247 functions/community-tags.php:311
 msgid "Moderate Tags &raquo;"
-msgstr ""
+msgstr "中度標籤 »"
 
 #: functions/community-tags.php:335
 msgid "Community Tags123"
-msgstr ""
+msgstr "社區 Tags123"
 
 #: functions/google-analytics.php:73 functions/google-webmaster-tools.php:46
 msgid "Save Above Changes"
-msgstr ""
+msgstr "保存上述變化"
 
 #: functions/keep-in-touch-widget2.php:5
 msgid "Keep In Touch Widget Tech"
-msgstr ""
+msgstr "保持聯繫控件技術"
 
 #: functions/keep-in-touch-widget.php:6 functions/keep-in-touch-widget2.php:6
 msgid "Displays Methods of Keeping in touch such as via Twitter, Facebook, RSS & Atom."
-msgstr ""
+msgstr "顯示方法保持接觸，例如通過 Twitter，Facebook，RSS和Atom所致。"
 
 #: functions/keep-in-touch-widget.php:38 functions/keep-in-touch-widget2.php:38
 msgid "Facebook ID"
-msgstr ""
+msgstr "趕快註冊 Facebook標識"
 
 #: functions/keep-in-touch-widget.php:5
 msgid "Keep In Touch Widget"
-msgstr ""
+msgstr "保持聯繫小工具"
 
 #: functions/relative-date.php:15 functions/relative-date.php:53
 #: functions/relative-date.php:121
 msgid "Today"
-msgstr ""
+msgstr "今天"
 
 #: functions/relative-date.php:17 functions/relative-date.php:55
 #: functions/relative-date.php:123
 msgid "Yesterday"
-msgstr ""
+msgstr "昨天"
 
 #: functions/twitter-import.php:57
 msgid "Every 5 Mins"
-msgstr ""
+msgstr "每隔5分鐘"
 
 #: functions/twitter-post_type.php:7
 msgid "Twitter"
-msgstr ""
+msgstr "嘰嘰喳喳"
 
 #: functions/twitter-post_type.php:9 functions/twitter-post_type.php:10
 msgid "Add New Tweet"
-msgstr ""
+msgstr "添加新的鳴叫"
 
 #: functions/twitter-post_type.php:11
 msgid "Edit Tweet"
-msgstr ""
+msgstr "編輯鳴叫"
 
 #: functions/twitter-post_type.php:12
 msgid "New Tweet"
-msgstr ""
+msgstr "新的鳴叫"
 
 #: functions/twitter-post_type.php:13
 msgid "View Tweet"
-msgstr ""
+msgstr "查看鳴叫"
 
 #: functions/twitter-post_type.php:14
 msgid "Search Tweets"
-msgstr ""
+msgstr "搜索鳴叫"
 
 #: functions/twitter-post_type.php:15
 msgid "No tweets found"
-msgstr ""
+msgstr "沒有找到鳴叫"
 
 #: functions/twitter-post_type.php:16
 msgid "No tweets found in Trash"
-msgstr ""
+msgstr "沒有鳴叫發現垃圾桶"
 
 #: functions/twitter-post_type.php:18
 msgid "Imported Twitter Posts"
-msgstr ""
+msgstr "進口 Twitter的職位"
 
 #: functions/twitter-post_type.php:35
 msgid "Tweets Meta Data"
-msgstr ""
+msgstr "鳴叫元數據"
 
 #: functions/twitter-post_type.php:48
 msgid " Tweet Post ID"
-msgstr ""
+msgstr "鳴叫郵政編號"
 
 #: functions/twitter-post_type.php:50
 msgid " Twitter Name"
-msgstr ""
+msgstr "twitter名"
 
 #: functions/twitter-post_type.php:52
 msgid " Twitter User"
-msgstr ""
+msgstr "Twitter的用戶"
 
 #: functions/twitter-post_type.php:221
 msgid "Twitter Widget"
-msgstr ""
+msgstr "Twitter的小工具"
 
 #: functions/twitter-post_type.php:222
 msgid "Displays Tweets from the tweet post type."
-msgstr ""
+msgstr "從顯示鳴叫的鳴叫文章類型。"
 
 #: functions/typekit-fonts.php:19
 msgid "You cannot edit the search-by-category options."
-msgstr ""
+msgstr "您不能編輯搜索按類別選項。"
 
 #: functions/typekit-fonts.php:32
 msgid "is the easiest way to use real fonts on the web. It&rsquo;s a subscription-based service for linking to high-quality Open Type fonts from some of the worlds best type foundries. Typekit fonts are served from a global network on redundant servers, offering bulletproof service and incredible speed. And it couldn&rsquo;t be easier to use."
-msgstr ""
+msgstr "最簡單的方法是使用真正的字體在網頁上。這是一個基於訂閱的服務聯繫起來，以優質的開放式字體由一些世界上最好的類型代工廠。 Typekit字體從全球供應網絡的冗餘服務器，提供防彈服務和令人難以置信的速度。而且它不能更容易使用。"
 
 #: functions/typekit-fonts.php:37
 msgid "You can find your Typekit ID on typekit.com under Kit Editor -> Embed Code."
-msgstr ""
+msgstr "你可以找到你Typekit ID在typekit.com下包編輯器“ - &gt;嵌入代碼。"
 
 #: functions/typekit-fonts.php:40
 msgid "Update ID"
-msgstr ""
+msgstr "更新ID"
 
 #: functions/typekit-fonts.php:47
 msgid "If you don&#8217;t have a Typekit ID yet you can sign up on their site for free and enable it on your site with just a few clicks."
-msgstr ""
+msgstr "如果你沒有一個 Typekit身份證但你可以註冊他們的網站上免費，並使其在您的網站，只需點擊幾下。"
 
 #: functions/typekit-fonts.php:49
 msgid "Sign up in seconds"
-msgstr ""
+msgstr "在幾秒鐘註冊"

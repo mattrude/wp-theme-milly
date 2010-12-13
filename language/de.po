@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Milly Theme package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2010-12-04 06:14:21+0000\n"
+"PO-Revision-Date: 2010-12-13 06:15:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,428 +12,428 @@ msgstr ""
 
 #: theme-options.php:35
 msgid "Light"
-msgstr ""
+msgstr "Light"
 
 #: theme-options.php:25
 msgid "Theme Options"
-msgstr ""
+msgstr "Theme"
 
 #: image.php:53
 msgid "Already Tagged"
-msgstr ""
+msgstr "Bereits Tagged"
 
 #: tag.php:12
 msgid "Permanent Link to"
-msgstr ""
+msgstr "Permanenter Link zu"
 
 #: theme-options.php:39
 msgid "Dark"
-msgstr ""
+msgstr "Dark"
 
 #: theme-options.php:53
 msgid "Content-Sidebar"
-msgstr ""
+msgstr "Content-Sidebar"
 
 #: theme-options.php:57
 msgid "Sidebar-Content"
-msgstr ""
+msgstr "Sidebar-Content"
 
 #: theme-options.php:61
 msgid "Content-Sidebar-Sidebar"
-msgstr ""
+msgstr "Content-Sidebar-Sidebar"
 
 #: theme-options.php:65
 msgid "Sidebar-Sidebar-Content"
-msgstr ""
+msgstr "Sidebar-Sidebar-Content"
 
 #: theme-options.php:69
 msgid "Sidebar-Content-Sidebar"
-msgstr ""
+msgstr "Sidebar-Content-Sidebar"
 
 #: theme-options.php:104
 msgid "%1$s Theme Options"
-msgstr ""
+msgstr "%1$s Theme"
 
 #: theme-options.php:108
 msgid "Options saved"
-msgstr ""
+msgstr "Optionen gespeichert"
 
 #: theme-options.php:122
 msgid "Color Scheme"
-msgstr ""
+msgstr "Farbschema"
 
 #: theme-options.php:141
 msgid "Select a default color scheme"
-msgstr ""
+msgstr "Wählen Sie ein Standard-Farbschema"
 
 #: theme-options.php:150 theme-options.php:152
 msgid "Default Layout"
-msgstr ""
+msgstr "Standard-Layouts"
 
 #: theme-options.php:188
 msgid "Aside Category"
-msgstr ""
+msgstr "Abgesehen Kategorie"
 
 #: theme-options.php:191 theme-options.php:219
 msgid "Select a category &hellip;"
-msgstr ""
+msgstr "Wählen Sie eine Kategorie ..."
 
 #: theme-options.php:207
 msgid "Select a category to use for shorter aside posts"
-msgstr ""
+msgstr "Wählen Sie eine Kategorie für kürzere beiseite Beiträge verwenden"
 
 #: theme-options.php:216
 msgid "Gallery Category"
-msgstr ""
+msgstr "Galerie Kategorie"
 
 #: theme-options.php:235
 msgid "Select a category to use for posts with image galleries"
-msgstr ""
+msgstr "Wählen Sie eine Kategorie für Beiträge mit Bildergalerien verwenden"
 
 #: theme-options.php:243
 msgid "Save Options"
-msgstr ""
+msgstr "Optionen speichern"
 
 #: 404.php:6 functions.php:43 functions/tech-post_type.php:7
 msgid "Technology"
-msgstr ""
+msgstr "Technology"
 
 #: 404.php:6
 msgid "or"
-msgstr ""
+msgstr "oder"
 
 #: 404.php:6
 msgid "Photo Gallery"
-msgstr ""
+msgstr "Fotogalerie"
 
 #: 404.php:6
 msgid "No sense sticking around here for very long. Check out the sidebar where you will be able to search, or checkout my"
-msgstr ""
+msgstr "Kein Sinn stecken hier sehr lange. Schauen Sie sich die Seitenleiste, wo man in der Lage sein wird zu suchen, oder meine Kasse"
 
 #: 404.php:5
 msgid "Oops! - 404 Error"
-msgstr ""
+msgstr "Achtung! - Fehler 404"
 
 #: 404.php:6
 msgid "section if your into those sorts of things. If you feel you've reached this page as an error on my part, please"
-msgstr ""
+msgstr "Abschnitt, wenn Ihr in diese Art von Dingen. Wenn Sie glauben, Sie haben diese Seite als ein Fehler von meiner Seite erreicht, bitte"
 
 #: 404.php:6
 msgid "contact me"
-msgstr ""
+msgstr "Kontaktieren Sie mich"
 
 #: author.php:14
 msgid "Posts written by "
-msgstr ""
+msgstr "Beiträge geschrieben von"
 
 #: author.php:19 author.php:23
 msgid "You may also follow"
-msgstr ""
+msgstr "Sie können auch verfolgen"
 
 #: author.php:21 author.php:25
 msgid " on "
-msgstr ""
+msgstr "auf"
 
 #: author.php:28
 msgid "Twitter as "
-msgstr ""
+msgstr "Twitter als"
 
 #: author.php:31
 msgid " or "
-msgstr ""
+msgstr "oder"
 
 #: author.php:35
 msgid "on Facebook as "
-msgstr ""
+msgstr "Auf Facebook als"
 
 #: functions.php:57
 msgid "Categories"
-msgstr ""
+msgstr "Kategorien"
 
 #: functions.php:58 functions.php:108
 msgid "Technology Tags"
-msgstr ""
+msgstr "Technik Tags"
 
 #: functions.php:65
 msgid "Technology Category"
-msgstr ""
+msgstr "Technology Kategorie"
 
 #: functions.php:66
 msgid "Displays Technology Category."
-msgstr ""
+msgstr "Zeigt Technology Kategorie."
 
 #: functions.php:96 functions.php:131 functions/keep-in-touch-widget.php:36
 #: functions/keep-in-touch-widget2.php:36 functions/twitter-post_type.php:252
 msgid "Widget Title"
-msgstr ""
+msgstr "Widget Titel"
 
 #: functions.php:109
 msgid "Displays Technology Tags."
-msgstr ""
+msgstr "Zeigt Technik Tags."
 
 #: functions.php:165
 msgid "The Header Navigation Menu"
-msgstr ""
+msgstr "Die Header-Navigationsmenü"
 
 #: functions.php:183
 msgid "People"
-msgstr ""
+msgstr "Die Menschen"
 
 #: functions.php:184
 msgid "Places"
-msgstr ""
+msgstr "Orte"
 
 #: functions.php:185
 msgid "Events"
-msgstr ""
+msgstr "Veranstaltungen"
 
 #: functions.php:196
 msgid "Facebook URL"
-msgstr ""
+msgstr "Facebook URL"
 
 #: functions.php:197
 msgid "Google Talk"
-msgstr ""
+msgstr "Google Talk"
 
 #: functions.php:198 functions/keep-in-touch-widget.php:37
 #: functions/keep-in-touch-widget2.php:37
 msgid "Twitter ID"
-msgstr ""
+msgstr "Twitter-ID"
 
 #: functions.php:218
 msgid "Sidebar Widget Area"
-msgstr ""
+msgstr "Sidebar Widget Area"
 
 #: functions.php:219
 msgid "This is the Main Right Hand Sidebar"
-msgstr ""
+msgstr "Dies ist die wichtigste Right Hand Sidebar"
 
 #: functions.php:228
 msgid "Technology Widget Area"
-msgstr ""
+msgstr "Technologie Widget Area"
 
 #: functions.php:229
 msgid "This widget area is only used on the technology pages and archives."
-msgstr ""
+msgstr "Widget-Bereich ist nur über die Technik-Seiten und Archive verwendet."
 
 #: functions.php:238
 msgid "Footer Widget Area"
-msgstr ""
+msgstr "Footer Widget Area"
 
 #: functions.php:239
 msgid "The footer widget area"
-msgstr ""
+msgstr "Die Fußzeile Widget Bereich"
 
 #: functions.php:349
 msgid "Shortlink"
-msgstr ""
+msgstr "Shortlink"
 
 #: functions.php:349
 msgid "A smaller version of this pages URL"
-msgstr ""
+msgstr "Eine kleinere Version dieser Seiten URL"
 
 #: functions.php:489
 msgid "Images EXIF Data"
-msgstr ""
+msgstr "Bilder EXIF-Daten"
 
 #: functions.php:501 functions.php:503
 msgid "second"
-msgstr ""
+msgstr "zweite"
 
 #: functions.php:506
 msgid "seconds"
-msgstr ""
+msgstr "Sekunden"
 
 #: functions.php:521
 msgid "Date Taken:"
-msgstr ""
+msgstr "Aufnahmedatum:"
 
 #: functions.php:522
 msgid "Camera:"
-msgstr ""
+msgstr "Kamera:"
 
 #: functions.php:523
 msgid "Focal Length:"
-msgstr ""
+msgstr "Brennweite:"
 
 #: functions.php:524
 msgid "Aperture:"
-msgstr ""
+msgstr "Aperture:"
 
 #: functions.php:525
 msgid "ISO:"
-msgstr ""
+msgstr "ISO:"
 
 #: functions.php:526
 msgid "Shutter Speed:"
-msgstr ""
+msgstr "Verschlussgeschwindigkeit:"
 
 #: image.php:33
 msgid "Next Image"
-msgstr ""
+msgstr "Nächstes Bild"
 
 #: image.php:40
 msgid "Previous Image"
-msgstr ""
+msgstr "Vorheriges Bild"
 
 #: image.php:48
 msgid "back to &#8220;%s&#8221;"
-msgstr ""
+msgstr "zurück zu &quot;%s&quot;"
 
 #: image.php:68
 msgid "Sorry, no posts matched your criteria."
-msgstr ""
+msgstr "Sorry, keine Beiträge mit Ihren Kriterien."
 
 #: sidebar.php:8 sidebar.php:19
 msgid "Welcome to your new site!"
-msgstr ""
+msgstr "Willkommen auf Ihrer neuen Seite!"
 
 #: sidebar.php:9
 msgid "This is your Technology Widget area.  To add items to this sidebar, go to the"
-msgstr ""
+msgstr "Das ist Ihre Technologie Widget Bereich. Um Objekte in dieser Seitenleiste, gehen Sie"
 
 #: sidebar.php:10 sidebar.php:21
 msgid "widgets page"
-msgstr ""
+msgstr "Widgets Seite"
 
 #: sidebar.php:11
 msgid "from your admin Dashboard, and add items to the 'Technology Widget Area' on the right hand side."
-msgstr ""
+msgstr "von Ihrem Admin-Dashboard, und fügen Sie einen Artikel in den &quot;Technology Widget Area &#39;auf der rechten Seite."
 
 #: sidebar.php:20
 msgid "To add items to your sidebar, go to the"
-msgstr ""
+msgstr "Um Objekte in Ihrer Seitenleiste, die gehen"
 
 #: sidebar.php:22
 msgid "from your admin Dashboard, and add items to the 'Sidebar Widget Area' on the right hand side."
-msgstr ""
+msgstr "von Ihrem Admin-Dashboard, und fügen Sie Artikel auf die &quot;Sidebar Widget Area &#39;auf der rechten Seite."
 
 #: functions/community-tags.php:239 functions/community-tags.php:335
 msgid "Community Tags"
-msgstr ""
+msgstr "Community Tags"
 
 #: functions/community-tags.php:247 functions/community-tags.php:311
 msgid "Moderate Tags &raquo;"
-msgstr ""
+msgstr "Moderate Tags »"
 
 #: functions/community-tags.php:335
 msgid "Community Tags123"
-msgstr ""
+msgstr "Gemeinschaft Tags123"
 
 #: functions/google-analytics.php:73 functions/google-webmaster-tools.php:46
 msgid "Save Above Changes"
-msgstr ""
+msgstr "Speichern Sie obigen Änderungen"
 
 #: functions/keep-in-touch-widget2.php:5
 msgid "Keep In Touch Widget Tech"
-msgstr ""
+msgstr "Keep In Touch Widget Tech"
 
 #: functions/keep-in-touch-widget.php:6 functions/keep-in-touch-widget2.php:6
 msgid "Displays Methods of Keeping in touch such as via Twitter, Facebook, RSS & Atom."
-msgstr ""
+msgstr "Zeigt Methoden in Kontakt zu bleiben, wie über Twitter, Facebook, RSS-und Atom."
 
 #: functions/keep-in-touch-widget.php:38 functions/keep-in-touch-widget2.php:38
 msgid "Facebook ID"
-msgstr ""
+msgstr "Facebook-ID"
 
 #: functions/keep-in-touch-widget.php:5
 msgid "Keep In Touch Widget"
-msgstr ""
+msgstr "Keep In Touch Widget"
 
 #: functions/relative-date.php:15 functions/relative-date.php:53
 #: functions/relative-date.php:121
 msgid "Today"
-msgstr ""
+msgstr "Heute"
 
 #: functions/relative-date.php:17 functions/relative-date.php:55
 #: functions/relative-date.php:123
 msgid "Yesterday"
-msgstr ""
+msgstr "Gestern"
 
 #: functions/twitter-import.php:57
 msgid "Every 5 Mins"
-msgstr ""
+msgstr "Alle 5 Minuten"
 
 #: functions/twitter-post_type.php:7
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: functions/twitter-post_type.php:9 functions/twitter-post_type.php:10
 msgid "Add New Tweet"
-msgstr ""
+msgstr "Einen neuen Tweet"
 
 #: functions/twitter-post_type.php:11
 msgid "Edit Tweet"
-msgstr ""
+msgstr "Bearbeiten Tweet"
 
 #: functions/twitter-post_type.php:12
 msgid "New Tweet"
-msgstr ""
+msgstr "New Tweet"
 
 #: functions/twitter-post_type.php:13
 msgid "View Tweet"
-msgstr ""
+msgstr "Tweete anzeigen"
 
 #: functions/twitter-post_type.php:14
 msgid "Search Tweets"
-msgstr ""
+msgstr "Suche Tweets"
 
 #: functions/twitter-post_type.php:15
 msgid "No tweets found"
-msgstr ""
+msgstr "Keine Tweets gefunden"
 
 #: functions/twitter-post_type.php:16
 msgid "No tweets found in Trash"
-msgstr ""
+msgstr "Keine Tweets gefunden in den Papierkorb"
 
 #: functions/twitter-post_type.php:18
 msgid "Imported Twitter Posts"
-msgstr ""
+msgstr "Importierte Twitter Beiträge"
 
 #: functions/twitter-post_type.php:35
 msgid "Tweets Meta Data"
-msgstr ""
+msgstr "Tweets Meta Data"
 
 #: functions/twitter-post_type.php:48
 msgid " Tweet Post ID"
-msgstr ""
+msgstr "Tweete Post-ID"
 
 #: functions/twitter-post_type.php:50
 msgid " Twitter Name"
-msgstr ""
+msgstr "Twitter Name"
 
 #: functions/twitter-post_type.php:52
 msgid " Twitter User"
-msgstr ""
+msgstr "Twitter User"
 
 #: functions/twitter-post_type.php:221
 msgid "Twitter Widget"
-msgstr ""
+msgstr "Twitter-Widget"
 
 #: functions/twitter-post_type.php:222
 msgid "Displays Tweets from the tweet post type."
-msgstr ""
+msgstr "Zeigt Tweets aus dem Tweet Typ."
 
 #: functions/typekit-fonts.php:19
 msgid "You cannot edit the search-by-category options."
-msgstr ""
+msgstr "Sie können nicht bearbeiten die Suche-by-Kategorie Optionen."
 
 #: functions/typekit-fonts.php:32
 msgid "is the easiest way to use real fonts on the web. It&rsquo;s a subscription-based service for linking to high-quality Open Type fonts from some of the worlds best type foundries. Typekit fonts are served from a global network on redundant servers, offering bulletproof service and incredible speed. And it couldn&rsquo;t be easier to use."
-msgstr ""
+msgstr "ist der einfachste Weg zu echten Schriften im Web nutzen. Es ist ein Abonnement-basierter Dienst für die Anbindung an hochwertigen Open Type-Schriften von einigen der weltbesten Schriftgießereien. Typekit Schriften sind von einem globalen Netzwerk von redundanten Servern bedient und bietet Service und kugelsichere unglaublicher Geschwindigkeit. Und es könnte nicht einfacher zu bedienen."
 
 #: functions/typekit-fonts.php:37
 msgid "You can find your Typekit ID on typekit.com under Kit Editor -> Embed Code."
-msgstr ""
+msgstr "Sie finden Ihre Typekit ID auf typekit.com unter Kit-Editor -&gt; Code zum Einbetten."
 
 #: functions/typekit-fonts.php:40
 msgid "Update ID"
-msgstr ""
+msgstr "Update ID"
 
 #: functions/typekit-fonts.php:47
 msgid "If you don&#8217;t have a Typekit ID yet you can sign up on their site for free and enable it on your site with just a few clicks."
-msgstr ""
+msgstr "Wenn Sie nicht über eine ID Typekit noch melde Dich auf ihrer Website kostenlos und ermöglichen es auf Ihrer Website mit nur wenigen Mausklicks."
 
 #: functions/typekit-fonts.php:49
 msgid "Sign up in seconds"
-msgstr ""
+msgstr "Registriere dich in Sekunden"

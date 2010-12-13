@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Milly Theme package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2010-12-04 06:14:30+0000\n"
+"PO-Revision-Date: 2010-12-13 06:15:09+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,428 +12,428 @@ msgstr ""
 
 #: theme-options.php:35
 msgid "Light"
-msgstr ""
+msgstr "Licht"
 
 #: theme-options.php:25
 msgid "Theme Options"
-msgstr ""
+msgstr "Thema Opties"
 
 #: image.php:53
 msgid "Already Tagged"
-msgstr ""
+msgstr "Al gemerkt"
 
 #: tag.php:12
 msgid "Permanent Link to"
-msgstr ""
+msgstr "Permanente link naar"
 
 #: theme-options.php:39
 msgid "Dark"
-msgstr ""
+msgstr "Donker"
 
 #: theme-options.php:53
 msgid "Content-Sidebar"
-msgstr ""
+msgstr "Content-Sidebar"
 
 #: theme-options.php:57
 msgid "Sidebar-Content"
-msgstr ""
+msgstr "Sidebar-Content"
 
 #: theme-options.php:61
 msgid "Content-Sidebar-Sidebar"
-msgstr ""
+msgstr "Content-Sidebar-Sidebar"
 
 #: theme-options.php:65
 msgid "Sidebar-Sidebar-Content"
-msgstr ""
+msgstr "Sidebar-Sidebar-Content"
 
 #: theme-options.php:69
 msgid "Sidebar-Content-Sidebar"
-msgstr ""
+msgstr "Sidebar-Content-Sidebar"
 
 #: theme-options.php:104
 msgid "%1$s Theme Options"
-msgstr ""
+msgstr "%1$s Theme Options"
 
 #: theme-options.php:108
 msgid "Options saved"
-msgstr ""
+msgstr "opgeslagen Opties"
 
 #: theme-options.php:122
 msgid "Color Scheme"
-msgstr ""
+msgstr "Kleurenschema"
 
 #: theme-options.php:141
 msgid "Select a default color scheme"
-msgstr ""
+msgstr "Selecteer een standaard kleurenschema"
 
 #: theme-options.php:150 theme-options.php:152
 msgid "Default Layout"
-msgstr ""
+msgstr "Standaard lay-out"
 
 #: theme-options.php:188
 msgid "Aside Category"
-msgstr ""
+msgstr "Naast Categorie"
 
 #: theme-options.php:191 theme-options.php:219
 msgid "Select a category &hellip;"
-msgstr ""
+msgstr "Kies een categorie ..."
 
 #: theme-options.php:207
 msgid "Select a category to use for shorter aside posts"
-msgstr ""
+msgstr "Selecteer een categorie te gebruiken voor kortere opzij berichten"
 
 #: theme-options.php:216
 msgid "Gallery Category"
-msgstr ""
+msgstr "Gallery Categorie"
 
 #: theme-options.php:235
 msgid "Select a category to use for posts with image galleries"
-msgstr ""
+msgstr "Selecteer een categorie voor berichten gebruik met fotogalerijen"
 
 #: theme-options.php:243
 msgid "Save Options"
-msgstr ""
+msgstr "Opties voor opslaan"
 
 #: 404.php:6 functions.php:43 functions/tech-post_type.php:7
 msgid "Technology"
-msgstr ""
+msgstr "-Technologie"
 
 #: 404.php:6
 msgid "or"
-msgstr ""
+msgstr "of"
 
 #: 404.php:6
 msgid "Photo Gallery"
-msgstr ""
+msgstr "Photo Gallery"
 
 #: 404.php:6
 msgid "No sense sticking around here for very long. Check out the sidebar where you will be able to search, or checkout my"
-msgstr ""
+msgstr "Geen zin om te blijven hier voor erg lang. Check out de zijbalk waar u in staat zullen zijn om te zoeken, of de kassa mijn"
 
 #: 404.php:5
 msgid "Oops! - 404 Error"
-msgstr ""
+msgstr "Oeps! - 404 Error"
 
 #: 404.php:6
 msgid "section if your into those sorts of things. If you feel you've reached this page as an error on my part, please"
-msgstr ""
+msgstr "sectie als je in dat soort dingen. Als u vindt dat u deze pagina als een fout van mijn kant bereikt, dan"
 
 #: 404.php:6
 msgid "contact me"
-msgstr ""
+msgstr "contact met mij op"
 
 #: author.php:14
 msgid "Posts written by "
-msgstr ""
+msgstr "Berichten geschreven door"
 
 #: author.php:19 author.php:23
 msgid "You may also follow"
-msgstr ""
+msgstr "U kunt ook volgen"
 
 #: author.php:21 author.php:25
 msgid " on "
-msgstr ""
+msgstr "op"
 
 #: author.php:28
 msgid "Twitter as "
-msgstr ""
+msgstr "Twitter als"
 
 #: author.php:31
 msgid " or "
-msgstr ""
+msgstr "of"
 
 #: author.php:35
 msgid "on Facebook as "
-msgstr ""
+msgstr "op Facebook als"
 
 #: functions.php:57
 msgid "Categories"
-msgstr ""
+msgstr "Categorieën"
 
 #: functions.php:58 functions.php:108
 msgid "Technology Tags"
-msgstr ""
+msgstr "Technologie Tags"
 
 #: functions.php:65
 msgid "Technology Category"
-msgstr ""
+msgstr "Technologie Categorie"
 
 #: functions.php:66
 msgid "Displays Technology Category."
-msgstr ""
+msgstr "Geeft Technology categorie."
 
 #: functions.php:96 functions.php:131 functions/keep-in-touch-widget.php:36
 #: functions/keep-in-touch-widget2.php:36 functions/twitter-post_type.php:252
 msgid "Widget Title"
-msgstr ""
+msgstr "Widget titel"
 
 #: functions.php:109
 msgid "Displays Technology Tags."
-msgstr ""
+msgstr "Geeft Technologie Tags."
 
 #: functions.php:165
 msgid "The Header Navigation Menu"
-msgstr ""
+msgstr "De Header Navigatiemenu"
 
 #: functions.php:183
 msgid "People"
-msgstr ""
+msgstr "Mensen"
 
 #: functions.php:184
 msgid "Places"
-msgstr ""
+msgstr "Plaatsen"
 
 #: functions.php:185
 msgid "Events"
-msgstr ""
+msgstr "Evenementen"
 
 #: functions.php:196
 msgid "Facebook URL"
-msgstr ""
+msgstr "Facebook-URL"
 
 #: functions.php:197
 msgid "Google Talk"
-msgstr ""
+msgstr "Google Talk"
 
 #: functions.php:198 functions/keep-in-touch-widget.php:37
 #: functions/keep-in-touch-widget2.php:37
 msgid "Twitter ID"
-msgstr ""
+msgstr "Twitter ID"
 
 #: functions.php:218
 msgid "Sidebar Widget Area"
-msgstr ""
+msgstr "Sidebar Widget Ruimte"
 
 #: functions.php:219
 msgid "This is the Main Right Hand Sidebar"
-msgstr ""
+msgstr "Dit is de belangrijkste Right Hand Sidebar"
 
 #: functions.php:228
 msgid "Technology Widget Area"
-msgstr ""
+msgstr "Technologie Widget Ruimte"
 
 #: functions.php:229
 msgid "This widget area is only used on the technology pages and archives."
-msgstr ""
+msgstr "Deze widget gebied wordt alleen gebruikt op de technologie pagina&#39;s en archieven."
 
 #: functions.php:238
 msgid "Footer Widget Area"
-msgstr ""
+msgstr "Voettekst Widget Ruimte"
 
 #: functions.php:239
 msgid "The footer widget area"
-msgstr ""
+msgstr "De voettekst widget gebied"
 
 #: functions.php:349
 msgid "Shortlink"
-msgstr ""
+msgstr "Shortlink"
 
 #: functions.php:349
 msgid "A smaller version of this pages URL"
-msgstr ""
+msgstr "Een kleinere versie van deze pagina&#39;s URL"
 
 #: functions.php:489
 msgid "Images EXIF Data"
-msgstr ""
+msgstr "Beelden EXIF-gegevens"
 
 #: functions.php:501 functions.php:503
 msgid "second"
-msgstr ""
+msgstr "tweede"
 
 #: functions.php:506
 msgid "seconds"
-msgstr ""
+msgstr "seconden"
 
 #: functions.php:521
 msgid "Date Taken:"
-msgstr ""
+msgstr "Datum gedaan:"
 
 #: functions.php:522
 msgid "Camera:"
-msgstr ""
+msgstr "Camera:"
 
 #: functions.php:523
 msgid "Focal Length:"
-msgstr ""
+msgstr "Brandpuntsafstand:"
 
 #: functions.php:524
 msgid "Aperture:"
-msgstr ""
+msgstr "Aperture:"
 
 #: functions.php:525
 msgid "ISO:"
-msgstr ""
+msgstr "ISO:"
 
 #: functions.php:526
 msgid "Shutter Speed:"
-msgstr ""
+msgstr "Sluitertijd:"
 
 #: image.php:33
 msgid "Next Image"
-msgstr ""
+msgstr "Volgende Afbeelding"
 
 #: image.php:40
 msgid "Previous Image"
-msgstr ""
+msgstr "Vorige Afbeelding"
 
 #: image.php:48
 msgid "back to &#8220;%s&#8221;"
-msgstr ""
+msgstr "terug naar &quot;%s&quot;"
 
 #: image.php:68
 msgid "Sorry, no posts matched your criteria."
-msgstr ""
+msgstr "Sorry, geen berichten gevonden die aan uw criteria."
 
 #: sidebar.php:8 sidebar.php:19
 msgid "Welcome to your new site!"
-msgstr ""
+msgstr "Welkom bij uw nieuwe site!"
 
 #: sidebar.php:9
 msgid "This is your Technology Widget area.  To add items to this sidebar, go to the"
-msgstr ""
+msgstr "Dit is uw Technology Widget gebied. Om items toe te voegen aan deze zijbalk, ga naar de"
 
 #: sidebar.php:10 sidebar.php:21
 msgid "widgets page"
-msgstr ""
+msgstr "Widgets pagina"
 
 #: sidebar.php:11
 msgid "from your admin Dashboard, and add items to the 'Technology Widget Area' on the right hand side."
-msgstr ""
+msgstr "van uw admin Dashboard en items toevoegen aan de &#39;Technology Widget Area&#39; aan de rechterkant."
 
 #: sidebar.php:20
 msgid "To add items to your sidebar, go to the"
-msgstr ""
+msgstr "Om items toe te voegen aan uw zijbalk, ga naar de"
 
 #: sidebar.php:22
 msgid "from your admin Dashboard, and add items to the 'Sidebar Widget Area' on the right hand side."
-msgstr ""
+msgstr "van uw admin Dashboard en items toevoegen aan de &#39;Sidebar Widget Ruimte&#39; aan de rechterkant."
 
 #: functions/community-tags.php:239 functions/community-tags.php:335
 msgid "Community Tags"
-msgstr ""
+msgstr "Gemeenschap Tags"
 
 #: functions/community-tags.php:247 functions/community-tags.php:311
 msgid "Moderate Tags &raquo;"
-msgstr ""
+msgstr "Matige Tags »"
 
 #: functions/community-tags.php:335
 msgid "Community Tags123"
-msgstr ""
+msgstr "Gemeenschap Tags123"
 
 #: functions/google-analytics.php:73 functions/google-webmaster-tools.php:46
 msgid "Save Above Changes"
-msgstr ""
+msgstr "Bespaar bovengenoemde wijzigingen"
 
 #: functions/keep-in-touch-widget2.php:5
 msgid "Keep In Touch Widget Tech"
-msgstr ""
+msgstr "Keep in Touch Widget Tech"
 
 #: functions/keep-in-touch-widget.php:6 functions/keep-in-touch-widget2.php:6
 msgid "Displays Methods of Keeping in touch such as via Twitter, Facebook, RSS & Atom."
-msgstr ""
+msgstr "Geeft Methoden om contact te houden, zoals via Twitter, Facebook, RSS-en Atom."
 
 #: functions/keep-in-touch-widget.php:38 functions/keep-in-touch-widget2.php:38
 msgid "Facebook ID"
-msgstr ""
+msgstr "Facebook ID"
 
 #: functions/keep-in-touch-widget.php:5
 msgid "Keep In Touch Widget"
-msgstr ""
+msgstr "Keep in Touch Widget"
 
 #: functions/relative-date.php:15 functions/relative-date.php:53
 #: functions/relative-date.php:121
 msgid "Today"
-msgstr ""
+msgstr "Vandaag"
 
 #: functions/relative-date.php:17 functions/relative-date.php:55
 #: functions/relative-date.php:123
 msgid "Yesterday"
-msgstr ""
+msgstr "Gisteren"
 
 #: functions/twitter-import.php:57
 msgid "Every 5 Mins"
-msgstr ""
+msgstr "Elke 5 Mins"
 
 #: functions/twitter-post_type.php:7
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: functions/twitter-post_type.php:9 functions/twitter-post_type.php:10
 msgid "Add New Tweet"
-msgstr ""
+msgstr "Voeg een nieuwe Tweet"
 
 #: functions/twitter-post_type.php:11
 msgid "Edit Tweet"
-msgstr ""
+msgstr "Tweet bewerken"
 
 #: functions/twitter-post_type.php:12
 msgid "New Tweet"
-msgstr ""
+msgstr "Nieuwe Tweet"
 
 #: functions/twitter-post_type.php:13
 msgid "View Tweet"
-msgstr ""
+msgstr "Bekijk Tweet"
 
 #: functions/twitter-post_type.php:14
 msgid "Search Tweets"
-msgstr ""
+msgstr "Zoek Tweets"
 
 #: functions/twitter-post_type.php:15
 msgid "No tweets found"
-msgstr ""
+msgstr "Geen tweets gevonden"
 
 #: functions/twitter-post_type.php:16
 msgid "No tweets found in Trash"
-msgstr ""
+msgstr "Geen tweets gevonden in prullenbak"
 
 #: functions/twitter-post_type.php:18
 msgid "Imported Twitter Posts"
-msgstr ""
+msgstr "Geïmporteerde Twitter berichten"
 
 #: functions/twitter-post_type.php:35
 msgid "Tweets Meta Data"
-msgstr ""
+msgstr "Tweets Meta Data"
 
 #: functions/twitter-post_type.php:48
 msgid " Tweet Post ID"
-msgstr ""
+msgstr "Tweet Post ID"
 
 #: functions/twitter-post_type.php:50
 msgid " Twitter Name"
-msgstr ""
+msgstr "Twitter Naam"
 
 #: functions/twitter-post_type.php:52
 msgid " Twitter User"
-msgstr ""
+msgstr "Twitter gebruiker"
 
 #: functions/twitter-post_type.php:221
 msgid "Twitter Widget"
-msgstr ""
+msgstr "Twitter widget"
 
 #: functions/twitter-post_type.php:222
 msgid "Displays Tweets from the tweet post type."
-msgstr ""
+msgstr "Geeft Tweets van de tweet bericht type."
 
 #: functions/typekit-fonts.php:19
 msgid "You cannot edit the search-by-category options."
-msgstr ""
+msgstr "U kunt niet bewerken de zoek-by-categorie-opties."
 
 #: functions/typekit-fonts.php:32
 msgid "is the easiest way to use real fonts on the web. It&rsquo;s a subscription-based service for linking to high-quality Open Type fonts from some of the worlds best type foundries. Typekit fonts are served from a global network on redundant servers, offering bulletproof service and incredible speed. And it couldn&rsquo;t be easier to use."
-msgstr ""
+msgstr "is de makkelijkste manier om echte fonts te gebruiken op het internet. Het is een abonnement gebaseerde service voor het koppelen van hoge kwaliteit Open Type fonts van enkele van &#39;s werelds beste type gieterijen. Typekit lettertypen worden geserveerd van een wereldwijd netwerk op redundante servers, het aanbieden van kogelvrije service en een ongelooflijke snelheid. En het kan niet eenvoudiger te gebruiken."
 
 #: functions/typekit-fonts.php:37
 msgid "You can find your Typekit ID on typekit.com under Kit Editor -> Embed Code."
-msgstr ""
+msgstr "U vindt uw Typekit ID typekit.com onder Kit Editor -&gt; embed code."
 
 #: functions/typekit-fonts.php:40
 msgid "Update ID"
-msgstr ""
+msgstr "Update ID"
 
 #: functions/typekit-fonts.php:47
 msgid "If you don&#8217;t have a Typekit ID yet you can sign up on their site for free and enable it on your site with just a few clicks."
-msgstr ""
+msgstr "Als u niet beschikt over een Typekit ID maar u kunt zich aanmelden op hun site gratis en het staat op uw site met slechts een paar klikken."
 
 #: functions/typekit-fonts.php:49
 msgid "Sign up in seconds"
-msgstr ""
+msgstr "Registreer je in enkele seconden"

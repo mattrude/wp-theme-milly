@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Milly Theme package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2010-12-12 22:17:23+0000\n"
+"PO-Revision-Date: 2010-12-13 06:15:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -254,186 +254,186 @@ msgstr "Fotocamera:"
 
 #: functions.php:523
 msgid "Focal Length:"
-msgstr ""
+msgstr "Lunghezza focale:"
 
 #: functions.php:524
 msgid "Aperture:"
-msgstr ""
+msgstr "Aperture:"
 
 #: functions.php:525
 msgid "ISO:"
-msgstr ""
+msgstr "ISO:"
 
 #: functions.php:526
 msgid "Shutter Speed:"
-msgstr ""
+msgstr "Velocità otturatore:"
 
 #: image.php:33
 msgid "Next Image"
-msgstr ""
+msgstr "Immagine successiva"
 
 #: image.php:40
 msgid "Previous Image"
-msgstr ""
+msgstr "Immagine precedente"
 
 #: image.php:48
 msgid "back to &#8220;%s&#8221;"
-msgstr ""
+msgstr "torna a &quot;%s&quot;"
 
 #: image.php:68
 msgid "Sorry, no posts matched your criteria."
-msgstr ""
+msgstr "Spiacente, nessun post corrisponde ai tuoi criteri."
 
 #: sidebar.php:8 sidebar.php:19
 msgid "Welcome to your new site!"
-msgstr ""
+msgstr "Benvenuto nel tuo nuovo sito!"
 
 #: sidebar.php:9
 msgid "This is your Technology Widget area.  To add items to this sidebar, go to the"
-msgstr ""
+msgstr "Questa è la tua area Technology Widget. Per aggiungere elementi a questa barra laterale, passare al"
 
 #: sidebar.php:10 sidebar.php:21
 msgid "widgets page"
-msgstr ""
+msgstr "Widget di pagina"
 
 #: sidebar.php:11
 msgid "from your admin Dashboard, and add items to the 'Technology Widget Area' on the right hand side."
-msgstr ""
+msgstr "dalla vostra Dashboard admin, e aggiungere elementi alla &#39;Widget Technology Area&#39; sul lato destro."
 
 #: sidebar.php:20
 msgid "To add items to your sidebar, go to the"
-msgstr ""
+msgstr "Per aggiungere elementi alla sidebar, andare alla"
 
 #: sidebar.php:22
 msgid "from your admin Dashboard, and add items to the 'Sidebar Widget Area' on the right hand side."
-msgstr ""
+msgstr "dalla vostra Dashboard admin, e aggiungere elementi alla &#39;sidebar widget Area&#39; sul lato destro."
 
 #: functions/community-tags.php:239 functions/community-tags.php:335
 msgid "Community Tags"
-msgstr ""
+msgstr "Comunità Tag"
 
 #: functions/community-tags.php:247 functions/community-tags.php:311
 msgid "Moderate Tags &raquo;"
-msgstr ""
+msgstr "Tag moderato »"
 
 #: functions/community-tags.php:335
 msgid "Community Tags123"
-msgstr ""
+msgstr "Comunità Tags123"
 
 #: functions/google-analytics.php:73 functions/google-webmaster-tools.php:46
 msgid "Save Above Changes"
-msgstr ""
+msgstr "Salva modifiche sopra"
 
 #: functions/keep-in-touch-widget2.php:5
 msgid "Keep In Touch Widget Tech"
-msgstr ""
+msgstr "Keep In Touch Widget Tech"
 
 #: functions/keep-in-touch-widget.php:6 functions/keep-in-touch-widget2.php:6
 msgid "Displays Methods of Keeping in touch such as via Twitter, Facebook, RSS & Atom."
-msgstr ""
+msgstr "Metodi Mostra di tenersi in contatto, come via Twitter, Facebook, feed RSS e Atom."
 
 #: functions/keep-in-touch-widget.php:38 functions/keep-in-touch-widget2.php:38
 msgid "Facebook ID"
-msgstr ""
+msgstr "Facebook ID"
 
 #: functions/keep-in-touch-widget.php:5
 msgid "Keep In Touch Widget"
-msgstr ""
+msgstr "Keep In Touch Widget"
 
 #: functions/relative-date.php:15 functions/relative-date.php:53
 #: functions/relative-date.php:121
 msgid "Today"
-msgstr ""
+msgstr "Oggi"
 
 #: functions/relative-date.php:17 functions/relative-date.php:55
 #: functions/relative-date.php:123
 msgid "Yesterday"
-msgstr ""
+msgstr "Ieri"
 
 #: functions/twitter-import.php:57
 msgid "Every 5 Mins"
-msgstr ""
+msgstr "Ogni 5 Minuti"
 
 #: functions/twitter-post_type.php:7
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: functions/twitter-post_type.php:9 functions/twitter-post_type.php:10
 msgid "Add New Tweet"
-msgstr ""
+msgstr "Aggiungi nuovo tweet"
 
 #: functions/twitter-post_type.php:11
 msgid "Edit Tweet"
-msgstr ""
+msgstr "Modifica Tweet"
 
 #: functions/twitter-post_type.php:12
 msgid "New Tweet"
-msgstr ""
+msgstr "Nuovo Tweet"
 
 #: functions/twitter-post_type.php:13
 msgid "View Tweet"
-msgstr ""
+msgstr "View Tweet"
 
 #: functions/twitter-post_type.php:14
 msgid "Search Tweets"
-msgstr ""
+msgstr "Cerca Tweets"
 
 #: functions/twitter-post_type.php:15
 msgid "No tweets found"
-msgstr ""
+msgstr "N. tweets trovato"
 
 #: functions/twitter-post_type.php:16
 msgid "No tweets found in Trash"
-msgstr ""
+msgstr "N. tweets trovato in Trash"
 
 #: functions/twitter-post_type.php:18
 msgid "Imported Twitter Posts"
-msgstr ""
+msgstr "Importato Twitter messaggi"
 
 #: functions/twitter-post_type.php:35
 msgid "Tweets Meta Data"
-msgstr ""
+msgstr "Tweets Meta Data"
 
 #: functions/twitter-post_type.php:48
 msgid " Tweet Post ID"
-msgstr ""
+msgstr "Tweet Post ID"
 
 #: functions/twitter-post_type.php:50
 msgid " Twitter Name"
-msgstr ""
+msgstr "Nome Twitter"
 
 #: functions/twitter-post_type.php:52
 msgid " Twitter User"
-msgstr ""
+msgstr "Twitter dell&#39;utente"
 
 #: functions/twitter-post_type.php:221
 msgid "Twitter Widget"
-msgstr ""
+msgstr "Twitter Widget"
 
 #: functions/twitter-post_type.php:222
 msgid "Displays Tweets from the tweet post type."
-msgstr ""
+msgstr "Tweets Mostra dal tipo post tweet."
 
 #: functions/typekit-fonts.php:19
 msgid "You cannot edit the search-by-category options."
-msgstr ""
+msgstr "Non è possibile modificare le opzioni di ricerca-by-categoria."
 
 #: functions/typekit-fonts.php:32
 msgid "is the easiest way to use real fonts on the web. It&rsquo;s a subscription-based service for linking to high-quality Open Type fonts from some of the worlds best type foundries. Typekit fonts are served from a global network on redundant servers, offering bulletproof service and incredible speed. And it couldn&rsquo;t be easier to use."
-msgstr ""
+msgstr "è il modo più semplice per utilizzare i caratteri reale sul web. Si tratta di un servizio su abbonamento per il collegamento di alta qualità Open font Type da alcuni dei mondi migliori fonderie. font Typekit sono serviti da una rete globale sui server ridondanti, che offre un servizio di proiettile e velocità incredibile. E non potrebbe essere più facile da usare."
 
 #: functions/typekit-fonts.php:37
 msgid "You can find your Typekit ID on typekit.com under Kit Editor -> Embed Code."
-msgstr ""
+msgstr "Puoi trovare il tuo ID Typekit su typekit.com sotto Kit Editor -&gt; codice Embed."
 
 #: functions/typekit-fonts.php:40
 msgid "Update ID"
-msgstr ""
+msgstr "Aggiornamento ID"
 
 #: functions/typekit-fonts.php:47
 msgid "If you don&#8217;t have a Typekit ID yet you can sign up on their site for free and enable it on your site with just a few clicks."
-msgstr ""
+msgstr "Se non si dispone di un ID Typekit ma è possibile iscriversi sul loro sito gratuitamente e attivarlo sul proprio sito con pochi click."
 
 #: functions/typekit-fonts.php:49
 msgid "Sign up in seconds"
-msgstr ""
+msgstr "Registrati in pochi secondi"
