@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Milly Theme package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2011-01-18 06:48:46+0000\n"
+"PO-Revision-Date: 2011-01-18 06:53:46+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -162,8 +162,7 @@ msgstr "فئة التكنولوجيا"
 msgid "Displays Technology Category."
 msgstr "يعرض فئة التكنولوجيا."
 
-#: functions.php:96 functions.php:131 functions/keep-in-touch-widget2.php:36
-#: functions/keep-in-touch-widget.php:36
+#: functions.php:96 functions.php:131 functions/keep-in-touch-widget.php:36
 #: functions/matts-keep-in-touch-widget.php:36
 #: functions/twitter-post_type.php:252
 msgid "Widget Title"
@@ -197,8 +196,7 @@ msgstr "عنوان بوك"
 msgid "Google Talk"
 msgstr "مجموعات نقاش"
 
-#: functions.php:198 functions/keep-in-touch-widget2.php:37
-#: functions/keep-in-touch-widget.php:37
+#: functions.php:198 functions/keep-in-touch-widget.php:37
 #: functions/matts-keep-in-touch-widget.php:37
 msgid "Twitter ID"
 msgstr "التغريد الهوية"
@@ -327,17 +325,16 @@ msgstr "المجتمع Tags123"
 msgid "Save Above Changes"
 msgstr "فوق حفظ التغييرات"
 
-#: functions/keep-in-touch-widget2.php:5
 #: functions/matts-keep-in-touch-widget.php:5
 msgid "Keep In Touch Widget Tech"
 msgstr "نضع في القطعة اللمس التقنية"
 
-#: functions/keep-in-touch-widget2.php:6 functions/keep-in-touch-widget.php:6
+#: functions/keep-in-touch-widget.php:6
 #: functions/matts-keep-in-touch-widget.php:6
 msgid "Displays Methods of Keeping in touch such as via Twitter, Facebook, RSS & Atom."
 msgstr "يعرض أساليب البقاء على اتصال عبر مثل التغريد ، آر إس إس ، والذرة بوك."
 
-#: functions/keep-in-touch-widget2.php:38 functions/keep-in-touch-widget.php:38
+#: functions/keep-in-touch-widget.php:38
 #: functions/matts-keep-in-touch-widget.php:38
 msgid "Facebook ID"
 msgstr "معرف بوك"
