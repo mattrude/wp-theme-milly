@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: milly 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-17 01:14-0600\n"
+"POT-Creation-Date: 2011-01-18 00:14-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,8 +88,8 @@ msgstr ""
 msgid "Displays Technology Category."
 msgstr ""
 
-#: functions.php:96 functions.php:131 functions/keep-in-touch-widget2.php:36
-#: functions/keep-in-touch-widget.php:36 functions/twitter-post_type.php:252
+#: functions.php:96 functions.php:131 functions/keep-in-touch-widget.php:36
+#: functions/keep-in-touch-widget2.php:36 functions/twitter-post_type.php:252
 msgid "Widget Title"
 msgstr ""
 
@@ -121,8 +121,8 @@ msgstr ""
 msgid "Google Talk"
 msgstr ""
 
-#: functions.php:198 functions/keep-in-touch-widget2.php:37
-#: functions/keep-in-touch-widget.php:37
+#: functions.php:198 functions/keep-in-touch-widget.php:37
+#: functions/keep-in-touch-widget2.php:37
 msgid "Twitter ID"
 msgstr ""
 
@@ -341,23 +341,23 @@ msgstr ""
 msgid "Save Above Changes"
 msgstr ""
 
-#: functions/keep-in-touch-widget2.php:5
-msgid "Keep In Touch Widget Tech"
+#: functions/keep-in-touch-widget.php:5
+msgid "Keep In Touch Widget"
 msgstr ""
 
-#: functions/keep-in-touch-widget2.php:6 functions/keep-in-touch-widget.php:6
+#: functions/keep-in-touch-widget.php:6 functions/keep-in-touch-widget2.php:6
 msgid ""
 "Displays Methods of Keeping in touch such as via Twitter, Facebook, RSS & "
 "Atom."
 msgstr ""
 
-#: functions/keep-in-touch-widget2.php:38
 #: functions/keep-in-touch-widget.php:38
+#: functions/keep-in-touch-widget2.php:38
 msgid "Facebook ID"
 msgstr ""
 
-#: functions/keep-in-touch-widget.php:5
-msgid "Keep In Touch Widget"
+#: functions/keep-in-touch-widget2.php:5
+msgid "Keep In Touch Widget Tech"
 msgstr ""
 
 #: functions/relative-date.php:15 functions/relative-date.php:53
