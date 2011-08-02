@@ -539,7 +539,7 @@ img.wp-smiley {
 .entry p {margin: 15px 0;}
 
 /* Byline */
-.byline {font-size: 11px;color: #999;margin: 5px 0;}
+.byline {font-size: 12px;color: #999;margin: 5px 0;}
 
 /* Post meta data */
 .post-meta-data {clear: both;font-size: 11px;color: #999;padding: 9px 5px 0 5px;border-top: 1px solid #e2e2e2;}
@@ -1069,8 +1069,8 @@ sup { height: 0px; line-height: 1; position: relative; bottom: 1ex; margin-left:
 img#wpstats{width:0px;height:0px;padding:0px;border:none;overflow:hidden}
 
 /* Keep In Touch Widget */
-.widget li#feed { background: url(./images/keep-in-touch.png) no-repeat scroll 0 1px transparent; }
-.widget li#twitter { background: url(./images/keep-in-touch.png) no-repeat scroll 0 -28px transparent; }
+.widget li#feed { background: url(images/keep-in-touch.png) no-repeat scroll 0 1px transparent; }
+.widget li#twitter { background: url(images/keep-in-touch.png) no-repeat scroll 0 -28px transparent; }
 .widget li#facebook { background: url(images/keep-in-touch.png) no-repeat scroll 0 -58px transparent; }
 .widget li#feed a { padding: 0 0 0 10px; }
 .widget li#twitter a { padding: 0 0 0 10px; }

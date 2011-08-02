@@ -197,18 +197,18 @@ class twitterImage
  
 }
 
-function milly_twiiter_byline() { ?>
+function milly_twitter_byline() { ?>
 <div id='tweet_date-<?php echo $post->ID; ?>' class='byline tweet_date' >
       <?php
-      //$tweet_id = get_post_meta( $wp_query->post->ID, 'aktt_twitter_id', true );
       $post_id = $post->ID;
       $tweet_id = get_post_meta( $post_id, 'aktt_twitter_id', true);
-      ?> Posted to <a href="http://twitter.com">Twitter</a> by <a href="http://twitter.com/<?php echo $twitterid; ?>"><?php echo $twittername; ?></a><?php
+      ?><p>Posted to <a href="http://twitter.com">Twitter</a> <?php
+//	by <a href="http://twitter.com/<?php echo $tweet_id; echo '">'; <?php echo $twittername; echo $tweet_id; echo "</a>"; <?php
+      echo " on ";
       if ($tweet_id) {
-        echo " on ";
         echo "<a href='http://twitter.com/$twitterid/status/$tweet_id'>";
         the_time('F jS, h:ma T Y ');
-        echo "</a>";
+        echo "</a></p>";
       } else {
         the_time('F jS, h:ma T Y ');
       }

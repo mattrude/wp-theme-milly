@@ -2,7 +2,7 @@
 require_once('functions/community-tags.php');
 require_once('functions/control-panel.php');
 require_once('functions/keep-in-touch-widget.php');
-require_once('functions/keep-in-touch-widget2.php');
+#require_once('functions/keep-in-touch-widget2.php');
 require_once('functions/twitter-post_type.php');
 #require_once('functions/category-excluder.php');
 #require_once('functions/google-analytics.php');
@@ -276,7 +276,7 @@ function milly_setup() {
 	
 	// Changing excerpt length
 	function new_excerpt_length($length) {
-	  return 80;
+	  return 29;
 	}
 	add_filter('excerpt_length', 'new_excerpt_length');
 	 
