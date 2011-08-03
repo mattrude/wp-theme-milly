@@ -1,9 +1,11 @@
 <?php get_header(); 
 $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
 $person_name = $term->name;
-$person_slug = $term->slug; ?>
-<div id="content"><?php
-	if (have_posts()) : ?>
+$person_slug = $term->slug;
+$person_description = $term->description; ?>
+<div id="content">
+	<p><?php echo $person_description; ?></p>
+	<?php if (have_posts()) : ?>
 		<h2>Posts about <?php echo $person_name; ?>:</h2>
 		<!--This is "The Loop"-->
 		<?php while (have_posts()) : the_post();
@@ -22,7 +24,7 @@ $person_slug = $term->slug; ?>
 		'post_parent' => null,
 		'tax_query'=>array(array(
 			'taxonomy' => 'people',
-			'field' => 'name',
+			'field' => 'slug',
 			'terms' => $person_slug
 			))
 		); 
