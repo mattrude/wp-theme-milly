@@ -3,6 +3,7 @@
 <div id="image_content">
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<?php if ( ! get_post_meta($post->ID, 'sharing_disabled') ) { add_post_meta($post->ID, 'sharing_disabled', '1'); }; ?>
 	<div class="single">
 		<?php if ( !empty($post->post_excerpt) ) {
 		  echo "<div class='post'><div class='comment-title'><h2>";
