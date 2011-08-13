@@ -7,6 +7,7 @@ Change Log
 
 **Version 1.7-devel - http://github.com/mattrude/wp-theme-milly/commits**
 
+ * Disable the Sharedaddy function part of the [Jetpack](http://jetpack.me/) plugin, on ALL images. [1bbab5a]
  * Added dashboard custom image header function
  * Rewrite of Header Navigation Menu functions
  * Added footnote function
