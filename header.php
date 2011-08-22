@@ -1,7 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
-
+<!DOCTYPE html>
+<html>
 <head>
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
   <link rel='shortcut icon' href='<?php echo get_template_directory_uri(); ?>/images/favicon.ico' />
@@ -20,11 +18,12 @@
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
   <?php if (function_exists('google_webmaster_tools')) { google_webmaster_tools(); } ?>
-  <!--This is a plugin hook-->
+  <!--This is the start of the plugin hook-->
   <?php wp_head(); ?>
+  <!--This is the end of the plugin hook-->
 </head>
 
-<body>
+<body <?php body_class( $class ); ?>>
   <?php if (function_exists('google_analytics')) { google_analytics(); } ?>
   <div id="wrapper" >
     <div id="header-title">
