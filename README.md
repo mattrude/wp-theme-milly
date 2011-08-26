@@ -92,5 +92,5 @@ Milly is free software; you may redistribute it and/or modify it under the terms
 
 Known Bugs
 ----------
- * None
+ * https://github.com/mattrude/wp-theme-milly/issues
 
