@@ -68,16 +68,6 @@ Change Log
  * Licenced under the GPLv2
 
 
-Wanted Features/Bugs
---------------------
- * W3 compliance
- * Auto set rel=lightbox for images when lightbox support is enabled
-
-
-Options still needed in the Control Panel
------------------------------------------
- * Customisable fav-icon
-
 License
 -------
 Milly is free software; you may redistribute it and/or modify it under the terms of the GNU General Public License version 2 as published by the Free Software Foundation (http://www.fsf.org/).
