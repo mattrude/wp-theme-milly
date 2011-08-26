@@ -1,7 +1,7 @@
 Wordpress Theme Milly
 ---------------------
 
-![Screenshot](https://github.com/mattrude/wp-theme-milly/raw/master/screenshot.png Screenshot left)
+![Screenshot](https://github.com/mattrude/wp-theme-milly/raw/master/screenshot.png)
 The Current  mattrude.com theme, with custom post-types & custom taxonomy.
 
 Change Log
