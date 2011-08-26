@@ -16,7 +16,7 @@
 
 </head>
 
-<body <?php body_class( $class ); ?>>
+<body>
 
 <?php if (function_exists('google_analytics')) { google_analytics(); } ?>
 
