@@ -22,7 +22,7 @@ $t=new twitterImage($twitterid);
         }
       the_content(); ?>
     </div>
-      <?php milly_twiiter_byline(); ?>
+      <?php milly_twitter_byline(); ?>
   </div><!--close post class-->
 </div><!--close content class-->
 
