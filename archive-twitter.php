@@ -18,7 +18,7 @@ $t=new twitterImage($twitterid);
         if ( $twitterimgenabled == 'true' ) {
           $t->profile_image(true,true);
         } else {
-           ?><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-bird.png" class='tweet-image' width="60" height="60" style='margin-right: 5px;' alt='Twitter bird' /><?php
+           ?><div class="twitter-avatar"><?php echo get_avatar( get_the_author_meta( 'ID' ), apply_filters( 'twentyeleven_status_avatar', '65' ) ); ?></div><?php
         }
       the_content(); ?>
     </div>

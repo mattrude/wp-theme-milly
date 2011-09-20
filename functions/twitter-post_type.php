@@ -115,7 +115,7 @@ function twitter_post_type_convert() {
   }
 }
 
-twitter_post_type_convert();
+//twitter_post_type_convert();
 
 
 // Get the users image from twitter
