@@ -41,43 +41,44 @@ function twitter_metabox() {
 
   // The actual fields for data entry
   global $post;
-  $post_id_var = get_post_meta($post->ID, 'aktt_twitter_id', true);
-  $post_name_var = get_post_meta($post->ID, 'twitter_name', true);
-  $post_user_var = get_post_meta($post->ID, 'twitter_user', true);
-  echo '<input type="text" name="aktt_twitter_id" value="' . $post_id_var . '" size="25" />';
-  echo '<label for="aktt_twitter_id">' . __(" Tweet Post ID") . '</label><br />';
-  echo '<input type="text" name="twitter_name" value="' . $post_name_var . '" size="25" />';
-  echo '<label for="twitter_user">' . __(" Twitter Name") . '</label>';
-  echo '<input type="text" name="twitter_user" value="' . $post_user_var . '" size="25" />';
-  echo '<label for="twitter_user">' . __(" Twitter User") . '</label>';
+  $post_id_var = get_post_meta($post->ID, 'ozh_ta_id', true);
+//  $post_name_var = get_post_meta($post->ID, 'twitter_name', true);
+//  $post_user_var = get_post_meta($post->ID, 'twitter_user', true);
+  echo '<input type="text" name="ozh_ta_id" value="' . $post_id_var . '" size="25" />';
+  echo '<label for="ozh_ta_id">' . __(" Tweet Post ID") . '</label><br />';
+//  echo '<input type="text" name="twitter_name" value="' . $post_name_var . '" size="25" />';
+//  echo '<label for="twitter_user">' . __(" Twitter Name") . '</label>';
+//  echo '<input type="text" name="twitter_user" value="' . $post_user_var . '" size="25" />';
+//  echo '<label for="twitter_user">' . __(" Twitter User") . '</label>';
 }
 
 function twitter_save_metabox() {
   global $post;
   $post_id = $post->ID;
-  $post_id_var = $_POST['aktt_twitter_id'];
-  $post_user_var = $_POST['twitter_user'];
+  $post_id_var = $_POST['ozh_ta_id'];
+//  $post_name_var = $_POST['twitter_name'];
+//  $post_user_var = $_POST['twitter_user'];
   
-  if(get_post_meta($post_id, 'aktt_twitter_id') == "") 
-    add_post_meta($post_id, 'aktt_twitter_id', $post_id_var, true);
-  elseif($post_id_var != get_post_meta($post_id, 'aktt_twitter_id', true))
-    update_post_meta($post_id, 'aktt_twitter_id', $post_id_var); 
+  if(get_post_meta($post_id, 'ozh_ta_id') == "") 
+    add_post_meta($post_id, 'ozh_ta_id', $post_id_var, true);
+  elseif($post_id_var != get_post_meta($post_id, 'ozh_ta_id', true))
+    update_post_meta($post_id, 'ozh_ta_id', $post_id_var); 
   elseif($post_id_var == "")
-    delete_post_meta($post_id, 'aktt_twitter_id');  
+    delete_post_meta($post_id, 'ozh_ta_id');  
 
-  if(get_post_meta($post_id, 'twitter_user') == "") 
-    add_post_meta($post_id, 'twitter_user', $post_user_var, true);
-  elseif($post_user_var != get_post_meta($post_id, 'twitter_user', true))
-    update_post_meta($post_id, 'twitter_user', $post_user_var); 
-  elseif($post_user_var == "")
-    delete_post_meta($post_id, 'twitter_user');  
+//  if(get_post_meta($post_id, 'twitter_user') == "") 
+//    add_post_meta($post_id, 'twitter_user', $post_user_var, true);
+//  elseif($post_user_var != get_post_meta($post_id, 'twitter_user', true))
+//    update_post_meta($post_id, 'twitter_user', $post_user_var); 
+//  elseif($post_user_var == "")
+//    delete_post_meta($post_id, 'twitter_user');  
 
-  if(get_post_meta($post_id, 'twitter_name') == "") 
-    add_post_meta($post_id, 'twitter_name', $post_name_var, true);
-  elseif($post_name_var != get_post_meta($post_id, 'twitter_name', true))
-    update_post_meta($post_id, 'twitter_name', $post_user_var); 
-  elseif($post_name_var == "")
-    delete_post_meta($post_id, 'twitter_name');  
+//  if(get_post_meta($post_id, 'twitter_name') == "") 
+//    add_post_meta($post_id, 'twitter_name', $post_name_var, true);
+//  elseif($post_name_var != get_post_meta($post_id, 'twitter_name', true))
+//    update_post_meta($post_id, 'twitter_name', $post_user_var); 
+//  elseif($post_name_var == "")
+//    delete_post_meta($post_id, 'twitter_name');  
 }
 
 // Change all post in category Twitter to post type twitter
@@ -201,7 +202,7 @@ function milly_twitter_byline() { ?>
 <div id='tweet_date-<?php echo $post->ID; ?>' class='byline tweet_date' >
       <?php
       $post_id = $post->ID;
-      $tweet_id = get_post_meta( $post_id, 'aktt_twitter_id', true);
+      $tweet_id = get_post_meta( $post_id, 'ozh_ta_id', true);
       ?><p>Posted to <a href="http://twitter.com">Twitter</a> <?php
 //	by <a href="http://twitter.com/<?php echo $tweet_id; echo '">'; <?php echo $twittername; echo $tweet_id; echo "</a>"; <?php
       echo " on ";
