@@ -81,6 +81,7 @@ function twitter_save_metabox() {
 //    delete_post_meta($post_id, 'twitter_name');  
 }
 
+/*
 // Change all post in category Twitter to post type twitter
 function twitter_post_type_convert() {
   global $Panel;
@@ -118,7 +119,9 @@ function twitter_post_type_convert() {
 
 //twitter_post_type_convert();
 
+*/
 
+/*
 // Get the users image from twitter
 class twitterImage
 {
@@ -137,10 +140,7 @@ class twitterImage
     $this->__init();
  
   }
-  /*
-   * fetches user info from twitter
-   * and populates the related vars
-   */
+   // fetches user info from twitter and populates the related vars
   private function __init()
   {
     $data=json_decode($this->get_data($this->requestURL.$this->user.'.'.$this->format)); //gets the data in json format and decodes it
@@ -159,11 +159,7 @@ class twitterImage
  
  
   }
-  /* creates image tag
-   * @params
-   * passing linked true -- will return an image which will link to the user's url defined on twitter profile
-   * passing display true -- will render the image, else return
-   */
+
   function profile_image($linked=false,$display=false)
   {
     $img="<img src='$this->image?size=bigger' class='tweet-image' width='60' height='60' style='margin-right: 5px;' alt='$this->displayName' />";
@@ -182,7 +178,7 @@ class twitterImage
  
  
   }
-  /* gets the data from a URL */
+  // gets the data from a URL
  
   private function get_data($url)
   {
@@ -197,6 +193,8 @@ class twitterImage
   }
  
 }
+
+*/
 
 function milly_twitter_byline() { ?>
 <div id='tweet_date-<?php echo $post->ID; ?>' class='byline tweet_date' >
@@ -217,6 +215,7 @@ function milly_twitter_byline() { ?>
     </div><!--close tweet_post class--><?php
 }
 
+/*
 class milly_twitter_widget extends WP_Widget {
   function milly_twitter_widget() {
     $milly_twitter_widget_name = __('Twitter Widget');
@@ -258,5 +257,7 @@ add_action('widgets_init', 'milly_twitter_widget_init');
 function milly_twitter_widget_init() {
         register_widget('milly_twitter_widget');
 }
+
+*/
 
 ?>
