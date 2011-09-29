@@ -59,7 +59,7 @@ function twitter_save_metabox() {
 //  $post_name_var = $_POST['twitter_name'];
 //  $post_user_var = $_POST['twitter_user'];
   
-  if(get_post_meta($post_id, 'ozh_ta_id') == "") 
+  if(get_post_meta($post_id, 'ozh_ta_id') != "") 
     add_post_meta($post_id, 'ozh_ta_id', $post_id_var, true);
   elseif($post_id_var != get_post_meta($post_id, 'ozh_ta_id', true))
     update_post_meta($post_id, 'ozh_ta_id', $post_id_var); 
