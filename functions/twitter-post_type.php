@@ -197,20 +197,22 @@ class twitterImage
 function milly_twitter_byline() { ?>
 <div id='tweet_date-<?php echo $post->ID; ?>' class='byline tweet_date' >
       <?php
+      global $post;
+      global $ozh_ta;
       $post_id = $post->ID;
       $tweet_id = get_post_meta( $post_id, 'ozh_ta_id', true);
-      ?><p>Posted to <a href="http://twitter.com">Twitter</a> <?php
-//	by <a href="http://twitter.com/<?php echo $tweet_id; echo '">'; <?php echo $twittername; echo $tweet_id; echo "</a>"; <?php
-      echo " on ";
+      $tweet_user = $ozh_ta['screen_name'];
+      echo "<p>Posted to ";
       if ($tweet_id) {
-        echo "<a href='http://twitter.com/$twitterid/status/$tweet_id'>";
-        the_time('F jS, h:ma T Y ');
-        echo "</a></p>";
+        echo "<a href='http://twitter.com/$tweet_user/status/$tweet_id'>";
       } else {
-        the_time('F jS, h:ma T Y ');
+        echo "<a href='http://twitter.com'>";
       }
-      edit_post_link('Edit', ' | '); ?>
-    </div><!--close tweet_post class--><?php
+      echo "Twitter</a> on "; ?>
+        <a href="<?php the_permalink(); ?>"><?php the_time('F jS, h:ma T Y '); ?></a><?php
+      edit_post_link('Edit', ' | ');
+      ?>
+    </div><?php
 }
 
 /*
