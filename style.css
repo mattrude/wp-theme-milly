@@ -928,6 +928,18 @@ a.comment-link:hover {
 .gallerypost_thumbnail {float: left;}
 .gallerypost_thumbnail img {margin: 0 0 0 10px;color: #000;}
 
+.wp-caption .wp-caption-text,
+.gallery-caption {
+        color: #666;
+        font-family: Georgia, serif;
+        font-size: 12px;
+}
+.wp-caption .wp-caption-text {
+        margin-bottom: 0.6em;
+        padding: 10px 0 5px 40px;
+        position: relative;
+}
+
 /* Twitter Posts */
 #tweet_template {
         position:relative
