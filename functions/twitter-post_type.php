@@ -121,7 +121,6 @@ function twitter_post_type_convert() {
 
 */
 
-/*
 // Get the users image from twitter
 class twitterImage
 {
@@ -194,7 +193,6 @@ class twitterImage
  
 }
 
-*/
 
 function milly_twitter_byline() { ?>
 <div id='tweet_date-<?php echo $post->ID; ?>' class='byline tweet_date' >
