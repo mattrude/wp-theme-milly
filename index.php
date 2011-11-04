@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<?php get_sidebar(); ?>
 <div id="content">
 	<?php if (have_posts()) : ?>
 		<!--Starting "The Loop"-->
@@ -32,6 +33,5 @@
 	<?php endif; ?>
 </div><!--close content id-->
 
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

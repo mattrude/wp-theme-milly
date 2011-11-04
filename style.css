@@ -577,7 +577,10 @@ p.pages a {margin: 0 0 0 3px;padding: 4px 7px;color: #486472 !important;backgrou
 .wiget-footer {
 	overflow: hidden;
 	}
-
+.widget img {
+	background: #fff;
+	border: none;
+}
 /* Navigation links */
 .navigation {
 	background: none repeat scroll 0 0 #FFFFFF;
