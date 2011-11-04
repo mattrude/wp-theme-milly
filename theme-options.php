@@ -6,7 +6,8 @@ add_action( 'admin_menu', 'milly_theme_options_add_page' );
 /**
  * Add theme options page styles
  */
-wp_register_style( 'milly', get_template_directory_uri() . '/theme-options.css', '', '0.1' );
+/*
+wp_enqueue_scripts( 'milly', get_template_directory_uri() . '/theme-options.css', '', '0.1' );
 if ( isset( $_GET['page'] ) && $_GET['page'] == 'theme_options' ) {
 	wp_enqueue_style( 'milly' );
 }
