@@ -6,7 +6,8 @@
     <?php while (have_posts()) : the_post(); ?>
       <div class="post" id="tweet_template-<?php echo $post->ID; ?>">
         <div id='tweet-<?php echo $post->ID; ?>' class='tweet_post' >
-          <div class='twitter-avatar'><img src=<?php milly_twitter_image_url(); ?>></div>
+          <div class='twitter-avatar'>
+	    <img src="<?php milly_twitter_image_url(); ?>" class="tweet-image" width="60" height="60" style="margin-right: 5px;" ></div>
           <?php the_content(); ?>
         </div><!--close tweet id-->
         <?php milly_twitter_byline(); ?>
