@@ -60,6 +60,15 @@ function twitter_save_metabox() {
 
 }
 
+function milly_twitter_image_url() {
+    $twitter_image_url = wp_cache_get( 'twitter_image_url' );
+    if ( false == $twitter_image_url ) {
+      $twitterid = $ozh_ta['screen_name'];
+      $xml = simplexml_load_file("http://twitter.com/users/".$twitterid.".xml");
+      $twitter_image_url = (string)$xml->profile_image_url;
+      wp_cache_set( 'twitter_image_url', $twitter_image_url, 't', 86400 );
+    }
+}
 
 function milly_twitter_byline() { ?>
 <div id='tweet_date-<?php echo $post->ID; ?>' class='byline tweet_date' >
