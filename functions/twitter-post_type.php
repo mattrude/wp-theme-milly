@@ -1,5 +1,5 @@
 <?php
-//This plugin will create a custom post-type 
+//This plugin will create a custom post-type twitter
 
 // Add Custom Post Types for WordPress 2.9
 register_post_type('twitter', array(
