@@ -4,7 +4,6 @@ $person_name = $term->name;
 $person_slug = $term->slug;
 $person_description = $term->description; ?>
 <div id="content">
-	<p><?php echo $person_description; ?></p>
 	<?php if (have_posts()) : ?>
 		<h2>Posts about <?php echo $person_name; ?>:</h2>
 		<!--This is "The Loop"-->
@@ -17,7 +16,9 @@ $person_description = $term->description; ?>
 		endwhile; ?>
 		<!--The Loop has ended-->	
 	<?php endif;
-	$args = array( 
+        $attachments = wp_cache_get( "people_tax_$person_slug" );
+	if ( false == $attachments ) {
+	    $args = array( 
 		'post_type' => 'attachment',
 		'numberposts' => -1,
 		'post_status' => null,
@@ -28,7 +29,9 @@ $person_description = $term->description; ?>
 			'terms' => $person_slug
 			))
 		); 
-	$attachments = get_posts( $args );
+		$attachments = get_posts( $args );
+		wp_cache_set( "people_tax_$person_slug", $attachments );
+	}
 	if ($attachments) { ?>
 		<br />
 		<h2>Pictures of <?php echo $person_name; ?>:</h2>
