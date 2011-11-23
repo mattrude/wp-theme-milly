@@ -1,6 +1,6 @@
 <?php
 require_once('functions/community-tags.php');
-require_once('functions/control-panel.php');
+#require_once('functions/control-panel.php');
 require_once('functions/keep-in-touch-widget.php');
 #require_once('functions/keep-in-touch-widget2.php');
 require_once('functions/twitter-post_type.php');
@@ -38,7 +38,6 @@ add_theme_support( 'post-formats', array( 'aside', 'gallery', 'image', 'link', '
 
 /********************************************************************************
   Add Post Type Technology for WordPress 3.1
-*/
 register_post_type('technology', array(
 	'label' => __('Technology'),
 	'public' => true,
@@ -137,6 +136,8 @@ function milly_technology_tag_widget_init() {
         register_widget('milly_technology_tag_widget');
 }
 
+
+*/
 
 /********************************************************************************
   Add Custom Navigation Menu for WordPress 3.0
