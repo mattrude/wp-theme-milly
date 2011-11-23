@@ -1,5 +1,5 @@
 <?php
-//This plugin will create a custom post-type twitter
+//This plugin will create a custom post-type 
 
 // Add Custom Post Types for WordPress 2.9
 register_post_type('twitter', array(
@@ -61,7 +61,7 @@ function twitter_save_metabox() {
 }
 
 function milly_twitter_image_url() {
-    $twitter_image_url = wp_cache_get( 'twitter_image_url' );
+    $twitter_image_url = wp_cache_get( 'twitter_image_url', 't' );
     if ( false == $twitter_image_url ) {
       global $ozh_ta;
       $twitterid = $ozh_ta['screen_name'];
