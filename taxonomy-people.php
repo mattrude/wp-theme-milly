@@ -1,20 +1,19 @@
 <?php get_header(); 
+global $blog_id;
 $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
 $person_name = $term->name;
 $person_slug = $term->slug;
 $person_description = $term->description; ?>
 <div id="content">
-	<?php if (have_posts()) : ?>
-		<h2>Posts about <?php echo $person_name; ?>:</h2>
-		<!--This is "The Loop"-->
+	<?php if (have_posts()) : ?> <!--This is "The Loop"-->
+		<h2>Posts about <?php echo $person_description; ?>:</h2>
 		<?php while (have_posts()) : the_post();
 			if ( in_category( 'gallery' )) {
 				include('functions/gallery-index.php');
 			} else {
 				milly_post_full();
 			}
-		endwhile; ?>
-		<!--The Loop has ended-->	
+		endwhile; ?><!--The Loop has ended-->	
 	<?php endif;
         $attachments = wp_cache_get( "people_tax_$person_slug" );
 	if ( false == $attachments ) {
@@ -23,6 +22,8 @@ $person_description = $term->description; ?>
 		'numberposts' => -1,
 		'post_status' => null,
 		'post_parent' => null,
+	    	'orderby' => 'post_date',
+    		'order' => 'ASC',
 		'tax_query'=>array(array(
 			'taxonomy' => 'people',
 			'field' => 'slug',
@@ -30,7 +31,7 @@ $person_description = $term->description; ?>
 			))
 		); 
 		$attachments = get_posts( $args );
-		wp_cache_set( "people_tax_$person_slug", $attachments );
+		wp_cache_set( "people_tax_$person_slug", $attachments, $blog_id, 86400 );
 	}
 	if ($attachments) { ?>
 		<br />

@@ -181,7 +181,7 @@ add_action('admin_head', 'milly_admin_favicon');
 */
 
 function create_milly_taxonomies() {
-  register_taxonomy( 'people', 'post', array( 'hierarchical' => false, 'label' => __('People'), 'query_var' => true, 'rewrite' => true ) );
+  register_taxonomy( 'people', array( 'post', 'attachment' ), array( 'hierarchical' => false, 'label' => __('People'), 'query_var' => true, 'rewrite' => true ) );
   register_taxonomy( 'places', 'post', array( 'hierarchical' => false, 'label' => __('Places'), 'query_var' => true, 'rewrite' => true ) );
   register_taxonomy( 'events', 'post', array( 'hierarchical' => false, 'label' => __('Events'), 'query_var' => true, 'rewrite' => true ) );
 }
@@ -528,5 +528,17 @@ function mdr_exif() { ?>
     </div>
   </div>
 <?php }
+
+/*   A query to correct taxonomy count
+
+UPDATE wp_term_taxonomy tt1
+SET count =
+(SELECT count(p.ID) FROM wp_term_relationships tr
+LEFT JOIN wp_posts p
+ON ( p.ID = tr.object_id )
+WHERE tr.term_taxonomy_id = tt1.term_taxonomy_id)
+WHERE tt1.taxonomy = 'people';
+
+*/
 
 ?>
