@@ -99,13 +99,22 @@ if ( isset( $_GET['addtag'] ) )
 
 function mct_suggest_tags() {
 	global $wpdb;
+	global $blogid;
 
 	header( 'Content-type: text/plain; charset=utf-8' );
 	
 	$s = addslashes( $_REQUEST['q'] );
 	if ( strlen( $s ) < 3 ) die;
 	
-	$results = $wpdb->get_col( "SELECT name FROM $wpdb->terms WHERE name LIKE ('%$s%')" );
+	// $results = $wpdb->get_col( "SELECT name FROM $wpdb->terms WHERE name LIKE ('%$s%')" );
+	$results = wp_cache_get( "mct_tax_results-$s", $blogid );
+	if ( false == $results ) {
+		//$results = $wpdb->get_col( "SELECT name FROM $wpdb->terms WHERE name LIKE ('%$s%')" );
+		$results = $wpdb->get_col( "SELECT name FROM $wpdb->terms LEFT JOIN ( $wpdb->term_taxonomy )
+			ON ( $wpdb->terms.term_id = $wpdb->term_taxonomy.term_id )
+			WHERE $wpdb->term_taxonomy.taxonomy = 'people' AND $wpdb->terms.name LIKE ('%$s%')" );
+		wp_cache_set( "mct_tax_results-$s", $results, $blogid, 120 );
+	}
 	
 	foreach ( $results as $r )
 		echo str_replace( '-', ' ', $r ) . "\n";
