@@ -35,6 +35,7 @@ $person_description = $term->description; ?>
 	}
 	if ($attachments) { ?>
 		<br />
+		<a name="pics" ></a>
 		<h2>Pictures of <?php echo $person_name; ?>:</h2>
 		<div class="post"><center><?php
 		foreach ( $attachments as $post ) {
