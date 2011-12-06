@@ -10,6 +10,8 @@ Change Log
 
 **Version 1.7-devel - http://github.com/mattrude/wp-theme-milly/commits**
 
+ * Corrected use of Twitter Post ID on Twitter pages. [#13](https://github.com/mattrude/wp-theme-milly/issues/13)
+ * Add Google Voice Search to Sites Search Forum. [#17](https://github.com/mattrude/wp-theme-milly/issues/17)
  * Disable the Sharedaddy function part of the [Jetpack](http://jetpack.me/) plugin, on ALL images. [1bbab5a](https://github.com/mattrude/wp-theme-milly/commit/1bbab5a8e0d15ef325096355fbc851a922b8ce18)
  * Added dashboard custom image header function
  * Rewrite of Header Navigation Menu functions
