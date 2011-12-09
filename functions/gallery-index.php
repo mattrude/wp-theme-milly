@@ -6,7 +6,13 @@
 	<div id="gallerypost_body-<?php the_ID(); ?>" class="gallerypost_body">
 		<?php $images =& get_children( 'post_type=attachment&post_mime_type=image' ); ?>
 		<h1 class="single-title entry-title"><a rel="bookmark" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-		<div><p class="byline">Album created by <?php the_author(); ?> on <?php the_time('F jS, Y') . edit_post_link('Edit', ' | '); ?></p></div>
+		<div class="byline">
+		        <span class="byline-prep byline-prep-author text">Album created by </span>
+		        <span class="author"><?php the_author(); ?></span>
+		        <span class="byline-prep byline-prep-author text"> on </span>
+		        <span class="published updated"><?php the_time('F jS, Y') ?></span>
+			<span class="byline-prep byline-prep-author text"> <?php edit_post_link('Edit', ' | '); ?> </span>
+		</div>
 		<div class="entry">
 			<?php the_excerpt(); ?>
 		</div>

@@ -336,9 +336,9 @@ function milly_post_full() { ?>
       </h1>
       <p class="byline">
 	<span class="byline-prep byline-prep-author text">Posted by </span>
-	<span class="author vcard"><?php the_author(); ?></span>
+	<address class="vcard"><span class="fn author"><a class="fn url" rel="author" href="<?php the_author_meta('user_url'); ?>"><?php the_author(); ?></a></span></address>
 	<span class="byline-prep byline-prep-author text"> on </span>
-	<span class="published"><?php the_time('F jS, Y') ?></span>
+	<span class="published updated"><?php the_time('F jS, Y') ?></span>
         <?php if ( get_post_type() == 'technology' ) {
 	  echo "<span>";
 	  echo get_the_term_list( $post->ID, 'tech_category', ' | Filed Under: ', ', ', '' );
@@ -370,7 +370,7 @@ function milly_post_short() { ?>
 	</h1>
 	<p class="byline">
 	  <span class="byline-prep byline-prep-author text">Posted by </span>
-	  <span class="author vcard"><?php the_author(); ?></span>
+	  <span class="author"><?php the_author(); ?></span>
 	  <span class="byline-prep byline-prep-author text"> on </span>
 	  <span class="published"><?php the_time('F jS, Y') ?></span>
       	  <?php if ( get_post_type() == 'technology' ) {

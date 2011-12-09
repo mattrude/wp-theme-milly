@@ -10,7 +10,13 @@
 		<div id="footer-text">
 			<p>
 			Copyright &copy; 1980 – <?php echo date("Y") ?> by <a href="http://mattrude.com/">Matt Rude</a><br />
-			Site Designed by <a href="http://mattrude.com/">Matt Rude</a>.<br />
+			Site Designed by <?php
+			if ( is_home() ) {
+				?><a rel="me" href="https://plus.google.com/112621058996703559018/posts"><?php
+			} else {
+				?><a rel="author" href="http://mattrude.com/"><?php
+			} 
+			?>Matt Rude</a>.<br />
 			Proudly powered by <a href="http://wordpress.org/" rel="nofollow">WordPress</a>.<br />
 			This page took <?php timer_stop(1); ?> seconds of computer labor,<br/>
 			and required <?php echo get_num_queries(); ?> questions to produce.<br />
