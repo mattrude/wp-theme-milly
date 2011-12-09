@@ -8,6 +8,8 @@ The Current  mattrude.com theme, with custom post-types & custom taxonomy.
 Change Log
 ----------
 
+**Version 1.8-devel - http://github.com/mattrude/wp-theme-milly/commits/master**
+
 **Version 1.7 - http://github.com/mattrude/wp-theme-milly/commits/1.7**
 
  * Corrected use of Twitter Post ID on Twitter pages. [#13](https://github.com/mattrude/wp-theme-milly/issues/13)
