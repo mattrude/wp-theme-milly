@@ -8,7 +8,7 @@ The Current  mattrude.com theme, with custom post-types & custom taxonomy.
 Change Log
 ----------
 
-**Version 1.7-devel - http://github.com/mattrude/wp-theme-milly/commits**
+**Version 1.7 - http://github.com/mattrude/wp-theme-milly/commits/1.7**
 
  * Corrected use of Twitter Post ID on Twitter pages. [#13](https://github.com/mattrude/wp-theme-milly/issues/13)
  * Add Google Voice Search to Sites Search Forum. [#17](https://github.com/mattrude/wp-theme-milly/issues/17)
