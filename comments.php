@@ -74,7 +74,7 @@ if($comments) {
   </div>
 </div>
 <div class="comment-right">
-  <textarea id="comment" tabindex="4" cols="20" rows="8" onfocus="if ( value == 'Your comment...' ) { this.value='' }" name="comment">Your comment...</textarea>
+  <textarea id="comment" tabindex="4" cols="20" rows="9" onfocus="if ( value == 'Your comment...' ) { this.value='' }" name="comment">Your comment...</textarea>
 </div>
 <?php endif; ?>
 
