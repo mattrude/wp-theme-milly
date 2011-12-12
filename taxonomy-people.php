@@ -3,7 +3,13 @@ global $blog_id;
 $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
 $person_name = $term->name;
 $person_slug = $term->slug;
-$person_description = $term->description; ?>
+if ( $term->description == "" ) {
+  $person_description = $term->name;
+
+} else {
+  $person_description = $term->description;
+} ?>
+
 <div id="content">
 	<?php if (have_posts()) : ?> <!--This is "The Loop"-->
 		<h2>Posts about <?php echo $person_description; ?>:</h2>
@@ -23,7 +29,7 @@ $person_description = $term->description; ?>
 		'post_status' => null,
 		'post_parent' => null,
 	    	'orderby' => 'post_date',
-    		'order' => 'ASC',
+    		'order' => 'DESC',
 		'tax_query'=>array(array(
 			'taxonomy' => 'people',
 			'field' => 'slug',
@@ -36,11 +42,11 @@ $person_description = $term->description; ?>
 	if ($attachments) { ?>
 		<br />
 		<a name="pics" ></a>
-		<h2>Pictures of <?php echo $person_name; ?>:</h2>
+		<h2>Pictures of <?php echo $person_description; ?>:</h2>
 		<div class="post"><center><?php
-		foreach ( $attachments as $post ) {
-			setup_postdata($post);
-			the_attachment_link($post->ID, false, null, 1);
+		foreach ( $attachments as $attachment ) {
+			setup_postdata($attachment);
+			the_attachment_link($attachment->ID, false, null, 1);
 			the_excerpt();
 		} ?>
 		</center></div>
