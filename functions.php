@@ -38,6 +38,8 @@ add_theme_support( 'post-formats', array( 'aside', 'gallery', 'image', 'link', '
 
 /********************************************************************************
   Add Post Type Technology for WordPress 3.1
+*/
+
 register_post_type('technology', array(
 	'label' => __('Technology'),
 	'public' => true,
@@ -63,7 +65,7 @@ class milly_technology_cat_widget extends WP_Widget {
   function milly_technology_cat_widget() {
     $milly_technology_cat_widget_name = __('Technology Category');
     $milly_technology_cat_widget_description = __('Displays Technology Category.');
-    $widget_ops = array('classname' => 'milly_technology_cat_widget', 'description' => $milly_technology_widget_cat_description );
+    $widget_ops = array('classname' => 'milly_technology_cat_widget', 'description' => $milly_technology_cat_widget_description );
     $this->WP_Widget('milly_technology_cat_widget', $milly_technology_cat_widget_name, $widget_ops);
   }  
   
@@ -106,7 +108,7 @@ class milly_technology_tag_widget extends WP_Widget {
   function milly_technology_tag_widget() {
     $milly_technology_tag_widget_name = __('Technology Tags');
     $milly_technology_tag_widget_description = __('Displays Technology Tags.');
-    $widget_ops = array('classname' => 'milly_technology_tag_widget', 'description' => $milly_technology_widget_tag_description );
+    $widget_ops = array('classname' => 'milly_technology_tag_widget', 'description' => $milly_technology_tag_widget_description );
     $this->WP_Widget('milly_technology_tag_widget', $milly_technology_tag_widget_name, $widget_ops);
   }  
   
@@ -136,8 +138,6 @@ function milly_technology_tag_widget_init() {
         register_widget('milly_technology_tag_widget');
 }
 
-
-*/
 
 /********************************************************************************
   Add Custom Navigation Menu for WordPress 3.0
@@ -336,7 +336,7 @@ function milly_post_full() { ?>
       </h1>
       <p class="byline">
 	<span class="byline-prep byline-prep-author text">Posted by </span>
-	<address class="vcard"><span class="fn author"><a class="fn url" rel="author" href="<?php the_author_meta('user_url'); ?>"><?php the_author(); ?></a></span></address>
+	<span class="fn author"><a class="fn url" rel="author" href="<?php the_author_meta('user_url'); ?>"><?php the_author(); ?></a></address></span>
 	<span class="byline-prep byline-prep-author text"> on </span>
 	<span class="published updated"><?php the_time('F jS, Y') ?></span>
         <?php if ( get_post_type() == 'technology' ) {
@@ -356,7 +356,7 @@ function milly_post_full() { ?>
     <?php if ( is_single() ) { ?>
       <!--Adding Related Entries if Yet Another Related Posts Plugin is installed-->
       <div class="related-entries">
-        <?php if (function_exists('related_entries')) { echo related_entries(); }?>
+        <?php if (function_exists('related_entries')) { related_entries(); } ?>
       </div>
     <?php } ?>
   </div><!--close post class-->
