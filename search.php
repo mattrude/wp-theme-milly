@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 <div id="content">
-	<?php if (have_posts()) : ?>
+	<?php if (have_posts()) { ?>
 		<!--This is "The Loop"-->
-		<div class="tag-head post"
+		<div class="tag-head post">
 			<h1>Search Results for: <?php the_search_query(); ?></h1>
 		</div>
 		<?php while (have_posts()) : the_post(); ?>
@@ -28,7 +28,13 @@
 		<?php endwhile; ?>
 		<!--The Loop has ended-->	
 		<?php milly_pre_next_post_cat(); ?>
-	<?php endif; ?>
+	<?php } else { ?>
+		<div class="post">
+			<h1 class="entry-title"><?php _e( 'Nothing Found' ); ?></h1>
+			<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.' ); ?></p>
+                        <?php get_search_form(); ?>
+		</div>
+	<?php } ?>
 </div><!--close content id-->
 
 <?php get_sidebar(); ?>
