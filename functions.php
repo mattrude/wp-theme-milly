@@ -26,6 +26,8 @@ $themecolors = array(
         'link' => '0060ff'
 );
 
+load_theme_textdomain( 'millytheme', get_template_directory() . '/languages' );
+
 /** Tell WordPress to run milly_setup() when the 'after_setup_theme' hook is run. */
 add_action( 'after_setup_theme', 'milly_setup' );
 
@@ -41,7 +43,7 @@ add_theme_support( 'post-formats', array( 'aside', 'gallery', 'image', 'link', '
 */
 
 register_post_type('technology', array(
-	'label' => __('Technology'),
+	'label' => __('Technology', 'millytheme'),
 	'public' => true,
 	'show_ui' => true,
 	'capability_type' => 'post',
@@ -55,16 +57,16 @@ register_post_type('technology', array(
 
 // Create the Technology Tag & Category taxonomies.
 function create_technology_taxonomies() {
-  register_taxonomy( 'tech_category', 'technology', array( 'hierarchical' => true, 'label' => __('Categories'), 'query_var' => true, 'rewrite' => true ) );
-  register_taxonomy( 'tech_tag', 'technology', array( 'hierarchical' => false, 'label' => __('Technology Tags'), 'query_var' => true, 'rewrite' => true ) );
+  register_taxonomy( 'tech_category', 'technology', array( 'hierarchical' => true, 'label' => __('Categories', 'millytheme'), 'query_var' => true, 'rewrite' => true ) );
+  register_taxonomy( 'tech_tag', 'technology', array( 'hierarchical' => false, 'label' => __('Technology Tags', 'millytheme'), 'query_var' => true, 'rewrite' => true ) );
 }
 add_action( 'init', 'create_technology_taxonomies', 0 );
 
 // Create the Technology Category Widget
 class milly_technology_cat_widget extends WP_Widget {
   function milly_technology_cat_widget() {
-    $milly_technology_cat_widget_name = __('Technology Category');
-    $milly_technology_cat_widget_description = __('Displays Technology Category.');
+    $milly_technology_cat_widget_name = __('Technology Category', 'millytheme');
+    $milly_technology_cat_widget_description = __('Displays Technology Category.', 'millytheme');
     $widget_ops = array('classname' => 'milly_technology_cat_widget', 'description' => $milly_technology_cat_widget_description );
     $this->WP_Widget('milly_technology_cat_widget', $milly_technology_cat_widget_name, $widget_ops);
   }  
@@ -94,7 +96,7 @@ class milly_technology_cat_widget extends WP_Widget {
   
   function form($instance) {
     $widget_title = strip_tags($instance['widget_title']);
-    ?><p><label for="<?php echo $this->get_field_id('widget_title'); ?>"><?php _e('Widget Title')?>:<input class="widefat" id="<?php echo $this->get_field_id('widget_title'); ?>" name="<?php echo $this->get_field_name('widget_title'); ?>" type="text" value="<?php echo esc_attr($widget_title); ?>" /></label></p><?php
+    ?><p><label for="<?php echo $this->get_field_id('widget_title'); ?>"><?php _e('Widget Title', 'millytheme')?>:<input class="widefat" id="<?php echo $this->get_field_id('widget_title'); ?>" name="<?php echo $this->get_field_name('widget_title'); ?>" type="text" value="<?php echo esc_attr($widget_title); ?>" /></label></p><?php
   }
 }
 
@@ -106,8 +108,8 @@ function milly_technology_cat_widget_init() {
 // Create the Technology Tag Widget
 class milly_technology_tag_widget extends WP_Widget {
   function milly_technology_tag_widget() {
-    $milly_technology_tag_widget_name = __('Technology Tags');
-    $milly_technology_tag_widget_description = __('Displays Technology Tags.');
+    $milly_technology_tag_widget_name = __('Technology Tags', 'millytheme');
+    $milly_technology_tag_widget_description = __('Displays Technology Tags.', 'millytheme');
     $widget_ops = array('classname' => 'milly_technology_tag_widget', 'description' => $milly_technology_tag_widget_description );
     $this->WP_Widget('milly_technology_tag_widget', $milly_technology_tag_widget_name, $widget_ops);
   }  
@@ -129,7 +131,7 @@ class milly_technology_tag_widget extends WP_Widget {
   
   function form($instance) {
     $widget_title = strip_tags($instance['widget_title']);
-    ?><p><label for="<?php echo $this->get_field_id('widget_title'); ?>"><?php _e('Widget Title')?>:<input class="widefat" id="<?php echo $this->get_field_id('widget_title'); ?>" name="<?php echo $this->get_field_name('widget_title'); ?>" type="text" value="<?php echo esc_attr($widget_title); ?>" /></label></p><?php
+    ?><p><label for="<?php echo $this->get_field_id('widget_title'); ?>"><?php _e('Widget Title', 'millytheme')?>:<input class="widefat" id="<?php echo $this->get_field_id('widget_title'); ?>" name="<?php echo $this->get_field_name('widget_title'); ?>" type="text" value="<?php echo esc_attr($widget_title); ?>" /></label></p><?php
   }
 }
 
@@ -163,7 +165,7 @@ function milly_nav_fallback() {
 
 // This theme uses wp_nav_menu() in one location.
 register_nav_menus( array(
-    'header' => __( 'The Header Navigation Menu', 'milly' ),
+    'header' => __( 'The Header Navigation Menu', 'millytheme' ),
 ) );
 
 function milly_admin_favicon() {
@@ -181,9 +183,9 @@ add_action('admin_head', 'milly_admin_favicon');
 */
 
 function create_milly_taxonomies() {
-  register_taxonomy( 'people', array( 'post', 'attachment' ), array( 'hierarchical' => false, 'label' => __('People'), 'query_var' => true, 'rewrite' => true ) );
-  register_taxonomy( 'places', 'post', array( 'hierarchical' => false, 'label' => __('Places'), 'query_var' => true, 'rewrite' => true ) );
-  register_taxonomy( 'events', 'post', array( 'hierarchical' => false, 'label' => __('Events'), 'query_var' => true, 'rewrite' => true ) );
+  register_taxonomy( 'people', array( 'post', 'attachment' ), array( 'hierarchical' => false, 'label' => __('People', 'millytheme'), 'query_var' => true, 'rewrite' => true ) );
+  register_taxonomy( 'places', 'post', array( 'hierarchical' => false, 'label' => __('Places', 'millytheme'), 'query_var' => true, 'rewrite' => true ) );
+  register_taxonomy( 'events', 'post', array( 'hierarchical' => false, 'label' => __('Events', 'millytheme'), 'query_var' => true, 'rewrite' => true ) );
 }
 add_action( 'init', 'create_milly_taxonomies', 0 );
 
@@ -194,9 +196,9 @@ add_action( 'init', 'create_milly_taxonomies', 0 );
 
 function add_milly_contactmethod( $contactmethods ) {
   // Add Twitter
-  $contactmethods['facebook'] = __('Facebook URL');
-  $contactmethods['googletalk'] = __('Google Talk');
-  $contactmethods['twitter'] = __('Twitter ID');
+  $contactmethods['facebook'] = __('Facebook URL', 'millytheme');
+  $contactmethods['googletalk'] = __('Google Talk', 'millytheme');
+  $contactmethods['twitter'] = __('Twitter ID', 'millytheme');
  
   // Remove Yahoo IM
   unset($contactmethods['aim']);
@@ -216,8 +218,8 @@ add_action( 'widgets_init', 'milly_register_sidebars' );
 function milly_register_sidebars() {
   register_sidebar(array (
     'id' => 'sidebar-widget-area',
-    'name' => __('Sidebar Widget Area'),
-    'description' => __('This is the Main Right Hand Sidebar'),
+    'name' => __('Sidebar Widget Area', 'millytheme'),
+    'description' => __('This is the Main Right Hand Sidebar', 'millytheme'),
     'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
     'after_widget' => '</div>',
     'before_title' => '<h3 class="widget-title">',
@@ -226,8 +228,8 @@ function milly_register_sidebars() {
     
   register_sidebar(array (
     'id' => 'technology-widget-area',
-    'name' => __('Technology Widget Area'),
-    'description' => __('This widget area is only used on the technology pages and archives.'),
+    'name' => __('Technology Widget Area', 'millytheme'),
+    'description' => __('This widget area is only used on the technology pages and archives.', 'millytheme'),
     'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
     'after_widget' => '</div>',
     'before_title' => '<h3 class="widget-title">',
@@ -236,8 +238,8 @@ function milly_register_sidebars() {
     
   register_sidebar( array (
     'id' => 'footer-widget-area',
-    'name' => __('Footer Widget Area'),
-    'description' => __('The footer widget area'),
+    'name' => __('Footer Widget Area', 'millytheme'),
+    'description' => __('The footer widget area', 'millytheme'),
     'before_widget' => '<div class="widget-footer">',
     'after_widget' => '</div>',
     'before_title' => '<h3 class="widget-title">',
@@ -347,7 +349,7 @@ function milly_post_full() { ?>
         } else { ?>
 	  <span > | Filed Under: <?php the_category(', '); the_tags(' | Tagged as: ', ', ', ''); ?></span>
         <?php } ?>
-	<span><?php if ( function_exists('the_shortlink') ) the_shortlink( __('Shortlink'), __('A smaller version of this pages URL'), ' | ' ); ?></span>
+	<span><?php if ( function_exists('the_shortlink') ) the_shortlink( __('Shortlink', 'millytheme'), __('A smaller version of this pages URL', 'millytheme'), ' | ' ); ?></span>
         <span><?php edit_post_link('Edit', ' | '); ?></span>
       </p>
     <div class="entry-content entry">
@@ -487,7 +489,7 @@ add_shortcode('ts', 'mdr_timesince');
 */
 function mdr_exif() { ?>
   <div id="exif">
-    <h3 class='comment-title exif-title'><?php _e('Images EXIF Data'); ?></h3>
+    <h3 class='comment-title exif-title'><?php _e('Images EXIF Data', 'millytheme'); ?></h3>
     <div id="exif-data">
       <?php
       $imgmeta = wp_get_attachment_metadata( $id );
@@ -499,12 +501,12 @@ function mdr_exif() { ?>
             or number_format((1 / $image_shutter_speed), 1) == 1.5
             or number_format((1 / $image_shutter_speed), 1) == 1.6
             or number_format((1 / $image_shutter_speed), 1) == 2.5){
-            $pshutter = "1/" . number_format((1 / $image_shutter_speed), 1, '.', '') ." ".__('second');
+            $pshutter = "1/" . number_format((1 / $image_shutter_speed), 1, '.', '') ." ".__('second', 'millytheme');
           } else {
-            $pshutter = "1/" . number_format((1 / $image_shutter_speed), 0, '.', '') ." ".__('second');
+            $pshutter = "1/" . number_format((1 / $image_shutter_speed), 0, '.', '') ." ".__('second', 'millytheme');
           }
         } else {
-          $pshutter = $image_shutter_speed ." ".__('seconds');
+          $pshutter = $image_shutter_speed ." ".__('seconds', 'millytheme');
         }
       }
 
@@ -519,12 +521,12 @@ function mdr_exif() { ?>
     </div>
     <div id="exif-lable">
       <?php // EXIF Titles
-      echo "<p><span>".__('Date Taken:')."</span>";
-      echo "<p><span>".__('Camera:')."</span>";
-      echo "<p><span>".__('Focal Length:')."</span>";
-      echo "<p><span>".__('Aperture:')."</span>";
-      echo "<p><span>".__('ISO:')."</span>";
-      echo "<p><span>".__('Shutter Speed:')."</span>"; ?>
+      echo "<p><span>".__('Date Taken:', 'millytheme')."</span>";
+      echo "<p><span>".__('Camera:', 'millytheme')."</span>";
+      echo "<p><span>".__('Focal Length:', 'millytheme')."</span>";
+      echo "<p><span>".__('Aperture:', 'millytheme')."</span>";
+      echo "<p><span>".__('ISO:', 'millytheme')."</span>";
+      echo "<p><span>".__('Shutter Speed:', 'millytheme')."</span>"; ?>
     </div>
   </div>
 <?php }
