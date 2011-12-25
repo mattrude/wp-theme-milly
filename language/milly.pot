@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: milly 1.0\n"
+"Project-Id-Version: milly 1.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-19 00:15-0500\n"
+"POT-Creation-Date: 2011-12-25 00:15-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,7 +35,7 @@ msgstr ""
 msgid "or"
 msgstr ""
 
-#: 404.php:6 functions.php:43 functions/tech-post_type.php:7
+#: 404.php:6 functions.php:44
 msgid "Technology"
 msgstr ""
 
@@ -72,147 +73,144 @@ msgstr ""
 msgid "on Facebook as "
 msgstr ""
 
-#: functions.php:57
+#: functions.php:58
 msgid "Categories"
 msgstr ""
 
-#: functions.php:58 functions.php:108
+#: functions.php:59 functions.php:109
 msgid "Technology Tags"
 msgstr ""
 
-#: functions.php:65
+#: functions.php:66
 msgid "Technology Category"
 msgstr ""
 
-#: functions.php:66
+#: functions.php:67
 msgid "Displays Technology Category."
 msgstr ""
 
-#: functions.php:96 functions.php:131 functions/keep-in-touch-widget.php:36
-#: functions/matts-keep-in-touch-widget.php:36
-#: functions/twitter-post_type.php:252
+#: functions.php:97 functions.php:132
 msgid "Widget Title"
 msgstr ""
 
-#: functions.php:109
+#: functions.php:110
 msgid "Displays Technology Tags."
 msgstr ""
 
-#: functions.php:165
+#: functions.php:166
 msgid "The Header Navigation Menu"
 msgstr ""
 
-#: functions.php:183
+#: functions.php:184
 msgid "People"
 msgstr ""
 
-#: functions.php:184
+#: functions.php:185
 msgid "Places"
 msgstr ""
 
-#: functions.php:185
+#: functions.php:186
 msgid "Events"
 msgstr ""
 
-#: functions.php:196
+#: functions.php:197
 msgid "Facebook URL"
 msgstr ""
 
-#: functions.php:197
+#: functions.php:198
 msgid "Google Talk"
 msgstr ""
 
-#: functions.php:198 functions/keep-in-touch-widget.php:37
-#: functions/matts-keep-in-touch-widget.php:37
+#: functions.php:199
 msgid "Twitter ID"
 msgstr ""
 
-#: functions.php:218
+#: functions.php:219
 msgid "Sidebar Widget Area"
 msgstr ""
 
-#: functions.php:219
+#: functions.php:220
 msgid "This is the Main Right Hand Sidebar"
 msgstr ""
 
-#: functions.php:228
+#: functions.php:229
 msgid "Technology Widget Area"
 msgstr ""
 
-#: functions.php:229
+#: functions.php:230
 msgid "This widget area is only used on the technology pages and archives."
 msgstr ""
 
-#: functions.php:238
+#: functions.php:239
 msgid "Footer Widget Area"
 msgstr ""
 
-#: functions.php:239
+#: functions.php:240
 msgid "The footer widget area"
 msgstr ""
 
-#: functions.php:349
+#: functions.php:350
 msgid "Shortlink"
 msgstr ""
 
-#: functions.php:349
+#: functions.php:350
 msgid "A smaller version of this pages URL"
 msgstr ""
 
-#: functions.php:489
+#: functions.php:490
 msgid "Images EXIF Data"
 msgstr ""
 
-#: functions.php:501 functions.php:503
+#: functions.php:502 functions.php:504
 msgid "second"
 msgstr ""
 
-#: functions.php:506
+#: functions.php:507
 msgid "seconds"
 msgstr ""
 
-#: functions.php:521
+#: functions.php:522
 msgid "Date Taken:"
 msgstr ""
 
-#: functions.php:522
+#: functions.php:523
 msgid "Camera:"
 msgstr ""
 
-#: functions.php:523
+#: functions.php:524
 msgid "Focal Length:"
 msgstr ""
 
-#: functions.php:524
+#: functions.php:525
 msgid "Aperture:"
 msgstr ""
 
-#: functions.php:525
+#: functions.php:526
 msgid "ISO:"
 msgstr ""
 
-#: functions.php:526
+#: functions.php:527
 msgid "Shutter Speed:"
 msgstr ""
 
-#: image.php:33
+#: image.php:34
 msgid "Next Image"
 msgstr ""
 
-#: image.php:40
+#: image.php:41
 msgid "Previous Image"
 msgstr ""
 
-#: image.php:48
+#: image.php:49
 #, php-format
 msgid "back to &#8220;%s&#8221;"
 msgstr ""
 
-#: image.php:53
+#: image.php:54
 msgid "Already Tagged"
 msgstr ""
 
-#: image.php:68
+#: image.php:69
 msgid "Sorry, no posts matched your criteria."
 msgstr ""
 
@@ -249,221 +247,79 @@ msgstr ""
 msgid "Permanent Link to"
 msgstr ""
 
-#: theme-options.php:25
+#: theme-options.php:26
 msgid "Theme Options"
 msgstr ""
 
-#: theme-options.php:35
+#: theme-options.php:36
 msgid "Light"
 msgstr ""
 
-#: theme-options.php:39
+#: theme-options.php:40
 msgid "Dark"
 msgstr ""
 
-#: theme-options.php:53
+#: theme-options.php:54
 msgid "Content-Sidebar"
 msgstr ""
 
-#: theme-options.php:57
+#: theme-options.php:58
 msgid "Sidebar-Content"
 msgstr ""
 
-#: theme-options.php:61
+#: theme-options.php:62
 msgid "Content-Sidebar-Sidebar"
 msgstr ""
 
-#: theme-options.php:65
+#: theme-options.php:66
 msgid "Sidebar-Sidebar-Content"
 msgstr ""
 
-#: theme-options.php:69
+#: theme-options.php:70
 msgid "Sidebar-Content-Sidebar"
 msgstr ""
 
-#: theme-options.php:104
+#: theme-options.php:105
 #, php-format
 msgid "%1$s Theme Options"
 msgstr ""
 
-#: theme-options.php:108
+#: theme-options.php:109
 msgid "Options saved"
 msgstr ""
 
-#: theme-options.php:122
+#: theme-options.php:123
 msgid "Color Scheme"
 msgstr ""
 
-#: theme-options.php:141
+#: theme-options.php:142
 msgid "Select a default color scheme"
 msgstr ""
 
-#: theme-options.php:150 theme-options.php:152
+#: theme-options.php:151 theme-options.php:153
 msgid "Default Layout"
 msgstr ""
 
-#: theme-options.php:188
+#: theme-options.php:189
 msgid "Aside Category"
 msgstr ""
 
-#: theme-options.php:191 theme-options.php:219
+#: theme-options.php:192 theme-options.php:220
 msgid "Select a category &hellip;"
 msgstr ""
 
-#: theme-options.php:207
+#: theme-options.php:208
 msgid "Select a category to use for shorter aside posts"
 msgstr ""
 
-#: theme-options.php:216
+#: theme-options.php:217
 msgid "Gallery Category"
 msgstr ""
 
-#: theme-options.php:235
+#: theme-options.php:236
 msgid "Select a category to use for posts with image galleries"
 msgstr ""
 
-#: theme-options.php:243
+#: theme-options.php:244
 msgid "Save Options"
-msgstr ""
-
-#: functions/community-tags.php:239 functions/community-tags.php:335
-msgid "Community Tags"
-msgstr ""
-
-#: functions/community-tags.php:247 functions/community-tags.php:311
-msgid "Moderate Tags &raquo;"
-msgstr ""
-
-#: functions/community-tags.php:335
-msgid "Community Tags123"
-msgstr ""
-
-#: functions/google-analytics.php:73 functions/google-webmaster-tools.php:46
-msgid "Save Above Changes"
-msgstr ""
-
-#: functions/keep-in-touch-widget.php:5
-msgid "Keep In Touch Widget"
-msgstr ""
-
-#: functions/keep-in-touch-widget.php:6
-#: functions/matts-keep-in-touch-widget.php:6
-msgid ""
-"Displays Methods of Keeping in touch such as via Twitter, Facebook, RSS & "
-"Atom."
-msgstr ""
-
-#: functions/keep-in-touch-widget.php:38
-#: functions/matts-keep-in-touch-widget.php:38
-msgid "Facebook ID"
-msgstr ""
-
-#: functions/matts-keep-in-touch-widget.php:5
-msgid "Keep In Touch Widget Tech"
-msgstr ""
-
-#: functions/relative-date.php:15 functions/relative-date.php:53
-#: functions/relative-date.php:121
-msgid "Today"
-msgstr ""
-
-#: functions/relative-date.php:17 functions/relative-date.php:55
-#: functions/relative-date.php:123
-msgid "Yesterday"
-msgstr ""
-
-#: functions/twitter-import.php:57
-msgid "Every 5 Mins"
-msgstr ""
-
-#: functions/twitter-post_type.php:7
-msgid "Twitter"
-msgstr ""
-
-#: functions/twitter-post_type.php:9 functions/twitter-post_type.php:10
-msgid "Add New Tweet"
-msgstr ""
-
-#: functions/twitter-post_type.php:11
-msgid "Edit Tweet"
-msgstr ""
-
-#: functions/twitter-post_type.php:12
-msgid "New Tweet"
-msgstr ""
-
-#: functions/twitter-post_type.php:13
-msgid "View Tweet"
-msgstr ""
-
-#: functions/twitter-post_type.php:14
-msgid "Search Tweets"
-msgstr ""
-
-#: functions/twitter-post_type.php:15
-msgid "No tweets found"
-msgstr ""
-
-#: functions/twitter-post_type.php:16
-msgid "No tweets found in Trash"
-msgstr ""
-
-#: functions/twitter-post_type.php:18
-msgid "Imported Twitter Posts"
-msgstr ""
-
-#: functions/twitter-post_type.php:35
-msgid "Tweets Meta Data"
-msgstr ""
-
-#: functions/twitter-post_type.php:48
-msgid " Tweet Post ID"
-msgstr ""
-
-#: functions/twitter-post_type.php:50
-msgid " Twitter Name"
-msgstr ""
-
-#: functions/twitter-post_type.php:52
-msgid " Twitter User"
-msgstr ""
-
-#: functions/twitter-post_type.php:221
-msgid "Twitter Widget"
-msgstr ""
-
-#: functions/twitter-post_type.php:222
-msgid "Displays Tweets from the tweet post type."
-msgstr ""
-
-#: functions/typekit-fonts.php:19
-msgid "You cannot edit the search-by-category options."
-msgstr ""
-
-#: functions/typekit-fonts.php:32
-msgid ""
-"is the easiest way to use real fonts on the web. It&rsquo;s a subscription-"
-"based service for linking to high-quality Open Type fonts from some of the "
-"worlds best type foundries. Typekit fonts are served from a global network "
-"on redundant servers, offering bulletproof service and incredible speed. And "
-"it couldn&rsquo;t be easier to use."
-msgstr ""
-
-#: functions/typekit-fonts.php:37
-msgid ""
-"You can find your Typekit ID on typekit.com under Kit Editor -> Embed Code."
-msgstr ""
-
-#: functions/typekit-fonts.php:40
-msgid "Update ID"
-msgstr ""
-
-#: functions/typekit-fonts.php:47
-msgid ""
-"If you don&#8217;t have a Typekit ID yet you can sign up on their site for "
-"free and enable it on your site with just a few clicks."
-msgstr ""
-
-#: functions/typekit-fonts.php:49
-msgid "Sign up in seconds"
 msgstr ""
