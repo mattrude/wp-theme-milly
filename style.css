@@ -236,6 +236,9 @@ input {
 	float: right;
 	text-align: right;
 	}
+.image-meta {
+	width: 700px;
+	}
 .text-input {
 	display: block;
 	width: 300px;
@@ -1002,8 +1005,8 @@ a.comment-link:hover {
 	}
 #image-comments div {
 	border: 0;
+	margin: 0 10px 0 0;
 	padding: 0 10px 0 0;
-	margin: 0;
 	}
 
 /**
