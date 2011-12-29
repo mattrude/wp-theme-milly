@@ -41,17 +41,17 @@
                	</div>
 		<div class="image-meta">
 			<div class="caption"><?php if ( !empty($post->post_excerpt) ) the_excerpt(); // this is the "caption" ?></div>
-				<p><a class="wrapper" href="<?php echo get_permalink($post->post_parent); ?>" rev="up post">&larr; <?php printf(__('back to &#8220;%s&#8221;', 'mdr-milly-theme'), get_the_title($post->post_parent)); ?></a></p>
-				<div id="community-tags">
-					<h3 class="comment-title exif-title">Who is this?</h3>	
-					<div id="tagthis"></div>
-				</div>
-				<p><?php echo get_the_term_list( $post->ID, 'people', '<br />' .__('Already Tagged', 'milly'). ': ', ', ', '' ); ?></p>
-			</div><!--close caption id-->
+			<p><a class="wrapper" href="<?php echo get_permalink($post->post_parent); ?>" rev="up post">&larr; <?php printf(__('back to &#8220;%s&#8221;', 'mdr-milly-theme'), get_the_title($post->post_parent)); ?></a></p>
+			<div id="community-tags">
+				<h3 class="comment-title exif-title">Who is this?</h3>	
+				<div id="tagthis"></div>
+			</div>
+			<p><?php echo get_the_term_list( $post->ID, 'people', '<br />' .__('Already Tagged', 'milly'). ': ', ', ', '' ); ?></p>
 		        <?php mdr_exif(); ?>
 			<br />
-		<div id="image-comments" >
-		<?php comments_template(); ?>
+			<div id="image-comments" >
+				<?php comments_template(); ?>
+			</div><!--close caption id-->
 		</div><!--close post class & post# id-->
 	</div>
 	<br />
