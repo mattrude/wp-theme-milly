@@ -10,6 +10,43 @@ Version: 1.8-devel
 Tags: Widgets, Avatars
 */
 
+
+@font-face {
+  font-family: 'Concert One';
+  font-style: Normal;
+  font-weight: 400;
+  src: local('Concert One Regular'), local('Concert One-Regular'), url('fonts/Concert_One/ConcertOne-Regular.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Asap';
+  font-style: Italic;
+  font-weight: 400;
+  src: local('Asap Italic'), local('Asap-Italic'), url('fonts/Asap/Asap-Italic.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Asap';
+  font-style: Bold;
+  font-weight: 400;
+  src: local('Asap Bold'), local('Asap-Bold'), url('fonts/Asap/Asap-Bold.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Asap';
+  font-style: Bold Italic;
+  font-weight: 400;
+  src: local('Asap BoldItalic'), local('Asap-BoldItalic'), url('fonts/Asap/Asap-BoldItalic.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Asap';
+  font-style: Normal;
+  font-weight: 400;
+  src: local('Asap Regular'), local('Asap-Regular'), url('fonts/Asap/Asap-Regular.ttf') format('woff');
+}
+
+
 html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;vertical-align:baseline;outline:none;background:transparent;border:none;text-decoration:none;}
 b,i,hr,u,center,menu,layer,s,strike,font,xmp{margin:0;padding:0;vertical-align:baseline;outline:none;font-size:100%;font-weight:normal;font-style:normal;background:transparent;border:none;text-decoration:none;}
 h1{color: #666;font-style:normal;font-weight:normal;margin:0;}
@@ -35,11 +72,9 @@ body {
 	}
 
 /* Fonts */
-/*
-#site-title, .widget-title, #access, .menu { font-family: "ff-cocon-web-pro-1","ff-cocon-web-pro-2",verdana,sans-serif; }
-h1, h2, h3, h4, h5, h6, .entry-title, .series-title, .related-title { font-family: "brevia-1","brevia-2",sans-serif; }
-body, #footer p, #content { font-family: "myriad-pro-1","myriad-pro-2",georgia,sans-serif; }
-*/
+#site-title, .widget-title, #access, .menu { font-family: Concert One ,verdana,sans-serif; }
+h1, h2, h3, h4, h5, h6, .entry-title, .series-title, .related-title { font-family: Concert One,sans-serif; }
+body, #footer p, #content { font-family: Asap,georgia,sans-serif; }
 
 /* Links */
 a:link, a:visited {
@@ -68,7 +103,6 @@ a:hover, a:active {
 	font-size:20px;
 	font-size-adjust:none;
 	font-stretch:normal;
-	font-style:normal;
 	font-variant:normal;
 	font-weight:bold;
 	line-height:21px;
@@ -87,7 +121,7 @@ a:hover, a:active {
 #access ul {list-style:none outside none;}
 #access .menu {
 	width: 982px;
-	font-size: 15px;
+	font-size: 16px;
 	margin: 0 auto;
 	background:#596852;
 	border:1px solid #424F3C;
@@ -452,7 +486,8 @@ img.wp-smiley {
 	}
 #site-title {
 	margin: 0px 0 0 25px;
-	font-size: 26px;
+	font-size: 28px;
+	font-family: Concert One, Georgia, serif;
 	}
 #site-title a:link, a:visited {
 	text-decoration: none;
@@ -782,6 +817,7 @@ li.depth-2 img {
 	}
 li.depth-3 img {
 	background: #e7e7de;
+	background: #e7e7de;
 	}
 li.depth-4 img {
 	background: #FFF;
@@ -937,8 +973,7 @@ a.comment-link:hover {
 .wp-caption .wp-caption-text,
 .gallery-caption {
         color: #666;
-        font-family: Georgia, serif;
-        font-size: 12px;
+        font-family: Asap, Georgia, serif;
 }
 .wp-caption .wp-caption-text {
         margin-bottom: 0.6em;
@@ -1091,6 +1126,7 @@ img#wpstats{width:0px;height:0px;padding:0px;border:none;overflow:hidden}
 .widget li#facebook { background: url(images/keep-in-touch.png) no-repeat scroll 0 -58px transparent; }
 .widget li#feed a { padding: 0 0 0 10px; }
 .widget li#twitter a { padding: 0 0 0 10px; }
+.widget li#facebook a { padding: 0 0 0 10px; }
 .widget li#facebook a { padding: 0 0 0 10px; }
 
 .rss a {
