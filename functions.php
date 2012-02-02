@@ -184,8 +184,8 @@ add_action('admin_head', 'milly_admin_favicon');
 
 function create_milly_taxonomies() {
   register_taxonomy( 'people', array( 'post', 'attachment' ), array( 'hierarchical' => false, 'label' => __('People', 'millytheme'), 'query_var' => true, 'rewrite' => true ) );
-  register_taxonomy( 'places', 'post', array( 'hierarchical' => false, 'label' => __('Places', 'millytheme'), 'query_var' => true, 'rewrite' => true ) );
-  register_taxonomy( 'events', 'post', array( 'hierarchical' => false, 'label' => __('Events', 'millytheme'), 'query_var' => true, 'rewrite' => true ) );
+  register_taxonomy( 'places', array( 'post', 'attachment' ), array( 'hierarchical' => false, 'label' => __('Places', 'millytheme'), 'query_var' => true, 'rewrite' => true ) );
+  register_taxonomy( 'events', array( 'post', 'attachment' ), array( 'hierarchical' => false, 'label' => __('Events', 'millytheme'), 'query_var' => true, 'rewrite' => true ) );
 }
 add_action( 'init', 'create_milly_taxonomies', 0 );
 
