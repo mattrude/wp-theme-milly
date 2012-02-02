@@ -32,7 +32,7 @@ function mct_script() {
 	$template_url = get_template_directory_uri();
 ?>
 <script type='text/javascript' src='<?php echo $template_url; ?>/functions/community-tags/suggest.js'></script>
-<link rel="stylesheet" href="<?php echo $template_url; ?>/functions/community-tags/suggest.css" />
+<!--<link rel="stylesheet" href="<?php echo $template_url; ?>/functions/community-tags/suggest.css" />-->
 <script type="text/javascript">
 <!--
 var $j = jQuery.noConflict();
