@@ -13,6 +13,7 @@
     </div>
     <?php milly_twitter_byline(); ?>
   </div><!--close post class-->
+  <?php milly_pre_next_post(); ?>
 </div><!--close content class-->
 
 <?php get_sidebar(); ?>
