@@ -16,7 +16,7 @@ Change Log
  * Adding a 'Not Found' page for missed searches. [#18](https://github.com/mattrude/wp-theme-milly/issues/18)
 
 
-** [Version 1.7](http://github.com/mattrude/wp-theme-milly/commits/1.7)**
+**[Version 1.7](http://github.com/mattrude/wp-theme-milly/commits/1.7)**
 
  * Corrected use of Twitter Post ID on Twitter pages. [#13](https://github.com/mattrude/wp-theme-milly/issues/13)
  * Add Google Voice Search to Sites Search Forum. [#17](https://github.com/mattrude/wp-theme-milly/issues/17)
@@ -27,7 +27,7 @@ Change Log
  * UI clean up
 
 
-**Version 1.6 - http://github.com/mattrude/wp-theme-milly/commits/1.6**
+**[Version 1.6](http://github.com/mattrude/wp-theme-milly/commits/1.6)**
 
  * Added Twitter post-type Widget
  * Added Top Naviation Custom Menu
@@ -38,7 +38,7 @@ Change Log
    * Added new widget Random Footer Image
 
 
-**Version 1.5 - http://github.com/mattrude/wp-theme-milly/commits/1.5**
+**[Version 1.5](http://github.com/mattrude/wp-theme-milly/commits/1.5)**
 
  * Added Twiter Custom Post Type.
  * Added function to convert all posts in category "Tweets" to, Custome Post Type "Twitter"
@@ -52,7 +52,7 @@ Change Log
  * Upgraded to version 0.7 of the Random Image Block widget
 
 
-**Version 1.4 - http://github.com/mattrude/wp-theme-milly/commits/1.4**
+**[Version 1.4](http://github.com/mattrude/wp-theme-milly/commits/1.4)**
 
  * Green! with a new header image of the cabin
   * Background color = 596852
@@ -63,13 +63,13 @@ Change Log
  * Added native EXIF function
 
 
-**Version 1.3 - http://github.com/mattrude/wp-theme-milly/commits/1.3**
+**[Version 1.3](http://github.com/mattrude/wp-theme-milly/commits/1.3)**
 
  * Added Random Image Widget
  * Added Rebuild Image functions
 
 
-**Version 1.1 - http://github.com/mattrude/wp-theme-milly/commits/1.1**
+**[Version 1.1](http://github.com/mattrude/wp-theme-milly/commits/1.1)**
 
  * Google Analytics Support (analytics.google.com)
  * Lightbox 2 support (www.huddletogether.com/projects/lightbox2)
@@ -93,7 +93,7 @@ Milly is free software; you may redistribute it and/or modify it under the terms
     Everyone is permitted to copy and distribute verbatim copies
     of this license document, but changing it is not allowed.
 
-Known Bugs
+Issues
 ----------
  * https://github.com/mattrude/wp-theme-milly/issues
 
