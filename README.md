@@ -5,12 +5,18 @@ The Current  mattrude.com theme, with custom post-types & custom taxonomy.
 
 ![Screenshot](https://github.com/mattrude/wp-theme-milly/raw/master/screenshot.png)
 
+Development of this theme may be monitored at http://github.com/mattrude/wp-theme-milly/
+
 Change Log
 ----------
 
-**Version 1.8-devel - http://github.com/mattrude/wp-theme-milly/commits/master**
+**[Version 1.8-devel](http://github.com/mattrude/wp-theme-milly/commits/master)**
 
-**Version 1.7 - http://github.com/mattrude/wp-theme-milly/commits/1.7**
+ * Add next/previous links to single twitter posts. [#16](https://github.com/mattrude/wp-theme-milly/issues/16)
+ * Adding a 'Not Found' page for missed searches. [#18](https://github.com/mattrude/wp-theme-milly/issues/18)
+
+
+** [Version 1.7](http://github.com/mattrude/wp-theme-milly/commits/1.7)**
 
  * Corrected use of Twitter Post ID on Twitter pages. [#13](https://github.com/mattrude/wp-theme-milly/issues/13)
  * Add Google Voice Search to Sites Search Forum. [#17](https://github.com/mattrude/wp-theme-milly/issues/17)
