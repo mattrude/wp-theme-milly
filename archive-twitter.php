@@ -3,6 +3,7 @@
 <div id="content">
   <?php if (have_posts()) : ?>
     <!--This is "The Loop"-->
+    <?php query_posts( 'posts_per_page=20&post_type=twitter' ); ?>
     <?php while (have_posts()) : the_post(); ?>
       <div class="post" id="tweet_template-<?php echo $post->ID; ?>">
         <div id='tweet-<?php echo $post->ID; ?>' class='tweet_post' >
