@@ -64,7 +64,8 @@ if($comments) {
 
 <?php else : ?>
 
-  <div class="comment-left">
+  <div id="comment-user-details" class="comment-left">
+  <?php do_action('alt_comment_login'); ?>
   <input id="author" type="text" onblur="if ( value == '' ) { this.value='Your name (Required)' }" onfocus="if ( value == 'Your name (Required)' ) { this.value='' }" tabindex="1" size="22" value="Your name (Required)" name="author"/>
   <input id="email" type="text" onblur="if ( value == '' ) { this.value='Your email (Required)' }" onfocus="if ( value == 'Your email (Required)' ) { this.value='' }" tabindex="2" size="22" value="Your email (Required)" name="email"/>
   <input id="url" type="text" tabindex="3" size="22" value="http://" name="url"/>
