@@ -1291,7 +1291,7 @@ li.twitter a {
 }
 
 /* @media (max-width: 850px) Reduce font-sizes for better readability on smaller devices */
-@media (max-width: 850px) {
+@media (max-width: 1055px) {
 	#header-title {	width: 94%;}
 	#header { width: 94%; height: auto; }
 	#access { width: 94%; margin: 0 auto; }
@@ -1307,6 +1307,31 @@ li.twitter a {
 		margin-bottom: -7px;
 		width: 100%;
 	}
+	#content {
+		width: 70%;
+	}	
+	.post img {
+		height: auto;
+		max-width: 98%;
+	}
+	.gallerypost_main {
+		width: auto;
+	}
+	.gallerypost_thumbnail {
+		padding: 0 20px 0 0;
+	}
+	.gallerypost_body {
+		float: none;
+		padding: 0 0 0 40px;
+		width: auto;
+	}
+}
+@media (max-width: 950px) {
+	#content {
+                width: 65%;
+        }
+}
+@media (max-width: 850px) {
 	#primary {
 		float: left;
 		width: 100%;
