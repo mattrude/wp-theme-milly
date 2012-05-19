@@ -275,7 +275,7 @@ function milly_setup() {
         require_once ( get_template_directory() . '/theme-options.php' );
 
 	// This theme allows users to set a custom background
-	add_custom_background();
+	add_theme_support( 'custom-background', $args );
 	
 	// Add Post Thumbnails for WordPress 2.9
 	add_theme_support('post-thumbnails');
