@@ -127,6 +127,7 @@ a:hover, a:active {
 	border:1px solid #424F3C;
 	height:38px;
 	margin:0 auto;
+	overflow: hidden;
 	line-height:38px;
 	}
 #access .menu ul {list-style:none;margin: 0 auto;}
@@ -1287,4 +1288,32 @@ li.twitter a {
 .ac_match {
 	text-decoration: underline;
 	color: black;
+}
+
+/* @media (max-width: 850px) Reduce font-sizes for better readability on smaller devices */
+@media (max-width: 850px) {
+	#header-title {	width: 94%;}
+	#header { width: 94%; height: auto; }
+	#access { width: 94%; margin: 0 auto; }
+	#access .menu {
+		width: 100%;
+		border: 0;
+	}
+	#container {
+		width: 94%;
+	}
+	#header img {
+		height: auto;
+		margin-bottom: -7px;
+		width: 100%;
+	}
+	#primary {
+		float: left;
+		width: 100%;
+	}
+	#content {
+		float: left;
+		overflow: hidden;
+		width: 100%;
+	}	
 }
