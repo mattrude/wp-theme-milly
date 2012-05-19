@@ -1,5 +1,4 @@
-Wordpress Theme Milly
----------------------
+# Wordpress Theme Milly
 
 The Current  mattrude.com theme, with custom post-types & custom taxonomy.
 
@@ -62,12 +61,10 @@ Change Log
  * Added native random gallery widget
  * Added native EXIF function
 
-
 **[Version 1.3](http://github.com/mattrude/wp-theme-milly/commits/1.3)**
 
  * Added Random Image Widget
  * Added Rebuild Image functions
-
 
 **[Version 1.1](http://github.com/mattrude/wp-theme-milly/commits/1.1)**
 
@@ -79,7 +76,6 @@ Change Log
  * Customisable rotbots.txt
  * CCS styling for Wickett Twitter plugin
  * Licenced under the GPLv2
-
 
 License
 -------
@@ -96,4 +92,3 @@ Milly is free software; you may redistribute it and/or modify it under the terms
 Issues
 ----------
  * https://github.com/mattrude/wp-theme-milly/issues
-
