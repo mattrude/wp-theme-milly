@@ -217,6 +217,16 @@ add_filter('user_contactmethods','add_milly_contactmethod',10,1);
 add_action( 'widgets_init', 'milly_register_sidebars' );
 function milly_register_sidebars() {
   register_sidebar(array (
+    'id' => 'top-widget-area',
+    'name' => __('Top Widget Area', 'millytheme'),
+    'description' => __('This is the top Main Right Hand Sidebar', 'millytheme'),
+    'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ));
+
+  register_sidebar(array (
     'id' => 'sidebar-widget-area',
     'name' => __('Sidebar Widget Area', 'millytheme'),
     'description' => __('This is the Main Right Hand Sidebar', 'millytheme'),

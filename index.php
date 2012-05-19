@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
-<?php get_sidebar(); ?>
+<?php if ( is_active_sidebar( 'top-widget-area' ) ) { echo "<div id='primary'>"; dynamic_sidebar( 'top-widget-area' ); echo "</div>"; } ?>
+
 <div id="content">
 	<?php if (have_posts()) : ?>
 		<!--Starting "The Loop"-->
@@ -33,5 +34,6 @@
 	<?php endif; ?>
 </div><!--close content id-->
 
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
