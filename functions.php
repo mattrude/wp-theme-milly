@@ -277,6 +277,9 @@ function milly_setup() {
 	// This theme allows users to set a custom background
 	add_theme_support( 'custom-background', $args );
 	
+	// This theme allows users to use custom header images
+	add_theme_support( 'custom-header', $args );
+
 	// Add Post Thumbnails for WordPress 2.9
 	add_theme_support('post-thumbnails');
 	set_post_thumbnail_size(200, 200);
@@ -420,30 +423,6 @@ define( 'HEADER_IMAGE', '%s/images/header-cabin.jpg' );
 define( 'HEADER_IMAGE_WIDTH', apply_filters( 'milly_header_image_width', 984 ) );
 define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'milly_header_image_height', 200 ) );
 define( 'NO_HEADER_TEXT', true );
-
-// Add a way for the custom header to be styled in the admin panel that controls
-// custom headers. See milly_admin_header_style(), below.
-add_custom_image_header( '', 'milly_admin_header_style' );
-
-function milly_admin_header_style() {
-?>
-<style type="text/css">
-/* Shows the same border as on front end */
-#headimg {
-        border-bottom: 1px solid #000000;
-        border-top: 4px solid #000000;
-}
-
-/* If NO_HEADER_TEXT is false, you can style here the header text preview */
-#headimg #name {
-}
-
-#headimg #desc {
-}
-</style>
-<?php
-}
-
 
 /*********************************************************************************
  Change the page naviagion forward and back buttons
