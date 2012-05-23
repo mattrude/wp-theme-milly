@@ -8,6 +8,8 @@
   <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
   <?php if ( $paged != '0' ) {
     ?><title><?php wp_title(' - ', true, 'right'); ?><?php bloginfo('name'); echo " - Page $paged" ?></title><?php
+  } elseif ( is_tag() ) {
+    ?><title><?php wp_title(' - ', true, 'right'); ?><?php bloginfo('name'); echo " - Tag" ?></title><?php
   } else {
     ?><title><?php wp_title(' - ', true, 'right'); ?><?php bloginfo('name'); ?></title><?php
   } ?>
