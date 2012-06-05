@@ -278,7 +278,7 @@ function milly_setup() {
 	//add_theme_support( 'custom-background', $args );
 	
 	// This theme allows users to use custom header images
-	add_theme_support( 'custom-header', $args );
+	add_theme_support( 'custom-header' );
 
 	// Add Post Thumbnails for WordPress 2.9
 	add_theme_support('post-thumbnails');
